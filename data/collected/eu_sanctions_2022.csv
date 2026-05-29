@@ -1,0 +1,10 @@
+package,date_adopted,sectors_targeted,key_measures,operational_relevance
+1,2022-02-23,individuals,"351 Russian Duma members sanctioned; asset freeze and travel ban","Baseline: no operational sector restrictions"
+2,2022-02-25,"finance; energy; transport; technology","Asset freeze on Putin and Lavrov; SWIFT restrictions begin; export bans on dual-use goods; aviation restrictions","Finance + Technology sectors first hit"
+3,2022-02-28,"finance; central banking","~€210bn Central Bank of Russia assets immobilised in EU; SWIFT ban extended to 7 banks","Finance sector: severe banking restrictions"
+4,2022-03-15,"energy; trade (broad)","Ban on new investment in Russian energy sector; ban on transactions with state-owned enterprises; export controls expanded","Energy sector investment ban; broad trade hit"
+5,2022-04-08,"energy (coal); transport; trade","Coal import ban (first energy commodity); EU port ban for Russian vessels; road transport ban for Russian trucks","Energy: coal + transport sectors hard hit"
+6,2022-06-03,"energy (oil); technology; finance; media","Seaborne crude oil import ban; ban on accounting/consulting/PR services to Russian firms; additional bank SWIFT bans; technology export restrictions tightened","Services sector (professional services) hit; oil sector"
+7,2022-07-21,"all sectors (maintenance)","Tightening/alignment of existing packages; closed loopholes in tech and trade restrictions; no new sector added","Cross-sector tightening"
+8,2022-10-06,"energy (oil price cap); trade; individuals","Oil price cap mechanism established; steel and iron import bans expanded; additional export controls on advanced tech","Energy + advanced manufacturing"
+9,2022-12-16,"defence; industry; technology; media","Ban on drone engine exports; restrictions on industrial goods (machinery, chemicals); additional media/propaganda bans","Industrial + defence manufacturing"
