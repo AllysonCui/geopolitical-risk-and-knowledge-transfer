@@ -1,0 +1,159 @@
+"""
+Collect patent counts per company from Lens.org public API.
+
+Uses the firms_exiters.csv produced by 01_parse_yale_tracker.py.
+Queries Lens.org for each parent company's patent portfolio size
+(a key input to the proprietary-intensity component of α).
+
+Setup:
+  1. Register at https://www.lens.org/ (free account)
+  2. Go to Profile > Subscriptions > API & Bulk Data > create a token
+  3. Set the token as an environment variable:
+       export LENS_API_TOKEN="your-token-here"
+  OR pass it as a command-line argument:
+       python3 02_collect_patents_lens.py --token YOUR_TOKEN
+
+Output:
+  data/collected/patents_by_firm.csv — one row per firm with patent counts
+"""
+
+import csv
+import json
+import os
+import time
+import argparse
+from pathlib import Path
+
+try:
+    import requests
+except ImportError:
+    raise SystemExit("requests not installed: pip install requests")
+
+LENS_API_URL = "https://api.lens.org/patent/search"
+IN_FILE = Path(__file__).parent.parent / "data" / "collected" / "firms_exiters.csv"
+OUT_FILE = Path(__file__).parent.parent / "data" / "collected" / "patents_by_firm.csv"
+
+# Rate limit: Lens.org free tier allows ~10 req/min → sleep 7s between requests
+REQUEST_DELAY_SEC = 7
+
+
+def get_patent_count(company_name: str, token: str) -> dict:
+    """
+    Query Lens.org for patents assigned to `company_name`.
+    Returns a dict with total patent count and family count.
+    """
+    headers = {
+        "Authorization": f"Bearer {token}",
+        "Content-Type": "application/json",
+    }
+    # Search both applicant and owner fields; use phrase match for precision
+    payload = {
+        "query": {
+            "bool": {
+                "should": [
+                    {"match_phrase": {"applicant.name": company_name}},
+                    {"match_phrase": {"owner.name": company_name}},
+                ]
+            }
+        },
+        "size": 1,          # we only need the total count, not records
+        "include": ["lens_id"],
+        "aggregations": {
+            "families": {
+                "terms": {
+                    "field": "family.id",
+                    "size": 1
+                }
+            }
+        }
+    }
+
+    try:
+        resp = requests.post(LENS_API_URL, headers=headers, json=payload, timeout=30)
+        if resp.status_code == 200:
+            data = resp.json()
+            total_patents = data.get("total", 0)
+            # family count from aggregation bucket count
+            buckets = data.get("aggregations", {}).get("families", {}).get("buckets", [])
+            # Lens doesn't return exact family count in agg by default;
+            # use a second query for family-level deduplication if needed.
+            return {
+                "patents_total": total_patents,
+                "api_status": "ok",
+            }
+        elif resp.status_code == 429:
+            return {"patents_total": None, "api_status": "rate_limited"}
+        else:
+            return {"patents_total": None, "api_status": f"http_{resp.status_code}"}
+    except requests.RequestException as e:
+        return {"patents_total": None, "api_status": f"error:{e}"}
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--token", default=os.environ.get("LENS_API_TOKEN", ""))
+    parser.add_argument(
+        "--limit", type=int, default=None,
+        help="Process only first N firms (for testing)"
+    )
+    args = parser.parse_args()
+
+    if not args.token:
+        raise SystemExit(
+            "No Lens API token found.\n"
+            "Set LENS_API_TOKEN env var or pass --token YOUR_TOKEN\n"
+            "Get a free token at https://www.lens.org/ (Profile > API & Bulk Data)"
+        )
+
+    firms = []
+    with open(IN_FILE, encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            firms.append(row)
+
+    if args.limit:
+        firms = firms[: args.limit]
+
+    print(f"Querying patents for {len(firms)} firms...")
+
+    out_fields = ["name", "country", "industry", "grade_latest", "patents_total", "api_status"]
+    results = []
+
+    for i, firm in enumerate(firms):
+        name = firm["name"]
+        print(f"  [{i+1}/{len(firms)}] {name}", end=" ... ", flush=True)
+        result = get_patent_count(name, args.token)
+
+        if result["api_status"] == "rate_limited":
+            print("rate limited — waiting 60s")
+            time.sleep(60)
+            result = get_patent_count(name, args.token)
+
+        results.append(
+            {
+                "name": name,
+                "country": firm["country"],
+                "industry": firm["industry"],
+                "grade_latest": firm["grade_latest"],
+                "patents_total": result["patents_total"],
+                "api_status": result["api_status"],
+            }
+        )
+        print(f"{result['api_status']} | patents={result['patents_total']}")
+
+        if i < len(firms) - 1:
+            time.sleep(REQUEST_DELAY_SEC)
+
+    with open(OUT_FILE, "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=out_fields)
+        writer.writeheader()
+        writer.writerows(results)
+
+    ok = sum(1 for r in results if r["api_status"] == "ok")
+    print(f"\nDone. {ok}/{len(results)} successful → {OUT_FILE}")
+    print("NOTE: Patent counts are at the PARENT company level.")
+    print("      Scale by subsidiary assets (from Orbis) to get proprietary intensity.")
+
+
+if __name__ == "__main__":
+    main()
