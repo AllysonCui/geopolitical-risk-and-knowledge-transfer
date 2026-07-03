@@ -1,0 +1,900 @@
+name,country,industry,grade,action_type,nace_sector,alpha_emp_intensity,alpha_sq,y_exit_payoff,deal_value_mn_usd,deal_status,has_deal,pre_inv_equity_th_usd,sum_assets_th_usd,ln_assets,years_in_russia,employees_total,n_subsidiaries,sanctions_exposure,guo_matched
+AAK,Sweden,Consumer Staples,A,sold,01,,,,,,0,55.82,484.22,6.1825,5,,1,0,HAAKMAN HOLDING B.V.
+AB InBev,Belgium,Consumer Staples,A,sold,11,0.003994,0.000016,,,,0,238969.19,957907.99,13.7725,18,3920,3,0,AB INBEV EFES B.V.
+ABB,Switzerland,Industrials,A,sold,46,0.001904,0.000004,,,Proposed,1,16948.51,130755.32,11.7811,22,249,1,0,ABB LTD
+AECOM,United States,Industrials,A,sold,71,,,,,,0,,,,22,,1,0,AECOM
+AG Barr,United Kingdom,Consumer Staples,A,sold,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+APG,Netherlands,Financials,A,sold,23,0.006695,0.000045,,,Withdrawn,1,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+AVL,Austria,Industrials,A,suspended,68,,,,,,0,-408.84,4826.83,8.4819,10,,1,0,MR PAVLOU PAVLOS
+Aarsleff,Danish,Industrials,A,sold,29,,,,,,0,-4620.80,7899.85,8.9746,11,,1,0,TARS HOLDING AG
+Accenture,Ireland,Information Technology,A,sold,68,0.027409,0.000751,,,,0,-27.23,401.33,5.9948,10,11,1,0,FAIRVIEW GROUP VENTURE LTD
+Accountor,Finland,Information Technology,A,sold,62,,,,,,0,-4.68,10.00,2.3027,5,,1,4,OUN GMBH
+Acerinox,Spain,Materials,A,suspended,70,0.015133,0.000229,,,,0,537.20,991.24,6.8990,17,15,1,0,ARC HOLDINGS
+Acronis,Switzerland,Information Technology,A,suspended,62,0.001131,0.000001,,,,0,856.53,1337.68,7.1987,19,2,2,4,ACRONIS AG
+Adenza,United Kingdom,Information Technology,A,other,46,0.007840,0.000061,,,,0,63.38,1020.42,6.9280,4,8,1,0,BRINKMAN 'S-GRAVENZANDE HOLDING B.V.
+Aegon,Netherlands,Financials,A,sold,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+AerCap,Ireland,Industrials,A,other,27,,,,,,0,,,,12,,1,0,SUPER-CAPACITOR LIMITED
+Agilent,United States,Information Technology,A,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Agrokoncernas,Lithuania,Industrials,A,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Aimbridge | Interstate Hotels,United States,Consumer Discretionary,A,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Air Lease,United States,Industrials,A,suspended,52,0.009261,0.000086,,,,0,393.19,431.90,6.0682,16,4,1,0,BASE HOLDING AG
+Air Liquide,France,Materials,A,sold,46,0.009579,0.000092,,,,0,104.40,104.40,4.6482,16,1,1,0,L'AIR LIQUIDE SOCIETE ANONYME POUR L'ETUDE ET L'EXPLOITATION DES PROCEDES GEORGES CLAUDE
+Air Products,United States,Materials,A,sold,73,0.000124,0.000000,,,,0,16257.86,40427.98,10.6073,8,5,1,0,BOMBARDIER RECREATIONAL PRODUCTS INC.
+AirBaltic,Latvia,Industrials,A,sold,55,0.000653,0.000000,,,,0,-62.40,8552.24,9.0539,18,5,2,0,IRB HOLDING AG
+Akvelon,United States,Information Technology,A,sold,62,,,,,,0,-4.68,10.00,2.3027,5,,1,4,OUN GMBH
+Aldi,Germany,Consumer Staples,A,other,46,0.019221,0.000369,,,,0,465.60,676.35,6.5167,16,13,1,0,VALDINOCHI LUKA
+Allegro,Poland,Consumer Discretionary,A,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Allen &amp; Overy,United Kingdom,Industrials,A,sold,46,0.002925,0.000009,,,,0,3633.77,15040.33,9.6185,19,44,1,0,CAL GMBH
+AmRest,Spain,Consumer Discretionary,A,sold,49,,,,104.82,Completed,1,,,,10,,1,2,ESTA GROUP AG
+Amedia,Norway,Communication Services,A,sold,59,0.000509,0.000000,,,,0,5771.18,46544.10,10.7482,15,86,3,0,AMEDIA NETWORKS LTD
+American Airlines,United States,Industrials,A,other,71,0.000126,0.000000,,,,0,21548.23,51114.97,10.8418,10,7,4,0,LINDE GMBH
+Ametek,United States,Industrials,A,other,62,0.000853,0.000001,,,,0,-568.75,1172.08,7.0665,11,1,1,4,PAYMETECH CYPRUS LIMITED
+Amsted Rail,United States,Industrials,A,sold,28,0.007552,0.000057,,,,0,30481.84,44490.70,10.7030,14,336,1,0,AMSTED RAIL - EPK BEARING B.V.
+Ansell,Australia,Industrials,A,sold,70,0.001374,0.000002,,,,0,593.95,1455.21,7.2829,17,2,1,0,SHELL PLC
+Arconic,United States,Materials,A,sold,70,0.015133,0.000229,428.1458,230.00,Completed,1,537.20,991.24,6.8990,17,15,1,0,ARC HOLDINGS
+Arendt &amp; Medernach,Luxembourg,Industrials,A,suspended,70,0.015133,0.000229,,,,0,537.20,991.24,6.8990,17,15,1,0,ARC HOLDINGS
+Arrival,United Kingdom,Consumer Discretionary,A,sold,31,0.021547,0.000464,,,,0,20279.38,29284.92,10.2848,20,631,1,0,ROCA CORPORACION EMPRESARIAL SA
+Asda,United Kingdom,Consumer Staples,A,other,62,0.016548,0.000274,,,,0,1386.32,1873.35,7.5355,8,31,1,4,"NASDAQ, INC."
+Asics,Japan,Consumer Discretionary,A,suspended,46,0.017012,0.000289,,,,0,8282.96,17164.01,9.7506,14,292,1,0,ASICS CORPORATION
+Assicurazioni Generali,Italy,Financials,A,sold,73,0.000269,0.000000,,,,0,14727.15,14858.94,9.6064,20,4,1,0,ASSICURAZIONI GENERALI SPA
+Atos,France,Information Technology,A,other,50,0.405570,0.164487,,,,0,82.27,177.53,5.1791,13,72,1,2,LOURO KHOSE DE MATOS
+Autogrill,Italy,Consumer Discretionary,A,sold,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Avantor,United States,Health Care,A,other,46,0.720033,0.518447,,,,0,88.69,108.33,4.6852,1,78,1,0,SANTO HOLDING AG
+Avaya,United States,Information Technology,A,other,73,0.000103,0.000000,,,,0,16611.65,19438.21,9.8750,17,2,1,0,AVAYA INTERNATIONAL ENTERPRISES LIMITED
+Avery Dennison,United States,Materials,A,other,46,0.017876,0.000320,,,,0,1657.39,1678.26,7.4255,15,30,1,0,AVERY DENNISON CORPORATION
+Avid,United States,Information Technology,A,other,70,,,,,,0,,,,17,1,1,0,MR MIKHAIL DAVIDOVICH FAIVUSHKIN
+Aviva,United Kingdom,Financials,A,sold,79,,,,,,0,,,,1,35,1,0,ALMAVIVA TECHNOLOGIES S.R.L.
+BASF SE,Germany,Materials,A,sold,46,0.000132,0.000000,,,,0,5731.93,20787.31,9.9421,15,231,3,0,BASF SE
+Baker Botts,United States,Industrials,A,sold,46,0.005815,0.000034,,,,0,-82.23,2751.30,7.9198,13,16,1,0,BO HOLDING AG
+Baker Hughes,United States,Energy,A,other,09,,,,,Pending,1,116409.56,252086.93,12.4375,15,985,6,0,BAKER HUGHES COMPANY
+Baker McKenzie,United States,Industrials,A,other,20,0.000095,0.000000,,,,0,10328.18,10479.60,9.2572,3,1,1,4,BAYER AG
+Baker Tilly,United Kingdom,Financials,A,sold,20,0.000095,0.000000,,,,0,10328.18,10479.60,9.2572,3,1,1,4,BAYER AG
+Bakoma,Poland,Consumer Staples,A,sold,46,,,,,,0,4463.47,5192.87,8.5550,19,,1,0,KOMPANIYA BEKKER AKROMA GRUP AKTYIEBOLAG
+Ball Corporation,United States,Materials,A,sold,28,0.007127,0.000051,574.1063,530.00,Completed,1,923.17,10394.24,9.2490,11,55,2,0,BALLU FAMILY
+BaseTrack,Estonia,Information Technology,A,sold,52,0.009261,0.000086,,,,0,393.19,431.90,6.0682,16,4,1,0,BASE HOLDING AG
+Beam Suntory,Japan,Consumer Staples,A,sold,68,0.000076,0.000000,,,,0,-12051.13,13207.76,9.4886,2,3,2,0,BEAM HOLDINGS LIMITED
+Bellona,Norway,NGO,A,sold,46,0.000337,0.000000,,,,0,6603.24,8905.68,9.0944,9,3,1,0,LONZA GROUP AG
+Bentley Systems,United States,Information Technology,A,other,46,,,,,,0,2776.24,3050.65,8.0231,17,,1,0,MKS INC
+Bestseller,Denmark,Consumer Discretionary,A,suspended,70,0.001374,0.000002,,,,0,593.95,1455.21,7.2829,17,2,1,0,SHELL PLC
+BioMar,Danish,Industrials,A,other,73,0.003063,0.000009,,,,0,1261.05,2285.61,7.7344,11,7,1,0,BIOMARIN PHARMACEUTICAL INC
+BlackRock,United States,Financials,A,other,46,0.000262,0.000000,,,,0,5240.97,11458.42,9.3465,14,3,1,0,"CROCS, INC."
+Blockchain.com,Luxembourg,Information Technology,A,suspended,68,0.000199,0.000000,,,,0,6638.56,67686.96,11.1226,22,18,2,0,ANACOM
+Bolt,Estonia,Information Technology,A,other,68,0.001683,0.000003,,,,0,821.76,1188.17,7.0802,16,2,1,0,KIMBOLT MEMBERS LTD.
+Bonava,Sweden,Real Estate,A,sold,46,0.005815,0.000034,,,,0,-82.23,2751.30,7.9198,13,16,1,0,BO HOLDING AG
+Booking,United States,Consumer Discretionary,A,suspended,73,0.000564,0.000000,,,,0,5019.40,5970.04,8.6945,13,3,2,0,BOOKING HOLDINGS INC.
+Boreo,Finland,Industrials,A,sold,46,0.005815,0.000034,,,,0,-82.23,2751.30,7.9198,13,16,1,0,BO HOLDING AG
+Bose,United States,Information Technology,A,suspended,46,0.005815,0.000034,,,Withdrawn,1,-82.23,2751.30,7.9198,13,16,1,0,BO HOLDING AG
+Boskalis,Netherlands,Industrials,A,other,46,0.004463,0.000020,,,,0,730.38,3584.65,8.1844,15,16,1,0,ALI GROUP LLC
+Breitling SA,Switzerland,Consumer Discretionary,A,sold,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Bristol-Myers Squibb,United States,Health Care,A,sold,46,0.001904,0.000004,,,,0,16948.51,130755.32,11.7811,22,249,1,0,ABB LTD
+British American Tobacco,United Kingdom,Consumer Staples,A,other,55,0.002042,0.000004,,,Pending,1,13748.57,27641.08,10.2271,21,292,6,0,ACCOR
+British Petroleum (BP),United Kingdom,Energy,A,sold,17,0.002184,0.000005,,,,0,65806.94,79194.80,11.2797,22,173,1,0,RETIS HOLDING GMBH
+British Standards Institution (BSI),United Kingdom,Industrials,A,other,17,0.002184,0.000005,,,,0,65806.94,79194.80,11.2797,22,173,1,0,RETIS HOLDING GMBH
+Broadridge Financial Solutions,United States,Financials,A,sold,62,0.012480,0.000156,,,,0,1069.77,3926.22,8.2754,10,49,1,4,"BROADRIDGE FINANCIAL SOLUTIONS, INC."
+Bruker,United States,Industrials,A,suspended,68,0.000021,0.000000,,,,0,15611.92,56203.27,10.9367,18,197,3,0,INTERBUNKER GROUP LTD
+Brunel,Netherlands,Industrials,A,sold,70,0.099856,0.009971,,,,0,7.08,10.01,2.3040,3,1,1,0,MR MAKSIM BRUNELEN
+Bryan Cave,United States,Industrials,A,other,46,,,,,,0,,,,14,,2,0,ANCS HOLDING LIMITED
+Bumble,United States,Communication Services,A,other,62,0.015701,0.000247,,,,0,3725.57,4521.93,8.4167,14,71,1,4,BUMBLE INC.
+Bunge,United States,Consumer Staples,A,sold,23,0.006695,0.000045,,,Completed,1,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+CD Projekt,Poland,Communication Services,A,other,70,,,,,,0,396.86,397.63,5.9855,4,,1,0,DEUTSCHE PROJEKT-UNION GESELLSCHAFT MIT BESCHRÄNKTER HAFTUNG
+CFA Institute,United States,NGO,A,other,64,0.000614,0.000000,,,,0,5.01,3067.76,8.0287,15,2,2,8,STIFT HOLDING LTD
+CMA CGM,France,Industrials,A,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Cadence,United States,Information Technology,A,other,62,,,,,,0,1956.20,2475.93,7.8144,19,,1,4,"CADENCE DESIGN SYSTEMS, INC."
+Calrec,United Kingdom,Consumer Discretionary,A,other,46,0.002925,0.000009,,,,0,3633.77,15040.33,9.6185,19,44,1,0,CAL GMBH
+Canara,India,Financials,A,sold,62,0.026802,0.000718,,,,0,614.91,1678.98,7.4259,5,45,1,4,CIAN PLC
+Cargotec,Finland,Industrials,A,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Carlsberg,Denmark,Consumer Staples,A,sold,23,0.006695,0.000045,16.6496,320.62,Withdrawn,1,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Carnival,United States,Consumer Discretionary,A,other,46,0.002925,0.000009,,,,0,3633.77,15040.33,9.6185,19,44,1,0,CAL GMBH
+Caverion,Finland,Industrials,A,sold,46,0.000029,0.000000,,,Pending,1,9988.88,34176.01,10.4393,15,1,1,0,ORION OYJ
+Centrica,United Kingdom,Utilities,A,other,77,0.004008,0.000016,,,,0,241.45,249.47,5.5194,18,1,1,0,ORICA LIMITED
+Chanel,France,Consumer Discretionary,A,suspended,70,0.006106,0.000037,,,Pending,1,-4067.23,6551.43,8.7874,17,40,1,0,MS CHANELLE LATOYA STURGE-WOODS
+Chapman Freeborn,United Kingdom,Industrials,A,other,46,0.005815,0.000034,,,,0,-82.23,2751.30,7.9198,13,16,1,0,BO HOLDING AG
+Charles Schwab,United States,Financials,A,other,28,0.007011,0.000049,,,,0,-18231.69,24818.58,10.1193,11,174,1,0,CHAS HOLDING AG
+Cisco,United States,Information Technology,A,sold,46,0.000093,0.000000,,,,0,36304.76,225796.95,12.3274,9,21,1,0,CISCO SYSTEMS INC
+Clarivate,United Kingdom,Industrials,A,other,46,0.002925,0.000009,,,,0,3633.77,15040.33,9.6185,19,44,1,0,CAL GMBH
+Cleaves,Norway,Financials,A,suspended,46,0.732502,0.536559,,,,0,-95.41,35.49,3.5694,3,26,1,0,CLEVER SPACE SA
+Clifford Chance,United Kingdom,Industrials,A,sold,46,0.002925,0.000009,,,,0,3633.77,15040.33,9.6185,19,44,1,0,CAL GMBH
+Colliers,Canada,Real Estate,A,other,46,0.022688,0.000515,,,,0,-267.38,220.39,5.3954,10,5,1,0,DIERS INTERNATIONAL GMBH
+Columbus,Denmark,Information Technology,A,sold,46,0.004331,0.000019,,,,0,671.32,1154.44,7.0514,12,5,1,0,COLUMBUS MCKINNON CORP
+Comarch,Poland,Information Technology,A,other,70,0.015133,0.000229,,,,0,537.20,991.24,6.8990,17,15,1,0,ARC HOLDINGS
+Commvault,United States,Information Technology,A,sold,16,,,,,,0,,,,15,,1,0,LTD
+Compass Group,United Kingdom,Consumer Staples,A,other,47,0.000422,0.000000,,,Completed,1,121581.00,177932.55,12.0892,20,75,1,0,COMPAGNIE FINANCIERE RUPERT
+Compass Mining,United States,Financials,A,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Coop,Switzerland,Financials,A,sold,01,0.002290,0.000005,,,,0,5763.04,27944.18,10.2380,14,64,1,0,MAISADOUR SOC COOP AGRICOLE
+Corteva,United States,Consumer Staples,A,other,46,0.000093,0.000000,,,,0,1174.37,128928.21,11.7670,12,12,1,0,"CORTEVA, INC"
+Covestro,Germany,Materials,A,suspended,46,0.008292,0.000069,,,,0,28615.23,89970.63,11.4072,17,746,1,0,RDO INTERNATIONAL
+Cummins,United States,Industrials,A,other,47,0.015746,0.000248,,,,0,26055.10,51949.88,10.8580,14,818,1,0,BNS INTERNATIONAL GROUP LTD
+Currency.com,United Kingdom,Financials,A,other,46,,,,,,0,-180.14,612.59,6.4177,6,,1,0,SYCOMP HOLDINGS INC.
+Cushman &amp; Wakefield,United States,Real Estate,A,other,68,,,,,,0,-63.68,262.73,5.5711,11,,1,0,DALEFIELD LIMITED
+Cyfrowy Polsat,Poland,Communication Services,A,other,47,,,,,,0,1485.50,1497.38,7.3115,3,,1,0,OLAST HOLDINGS LIMITED
+DLA Piper,United States,Industrials,A,sold,46,0.000334,0.000000,,,,0,2640.42,2993.58,8.0042,7,1,1,0,"SOCIEDAD DE RESPONSABILIDAD LIMITADA UNIPERSONAL INIBSA DENTAL, S.L.U."
+DMG Mori,Japan,Industrials,A,sold,46,0.000060,0.000000,,,,0,45335.82,83198.55,11.3290,17,5,1,0,"DMG MORI CO., LTD."
+DP Eurasia,Netherlands,Consumer Staples,A,other,64,0.033435,0.001118,,,,0,-102.73,59.82,4.0913,20,2,1,8,SUN GROUP (EURASIA) LIMITED
+DXC Technology,United States,Information Technology,A,other,62,0.018406,0.000339,,,,0,2712.80,8128.09,9.0031,2,147,2,4,DXC TECHNOLOGY COMPANY
+Daikin,Japan,Industrials,A,other,62,0.051033,0.002604,,,,0,676.78,685.83,6.5306,13,35,1,4,KORPORATSIYA KLAUDAIK INK
+Danfoss,Denmark,Industrials,A,sold,22,0.068261,0.004660,,,Pending,1,61.65,483.44,6.1809,8,33,1,0,SFS GROUP AG
+Dechert,United States,Industrials,A,other,46,0.000080,0.000000,,,,0,56816.41,87327.09,11.3774,10,7,1,0,"STANLEY BLACK & DECKER, INC."
+Deezer,France,Communication Services,A,other,46,0.019798,0.000392,,,,0,55.48,101.02,4.6153,13,2,1,0,MR BARNABE IGOR VEZER
+Deichmann,Germany,Consumer Discretionary,A,sold,73,0.005891,0.000035,,,,0,541.76,678.95,6.5205,8,4,1,0,NTN CORPORATION
+Dell,United States,Information Technology,A,suspended,46,0.009885,0.000098,,,Completed,1,44817.94,196728.29,12.1896,15,1865,3,0,MR MICHAEL S DELL
+Deloitte,United States,Industrials,A,other,33,0.000125,0.000000,,,,0,2604.82,8010.27,8.9885,9,1,1,0,ITT INC.
+Delta Air Lines,United States,Industrials,A,sold,71,0.000126,0.000000,,,,0,21548.23,51114.97,10.8418,10,7,4,0,LINDE GMBH
+Dentsu International,United Kingdom,Communication Services,A,sold,79,0.108943,0.011869,,,,0,16.27,477.32,6.1682,20,52,1,0,MR VALTER ALBERT DENTS
+Deugro,Germany,Industrials,A,sold,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Deutsche Bank,Germany,Financials,A,sold,62,,,,,,0,19901.19,56547.08,10.9428,8,,1,4,DEUTSCHE BANK AG
+Deutsche Telekom,Germany,Communication Services,A,other,62,,,,,,0,2451.63,35766.11,10.4848,8,,2,4,DEUTSCHE TELEKOM AG
+Digicert,United States,Information Technology,A,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Dino Polska,Poland,Consumer Staples,A,other,46,0.006016,0.000036,,,,0,23973.67,80628.63,11.2976,19,544,3,0,SIKA AG
+Docker,United States,Information Technology,A,other,46,0.003433,0.000012,,,,0,1421.15,1456.56,7.2838,16,5,1,0,MR FRANK HOCKER
+Domino's Pizza,United States,Consumer Discretionary,A,other,20,0.006764,0.000046,,,,0,57857.69,147873.58,11.9041,16,835,3,4,DOW INC.
+Donaldson Company,United States,Industrials,A,other,64,,,,,,0,-78220.72,4004.33,8.2951,22,,1,8,HS COMPANY LIMITED
+Dr. Oetker,Germany,Consumer Staples,A,other,46,0.003650,0.000013,,,,0,176.85,821.99,6.7117,4,3,1,0,DR. ALFRED OETKER
+Draftkings,United States,Consumer Discretionary,A,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Duisburger Hafen,Germany,Industrials,A,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+ELA Container,Germany,Industrials,A,sold,25,0.004643,0.000022,,,Proposed,1,1411.45,5384.06,8.5912,5,25,1,0,ELA CONTAINER GMBH
+EY,United States,Industrials,A,other,68,0.008956,0.000080,,,Completed,1,3300.89,3349.88,8.1167,19,30,1,0,BREYFWOOD LIMITED
+EarthDaily Analytics,United States,Industrials,A,other,68,0.000150,0.000000,,,,0,5385.95,12803.05,9.4574,16,3,3,0,ELPART HOLDING LTD
+Eastnine,Sweden,Industrials,A,sold,63,0.053297,0.002841,4.5723,163.49,Completed,1,35756.86,49721.71,10.8142,19,2650,1,0,NEC CORPORATION
+Electronic Arts,United States,Communication Services,A,other,46,0.010080,0.000102,,,,0,7600.39,15016.54,9.6169,16,621,4,0,ELECSTER OYJ
+Elisa Esports,Finland,NGO,A,other,22,0.015095,0.000228,,,,0,1852.00,21137.22,9.9588,17,268,3,0,ELIS S.A.
+Elopak,Norway,Materials,A,sold,46,0.014656,0.000215,,,,0,58534.34,116467.98,11.6654,19,1707,1,0,ELCO
+Emerson Electric,United States,Industrials,A,other,62,0.005592,0.000031,,,Completed,1,5447.70,11015.70,9.3071,21,49,3,4,EMERSON ELECTRIC CO
+Endeavour Group,Australia,Consumer Staples,A,suspended,33,,,,,,0,,,,21,,1,0,E.ON SE
+Enel,Italy,Utilities,A,sold,35,0.000080,0.000000,,609.28,Completed,1,-417.90,14322.99,9.5696,5,3,2,3,ENEL SPA
+EnerSys,United States,Industrials,A,other,46,,,,,,0,16874.37,17923.22,9.7939,18,,1,0,ENERSYS
+Energizer,United States,Industrials,A,sold,23,0.006695,0.000045,,,Completed,1,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Eni,Italy,Energy,A,sold,71,0.001589,0.000003,,,,0,4886.83,5034.38,8.5240,15,8,1,0,ENI S.P.A.
+Equinor,Norway,Energy,A,other,68,0.000093,0.000000,,,,0,8894.02,10785.13,9.2859,18,1,1,0,ANOR HOLDINGS LIMITED
+Espersen,Denmark,Consumer Staples,A,sold,69,,,,,,0,,,,1,2,1,0,MS MIRTHE MADY VAN KESTEREN
+Essity,,,A,sold,46,0.002374,0.000006,8.4352,110.88,Completed,1,13144.96,72894.88,11.1968,19,348,4,0,ESSILORLUXOTTICA
+Etsy,United States,Consumer Discretionary,A,other,78,2.020318,4.081685,,,,0,21.72,21.78,3.0809,14,44,1,0,"CHASTNAYA KOMPANIYA, OTVETSTVENNOST AKTSIONEROV KOTOROI OGRANICHIVAETSYA AKTSIYAMI DANAOS SHIPPING KOMPANI LIMITED"
+Euroins,Bulgaria,Financials,A,sold,61,,,,,,0,-1788.44,18114.59,9.8045,18,,1,6,EURONET WORLDWIDE INC
+Euronet Worldwide,United States,Financials,A,other,61,,,,,,0,-1788.44,18114.59,9.8045,18,,1,6,EURONET WORLDWIDE INC
+Eurovision,United Kingdom,NGO,A,other,43,0.024059,0.000579,,,,0,4371.81,6234.59,8.7379,20,150,1,0,SKION GMBH
+Eversheds Sutherland,United Kingdom,Industrials,A,other,68,,,,,,0,1312.81,1385.48,7.2338,8,,1,0,THERMLAN LIMITED
+Evonik,Germany,Materials,A,sold,46,0.000105,0.000000,,,,0,19102.45,37993.62,10.5452,17,4,1,0,EVONIK INDUSTRIES AG
+Expedia,United States,Consumer Discretionary,A,suspended,46,0.000132,0.000000,,,,0,5417.90,15144.79,9.6254,8,2,1,0,EXPERIA SRL
+Exxonmobil,United States,Energy,A,other,52,0.041799,0.001747,,,,0,164.15,263.16,5.5728,13,11,1,0,MOBILITAS
+FL Smidth,Denmark,Industrials,A,other,70,0.000011,0.000000,,,,0,14205.49,90088.04,11.4085,15,561,3,0,FLSMIDTH & CO. A/S
+FMC Corporation,United States,Materials,A,other,10,0.035508,0.001261,,,,0,1474.33,2253.00,7.7200,21,80,1,0,FM HOLDING GMBH
+Fantasy Premier League,United Kingdom,Consumer Discretionary,A,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Faurecia | Forvia,France,Consumer Discretionary,A,other,29,0.010508,0.000110,,,,0,97927.03,183089.57,12.1177,14,1818,2,0,FORVIA SE
+Fazer,Finland,Consumer Staples,A,sold,68,,,,,Completed,1,345.49,562.45,6.3323,14,,2,0,OY KARL FAZER AB
+Fennovoima,Finland,Energy,A,other,68,0.000123,0.000000,,,,0,53673.39,157370.99,11.9664,11,436,5,0,NOV INC
+Fiskars,Finland,Consumer Discretionary,A,sold,29,,,,,,0,-4620.80,7899.85,8.9746,11,,1,0,TARS HOLDING AG
+Flowserve,United States,Industrials,A,sold,33,0.000071,0.000000,,,,0,163.03,14157.48,9.5580,16,1,1,0,FLOWSERVE CORP
+Fonterra,New Zealand,Consumer Staples,A,other,52,0.010169,0.000103,,,,0,792.25,1081.68,6.9863,15,11,1,0,TERRA HOLDING GMBH
+Ford,United States,Consumer Discretionary,A,sold,41,0.000669,0.000000,,,Completed,1,-286.38,2991.39,8.0035,13,2,1,0,AKTSIONERNAYA KOMPANIYA S OGRANICHENNOI OTVETSTVENNOSTYU SENFORD PERFEKSHN LIMITED
+Formula One,United Kingdom,Communication Services,A,other,10,0.001600,0.000003,,,,0,29826.19,31243.43,10.3496,7,50,1,0,FORIMA HOLDINGS LIMITED
+Fortum,Finland,Utilities,A,other,73,0.013806,0.000191,,,Withdrawn,1,193.95,217.30,5.3813,14,3,1,0,STICHTING ADMINISTRATIEKANTOOR TUMMERS BEHEER
+Freedom Holding,Kazakhstan,Financials,A,sold,63,0.008607,0.000074,,,,0,2472.99,34501.70,10.4488,18,454,5,0,FREESTART TRADING LIMITED
+Freshfields,United Kingdom,Industrials,A,sold,71,,,,,,0,73.87,537.16,6.2863,17,,1,0,BALFIELD HOLDINGS LIMITED
+Fugro,Netherlands,Industrials,A,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+G2A,Netherlands,Communication Services,A,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+GC Rieber,Norway,Industrials,A,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+GM,United States,Consumer Discretionary,A,suspended,08,0.000598,0.000000,,,Completed,1,-37.72,1713.87,7.4465,3,2,2,0,SEQUOIA GM
+GXO Logistics,United States,Industrials,A,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Galp,Portugal,Energy,A,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Game Insight,Lithuania,Consumer Discretionary,A,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Gameloft,France,Information Technology,A,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Garmin,United States,Consumer Discretionary,A,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Gaz-System,Poland,Utilities,A,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Geberit,Switzerland,Industrials,A,other,46,0.000832,0.000001,,,,0,11997.29,18021.47,9.7993,8,15,1,0,GEBERIT AG
+Georg Fischer,Switzerland,Industrials,A,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Gerry Weber,Germany,Consumer Discretionary,A,sold,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Gett,Israel,Industrials,A,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Global Fashion Group,Luxembourg,Consumer Discretionary,A,sold,23,0.006695,0.000045,,,Terminated,1,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Global Foundries,United States,Information Technology,A,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+GoDaddy,United States,Information Technology,A,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Goodvalley,Denmark,Consumer Staples,A,sold,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Gowling,Canada,Industrials,A,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Grant Thornton,United States,Industrials,A,sold,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Grid Dynamics,United States,Information Technology,A,sold,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Grundfos,Denmark,Industrials,A,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+HP Enterprise (Independent from HP Inc.),United States,Information Technology,A,sold,46,0.000132,0.000000,,,,0,23341.19,166431.81,12.0223,7,22,1,0,HP INC.
+HP Inc.,United States,Information Technology,A,other,46,0.000132,0.000000,,,,0,23341.19,166431.81,12.0223,7,22,1,0,HP INC.
+Halewood,United Kingdom,Consumer Staples,A,other,11,0.004706,0.000022,,,,0,2319.89,25559.53,10.1488,14,99,2,0,HALEWOOD ARTISANAL SPIRITS (HOLDINGS) LIMITED
+Halliburton,United States,Energy,A,other,68,,,,,Completed,1,2967.02,3240.83,8.0836,17,,2,0,RAITON LIMITED
+Halyk Bank,Kazakhstan,Financials,A,sold,24,0.005465,0.000030,,,,0,19899.29,23237.20,10.0535,15,127,1,5,HAWLE HOLDING GMBH
+Hampidjan,Iceland,Industrials,A,sold,46,0.037187,0.001383,,,,0,513.36,1156.31,7.0530,8,43,1,0,FARMAN-FARMAYAN ABDOL KHAMID KHAMID
+Haniel,Germany,Materials,A,other,46,,,,,,0,813.97,8275.59,9.0211,11,,1,0,FRANZ HANIEL & CIE. GMBH
+Hansgrohe,Germany,Consumer Discretionary,A,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Hard Rock Café,United States,Consumer Staples,A,other,46,0.001417,0.000002,,,,0,2868.71,11294.80,9.3321,15,16,1,0,SHARP CORPORATION
+Harvia,Finland,Consumer Discretionary,A,sold,46,,,,,Pending,1,4716.76,5886.89,8.6805,7,,1,0,HARVIA OYJ
+Hearst Communications,United States,Communication Services,A,other,61,0.000796,0.000001,,,,0,-3592.69,23194.19,10.0517,11,20,2,6,EUTELSAT COMMUNICATIONS
+Heidrick &amp; Struggles,United States,Industrials,A,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Heineken,Netherlands,Consumer Staples,A,sold,33,,,,,Completed,1,,,,21,,1,0,E.ON SE
+Heinzmann,Germany,Industrials,A,other,46,0.002093,0.000004,,,,0,5556.56,21025.59,9.9535,14,44,1,0,G. HEINEMANN MEDIZINTECHNIK GMBH
+Hempel,Denmark,Industrials,A,sold,46,0.011568,0.000134,,,,0,999.05,2074.76,7.6376,18,24,1,0,MR ALEKSANDR REMPEL
+Henkel,Germany,Consumer Staples,A,other,46,,,,690.66,Completed,1,,,,,3,1,0,SHENDELEV KLIM
+Herbert Smith Freehills,Australia,Industrials,A,other,22,,,,,,0,6681.14,11920.39,9.3860,13,5,2,0,SMITHS GROUP PLC
+Hesburger,Finland,Consumer Discretionary,A,sold,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Hogan Lovells,United Kingdom,Industrials,A,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Holcim,Switzerland,Materials,A,other,69,0.121791,0.014833,,,Pending,1,8.21,8.21,2.1054,7,1,1,0,MRS ELENA VICTOROVNA HOLM
+Home Credit,Czech Republic,Financials,A,sold,46,,,,,Proposed,1,,,,13,,1,0,CREDITOR LP
+Honeywell,United States,Industrials,A,sold,46,,,,,,0,27167.59,71931.93,11.1835,13,,1,0,HONEYWELL INTERNATIONAL INC
+Hortex,Poland,Consumer Staples,A,sold,20,0.003417,0.000012,,,,0,281.59,292.64,5.6789,10,1,1,4,HORTISOL HOLDING B.V.
+Houthoff,Netherlands,Industrials,A,other,46,0.000976,0.000001,,,,0,503.82,20501.14,9.9282,20,20,1,0,LUHO AG
+Huhtamaki,Finland,Materials,A,sold,45,0.000170,0.000000,0.2670,163.32,Completed,1,611643.52,960015.35,13.7747,14,163,1,0,KIA CORPORATION
+Hypertherm Associates,Netherlands,Industrials,A,other,82,0.003233,0.000010,,,,0,531.68,618.69,6.4276,7,2,1,0,EREMA GROUP GMBH
+ID Logistics,France,Industrials,A,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+IDEXX Labs,United States,Health Care,A,sold,64,,,,,,0,,,,,1,1,8,B.S.A.
+IMCD,Netherlands,Industrials,A,sold,46,0.011652,0.000136,,,,0,4967.56,7724.32,8.9521,17,90,1,0,IMCD N.V.
+IMI Plc,United Kingdom,Materials,A,sold,68,0.001006,0.000001,,,,0,-8766.92,994.41,6.9021,10,1,1,0,MR VLADIMIR RYABENSKY
+ISS,Denmark,Industrials,A,sold,64,,,,,,0,,,,17,,1,8,ARC MISSION AGENCY
+Icosagen,Estonia,Industrials,A,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Imperial Brands,United Kingdom,Consumer Staples,A,other,71,,,,,,0,-1025.59,2542.72,7.8410,10,3,2,0,ARIANDOS HOLDINGS LTD
+InPost,Poland,Industrials,A,suspended,52,0.000048,0.000000,,,,0,17329.79,54644.31,10.9086,8,9,2,0,DEUTSCHE POST AG
+Inchcape,United Kingdom,Industrials,A,sold,64,,,28.4124,79.90,Pending,1,2812.15,2812.25,7.9417,18,,1,8,PIN HOLDINGS LIMITED
+Incoff Aerospace,Slovakia,Industrials,A,other,64,,,,,,0,2812.15,2812.25,7.9417,18,,1,8,PIN HOLDINGS LIMITED
+Inditex,Spain,Consumer Discretionary,A,suspended,64,,,,,,0,2812.15,2812.25,7.9417,18,,1,8,PIN HOLDINGS LIMITED
+Infineon,Germany,Information Technology,A,other,33,,,,,,0,,,,21,,1,0,E.ON SE
+Insydium,United Kingdom,Industrials,A,other,64,,,,,,0,2812.15,2812.25,7.9417,18,,1,8,PIN HOLDINGS LIMITED
+Intercontinental Exchange,United States,Financials,A,other,23,0.006695,0.000045,,,Pending,1,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Intercontinental Hotels (IHG),United Kingdom,Consumer Discretionary,A,suspended,70,0.000190,0.000000,,,,0,4684.89,5254.74,8.5669,16,1,1,0,INTERCONTINENTAL HOTELS GROUP PLC
+International Biathlon Union,Austria,NGO,A,other,46,0.000716,0.000001,,,,0,7873.97,11178.62,9.3218,14,8,1,0,NIKON CORPORATION
+International Boxing Federation,France,NGO,A,other,23,0.006695,0.000045,,,Pending,1,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+International Cat Federation,Canada,NGO,A,other,73,0.000182,0.000000,,,,0,6205.38,10962.60,9.3022,10,2,1,0,INTEL CORP
+International Cycling Union,United States,NGO,A,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+International Ice Hockey Federation,Switzerland,NGO,A,other,73,0.000182,0.000000,,,,0,6205.38,10962.60,9.3022,10,2,1,0,INTEL CORP
+International Olympic Committee,Switzerland,NGO,A,other,33,0.000125,0.000000,,,,0,2604.82,8010.27,8.9885,9,1,1,0,ITT INC.
+International Paper,United States,Materials,A,sold,46,0.161858,0.026198,,,,0,11.56,12.36,2.5142,2,2,1,0,"PAYPER, SA"
+International Paralympic Committee,Germany,NGO,A,other,33,0.000125,0.000000,,,,0,2604.82,8010.27,8.9885,9,1,1,0,ITT INC.
+International Skating Union,Switzerland,NGO,A,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+International Weightlifting Federation,Switzerland,NGO,A,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Interpublic Group,United States,Communication Services,A,other,73,0.000182,0.000000,,,,0,6205.38,10962.60,9.3022,10,2,1,0,INTEL CORP
+Intracom Telecom,Greece,Communication Services,A,sold,71,,,,,,0,,,,22,,1,0,AECOM
+Iveco,Italy,Industrials,A,sold,45,0.000269,0.000000,,,,0,53284.03,81693.21,11.3107,16,22,1,0,IVECO GROUP NV
+J Sainsbury,United Kingdom,Consumer Staples,A,other,46,,,,,,0,,,,14,,2,0,ANCS HOLDING LIMITED
+JD Sports,United Kingdom,Consumer Discretionary,A,suspended,46,0.000157,0.000000,,,,0,13584.23,31902.73,10.3704,18,5,1,0,"AMER SPORTS, INC."
+JKX,United Kingdom,Energy,A,other,06,0.003787,0.000014,,,,0,-102656.08,50721.28,10.8341,16,208,2,8,JKX OIL & GAS LIMITED
+Jamie Oliver,United Kingdom,Consumer Staples,A,other,25,0.022218,0.000494,,,,0,108.71,450.09,6.1094,5,10,1,0,JAM GMBH
+Jan de Nul,Luxembourg,Industrials,A,sold,25,0.022218,0.000494,,,,0,108.71,450.09,6.1094,5,10,1,0,JAM GMBH
+JetBrains,Czech Republic,Information Technology,A,suspended,46,,,,,,0,-137.99,102.45,4.6293,4,,1,0,RAIN INTERNATIONAL LLC
+Johnson Matthey,United Kingdom,Materials,A,other,46,0.001793,0.000003,,,,0,584846.98,889248.70,13.6981,20,1594,1,0,JOHNSON & JOHNSON
+Jägermeister,Germany,Consumer Staples,A,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+KION Group,Germany,Industrials,A,sold,43,0.024059,0.000579,,,,0,4371.81,6234.59,8.7379,20,150,1,0,SKION GMBH
+KPMG,United States,Industrials,A,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Kalnapilis-Taurus,Lithuania,Consumer Staples,A,other,46,,,,,,0,3760.72,4116.68,8.3228,13,,1,0,KAO CORPORATION
+Kamstrup,Denmark,Utilities,A,sold,62,,,,,,0,428.04,466.13,6.1445,5,,1,4,AMST HOLDING GMBH
+Kearney,United States,Industrials,A,sold,61,0.002581,0.000007,,,,0,2821.82,3487.47,8.1569,17,9,1,6,WEY GROUP AG
+Kemira,Finland,Consumer Discretionary,A,sold,46,,,,,,0,13160.13,17977.04,9.7969,16,,1,0,KEMIRA OYJ
+Kennametal,United States,Industrials,A,sold,46,,,,,,0,3364.96,5372.04,8.5890,15,,1,0,KENNAMETAL INC.
+Kennedys,United States,Industrials,A,sold,35,0.000080,0.000000,,,,0,-417.90,14322.99,9.5696,5,3,2,3,ENEL SPA
+Kiilto,Finland,Materials,A,sold,92,,,,,Completed,1,,,,14,,1,0,ROSSIISKO-AVSTRIISKII LOTEREINYI KHOLDING G.M.B.KH.
+Kingspan,Ireland,Industrials,A,sold,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Kinross Gold,Canada,Materials,A,other,23,0.006695,0.000045,17.6559,340.00,Completed,1,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Knorr-Bremse,Germany,Industrials,A,other,68,0.000093,0.000000,,,,0,8894.02,10785.13,9.2859,18,1,1,0,ANOR HOLDINGS LIMITED
+Koch Industries,United States,Industrials,A,other,47,,,,,Completed,1,-96.08,1621.31,7.3910,10,,1,0,"KOCH, INC."
+Koskisen,Finland,Industrials,A,sold,46,0.002474,0.000006,,,,0,14367.19,87304.60,11.3772,15,216,1,0,IPSEN
+Krispy Kreme,United States,Consumer Discretionary,A,sold,46,,,,,,0,-6.11,42.70,3.7541,10,,1,0,ISSP GROUP LIMITED
+L'Occitane,France,Consumer Discretionary,A,other,63,0.053297,0.002841,,,,0,35756.86,49721.71,10.8142,19,2650,1,0,NEC CORPORATION
+Lamb Weston,United States,Consumer Staples,A,other,77,,,,,,0,600.28,932.41,6.8378,3,,1,0,LAMY SA
+Latham &amp; Watkins,United States,Industrials,A,sold,47,0.015746,0.000248,,,,0,26055.10,51949.88,10.8580,14,818,1,0,BNS INTERNATIONAL GROUP LTD
+Lear Corporation,United States,Consumer Discretionary,A,sold,46,,,,,Completed,1,,,,1,7,1,0,COCHLEAR LIMITED
+Legrand,France,Industrials,A,other,23,0.006695,0.000045,,,Completed,1,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Leica Camera AG,Germany,Information Technology,A,sold,46,0.002912,0.000008,,,,0,318.75,686.82,6.5321,9,2,1,0,MEDRA HOLDING GMBH
+Leptos Estates,Cyprus,Real Estate,A,other,49,,,,,,0,,,,10,,1,2,ESTA GROUP AG
+Lincoln Electric,United States,Industrials,A,suspended,46,,,,,,0,11702.44,27057.41,10.2057,10,,1,0,S.L.N. ELECTRIC LIMITED
+Lindab,Sweden,Industrials,A,sold,71,0.000126,0.000000,,,,0,21548.23,51114.97,10.8418,10,7,4,0,LINDE GMBH
+Lindstrom Group,Finland,Consumer Discretionary,A,sold,71,0.000126,0.000000,,,,0,21548.23,51114.97,10.8418,10,7,4,0,LINDE GMBH
+Lindt-Sprungli,Switzerland,Consumer Staples,A,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Linklaters,United Kingdom,Industrials,A,other,46,0.015074,0.000227,,,,0,1608.44,2454.50,7.8057,10,37,1,0,LINAK HOLDING A/S
+Lloyd's Register,United Kingdom,Industrials,A,sold,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Logitech,Switzerland,Information Technology,A,suspended,46,,,,,,0,106.82,3612.16,8.1921,14,,1,0,LOGITECH INTERNATIONAL SA
+London Stock Exchange Group,United Kingdom,Financials,A,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Lufthansa,Germany,Industrials,A,suspended,56,0.021184,0.000449,,,Proposed,1,2294.31,2643.55,7.8799,14,56,1,0,DEUTSCHE LUFTHANSA AKTIENGESELLSCHAFT
+Luxoft,Switzerland,Information Technology,A,other,46,0.002374,0.000006,,,,0,13144.96,72894.88,11.1968,19,348,4,0,ESSILORLUXOTTICA
+LyondellBasell,Netherlands,Materials,A,other,52,0.009261,0.000086,,,,0,393.19,431.90,6.0682,16,4,1,0,BASE HOLDING AG
+MAN,Germany,Industrials,A,other,46,,,,204.00,Completed,1,-64.92,65.90,4.1882,5,,1,0,MR MAKS SAMUIL VEITSMAN
+MSU S.A.,Poland,Consumer Discretionary,A,suspended,46,0.007475,0.000056,,,,0,-3010.07,4080.54,8.3140,11,30,2,0,MSA SAFETY INCORPORATED
+Maersk,Denmark,Industrials,A,sold,71,0.172293,0.029685,,,Completed,1,167.07,203.14,5.3139,11,35,1,0,RSK GROUP LIMITED
+Makrochem SA,Poland,Industrials,A,other,46,0.002121,0.000004,,,,0,17097.53,141075.93,11.8571,13,280,2,0,ROCHE HOLDING AG
+Mannheimer Swartling,Sweden,Industrials,A,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Mantsinen,Finland,Industrials,A,sold,70,0.012791,0.000164,,,,0,47.97,938.14,6.8439,8,12,1,0,MANTU GROUP SA
+Marsh McLennan,United States,Financials,A,sold,29,,,,,,0,-4620.80,7899.85,8.9746,11,,1,0,TARS HOLDING AG
+Marugame,Japan,Consumer Staples,A,sold,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Maxima,Lithuania,Consumer Discretionary,A,other,85,0.014521,0.000211,,,,0,-1510.68,8174.69,9.0088,9,149,2,0,UMAX LIMITED
+Mayr-Melnhof,United Kingdom,Materials,A,sold,46,0.000976,0.000001,,,,0,503.82,20501.14,9.9282,20,20,1,0,LUHO AG
+McCain Foods,Canada,Consumer Staples,A,other,46,,,,,,0,-137.99,102.45,4.6293,4,,1,0,RAIN INTERNATIONAL LLC
+McDonald's,United States,Consumer Discretionary,A,sold,52,0.001786,0.000003,,,,0,13352.59,16718.69,9.7243,18,63,3,0,ICON PLC
+McKinsey,United States,Industrials,A,other,25,0.009200,0.000085,,,,0,-511.10,760.91,6.6345,13,7,1,0,MICK AG
+Mercedes-Benz,Germany,Consumer Discretionary,A,suspended,46,0.002912,0.000008,,,Completed,1,318.75,686.82,6.5321,9,2,1,0,MEDRA HOLDING GMBH
+MessageBird,Netherlands,Information Technology,A,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Mondi,United Kingdom,Materials,A,other,22,,,,834.40,Completed,1,,,,13,106,1,0,MONDI PLC
+Monroe Energy,United States,Energy,A,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Moog Inc.,United States,Industrials,A,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Moose Toys,Australia,Consumer Discretionary,A,other,70,,,,,,0,,,,,,1,0,MOSES TESFAI
+Morgan Advanced Materials,United Kingdom,Industrials,A,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Morgan Lewis,United States,Industrials,A,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Morrisons,United Kingdom,Consumer Staples,A,other,41,0.033137,0.001098,,,,0,29.65,30.18,3.4071,3,1,1,0,RUSSIAN MORRISON RAUL FRANSUA
+NTT Data,Japan,Information Technology,A,sold,61,,,,,,0,2656.11,3065.65,8.0280,13,,1,6,NTT INC.
+Nasdaq,United States,Financials,A,other,62,0.016548,0.000274,,,,0,1386.32,1873.35,7.5355,8,31,1,4,"NASDAQ, INC."
+Naspers,South Africa,Consumer Discretionary,A,sold,71,0.172293,0.029685,,,,0,167.07,203.14,5.3139,11,35,1,0,RSK GROUP LIMITED
+Nemetschek Group,Germany,Information Technology,A,other,63,0.053297,0.002841,,,,0,35756.86,49721.71,10.8142,19,2650,1,0,NEC CORPORATION
+Nemiroff,Ukraine,Consumer Staples,A,other,63,0.053297,0.002841,,,,0,35756.86,49721.71,10.8142,19,2650,1,0,NEC CORPORATION
+Netflix,United States,Communication Services,A,suspended,47,0.016422,0.000270,,,,0,8810.27,12433.53,9.4282,8,196,2,0,NEXT PLC
+Netscout,United States,Information Technology,A,suspended,47,0.016422,0.000270,,,,0,8810.27,12433.53,9.4282,8,196,2,0,NEXT PLC
+Next,United Kingdom,Consumer Discretionary,A,sold,47,0.016422,0.000270,,,,0,8810.27,12433.53,9.4282,8,196,2,0,NEXT PLC
+Nike,United States,Consumer Discretionary,A,sold,46,0.001496,0.000002,,,,0,43098.22,107717.35,11.5873,19,154,2,0,NIKE INC
+Nissan,Japan,Consumer Discretionary,A,other,68,0.010117,0.000102,,,,0,131.88,197.68,5.2866,16,2,1,0,NISA INTERNATIONAL CORPORATION
+Nokia,Finland,Information Technology,A,other,61,,,13.7947,400.60,Completed,1,29040.21,172715.18,12.0594,15,27,3,6,NOKIA OYJ
+Nokian Tyres,Finland,Consumer Discretionary,A,other,45,0.000170,0.000000,,,,0,611643.52,960015.35,13.7747,14,163,1,0,KIA CORPORATION
+Nordea Bank,Finland,Financials,A,suspended,66,0.000034,0.000000,,,,0,238332.41,238437.94,12.3819,21,8,1,0,NORDEA BANK ABP
+Norton Rose Fulbright,United Kingdom,Industrials,A,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Norwegian Cruise Lines,United States,Consumer Discretionary,A,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+OBI,Germany,Consumer Discretionary,A,sold,62,0.001881,0.000004,,,Withdrawn,1,9614.56,21616.04,9.9812,14,95,2,4,INFOBIP HOLDINGS LIMITED
+Oceania Cruises,United States,Consumer Discretionary,A,other,47,0.005523,0.000031,,,,0,288.60,2716.03,7.9069,12,15,1,0,LOCANIM HOLDINGS LIMITED
+Oerlikon,Switzerland,Materials,A,other,46,0.000716,0.000001,,,Pending,1,7873.97,11178.62,9.3218,14,8,1,0,NIKON CORPORATION
+Olam Group,Singapore,Consumer Staples,A,sold,72,,,,,,0,50.23,122.70,4.8098,20,,1,0,LARIDZHANI GOLAM REZA RAKHIMI
+Omnicom Media Group,United States,Communication Services,A,other,73,0.001301,0.000002,,,,0,643.07,105105.84,11.5627,11,139,5,0,OMNICOM GROUP INC.
+Omron,Japan,Information Technology,A,sold,71,,,,,,0,10578.35,13893.40,9.5392,16,,1,0,OMRON CORPORATION
+OneWeb,United States,Communication Services,A,suspended,01,0.005995,0.000036,,,,0,42539.54,117036.65,11.6702,14,659,5,0,EW GROUP GMBH
+Orica,Australia,Industrials,A,sold,77,0.004008,0.000016,,,,0,241.45,249.47,5.5194,18,1,1,0,ORICA LIMITED
+Orlen Lietuva,Poland,Energy,A,suspended,71,0.000088,0.000000,,,,0,1210.34,11544.78,9.3540,17,2,2,0,WORLEY LIMITED
+Orsted,Denmark,Utilities,A,other,60,0.000033,0.000000,,,,0,49492.38,120261.94,11.6974,17,4,1,0,KOMPANIYA TADA INKORPOREITED (TADA INCORPORATED)
+Otis Worldwide,United States,Industrials,A,sold,64,0.000323,0.000000,,,Pending,1,350.84,3095.01,8.0375,19,1,1,8,DENALOT WORLDWIDE LIMITED
+Owens Corning,United States,Industrials,A,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+PGL Esports,United States,Communication Services,A,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+PKO BP,Poland,Financials,A,suspended,47,0.003503,0.000012,,,Pending,1,-173.89,570.95,6.3473,9,2,1,0,WEPUKO PAHNKE HOLDING GMBH & CO. KG
+PME pensioenfonds,Netherlands,Financials,A,sold,71,0.000124,0.000000,,,,0,-1286.80,16673.83,9.7216,22,26,2,0,PMG HOLDING GMBH
+Pandora,Denmark,Consumer Discretionary,A,suspended,22,0.008565,0.000073,,,,0,7461.36,10624.40,9.2709,7,91,1,0,ORAC HOLDING
+Parker Hannifin,United States,Industrials,A,other,46,,,,,,0,9342.48,12916.83,9.4663,18,1,2,0,PARKER-HANNIFIN CORPORATION
+Paul Smith,United Kingdom,Consumer Discretionary,A,other,22,,,,,,0,6681.14,11920.39,9.3860,13,5,2,0,SMITHS GROUP PLC
+Paulig,Finland,Consumer Staples,A,sold,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Paysera,Lithuania,Financials,A,suspended,46,0.161858,0.026198,,,,0,11.56,12.36,2.5142,2,2,1,0,"PAYPER, SA"
+Pensioenfonds Detailhandel,Netherlands,Financials,A,sold,68,0.000083,0.000000,,,,0,7130.90,23564.28,10.0675,6,2,2,0,TAIALA LTD
+Pentair,United States,Industrials,A,other,55,0.000653,0.000000,,,,0,-62.40,8552.24,9.0539,18,5,2,0,IRB HOLDING AG
+Petro,Austria,Energy,A,sold,41,,,,2.50,Withdrawn,1,,,,17,,1,0,OBSHCHESTVO S OGRANICHENNOI OTVESTVENNOSTYU GLOBAL PETRO KEMIKAL PROTSESSEZ INK. (GLOBAL PETRO CHEMICAL PROCESSES INC.)
+Petrofac,United Kingdom,Energy,A,other,82,0.000217,0.000000,,,,0,-3076.86,4598.10,8.4334,17,1,1,0,PETROFAC LIMITED
+Pixabay,Germany,Consumer Discretionary,A,other,68,0.027386,0.000750,,,,0,-298.19,2446.50,7.8024,12,67,1,0,MALBAY HOLDINGS LIMITED
+Playrix,Ireland,Consumer Discretionary,A,other,77,,,,,,0,600.28,932.41,6.8378,3,,1,0,LAMY SA
+Playtika,Israel,Information Technology,A,other,46,0.006016,0.000036,,,,0,23973.67,80628.63,11.2976,19,544,3,0,SIKA AG
+Polskie Górnictwo Naftowe i Gazownictwo SA,Poland,Energy,A,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Ponsse PLC,Finland,Industrials,A,sold,62,,,,,,0,-2.41,10.80,2.3791,3,,1,4,QPO GROUP
+Postnord,Norway,Utilities,A,other,71,0.019057,0.000363,,,,0,144.94,2833.63,7.9493,13,54,1,0,NORDIC HOLDING AG
+Primo Water,United States,Consumer Staples,A,sold,63,0.033684,0.001135,,,,0,2195.70,6600.98,8.7950,12,237,2,0,PRIMOND HOLDINGS LIMITED
+Princess Cruises,United States,Consumer Discretionary,A,other,46,0.000666,0.000000,,,,0,1422.12,7511.49,8.9242,10,5,1,0,INTESS SA
+Publicis Groupe,France,Communication Services,A,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Pure Storage,United States,Information Technology,A,sold,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Qantas Airlines,Australia,Industrials,A,other,71,0.000126,0.000000,,,,0,21548.23,51114.97,10.8418,10,7,4,0,LINDE GMBH
+R&amp;A,United States,Industrials,A,other,20,0.007096,0.000050,,,,0,14506.94,16346.20,9.7018,14,116,1,4,AMPACET CORPORATION
+RWS,United Kingdom,Industrials,A,sold,63,0.038621,0.001492,,,,0,1108.21,1527.68,7.3315,15,59,1,0,RWS HOLDINGS PLC
+Raisio,United States,Consumer Staples,A,sold,46,,,,1.58,Completed,1,-137.99,102.45,4.6293,4,,1,0,RAIN INTERNATIONAL LLC
+Rational,Germany,Consumer Discretionary,A,other,12,0.004282,0.000018,,,Completed,1,3382.40,3970.38,8.2866,22,17,1,0,"PYXUS INTERNATIONAL, INC."
+Red Hat,United States,Information Technology,A,other,46,,,,,,0,17357.61,62845.10,11.0484,7,47,6,0,BERKSHIRE HATHAWAY INC.
+Reface,Ukraine,Information Technology,A,other,23,0.004118,0.000017,,,,0,207.10,2914.19,7.9773,4,12,1,0,SURFACES SLP (SCSP)
+Refinitiv,United Kingdom,Financials,A,other,25,0.003745,0.000014,,,,0,41157.76,59015.04,10.9855,20,221,1,0,GREIF INC
+Regent Seven Seas Cruises,United States,Consumer Discretionary,A,other,47,0.003976,0.000016,,,,0,501.21,1760.65,7.4734,10,7,1,0,REGENT LP
+Renault,France,Consumer Discretionary,A,other,62,0.009517,0.000091,,,Completed,1,20.97,2837.17,7.9506,8,27,1,4,REALTRAC INTERNATIONAL SA
+Repsol,Spain,Energy,A,sold,46,,,,,Pending,1,,,,17,,1,0,TOURNESOL INTERNATIONAL SA
+Resbud,Estonia,Industrials,A,sold,46,0.006838,0.000047,,,,0,588.74,731.22,6.5947,10,5,1,0,ARYES
+Rewe,Germany,Consumer Discretionary,A,other,01,0.005995,0.000036,,,,0,42539.54,117036.65,11.6702,14,659,5,0,EW GROUP GMBH
+Rio Tinto,Australia,Materials,A,other,62,24.764200,613.265618,,,,0,-3.19,0.08,-2.5163,1,2,1,4,KHEROLD TINO
+Rocket Lawyer,United States,Information Technology,A,suspended,20,0.000095,0.000000,,,,0,10328.18,10479.60,9.2572,3,1,1,4,BAYER AG
+Roku,United States,Communication Services,A,other,47,0.008369,0.000070,,,,0,-48.08,119.49,4.7832,4,1,1,0,MOROKUTTI VERNER D-R
+Roland Berger,Germany,Industrials,A,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Royal London,United Kingdom,Financials,A,sold,62,,,,,,0,-4.68,10.00,2.3027,5,,1,4,OUN GMBH
+Royal Swinkels Family Brewers,Netherlands,Consumer Staples,A,other,01,0.005995,0.000036,,,,0,42539.54,117036.65,11.6702,14,659,5,0,EW GROUP GMBH
+S Group (Suomen Osuuskauppojen Keskuskunta),Finland,Consumer Staples,A,other,23,0.006695,0.000045,,,Pending,1,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+S&amp;P 500 [S&amp;P Dow Jones Indices],United States,Financials,A,other,20,0.006764,0.000046,,,,0,57857.69,147873.58,11.9041,16,835,3,4,DOW INC.
+SMAY,Poland,Industrials,A,other,46,0.004439,0.000020,,,,0,-82.70,225.28,5.4174,9,1,1,0,MR PETER PAUL WEISMAYR
+Salesforce,United States,Industrials,A,other,62,0.063502,0.004033,,,,0,-1269.56,4834.48,8.4835,12,307,1,4,SALESFORCE INC
+Sarantis Group,Greece,Consumer Staples,A,sold,78,0.000241,0.000000,,,,0,6785.35,27351.58,10.2165,21,7,2,0,SAFRAN
+Savills,United Kingdom,Real Estate,A,other,46,0.012333,0.000152,,,,0,815.05,2675.84,7.8920,6,33,1,0,KOMPANIYA S OGRANICHENNOI OTVETSTVENNOSTYU SAKVILLE LIMITED
+Schneider Electric,France,Industrials,A,other,33,0.000126,0.000000,,,Pending,1,784.76,51622.64,10.8517,15,84,2,0,SCHNEIDER ELECTRIC SE
+Senior PLC,United Kingdom,Industrials,A,other,41,0.000669,0.000000,,,,0,-286.38,2991.39,8.0035,13,2,1,0,AKTSIONERNAYA KOMPANIYA S OGRANICHENNOI OTVETSTVENNOSTYU SENFORD PERFEKSHN LIMITED
+Sidley Austin,United States,Industrials,A,other,22,0.006198,0.000038,,,,0,1298.54,10810.20,9.2882,3,67,1,0,SIG GROUP AG
+Siemens,Germany,Industrials,A,other,46,0.000036,0.000000,,,,0,39850.35,371321.49,12.8248,4,492,4,0,SIEMENS AG
+Smurfit Kappa,Ireland,Materials,A,other,28,,,,,,0,,,,22,,1,0,SMS GMBH
+Societe Generale,France,Financials,A,other,23,0.006695,0.000045,,,Pending,1,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Sodexo,France,Industrials,A,other,33,0.328531,0.107933,,,,0,231.58,292.21,5.6775,7,96,1,0,SBO AG
+SoftwareOne,Switzerland,Information Technology,A,sold,33,,,,,,0,,,,21,,1,0,E.ON SE
+Spin Master,Canada,Consumer Discretionary,A,sold,46,0.000666,0.000000,,,,0,8089.39,24039.78,10.0875,4,16,1,0,SPIN MASTER CORP.
+Squire Patton Boggs,United States,Industrials,A,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Stanley Black &amp; Decker,United States,Industrials,A,other,46,0.000080,0.000000,,,,0,56816.41,87327.09,11.3774,10,7,1,0,"STANLEY BLACK & DECKER, INC."
+Starbucks,United States,Consumer Discretionary,A,other,49,,,,5.99,Completed,1,,,,10,,1,2,ESTA GROUP AG
+State Street,United States,Financials,A,other,49,,,,,,0,,,,10,,1,2,ESTA GROUP AG
+Stora Enso,Finland,Materials,A,sold,33,0.328531,0.107933,,,,0,231.58,292.21,5.6775,7,96,1,0,SBO AG
+Storebrand,Norway,Financials,A,sold,28,0.001555,0.000002,,,,0,3128.05,5144.63,8.5457,9,8,1,0,EBARA CORPORATION
+Strabag,Austria,Industrials,A,sold,68,0.000217,0.000000,,,,0,5192.24,39761.36,10.5907,18,31,5,0,STRABAG SE
+Strava,United States,Information Technology,A,other,69,,,,,,0,,,,15,,1,0,SOTRA HOLDING AG
+Sulzer,Switzerland,Industrials,A,other,72,,,,,,0,439.84,620.41,6.4304,2,,1,0,SULZER AG
+Svenska Handelsbanken,Sweden,Financials,A,sold,33,,,,,,0,,,,21,,1,0,E.ON SE
+Sylvamo,United States,Materials,A,sold,77,,,649.7021,390.00,Completed,1,600.28,932.41,6.8378,3,,1,0,LAMY SA
+Systembolaget,Sweden,Consumer Discretionary,A,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Sæplast,Iceland,Materials,A,suspended,47,,,,,,0,1485.50,1497.38,7.3115,3,,1,0,OLAST HOLDINGS LIMITED
+TDZ Turn,Czech Republic,Industrials,A,suspended,16,,,,,,0,,,,15,,1,0,LTD
+TJ Maxx,United States,Consumer Discretionary,A,sold,85,0.014521,0.000211,,,,0,-1510.68,8174.69,9.0088,9,149,2,0,UMAX LIMITED
+TUI,Germany,Consumer Discretionary,A,sold,62,,,,,,0,,,,,1,1,4,PRIVATE LIMITED COMPANY «FINTUITY LIMITED»
+Tata Steel,India,Materials,A,other,35,0.000080,0.000000,,,,0,-417.90,14322.99,9.5696,5,3,2,3,ENEL SPA
+Tchibo,Germany,Consumer Staples,A,other,46,0.005815,0.000034,,,,0,-82.23,2751.30,7.9198,13,16,1,0,BO HOLDING AG
+TeamViewer,Germany,Information Technology,A,sold,01,0.005995,0.000036,,,,0,42539.54,117036.65,11.6702,14,659,5,0,EW GROUP GMBH
+Technip Energies,France,Energy,A,other,41,0.000345,0.000000,,,,0,45.13,11597.78,9.3586,7,4,1,0,TECHNIP ENERGIES N.V.
+Teknos,Finland,Industrials,A,sold,62,0.429947,0.184854,,,Completed,1,86.97,90.71,4.5077,13,39,1,4,"GENUS TEKNOLODZHIS, LTD."
+Teknotherm Marine HVAC sp. z o.o.,Poland,Industrials,A,sold,46,,,,,,0,,,,14,,2,0,ANCS HOLDING LIMITED
+Teleperformance,France,Communication Services,A,sold,82,0.018411,0.000339,,,,0,2438.95,2715.83,7.9069,9,50,1,0,TELEPERFORMANCE SE
+Teradata,United States,Information Technology,A,suspended,62,0.000036,0.000000,,,,0,7249.21,27431.49,10.2194,15,1,1,4,TERADATA CORPORATION
+Tetra Pak,Sweden,Industrials,A,other,46,,,,,,0,1286.75,16886.45,9.7343,22,44,3,0,TETRA LAVAL INTERNATIONAL SA
+Tietoevry,Finland,Information Technology,A,other,46,0.053692,0.002883,,,,0,-261.36,856.73,6.7531,7,46,1,0,MR DE BRUIJNE PIETER
+Tom Ford,United States,Consumer Discretionary,A,suspended,46,0.008292,0.000069,,,,0,28615.23,89970.63,11.4072,17,746,1,0,RDO INTERNATIONAL
+Topsoe,Denmark,Energy,A,sold,46,0.098848,0.009771,,,,0,431.07,485.59,6.1854,6,48,1,0,TPBS GROUP AG
+Toyota,Japan,Consumer Discretionary,A,suspended,45,0.002279,0.000005,,,,0,569389.78,2178231.30,14.5940,21,2582,2,0,TOYOTA MOTOR CORPORATION.
+Trane Technologies,Ireland,Industrials,A,sold,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+TransferGo,United Kingdom,Financials,A,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Trimble,United States,Information Technology,A,other,46,0.000892,0.000001,,,,0,1875.56,8919.78,9.0960,12,41,2,0,TRIMBLE INC.
+TripAdvisor,United States,Communication Services,A,other,65,,,,,,0,,,,14,,1,8,SCOR SE
+Triumph Motorcycles,United Kingdom,Consumer Discretionary,A,other,22,0.008565,0.000073,,,,0,7461.36,10624.40,9.2709,7,91,1,0,ORAC HOLDING
+Uber,United States,Information Technology,A,sold,46,0.002845,0.000008,,,,0,308.13,2811.73,7.9416,17,8,1,0,HANS HUBER GMBH & CO. KG
+Unilever,United Kingdom,Consumer Staples,A,sold,59,0.000343,0.000000,,,Completed,1,16497.03,20426.50,9.9246,15,7,1,0,UNIVERSAL MUSIC GROUP N.V.
+United Airlines,United States,Industrials,A,other,71,0.000126,0.000000,,,,0,21548.23,51114.97,10.8418,10,7,4,0,LINDE GMBH
+United Internet Group,Germany,Information Technology,A,suspended,47,0.016422,0.000270,,,,0,8810.27,12433.53,9.4282,8,196,2,0,NEXT PLC
+Universal,United States,Communication Services,A,sold,59,0.000343,0.000000,,,,0,16497.03,20426.50,9.9246,15,7,1,0,UNIVERSAL MUSIC GROUP N.V.
+Uponor,Finland,Industrials,A,other,68,0.000093,0.000000,,,,0,8894.02,10785.13,9.2859,18,1,1,0,ANOR HOLDINGS LIMITED
+VTG,Germany,Industrials,A,sold,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Vaillant Group,Germany,Industrials,A,other,46,0.002642,0.000007,,,,0,6343.32,23470.60,10.0635,16,62,1,0,JOH. VAILLANT GMBH & CO KG
+Valeo,France,Consumer Discretionary,A,other,45,0.000179,0.000000,,,Pending,1,87732.94,123484.32,11.7239,14,22,2,0,VALEO
+Valio,Finland,Consumer Staples,A,other,46,0.004463,0.000020,,,,0,730.38,3584.65,8.1844,15,16,1,0,ALI GROUP LLC
+Valmet,Finland,Industrials,A,other,46,,,,,,0,,,,14,,1,0,KOMPANIYA S OGR OT-TYU YUNAITED TIAL METALS LTD
+Van Oord,Netherlands,Industrials,A,sold,46,0.008292,0.000069,,,,0,28615.23,89970.63,11.4072,17,746,1,0,RDO INTERNATIONAL
+VanEck,United States,Financials,A,other,63,0.053297,0.002841,,,,0,35756.86,49721.71,10.8142,19,2650,1,0,NEC CORPORATION
+Vanguard,United States,Financials,A,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Veon,Netherlands,Communication Services,A,sold,33,,,,,,0,,,,21,,1,0,E.ON SE
+Vestas,Denmark,Energy,A,sold,46,,,,,Completed,1,87931.14,212236.98,12.2655,12,,1,0,VESTAS WIND SYSTEMS A/S
+Vianor,Finland,Consumer Discretionary,A,other,68,0.000093,0.000000,,,,0,8894.02,10785.13,9.2859,18,1,1,0,ANOR HOLDINGS LIMITED
+Vinmonopolet,Norway,Consumer Staples,A,suspended,47,,,,,,0,-805.92,264.90,5.5793,8,,1,0,EQT AB
+Visteon,United States,Consumer Discretionary,A,suspended,33,,,,,,0,,,,21,,1,0,E.ON SE
+Vodafone,United Kingdom,Information Technology,A,suspended,46,,,,,,0,1122.64,1390.66,7.2375,11,,1,0,DANONE
+Volaris Group,Canada,Information Technology,A,other,47,0.002228,0.000005,,,,0,-146.30,448.87,6.1067,10,1,1,0,VOLATI AB
+Volfas Engelman,Lithuania,Consumer Staples,A,sold,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Vorwerk Group,,,A,suspended,71,0.172293,0.029685,,,,0,167.07,203.14,5.3139,11,35,1,0,RSK GROUP LIMITED
+WPP PLC,United Kingdom,Communication Services,A,other,73,0.001418,0.000002,,,,0,2047.66,73232.53,11.2014,12,90,3,0,WPP PLC (NEW)
+Waitrose,United Kingdom,Consumer Staples,A,other,74,,,,,,0,,,,15,,1,0,ENDTHWAITE LIMITED
+Walker's Shortbread,United Kingdom,Consumer Staples,A,other,46,0.006502,0.000042,,,,0,8658.79,9227.63,9.1300,17,60,1,0,ADP HOLDINGS LIMITED
+Wallenius Wilhelmsen,Norway,Consumer Discretionary,A,other,46,0.004523,0.000020,,,,0,3134.65,11763.94,9.3728,3,70,2,0,GENUS PLC
+Wargaming,Belarus,Consumer Discretionary,A,sold,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Wartsila,Finland,Industrials,A,other,41,0.000464,0.000000,,,,0,46.98,6466.38,8.7744,14,3,1,0,SILLA GROUP LP
+WePlay,United States,Consumer Discretionary,A,other,77,,,,,,0,600.28,932.41,6.8378,3,,1,0,LAMY SA
+Wear Medicine,Poland,Consumer Discretionary,A,other,24,0.005523,0.000031,,,,0,7271.29,7423.62,8.9124,14,41,1,5,DIC CORPORATION
+Weir Group,United Kingdom,Industrials,A,sold,46,0.000041,0.000000,,,,0,8923.51,48939.77,10.7983,19,2,1,0,THE WEIR GROUP PLC
+White &amp; Case,United States,Industrials,A,sold,46,0.002869,0.000008,84.9069,114.39,Pending,1,1347.24,4530.42,8.4186,15,13,1,0,CBASE
+Wienerberger,Austria,Industrials,A,sold,23,0.006695,0.000045,0.5053,9.73,Completed,1,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Willis Towers Watson,United Kingdom,Financials,A,sold,60,0.010881,0.000118,,,,0,183.81,183.81,5.2139,7,2,1,0,SONY GROUP CORPORATION
+Windstar Cruises,United States,Consumer Discretionary,A,other,29,,,,,,0,-4620.80,7899.85,8.9746,11,,1,0,TARS HOLDING AG
+Winston &amp; Strawn,United States,Industrials,A,other,69,,,,,,0,,,,15,,1,0,SOTRA HOLDING AG
+Women's Tennis Association,United States,NGO,A,suspended,52,0.001786,0.000003,,,,0,13352.59,16718.69,9.7243,18,63,3,0,ICON PLC
+World Athletics Council,United States,NGO,A,other,62,,,,,,0,-4.68,10.00,2.3027,5,,1,4,OUN GMBH
+World Boxing Association,Panama,NGO,A,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+World Boxing Organization,United States,NGO,A,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+World Rowing Federation,United States,NGO,A,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+World Rugby Union,Ireland,NGO,A,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+YIT,Finland,Industrials,A,other,41,,,,,,0,20607.09,28981.54,10.2744,11,,1,0,YIT OYJ
+ZET Chemie,Germany,Materials,A,other,71,0.143235,0.020516,,,,0,-728.77,649.28,6.4759,10,93,1,0,ZETA HOLDING GMBH
+ZF Friedrichshafen,Germany,Consumer Discretionary,A,other,21,0.006516,0.000042,,,,0,20123.15,219772.22,12.3003,12,1432,1,0,FENY HOLDINGS LTD
+Zurich Insurance Group,Switzerland,Financials,A,sold,46,,,,,Pending,1,,,,14,,2,0,ANCS HOLDING LIMITED
+ACCA,United Kingdom,Industrials,B,suspended,72,0.061298,0.003757,,,,0,15.33,16.31,2.7920,5,1,1,0,MR GIANLUCA ZACCARINI
+ADEO | Leroy Merlin,France,Consumer Discretionary,B,other,46,0.000247,0.000000,,,,0,6504.36,8088.71,8.9982,7,2,1,0,OLIN CORPORATION
+ADP,United States,Information Technology,B,suspended,46,0.006502,0.000042,,,,0,8658.79,9227.63,9.1300,17,60,1,0,ADP HOLDINGS LIMITED
+AL-KO Vehicle Technology,Germany,Consumer Discretionary,B,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+AM Best,United States,Information Technology,B,suspended,49,,,,,,0,,,,10,,1,2,ESTA GROUP AG
+AMD,United States,Information Technology,B,suspended,33,0.040366,0.001629,,,,0,1122.43,1213.90,7.1016,5,49,1,0,AMD PRIVATSTIFTUNG
+ARM,United Kingdom,Information Technology,B,suspended,46,0.005022,0.000025,,,Withdrawn,1,-24.86,398.25,5.9871,20,2,1,0,MARCO POLO PHARMACEUTICALS S.A.
+AXA,France,Financials,B,suspended,71,0.000817,0.000001,,,,0,-141.12,2449.41,7.8036,16,2,1,0,AXA LBO FUND V CORE
+AXA Investments Managers,France,Financials,B,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Acer,Taiwan,Information Technology,B,suspended,62,0.001009,0.000001,,,,0,4391.73,6024.01,8.7035,2,6,2,4,EMBRACER GROUP AB
+Acne Studios,Sweden,Consumer Discretionary,B,other,70,0.015133,0.000229,,,,0,537.20,991.24,6.8990,17,15,1,0,ARC HOLDINGS
+Adamed,Poland,Health Care,B,suspended,71,0.012833,0.000165,,,,0,156.41,233.76,5.4543,8,3,1,0,MR PETER DUBENS ADAM DAICHES
+Air Astana,Kazakhstan,Industrials,B,suspended,46,0.004463,0.000020,,,,0,730.38,3584.65,8.1844,15,16,1,0,ALI GROUP LLC
+Air France,France,Industrials,B,suspended,46,0.016381,0.000268,,,,0,419.84,9889.37,9.1992,13,162,1,0,MR FRANCESCO DE SANTIS
+Air Malta,Malta,Industrials,B,suspended,46,0.003972,0.000016,,,,0,1212.93,1762.18,7.4743,7,7,1,0,ALTARA SA
+Airbnb,United States,Consumer Discretionary,B,other,55,0.000653,0.000000,,,,0,-62.40,8552.24,9.0539,18,5,2,0,IRB HOLDING AG
+Akamai,United States,Information Technology,B,suspended,46,0.000109,0.000000,,,,0,108.79,9172.47,9.1240,18,1,1,0,MR ABDOU RAZAK AMADOU
+Akin Gump,United States,Industrials,B,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Alaska Airlines,United States,Industrials,B,suspended,25,0.018092,0.000327,,,,0,875.85,1677.58,7.4251,14,20,2,0,ATLAS INTERNATIONAL AG
+Alimentation Couche-Tard,Canada,Consumer Staples,B,suspended,46,0.004463,0.000020,,,,0,730.38,3584.65,8.1844,15,16,1,0,ALI GROUP LLC
+Alstom,France,Industrials,B,suspended,30,0.002707,0.000007,21.7727,81.68,Completed,1,3751.49,4802.25,8.4768,9,13,1,4,ALSTOM S.A
+Amazon,United States,Consumer Discretionary,B,suspended,46,0.000770,0.000001,,,,0,15968.10,75300.39,11.2292,17,58,1,0,AMAZONEN-WERKE H. DREYER SE & CO. KG
+Ambarella,United States,Information Technology,B,suspended,25,0.022218,0.000494,,,,0,108.71,450.09,6.1094,5,10,1,0,JAM GMBH
+Amdocs,United States,Information Technology,B,suspended,62,0.002599,0.000007,,,,0,18908.42,41953.96,10.6443,21,442,2,4,AMDOCS LIMITED
+Amer Sports,Finland,Consumer Discretionary,B,other,46,0.000157,0.000000,,,,0,13584.23,31902.73,10.3704,18,5,1,0,"AMER SPORTS, INC."
+American Express,United States,Financials,B,suspended,22,0.068261,0.004660,,,,0,61.65,483.44,6.1809,8,33,1,0,SFS GROUP AG
+Analog Devices,United States,Information Technology,B,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Aon PLC,United Kingdom,Financials,B,suspended,66,0.003165,0.000010,,,Completed,1,204.41,315.91,5.7555,12,1,2,0,AON PUBLIC LIMITED COMPANY
+Apple,United States,Information Technology,B,suspended,46,0.006897,0.000048,,,,0,259633.53,1173337.11,13.9754,11,8093,1,0,APPLE INC.
+Arla,Denmark,Consumer Staples,B,other,68,14.858520,220.775622,,,,0,-0.05,0.13,-2.0054,11,2,1,0,CARLAU AG
+Asian Infrastructure Investment Bank,China,Financials,B,other,64,,,,,,0,7.26,134.10,4.8986,4,,1,8,FTL INVESTMENT LP
+Association of International Certified Professional Accountants,United States,Industrials,B,other,62,,,,,,0,-4.68,10.00,2.3027,5,,1,4,OUN GMBH
+Aston Martin,United Kingdom,Consumer Discretionary,B,suspended,70,0.010942,0.000120,,,,0,21.72,548.35,6.3069,9,6,1,0,KHERMANSSON MARTIN
+Asus,Taiwan,Information Technology,B,suspended,29,,,,,,0,-4421.62,86477.36,11.3676,16,3,3,0,"PEGASUS HOLDINGS ONE, LLC"
+Atlassian,Australia,Information Technology,B,suspended,25,0.018092,0.000327,,,,0,875.85,1677.58,7.4251,14,20,2,0,ATLAS INTERNATIONAL AG
+Audi,Germany,Consumer Discretionary,B,suspended,68,,,,,,0,56.91,208.81,5.3414,21,,1,0,INTERTAXAUDIT PARTNERS & CO.
+Australia Post,Australia,Communication Services,B,suspended,46,0.004463,0.000020,,,Withdrawn,1,730.38,3584.65,8.1844,15,16,1,0,ALI GROUP LLC
+Austrian Airlines,Austria,Industrials,B,other,71,0.000126,0.000000,,,,0,21548.23,51114.97,10.8418,10,7,4,0,LINDE GMBH
+Autodesk,United States,Information Technology,B,suspended,46,,,,,,0,612.75,614.97,6.4216,10,,1,0,GSK PLC
+Axis Communication,Sweden,Consumer Discretionary,B,suspended,52,0.001786,0.000003,,,,0,13352.59,16718.69,9.7243,18,63,3,0,ICON PLC
+Azerbaijan Airlines,Azerbaijan,Industrials,B,suspended,71,0.000126,0.000000,,,,0,21548.23,51114.97,10.8418,10,7,4,0,LINDE GMBH
+BCG,United States,Industrials,B,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+BNP Paribas,France,Financials,B,suspended,77,0.000427,0.000000,,,,0,34670.02,126509.04,11.7481,16,54,1,0,BNP PARIBAS
+BUDVAR Centrum Sp. z.o.o.,Poland,Industrials,B,suspended,46,0.005493,0.000030,,,,0,-361.26,1820.50,7.5069,5,10,1,0,ARGUMENTUM HOLDING AG
+Badminton World Federation,Malaysia,NGO,B,other,52,0.001786,0.000003,,,,0,13352.59,16718.69,9.7243,18,63,3,0,ICON PLC
+Bain,United States,Industrials,B,suspended,23,0.001487,0.000002,,,,0,134628.01,238206.28,12.3809,21,938,4,0,COMPAGNIE DE SAINT-GOBAIN
+Bang &amp; Olufsen,Denmark,Information Technology,B,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Bank of China,China,Financials,B,other,82,0.000009,0.000000,,,,0,33430.42,110212.23,11.6102,11,1,1,0,BANK OF CYPRUS HOLDINGS PUBLIC LIMITED COMPANY
+Bentley,United States,Consumer Discretionary,B,suspended,47,0.000106,0.000000,,,,0,4729.64,9390.96,9.1475,17,1,1,0,THE BENTLEY FAMILY
+Big Fish Games,United States,Communication Services,B,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Bitdefender,Romania,Information Technology,B,suspended,,0.000162,0.000000,,,,0,1997.95,12328.86,9.4197,13,2,1,0,ALIENDER LIMITED
+BlackBerry,Canada,Information Technology,B,other,47,0.000226,0.000000,,,,0,29981.60,30916.11,10.3390,9,7,1,0,BURBERRY GROUP PLC
+Boeing,United States,Industrials,B,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Bombardier,Canada,Industrials,B,other,73,0.000124,0.000000,,,,0,16257.86,40427.98,10.6073,8,5,1,0,BOMBARDIER RECREATIONAL PRODUCTS INC.
+Boohoo Group,United Kingdom,Consumer Discretionary,B,suspended,46,0.005815,0.000034,,,,0,-82.23,2751.30,7.9198,13,16,1,0,BO HOLDING AG
+Boosteroid Cloud Gaming,United Arab Emirates,Information Technology,B,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Boryszew,Poland,Materials,B,suspended,01,0.005995,0.000036,,,,0,42539.54,117036.65,11.6702,14,659,5,0,EW GROUP GMBH
+Bridgestone Tire,Japan,Consumer Discretionary,B,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Brinks,United States,Consumer Discretionary,B,suspended,46,0.007840,0.000061,,,,0,63.38,1020.42,6.9280,4,8,1,0,BRINKMAN 'S-GRAVENZANDE HOLDING B.V.
+British Airways,United Kingdom,Industrials,B,other,17,0.002184,0.000005,,,,0,65806.94,79194.80,11.2797,22,173,1,0,RETIS HOLDING GMBH
+Brown-Forman,United States,Consumer Staples,B,suspended,10,0.001600,0.000003,,,,0,29826.19,31243.43,10.3496,7,50,1,0,FORIMA HOLDINGS LIMITED
+Brunico Communications,Canada,Communication Services,B,other,95,0.001857,0.000003,,,,0,20213.87,22956.00,10.0413,17,41,2,0,"RIBBON COMMUNICATIONS, INC."
+Budweiser Budvar,Czech Republic,Consumer Staples,B,other,70,0.015133,0.000229,,,,0,537.20,991.24,6.8990,17,15,1,0,ARC HOLDINGS
+Bulgaria Air,Bulgaria,Industrials,B,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Bulgarian Postbank,Bulgaria,Financials,B,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Burberry,United Kingdom,Consumer Discretionary,B,suspended,47,0.000226,0.000000,,,,0,29981.60,30916.11,10.3390,9,7,1,0,BURBERRY GROUP PLC
+Buta Airways,Azerbaijan,Industrials,B,suspended,46,0.006838,0.000047,,,,0,588.74,731.22,6.5947,10,5,1,0,ARYES
+CBRE,United States,Real Estate,B,other,81,0.021155,0.000448,,,,0,2035.09,9879.49,9.1982,3,209,1,0,"CBRE GROUP, INC."
+CNH Industrial,United Kingdom,Industrials,B,suspended,45,,,2.6297,60.00,Completed,1,22816.26,25074.69,10.1296,15,,1,0,GATES INDUSTRIAL CORPORATION PLC
+Callaway Golf,United States,Consumer Discretionary,B,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Canada Goose,Canada,Consumer Discretionary,B,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Canadian Tire,Canada,Consumer Discretionary,B,other,62,0.026802,0.000718,,,,0,614.91,1678.98,7.4259,5,45,1,4,CIAN PLC
+Canon,Japan,Information Technology,B,suspended,46,0.002010,0.000004,,,,0,40925.04,71128.25,11.1722,18,143,1,0,CANON INC.
+Canonical,United Kingdom,Information Technology,B,suspended,46,0.002925,0.000009,,,,0,3633.77,15040.33,9.6185,19,44,1,0,CAL GMBH
+Capgemini,France,Information Technology,B,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Cargolux,Luxembourg,Industrials,B,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Ceratizit,Luxembourg,Industrials,B,suspended,41,,,,,,0,20607.09,28981.54,10.2744,11,,1,0,YIT OYJ
+Chemours,United States,Materials,B,suspended,71,0.172293,0.029685,,,,0,167.07,203.14,5.3139,11,35,1,0,RSK GROUP LIMITED
+Chevron,United States,Energy,B,other,46,0.000758,0.000001,,,,0,597.95,1319.62,7.1851,13,1,1,0,SECHERON HASLER INTERNATIONAL SA
+Chipperfield,United Kingdom,Industrials,B,suspended,77,0.006068,0.000037,,,,0,-3294.45,19328.60,9.8693,16,144,5,0,HIPP GMBH
+Chopard,Switzerland,Consumer Discretionary,B,suspended,46,0.004226,0.000018,,,,0,525.21,709.87,6.5651,5,3,1,0,CITEL GUICHARD
+Cie Automotives,Spain,Consumer Discretionary,B,other,27,0.000994,0.000001,,,,0,17990.23,19117.21,9.8583,9,19,1,0,CIE AUTOMOTIVE S.A.
+Ciena,United States,Communication Services,B,suspended,46,,,,,,0,3423.07,3659.31,8.2050,12,,1,0,CIENA CORPORATION
+Citrix,United States,Information Technology,B,suspended,72,0.033900,0.001149,,,,0,14.83,59.00,4.0775,10,2,1,0,CAMBRIDGE ONCOMETRIX LIMITED
+Cleary Gottlieb,United States,Industrials,B,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Clorox,United States,Consumer Staples,B,suspended,46,0.002925,0.000009,,,,0,3633.77,15040.33,9.6185,19,44,1,0,CAL GMBH
+Clutch,United States,Industrials,B,suspended,46,0.002925,0.000009,,,,0,3633.77,15040.33,9.6185,19,44,1,0,CAL GMBH
+Cogent Communications,United States,Communication Services,B,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Columbia Sportswear,United States,Consumer Discretionary,B,suspended,70,0.015133,0.000229,,,,0,537.20,991.24,6.8990,17,15,1,0,ARC HOLDINGS
+Commerzbank,Germany,Financials,B,suspended,71,,,,,,0,,,,22,,1,0,AECOM
+Conde Nast,United States,Communication Services,B,suspended,52,0.001786,0.000003,,,,0,13352.59,16718.69,9.7243,18,63,3,0,ICON PLC
+Conformis,United States,Health Care,B,suspended,52,0.001786,0.000003,,,,0,13352.59,16718.69,9.7243,18,63,3,0,ICON PLC
+Costco,United States,Consumer Discretionary,B,suspended,64,0.004523,0.000020,,,,0,6407.88,7517.91,8.9250,9,34,1,8,OSTC GROUP HOLDINGS LIMITED
+Coursera,United States,Consumer Discretionary,B,suspended,52,0.041541,0.001726,,,,0,700.30,890.69,6.7920,8,37,1,0,STERNA
+Credit Agricole,France,Financials,B,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Criteo,France,Consumer Discretionary,B,other,62,,,,,,0,1280.34,14991.98,9.6153,8,,1,4,AKTSIONERNOE OBSHCHESTVO KRITEO
+Crocs,United States,Consumer Discretionary,B,suspended,46,0.000262,0.000000,,,,0,5240.97,11458.42,9.3465,14,3,1,0,"CROCS, INC."
+Cyprus Airways,Cyprus,Industrials,B,suspended,06,0.000098,0.000000,,,,0,-46833.24,225687.04,12.3269,16,22,2,8,DPE CYPRUS LIMITED
+DACHSER,Germany,Industrials,B,other,46,,,,,,0,4452.33,17496.38,9.7697,6,,1,0,"BAYOU PURCHASER, INC."
+DAF,Netherlands,Consumer Discretionary,B,suspended,74,,,,,,0,,,,10,,1,0,DAFNE LINE SHIPPING COMPANY LIMITED
+DJI,China,Information Technology,B,suspended,77,,,,,,0,,,,11,,3,0,MR CHRYSANTHOS HADJIYIANNIS
+DKV Mobility,Germany,Information Technology,B,suspended,52,0.041799,0.001747,,,,0,164.15,263.16,5.5728,13,11,1,0,MOBILITAS
+Daimler Truck,Germany,Consumer Discretionary,B,other,68,0.005728,0.000033,,,,0,797.17,7527.43,8.9263,13,39,2,0,LANIMER HOLDINGS LIMITED
+Damen,Netherlands,Industrials,B,suspended,71,0.003686,0.000014,,,Completed,1,739.36,11393.33,9.3408,3,42,14,0,DAMEN FAMILY
+Danaher,United States,Health Care,B,suspended,46,0.001520,0.000002,,,,0,44201.59,87729.17,11.3820,13,129,3,0,DANAHER CORPORATION
+Danone,France,Consumer Staples,B,other,46,,,,,Completed,1,1122.64,1390.66,7.2375,11,,1,0,DANONE
+Danske Bank,Denmark,Financials,B,suspended,46,0.000990,0.000001,,,,0,2672.78,20263.05,9.9166,2,23,2,0,DANSK LANDBRUGS FROSELSKAB AMBA
+Dassault Aviation,France,Industrials,B,suspended,52,0.001786,0.000003,,,,0,13352.59,16718.69,9.7243,18,63,3,0,ICON PLC
+Dassault Systèmes,France,Information Technology,B,suspended,46,0.000075,0.000000,,,,0,26437.36,40016.38,10.5970,17,3,1,0,SSAB AB
+Debevoise &amp; Plimpton,United States,Industrials,B,sold,62,0.000811,0.000001,,,,0,387.00,2040.22,7.6208,3,20,2,4,DEBEX HOLDING LIMITED
+Decathlon,France,Consumer Discretionary,B,suspended,62,,,,,Withdrawn,1,-4.68,10.00,2.3027,5,,1,4,OUN GMBH
+Deckers,United States,Consumer Discretionary,B,suspended,46,0.000080,0.000000,,,,0,56816.41,87327.09,11.3774,10,7,1,0,"STANLEY BLACK & DECKER, INC."
+Demant,Denmark,Health Care,B,suspended,70,0.012791,0.000164,,,,0,47.97,938.14,6.8439,8,12,1,0,MANTU GROUP SA
+Denso,Japan,Consumer Discretionary,B,suspended,46,0.088363,0.007808,,,,0,-223.63,237.65,5.4708,8,21,1,0,DENSO CORPORATION CO
+Depositphotos,Ukraine,Consumer Discretionary,B,suspended,46,,,,,,0,644.25,978.62,6.8861,6,,1,0,OSG CORPORATION
+Diadora,Italy,Consumer Discretionary,B,suspended,22,0.008565,0.000073,,,,0,7461.36,10624.40,9.2709,7,91,1,0,ORAC HOLDING
+Diageo,United Kingdom,Consumer Staples,B,suspended,46,0.045074,0.002032,,,,0,7001.38,19123.96,9.8587,18,862,1,0,DIAGEO PLC
+Diebold Nixdorf,United States,Information Technology,B,suspended,46,0.000034,0.000000,,,,0,17060.29,29060.27,10.2771,15,1,1,0,"DIEBOLD NIXDORF, INC"
+DirecTV,United States,Communication Services,B,other,68,0.000962,0.000001,,,,0,-58.30,2080.02,7.6401,2,2,1,0,DIRECT INVESTMENT MANAGEMENT LP
+Discover,United States,Communication Services,B,suspended,46,0.007790,0.000061,,,,0,11864.90,13477.96,9.5088,17,105,1,0,DOVER CORPORATION
+Discovery,United States,Communication Services,B,suspended,24,0.005523,0.000031,,,,0,7271.29,7423.62,8.9124,14,41,1,5,DIC CORPORATION
+Disney,United States,Communication Services,B,suspended,46,,,,,,0,4503.61,19004.15,9.8524,17,,1,0,WALT DISNEY COMPANY (THE)
+Dreamstime,United States,Communication Services,B,other,62,,,,,,0,428.04,466.13,6.1445,5,,1,4,AMST HOLDING GMBH
+DuPont,United States,Materials,B,suspended,73,0.005891,0.000035,,,,0,541.76,678.95,6.5205,8,4,1,0,NTN CORPORATION
+ECFMG,United States,Industrials,B,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+ESET,Slovakia,Information Technology,B,suspended,47,,,,9.93,Completed,1,,,,,2,1,0,MRS ROSSANA PODLESETSKII
+Edrington,United Kingdom,Consumer Staples,B,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Egon Zehnder,United States,Industrials,B,suspended,82,,,,,,0,1163.25,1302.01,7.1717,18,,1,0,EGON ZEHNDER INTERNATIONAL AG
+Electrolux,Sweden,Consumer Discretionary,B,other,46,0.010080,0.000102,,,,0,7600.39,15016.54,9.6169,16,621,4,0,ELECSTER OYJ
+Elsevier,Netherlands,Communication Services,B,sold,21,0.004887,0.000024,,,,0,39241.65,42973.07,10.6683,20,210,1,0,SERVIER SAS
+Embraer,Brazil,Industrials,B,suspended,62,0.001009,0.000001,,,,0,4391.73,6024.01,8.7035,2,6,2,4,EMBRACER GROUP AB
+Epiroc,Sweden,Consumer Staples,B,suspended,46,0.000131,0.000000,,,,0,47088.65,114852.62,11.6514,5,15,1,0,EPIROC AB
+Eppendorf SE,Germany,Health Care,B,suspended,68,0.001196,0.000001,,,,0,3942.65,6686.40,8.8078,18,8,1,0,ZEPP HOLDINGS LTD
+Equinix,United States,Real Estate,B,suspended,47,,,,,,0,-805.92,264.90,5.5793,8,,1,0,EQT AB
+Ericsson,Sweden,Information Technology,B,suspended,60,0.010881,0.000118,,,Pending,1,183.81,183.81,5.2139,7,2,1,0,SONY GROUP CORPORATION
+Estee Lauder,United States,Consumer Staples,B,suspended,49,,,,,,0,,,,10,,1,2,ESTA GROUP AG
+Eurasian Resources Group,Luxembourg,Materials,B,suspended,46,0.007665,0.000059,,,,0,178.99,782.76,6.6628,8,6,1,0,LEONA RESOURCES LP
+European University Association,Belgium,NGO,B,other,52,0.001786,0.000003,,,,0,13352.59,16718.69,9.7243,18,63,3,0,ICON PLC
+Exiger,United States,Industrials,B,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Exor,Netherlands,Financials,B,other,77,0.000300,0.000000,,,,0,23940.90,73317.50,11.2026,13,22,1,0,LEXORT LIMITED
+FANUC,Japan,Industrials,B,suspended,46,0.000125,0.000000,,,,0,26015.92,32024.71,10.3743,19,4,1,0,FANUC CORPORATION
+FIBA,Switzerland,NGO,B,other,46,0.043428,0.001886,,,,0,670.58,898.03,6.8002,4,39,1,0,IBA AG
+FIFA,Switzerland,Industrials,B,other,90,0.004166,0.000017,,,,0,219.21,240.02,5.4807,6,1,1,0,FEDERATION INTERNATIONALE DE FOOTBALL ASSOCIATION (FIFA)
+Farfetch,United Kingdom,Consumer Discretionary,B,suspended,46,0.033663,0.001133,,,,0,449.68,831.77,6.7236,1,28,1,0,MRS CORNELIA KITT-FRECH
+Ferragamo,Italy,Consumer Discretionary,B,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Ferrari,Italy,Consumer Discretionary,B,suspended,46,,,,,,0,-287.11,81.22,4.3972,11,,1,0,MR DANIELE FERRARO
+Fidelity,United States,Financials,B,suspended,46,0.001753,0.000003,,,,0,2947.00,4563.77,8.4259,20,8,1,0,FIDEP
+Finnlines,Finland,Industrials,B,suspended,71,0.000126,0.000000,,,,0,21548.23,51114.97,10.8418,10,7,4,0,LINDE GMBH
+Fiverr,Israel,Consumer Discretionary,B,suspended,78,0.334568,0.111935,,,,0,44.15,53.80,3.9853,7,18,1,0,KHAMMER OLIVER
+Fluidra,Spain,Industrials,B,suspended,46,0.008531,0.000073,,,,0,1832.81,4219.72,8.3475,22,36,1,0,FLUIDRA S.A.
+Forest Stewardship Council (FSC),Germany,NGO,B,suspended,62,,,,,,0,-4.68,10.00,2.3027,5,,1,4,OUN GMBH
+Fortinet,United States,Information Technology,B,suspended,46,0.000094,0.000000,,,,0,19786.28,43091.64,10.6711,11,51,3,0,FORTIVE CORPORATION
+Foster + Partners,United Kingdom,Industrials,B,suspended,82,0.007175,0.000051,,,Completed,1,1068.32,9337.74,9.1418,18,67,1,0,"GARTNER, INC."
+Fujitsu,Japan,Information Technology,B,other,46,0.009267,0.000086,,,,0,2237.33,13273.50,9.4935,14,123,1,0,FUTURA S.P.A.
+Fédération Internationale de Motocyclisme,Switzerland,NGO,B,other,68,,,,,,0,2967.02,3240.83,8.0836,17,,2,0,RAITON LIMITED
+Ganni,Denmark,Consumer Discretionary,B,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Gap Inc,United States,Consumer Discretionary,B,suspended,01,,,,,,0,40725.62,44353.08,10.6999,18,,1,0,GOVERNMENT OF SINGAPORE
+Gasum,Finland,Energy,B,suspended,23,0.006695,0.000045,,,Completed,1,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Generac,United States,Industrials,B,suspended,46,0.000189,0.000000,,,,0,2310.11,5282.07,8.5721,14,1,1,0,GENERAC HOLDINGS INC.
+Gestamp,Spain,Consumer Discretionary,B,suspended,23,0.006695,0.000045,,,Completed,1,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+GetYourGuide,Switzerland,Consumer Discretionary,B,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Goodyear,United States,Consumer Discretionary,B,suspended,45,0.017976,0.000323,,,,0,26886.47,57686.67,10.9628,21,1037,1,0,THE GOODYEAR TIRE & RUBBER COMPANY
+Grainpro,United States,Materials,B,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Grammarly,United States,Information Technology,B,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Graphisoft,Hungary,Information Technology,B,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Grupa Azoty,Poland,Materials,B,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Grupo Antolín,Spain,Consumer Discretionary,B,suspended,23,0.006695,0.000045,,,Completed,1,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Grupo Bimbo,Mexico,Consumer Staples,B,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+HARIBO,Germany,Consumer Staples,B,suspended,46,0.000091,0.000000,,,,0,2405.30,10933.93,9.2996,19,1,1,0,HARIBO HOLDING GMBH & CO. KG
+Hannover Re,Germany,Financials,B,suspended,68,0.000123,0.000000,,,,0,53673.39,157370.99,11.9664,11,436,5,0,NOV INC
+Hapag Lloyd,Germany,Industrials,B,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Harley-Davidson,United States,Consumer Discretionary,B,other,70,,,,,,0,703.15,770.44,6.6470,12,,1,0,"HARLEY-DAVIDSON, INC."
+Hasbro,United States,Consumer Discretionary,B,suspended,46,,,,,,0,16428.58,107473.37,11.5850,11,,1,0,HASBRO INC
+Heraeus,Germany,Industrials,B,suspended,46,0.021921,0.000481,,,,0,402.17,593.03,6.3853,3,13,1,0,"PTC THERAPEUTICS, INC."
+Herbalife,United States,Consumer Staples,B,suspended,73,0.002971,0.000009,,,,0,7656.58,39050.12,10.5726,18,116,1,0,HERBALIFE LTD.
+Hermes,France,Consumer Discretionary,B,suspended,33,0.002489,0.000006,,,,0,189.44,2008.54,7.6052,8,5,1,0,MASCHINENFABRIK BERTHOLD HERMLE AG
+Herzog &amp; de Meuron,Switzerland,Industrials,B,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Hexagon,Sweden,Information Technology,B,other,46,0.005118,0.000026,,,,0,12013.82,33941.07,10.4324,14,152,4,0,HEXAGON AB
+Hindalco,India,Materials,B,suspended,77,,,,,,0,104.82,303.44,5.7152,17,,1,0,ALCOR HOLDING SA
+Hitachi Construction,Japan,Industrials,B,suspended,52,0.001786,0.000003,,,,0,13352.59,16718.69,9.7243,18,63,3,0,ICON PLC
+Honda,Japan,Consumer Discretionary,B,suspended,45,,,,,,0,61645.13,76238.09,11.2416,18,,1,0,"HONDA MOTOR CO.,LTD."
+Honey Group,Finland,Consumer Staples,B,suspended,46,,,,,,0,27167.59,71931.93,11.1835,13,,1,0,HONEYWELL INTERNATIONAL INC
+Hugo Boss,Germany,Consumer Discretionary,B,other,23,0.006695,0.000045,,,Completed,1,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Hunkemoller,Netherlands,Consumer Discretionary,B,suspended,69,0.528504,0.279317,,,,0,8.25,13.24,2.5836,14,7,1,0,IOKHEN KOLLER
+Husqvarna,Sweden,Consumer Discretionary,B,suspended,68,0.000870,0.000001,,,,0,520.79,1149.12,7.0468,15,1,1,0,DARINA HOLDINGS LIMITED
+Hyundai,South Korea,Consumer Discretionary,B,suspended,45,0.000852,0.000001,,,,0,68610.24,123175.91,11.7214,18,105,1,0,"HYUNDAI MOBIS CO.,LTD."
+Iberia,Spain,Industrials,B,other,47,0.000042,0.000000,,,,0,-107299.53,118125.40,11.6795,18,5,1,0,H.S.R. HOLIDAY SIBERIADA RETAILING GROUP LIMITED
+Icecat,Netherlands,Industrials,B,other,46,0.019788,0.000392,,,,0,1311.19,1819.27,7.5062,17,36,1,0,ICG PLC
+Illinois Tool Works,United States,Industrials,B,other,46,0.009014,0.000081,,,,0,1927.15,6472.91,8.7754,10,81,3,0,ILLINOIS TOOL WORKS INC.
+Indeed,United States,Information Technology,B,suspended,71,0.000126,0.000000,,,,0,21548.23,51114.97,10.8418,10,7,4,0,LINDE GMBH
+Institute of Internal Auditors,United States,Industrials,B,suspended,52,0.041541,0.001726,,,,0,700.30,890.69,6.7920,8,37,1,0,STERNA
+Intel,United States,Information Technology,B,suspended,73,0.000182,0.000000,,,Withdrawn,1,6205.38,10962.60,9.3022,10,2,1,0,INTEL CORP
+Interactive Advertising Bureau,United States,Industrials,B,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Intercomm Foods,Greece,Consumer Staples,B,other,73,0.000182,0.000000,,,,0,6205.38,10962.60,9.3022,10,2,1,0,INTEL CORP
+International Canoe Federation,Switzerland,NGO,B,suspended,73,0.000182,0.000000,,,,0,6205.38,10962.60,9.3022,10,2,1,0,INTEL CORP
+International Federation of Sport Climbing,Italy,NGO,B,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+International Tennis Federation,United Kingdom,NGO,B,suspended,73,0.000182,0.000000,,,,0,6205.38,10962.60,9.3022,10,2,1,0,INTEL CORP
+Intertek,United States,Industrials,B,suspended,71,0.020160,0.000406,,,,0,7420.04,11807.11,9.3765,22,242,2,0,INTERTEK GROUP PLC
+Intuit,United States,Information Technology,B,suspended,62,,,,,,0,,,,,1,1,4,PRIVATE LIMITED COMPANY «FINTUITY LIMITED»
+JCB,United Kingdom,Industrials,B,suspended,64,0.018280,0.000334,,,,0,932.88,1148.81,7.0465,8,21,1,8,"JCB CO.,LTD."
+Jablotron,Czech Republic,Consumer Discretionary,B,other,46,0.000029,0.000000,,,,0,9988.88,34176.01,10.4393,15,1,1,0,ORION OYJ
+Japan Credit Bureau (JCB),Japan,Financials,B,suspended,25,0.022218,0.000494,,,,0,108.71,450.09,6.1094,5,10,1,0,JAM GMBH
+Johnson Controls,Ireland,Industrials,B,suspended,46,0.001793,0.000003,,,,0,584846.98,889248.70,13.6981,20,1594,1,0,JOHNSON & JOHNSON
+Julipedra,Portugal,Materials,B,suspended,46,0.002912,0.000008,,,,0,318.75,686.82,6.5321,9,2,1,0,MEDRA HOLDING GMBH
+Jungheinrich,Germany,Industrials,B,suspended,46,,,,,Proposed,1,,,,7,59,1,0,JUNGHEINRICH AG
+Juniper Networks,United States,Information Technology,B,suspended,46,,,,,,0,2776.24,3050.65,8.0231,17,,1,0,MKS INC
+KGHM,Poland,Materials,B,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+KONE,Finland,Industrials,B,suspended,90,,,,,Completed,1,-77.15,269.96,5.5983,13,,1,0,MR MIKKO MARKKUS PETTERI VALKONEN
+Kepenou Mills,Greece,Consumer Staples,B,suspended,71,0.036377,0.001323,,,,0,401.26,769.73,6.6460,16,28,1,0,ALS LIMITED
+Kering,France,Consumer Discretionary,B,other,47,0.000607,0.000000,,,,0,4130.48,4941.62,8.5054,6,3,1,0,KERING
+Kingston,United States,Information Technology,B,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Kodak Alaris,United Kingdom,Information Technology,B,suspended,46,0.000448,0.000000,,,,0,9875.37,13392.02,9.5024,16,6,1,0,KALMAR OYJ
+Komatsu,Japan,Industrials,B,suspended,46,,,,,,0,3760.72,4116.68,8.3228,13,,1,0,KAO CORPORATION
+Konecranes,Finland,Industrials,B,suspended,63,0.053297,0.002841,,,,0,35756.86,49721.71,10.8142,19,2650,1,0,NEC CORPORATION
+Konica Minolta,Japan,Consumer Discretionary,B,suspended,46,0.004690,0.000022,,,,0,15908.15,27079.37,10.2065,19,127,1,0,KONICA MINOLTA INC
+Korean Air Lines,South Korea,Industrials,B,other,71,0.000126,0.000000,,,,0,21548.23,51114.97,10.8418,10,7,4,0,LINDE GMBH
+Korn Ferry,United States,Industrials,B,suspended,70,0.000299,0.000000,,,,0,4107.25,10034.49,9.2138,20,3,1,0,KORN FERRY
+Krombacher,Germany,Consumer Staples,B,suspended,62,0.001009,0.000001,,,,0,4391.73,6024.01,8.7035,2,6,2,4,EMBRACER GROUP AB
+Kronospan,Austria,Materials,B,other,68,,,,,,0,-36073.51,9906.24,9.2009,18,,1,0,SAPLAN LIMITED
+Kubota,Japan,Industrials,B,other,28,0.002836,0.000008,,,,0,-6248.95,13751.03,9.5289,17,39,1,0,KUBOTA CORPORATION
+Kyocera,Japan,Information Technology,B,suspended,46,0.000490,0.000000,,,,0,21371.98,34668.04,10.4536,11,17,1,0,KYOCERA CORPORATION
+Kärcher,Germany,Consumer Discretionary,B,suspended,46,0.015430,0.000238,,,,0,26153.51,59881.44,11.0001,18,956,2,0,ALFRED KÄRCHER SE & CO. KG
+Körber,Germany,Industrials,B,suspended,46,0.002835,0.000008,,,,0,3321.14,10229.39,9.2330,5,29,1,0,MR KROBER THOMAS
+L'Oreal,France,Consumer Discretionary,B,suspended,46,0.002925,0.000009,,,,0,3633.77,15040.33,9.6185,19,44,1,0,CAL GMBH
+LCBO,Canada,Consumer Staples,B,suspended,46,0.005815,0.000034,,,,0,-82.23,2751.30,7.9198,13,16,1,0,BO HOLDING AG
+LG Electronics,South Korea,Information Technology,B,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+La Lorraine,Belgium,Consumer Staples,B,suspended,46,0.000065,0.000000,,,,0,27572.32,30629.27,10.3297,7,2,1,0,LA LORRAINE BAKERY GROUP
+Lanxess,Germany,Materials,B,suspended,70,,,,,Pending,1,,,,,2,1,0,MR BASTIAN FAANESS
+Lego,Denmark,Consumer Discretionary,B,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Leonardo,Italy,Industrials,B,suspended,46,0.326752,0.106767,,,,0,14.09,91.81,4.5198,1,30,1,0,MR LEONARDO ASNAGI
+Les Ballets de Monte-Carlo,Monaco,Consumer Discretionary,B,suspended,17,0.004507,0.000020,,,,0,48822.87,80323.01,11.2938,17,362,1,0,ONTEX GROUP NV
+Levi Strauss,United States,Consumer Discretionary,B,suspended,47,0.000048,0.000000,,,Withdrawn,1,30958.14,42030.22,10.6461,14,2,1,0,CHASTNAYA KOMPANIYA S OGRANICHENNOI OTVETSTVENNOSTYU LEVI SHTRAUSS NEDERLAND B.V.
+Lexmark,United States,Information Technology,B,suspended,68,0.000239,0.000000,,,,0,3462.50,4179.47,8.3379,3,1,1,0,LEXART CORPORATE SERVICES LTD
+Little Caesar's,United States,Consumer Discretionary,B,suspended,33,0.000125,0.000000,,,,0,2604.82,8010.27,8.9885,9,1,1,0,ITT INC.
+Live Nation Entertainment,United States,Communication Services,B,suspended,62,0.060526,0.003663,,,,0,2059.01,2775.65,7.9286,14,168,2,4,G5 ENTERTAINMENT AB
+Lladró,Spain,Consumer Discretionary,B,suspended,46,0.005696,0.000032,,,,0,135970.59,282041.11,12.5498,17,1393,4,0,CATERPILLAR INC.
+Louis Dreyfus,Netherlands,Consumer Staples,B,suspended,07,,,,,Withdrawn,1,13.46,13.46,2.5997,9,,1,0,UGS SA
+M&amp;G,United Kingdom,Financials,B,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+MS &amp; AD Insurance Group,Japan,Financials,B,other,66,0.003812,0.000015,,,,0,81.60,262.31,5.5695,6,1,2,0,MS&AD INSURANCE GROUP HOLDINGS INC.
+MSC Cruises,Switzerland,Consumer Discretionary,B,suspended,46,,,,,,0,2776.24,3050.65,8.0231,17,,1,0,MKS INC
+MV Group,Lithuania,Consumer Staples,B,other,46,,,,,Completed,1,,,,17,,1,0,AMV COMMODITIES HANDELS GMBH
+Magna,Canada,Consumer Discretionary,B,suspended,23,0.006695,0.000045,0.7789,15.00,Completed,1,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Magna Steyr,Austria,Consumer Discretionary,B,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Mango,Spain,Consumer Discretionary,B,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Manolo Blahnik,United Kingdom,Consumer Discretionary,B,suspended,46,0.001496,0.000002,,,,0,43098.22,107717.35,11.5873,19,154,2,0,NIKE INC
+Marks &amp; Spencer,United Kingdom,Consumer Staples,B,suspended,29,,,,,,0,-4620.80,7899.85,8.9746,11,,1,0,TARS HOLDING AG
+Marriott,United States,Consumer Discretionary,B,suspended,33,0.000125,0.000000,,,,0,2604.82,8010.27,8.9885,9,1,1,0,ITT INC.
+Marvell,United States,Information Technology,B,suspended,70,,,,,,0,-1.25,,,10,2,1,0,MARVELLE GROUP HOLDINGS LTD
+Mastercard,United States,Information Technology,B,suspended,63,0.000158,0.000000,,,,0,313764.05,335164.67,12.7224,12,53,1,0,MASTERCARD INCORPORATED
+Match Group,United States,Communication Services,B,other,93,0.003239,0.000010,,,,0,1232.59,1270.49,7.1472,9,4,2,0,MATCH HOSPITALITY AG
+Mattel,United States,Consumer Discretionary,B,suspended,46,0.000030,0.000000,,,,0,107781.18,133373.36,11.8009,13,4,1,0,"MATTEL, INC."
+McCormick,United States,Consumer Staples,B,suspended,25,0.009200,0.000085,,,,0,-511.10,760.91,6.6345,13,7,1,0,MICK AG
+Meggit,United Kingdom,Industrials,B,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Meta,United States,Communication Services,B,suspended,62,0.012181,0.000148,,,Completed,1,225.15,246.28,5.5065,1,3,1,4,LIMITED COMPANY ORDER OF META OY
+Metso Outotec,Finland,Industrials,B,suspended,46,0.009634,0.000093,,,,0,3657.38,14630.88,9.5909,15,152,2,0,TECE SE
+Mettler Toledo,United States,Health Care,B,suspended,20,0.006764,0.000046,,,,0,57857.69,147873.58,11.9041,16,835,3,4,DOW INC.
+Michelin,France,Consumer Discretionary,B,suspended,25,0.009200,0.000085,,,Withdrawn,1,-511.10,760.91,6.6345,13,7,1,0,MICK AG
+Micro Focus,United Kingdom,Information Technology,B,suspended,25,0.009200,0.000085,,,,0,-511.10,760.91,6.6345,13,7,1,0,MICK AG
+Micron,United States,Information Technology,B,suspended,46,0.008656,0.000075,,,,0,209.99,693.18,6.5413,10,6,1,0,HOSOKAWA MICRON CORPORATION
+Microsoft,United States,Information Technology,B,suspended,62,0.000032,0.000000,,,,0,33829.29,64645.36,11.0767,18,2,3,4,MICROSOFT CORPORATION
+Milk Hydrosan sp. z o.o.,Poland,Industrials,B,suspended,46,0.006560,0.000043,,,,0,915.46,2286.71,7.7349,2,15,1,0,MIG HOLDING GMBH
+Mitsubishi Electric,Japan,Industrials,B,suspended,46,0.000656,0.000000,,,,0,33613.52,68552.80,11.1354,8,45,1,0,MITSUBISHI ELECTRIC CORPORATION
+Mitsubishi Motors,Japan,Consumer Discretionary,B,suspended,66,,,,,,0,24044.75,24057.91,10.0882,9,,1,0,MITSUBISHI CORPORATION
+Mobatime (Elekon),Czech Republic,Consumer Discretionary,B,suspended,46,0.009586,0.000092,,,,0,1432.19,2607.86,7.8663,12,25,1,0,PROTIME AG
+Moncler,Italy,Consumer Discretionary,B,suspended,71,,,,,,0,10986.15,172718.91,12.0594,10,,1,0,MONERGO B.V.
+Moneygram,United States,Financials,B,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+MongoDB,United States,Information Technology,B,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Mothercare,United Kingdom,Consumer Discretionary,B,suspended,47,0.007472,0.000056,,,,0,-1284.84,5621.06,8.6343,16,42,1,0,MOTIER
+Motorola Solutions,United States,Information Technology,B,suspended,52,0.002571,0.000007,,,,0,11.82,388.92,5.9634,2,1,1,0,RGG SOLUTIONS LP
+Munich Re,Germany,Financials,B,suspended,64,0.000075,0.000000,,,,0,106915.07,858637.47,13.6631,20,64,4,8,UNICREDIT SPA
+NEC,Japan,Information Technology,B,suspended,63,0.053297,0.002841,,,,0,35756.86,49721.71,10.8142,19,2650,1,0,NEC CORPORATION
+NSG Group (Pilkington),Japan,Materials,B,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+NXP Semiconductors,Netherlands,Information Technology,B,suspended,52,0.001786,0.000003,,,,0,13352.59,16718.69,9.7243,18,63,3,0,ICON PLC
+Namecheap,United States,Information Technology,B,suspended,46,0.006502,0.000042,,,,0,8658.79,9227.63,9.1300,17,60,1,0,ADP HOLDINGS LIMITED
+NetApp,United States,Information Technology,B,suspended,46,148.585202,22077.562243,,,,0,0.01,0.01,-4.3080,14,2,1,0,"NETAPP, INC."
+New Balance,United States,Consumer Discretionary,B,suspended,01,0.005995,0.000036,,,,0,42539.54,117036.65,11.6702,14,659,5,0,EW GROUP GMBH
+New Development Bank,China,Financials,B,other,01,0.005995,0.000036,,,,0,42539.54,117036.65,11.6702,14,659,5,0,EW GROUP GMBH
+Niantic Labs,United States,Information Technology,B,other,68,0.010117,0.000102,,,,0,131.88,197.68,5.2866,16,2,1,0,NISA INTERNATIONAL CORPORATION
+Nikon,Japan,Consumer Discretionary,B,suspended,46,0.000716,0.000001,,,,0,7873.97,11178.62,9.3218,14,8,1,0,NIKON CORPORATION
+Nintendo,Japan,Communication Services,B,suspended,46,,,,,,0,2331.87,13866.45,9.5372,10,,1,0,NINTENDO CO LTD
+Nippon Telegraph and Telephone Corporation (NTT),Japan,Communication Services,B,sold,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Norton,United States,Information Technology,B,suspended,68,0.003044,0.000009,,,,0,3218.33,3284.97,8.0971,2,10,1,0,NORTOX PROPERTIES LIMITED
+Nu Skin,United States,Consumer Staples,B,suspended,43,0.024059,0.000579,,,,0,4371.81,6234.59,8.7379,20,150,1,0,SKION GMBH
+Nutanix,United States,Information Technology,B,suspended,47,0.009295,0.000086,,,,0,-3.57,107.59,4.6783,13,1,1,0,MR ITALO MONTANI
+Nvidia,United States,Information Technology,B,suspended,01,0.009460,0.000089,,,,0,6450.10,15759.64,9.6652,11,79,3,0,NIDIALINGTON HOLDING LIMITED
+OP Bank Lithuania,Lithuania,Financials,B,suspended,68,0.010117,0.000102,,,,0,131.88,197.68,5.2866,16,2,1,0,NISA INTERNATIONAL CORPORATION
+Olympus,Japan,Information Technology,B,suspended,07,,,,,,0,13.46,13.46,2.5997,9,,1,0,UGS SA
+OpenText,Canada,Information Technology,B,suspended,62,,,,,,0,24170.15,29044.92,10.2766,6,,1,4,OPEN TEXT CORPORATION
+Oracle,United States,Information Technology,B,suspended,22,0.008565,0.000073,,,,0,7461.36,10624.40,9.2709,7,91,1,0,ORAC HOLDING
+Orion,Finland,Health Care,B,other,46,0.000029,0.000000,,,,0,9988.88,34176.01,10.4393,15,1,1,0,ORION OYJ
+Outokumpu,Finland,Materials,B,suspended,46,0.008676,0.000075,,,,0,532.99,691.54,6.5389,8,6,1,0,OUTOKUMMUN METALLI OY
+PTC,United States,Information Technology,B,other,62,0.006027,0.000036,,,,0,3306.09,6304.63,8.7490,13,38,1,4,PTC INC.
+PagerDuty,United States,Information Technology,B,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Panasonic,Japan,Consumer Discretionary,B,suspended,70,0.000846,0.000001,,,,0,11288.51,28360.85,10.2528,18,24,1,0,PANASONIC HOLDINGS CORPORATION
+Par Pacific,United States,Energy,B,suspended,46,0.019788,0.000392,,,,0,1311.19,1819.27,7.5062,17,36,1,0,ICG PLC
+Paramount,United States,Communication Services,B,suspended,70,0.000094,0.000000,,,,0,12860.46,44950.59,10.7133,7,4,2,0,PARAMOUNT SKYDANCE CORP.
+Payoneer,United States,Information Technology,B,other,68,,,,,,0,2357.50,2911.14,7.9763,17,,1,0,CIRO PAONE RE INTERNATIONAL S.R.L.
+Paypal,United States,Information Technology,B,suspended,68,0.005099,0.000026,,,,0,939.80,980.50,6.8881,19,5,1,0,MR PAPALLIS LOUKAS
+Peak Design,United States,Consumer Staples,B,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Pekao SA,Poland,Financials,B,suspended,46,,,,,,0,3760.72,4116.68,8.3228,13,,1,0,KAO CORPORATION
+Pernod Ricard,France,Consumer Staples,B,suspended,46,0.008292,0.000069,,,,0,28615.23,89970.63,11.4072,17,746,1,0,RDO INTERNATIONAL
+Pivovary Staropramen,Czech Republic,Consumer Staples,B,suspended,46,0.000804,0.000001,,,,0,14428.34,84600.85,11.3457,16,68,1,0,AMGEN INC.
+Playmobil,Germany,Consumer Discretionary,B,suspended,77,,,,,,0,600.28,932.41,6.8378,3,,1,0,LAMY SA
+Podravka,Croatia,Consumer Staples,B,suspended,23,,,,,,0,,,,20,,1,0,MEZHDUNARODNAYA DELOVAYA KOMPANIYA P.P.B.INK (SPRAVKA
+Polaris,United States,Consumer Discretionary,B,suspended,63,0.000135,0.000000,,,,0,1775.79,7582.45,8.9336,15,2,2,0,UNIONE FIDUCIARIA S.P.A. SOCIETA' FIDUCIARIA E DI SERVIZI DELLE BANCHE POPOLARI ITALIANE - IN BREVE UNIONE FIDUCIARIA S.P.A.
+Porsche,Germany,Consumer Discretionary,B,other,45,0.011345,0.000129,,,,0,144569.83,300139.22,12.6120,19,2984,5,0,FAMILIEN PORSCHE/PIECH
+Prada,Italy,Consumer Discretionary,B,suspended,47,0.000231,0.000000,,,,0,93864.87,138434.23,11.8382,14,32,1,0,MRS BIANCHI MIUCCIA PRADA
+Prosus,Netherlands,Industrials,B,sold,02,,,,,,0,,,,21,,1,0,KOMPANIYA TIMBER PROSESSING TEKHNOLODZHIS INK
+Puma,Germany,Consumer Discretionary,B,suspended,46,0.000138,0.000000,,,,0,61460.09,101641.01,11.5292,22,14,1,0,PUMA SE
+Qualcomm,United States,Information Technology,B,suspended,77,,,,,,0,104.82,303.44,5.7152,17,,1,0,ALCOR HOLDING SA
+RTB,United States,Industrials,B,suspended,68,0.000290,0.000000,,,,0,-2277.37,51675.02,10.8527,15,15,1,0,VORTBURG HOLDINGS LIMITED
+Rabobank,Netherlands,Financials,B,other,64,,,,,,0,12783.09,21176.58,9.9607,14,,2,8,COOPERATIEVE RABOBANK U.A.
+Radio Free Europe,Czech Republic,Communication Services,B,suspended,45,0.009720,0.000094,,,,0,1069.14,6378.43,8.7607,13,62,1,0,ARC EUROPE
+Rakovnický Pivovar,Czech Republic,Consumer Staples,B,sold,70,0.015133,0.000229,,,,0,537.20,991.24,6.8990,17,15,1,0,ARC HOLDINGS
+Ralph Lauren,United States,Consumer Discretionary,B,suspended,55,0.000149,0.000000,,,,0,-16053.00,6696.80,8.8094,19,1,1,0,LARES HOLDING LIMITED
+Ravensburger | BRIO,Germany,,B,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Raytheon,United States,Industrials,B,suspended,33,,,,,,0,,,,21,,1,0,E.ON SE
+Recruit Holdings,Japan,Industrials,B,suspended,41,,,,,,0,20607.09,28981.54,10.2744,11,,1,0,YIT OYJ
+Remitly Global,United States,Information Technology,B,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Renishaw,United Kingdom,Industrials,B,suspended,17,0.002184,0.000005,,,,0,65806.94,79194.80,11.2797,22,173,1,0,RETIS HOLDING GMBH
+Revolut,United Kingdom,Financials,B,suspended,62,0.000380,0.000000,,,,0,2039.58,2634.33,7.8764,6,1,1,4,REVOLUT GROUP HOLDINGS LTD
+Richemont,Switzerland,Consumer Discretionary,B,suspended,46,0.002121,0.000004,,,,0,17097.53,141075.93,11.8571,13,280,2,0,ROCHE HOLDING AG
+Ricoh,Japan,Information Technology,B,suspended,46,0.102756,0.010559,,,,0,9.73,9.73,2.2754,9,1,1,0,"RICOH COMPANY,LTD."
+Roca,Spain,Consumer Discretionary,B,other,31,0.021547,0.000464,,,,0,20279.38,29284.92,10.2848,20,631,1,0,ROCA CORPORACION EMPRESARIAL SA
+Rockwell Automation,United States,Industrials,B,suspended,52,0.001786,0.000003,,,,0,13352.59,16718.69,9.7243,18,63,3,0,ICON PLC
+Roland DG,Japan,Information Technology,B,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Rolls Royce,United Kingdom,Industrials,B,suspended,46,0.000036,0.000000,,,,0,13167.95,27419.12,10.2190,9,1,1,0,ROLLS-ROYCE HOLDINGS PLC
+Rotork,United Kingdom,Industrials,B,suspended,33,0.000326,0.000000,,,,0,3466.42,6128.73,8.7207,17,2,1,0,ROTORK PLC
+Royal Caribbean Cruises,United States,Consumer Discretionary,B,other,46,0.008292,0.000069,,,,0,28615.23,89970.63,11.4072,17,746,1,0,RDO INTERNATIONAL
+Royal Society of Chemistry,United Kingdom,NGO,B,suspended,46,0.008292,0.000069,,,,0,28615.23,89970.63,11.4072,17,746,1,0,RDO INTERNATIONAL
+SSAB,Sweden,Materials,B,other,46,0.000075,0.000000,,,,0,26437.36,40016.38,10.5970,17,3,1,0,SSAB AB
+STIHL,Germany,Consumer Discretionary,B,suspended,46,0.002060,0.000004,,,,0,9952.04,17474.93,9.7685,8,36,1,0,STIHL HOLDING AG & CO. KG
+Safran,France,Industrials,B,suspended,78,0.000241,0.000000,,,,0,6785.35,27351.58,10.2165,21,7,2,0,SAFRAN
+Samsonite International,Luxembourg,Consumer Discretionary,B,suspended,22,,,,,,0,,,,13,106,1,0,MONDI PLC
+Samsung,South Korea,Information Technology,B,suspended,52,0.003955,0.000016,,,,0,13223.07,27815.66,10.2334,9,110,1,0,"SAMSUNG SDS CO.,LTD."
+Sandvik,Sweden,Industrials,B,suspended,72,0.000347,0.000000,,,,0,6169.85,37438.49,10.5305,10,13,1,0,SAP SE
+Sardina,Croatia,Consumer Staples,B,suspended,46,0.001943,0.000004,,,,0,796.22,4117.62,8.3230,7,8,1,0,SAUR
+Scandinavian Tobacco,Denmark,Consumer Staples,B,suspended,55,0.002042,0.000004,,,,0,13748.57,27641.08,10.2271,21,292,6,0,ACCOR
+Scania,Sweden,Industrials,B,suspended,68,0.010117,0.000102,,,,0,131.88,197.68,5.2866,16,2,1,0,NISA INTERNATIONAL CORPORATION
+Schwarz Group,Germany,Consumer Staples,B,suspended,46,0.000046,0.000000,,,,0,14087.39,21884.98,9.9936,18,1,1,0,ROHDE & SCHWARZ GMBH & CO. KOMMANDITGESELLSCHAFT
+Sennheiser,Germany,Information Technology,B,suspended,46,0.002836,0.000008,,,,0,5472.08,9168.73,9.1236,16,26,1,0,SENNHEISER HOLDING SE & CO. KG
+Sharp Group,Japan,Information Technology,B,suspended,46,0.001417,0.000002,,,Completed,1,2868.71,11294.80,9.3321,15,16,1,0,SHARP CORPORATION
+Sherwin Williams,United States,Industrials,B,suspended,46,,,,,,0,1527.72,1779.42,7.4840,18,,1,0,SHERWIN WILLIAMS COMPANY (THE)
+Shiseido,Japan,Consumer Staples,B,suspended,46,0.001603,0.000003,,,,0,46123.56,139084.93,11.8428,15,223,1,0,SHISEIDO COMPANY LIMITED
+Siemens Energy AG,Germany,Industrials,B,sold,46,,,,,,0,21223.24,244400.37,12.4066,2,,2,0,SIEMENS ENERGY AG
+Sigma Group,Czech Republic,Industrials,B,suspended,10,,,,,,0,-2384.11,2259.62,7.7230,4,,1,0,KKR SIGMA AGGREGATOR LP
+Simba Dickie Group,Germany,Consumer Discretionary,B,suspended,24,0.005523,0.000031,,,,0,7271.29,7423.62,8.9124,14,41,1,5,DIC CORPORATION
+Skytrax,United Kingdom,NGO,B,suspended,78,0.000608,0.000000,,,,0,2003.82,3762.86,8.2329,7,7,2,0,SEKTRA LIMITED
+Smartway Pharmaceuticals,United Kingdom,Health Care,B,suspended,46,0.002925,0.000009,,,,0,3633.77,15040.33,9.6185,19,44,1,0,CAL GMBH
+Sodeca,Spain,Industrials,B,other,33,0.328531,0.107933,,,,0,231.58,292.21,5.6775,7,96,1,0,SBO AG
+Solvay,Belgium,Materials,B,suspended,33,,,,,,0,-7.24,19.07,2.9483,6,,1,0,AKTSIONERNOE OBSHCHESTVO FINANSOVAYA KOMPANIYA AMO
+SonoSim,United States,Health Care,B,suspended,60,0.010881,0.000118,,,,0,183.81,183.81,5.2139,7,2,1,0,SONY GROUP CORPORATION
+Sony,Japan,Consumer Discretionary,B,suspended,60,0.010881,0.000118,,,,0,183.81,183.81,5.2139,7,2,1,0,SONY GROUP CORPORATION
+Sportradar,Switzerland,Consumer Discretionary,B,suspended,63,,,,,,0,,,,12,,1,0,SNPO LIMITED
+Spotify,Sweden,Communication Services,B,suspended,63,,,,,,0,,,,12,,1,0,SNPO LIMITED
+SriLankan Airlines,Sri Lanka,Industrials,B,suspended,25,,,,,,0,5432.75,91630.81,11.4255,13,107,4,0,SILGAN HOLDINGS INC
+Stellantis,Netherlands,Consumer Discretionary,B,suspended,29,0.001789,0.000003,,,,0,137703.54,489526.38,13.1012,13,796,3,0,STELLANTIS N.V.
+Storytel,Sweden,Communication Services,B,suspended,58,0.042891,0.001840,,,,0,2238.85,5548.96,8.6214,8,238,1,0,STORYTEL AB
+Subaru,Japan,Consumer Discretionary,B,suspended,64,,,,,,0,,,,,,2,8,LARUE LIMITED
+Sumitomo Group,Japan,Financials,B,other,46,0.001884,0.000004,,,,0,13917.70,54101.74,10.8986,15,64,6,0,SUMITOMO CORPORATION
+Supercell,Finland,Information Technology,B,other,27,,,,,,0,,,,12,,1,0,SUPER-CAPACITOR LIMITED
+Swagelok,United States,Industrials,B,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Swarovski,Liechtenstein,Consumer Discretionary,B,suspended,46,0.002083,0.000004,,,,0,10143.70,12484.57,9.4322,20,26,1,0,D. SWAROVSKI KG
+Swatch,Switzerland,Consumer Discretionary,B,suspended,46,0.000687,0.000000,,,,0,101551.45,117961.37,11.6781,17,81,1,0,THE SWATCH GROUP LTD.
+Synopsys,United States,Information Technology,B,suspended,62,0.000066,0.000000,,,,0,1312.26,18062.61,9.8016,11,2,2,4,"SYNOPSYS, INC."
+Systemair,Sweden,Industrials,B,suspended,46,0.005080,0.000026,,,,0,17684.10,34474.05,10.4480,12,183,3,0,SYSTEMAIR AB
+T Machinery,Czech Republic,Industrials,B,suspended,46,0.013681,0.000187,,,,0,-223.13,584.77,6.3712,18,8,1,0,UNITED MACHINERY AG
+TTC Holding,Czech Republic,Real Estate,B,suspended,46,0.025273,0.000639,,,Completed,1,-1053.73,2413.67,7.7889,11,61,1,0,TTC S.R.L.
+Tadano,Japan,Industrials,B,other,68,0.000093,0.000000,,,,0,8894.02,10785.13,9.2859,18,1,1,0,ANOR HOLDINGS LIMITED
+Take-Two Interactive,United States,Communication Services,B,suspended,46,0.026427,0.000698,,,,0,574.55,1135.21,7.0346,11,30,1,0,"NUTRACTIVE, LLC"
+Talgo,Spain,Industrials,B,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Tata Motors,India,Consumer Discretionary,B,suspended,71,0.172293,0.029685,,,,0,167.07,203.14,5.3139,11,35,1,0,RSK GROUP LIMITED
+Tendam,Spain,Consumer Discretionary,B,suspended,46,0.052086,0.002713,,,,0,281.10,806.35,6.6925,11,42,1,0,MR NICOLA VENDRAME
+Thales,France,Industrials,B,suspended,73,0.001858,0.000003,,,,0,177.99,538.25,6.2883,11,1,1,0,THALES
+The Navigator Company,Portugal,Materials,B,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Thermo Fisher,United States,Health Care,B,suspended,52,0.000670,0.000000,,,,0,57407.12,64712.22,11.0777,12,219,2,0,THERMO FISHER SCIENTIFIC INC.
+TikTok,United States,Communication Services,B,suspended,74,0.004425,0.000020,,,,0,441.40,451.98,6.1136,9,2,1,0,MRS DANA MARINA TINKOKA
+Timken,United States,Industrials,B,suspended,30,0.003707,0.000014,,,,0,-3282.31,22119.58,10.0042,7,82,1,4,THE TIMKEN COMPANY
+TomTom,Netherlands,Information Technology,B,sold,71,0.002273,0.000005,,,,0,2071.71,3708.74,8.2184,16,5,2,0,TOMTOM N.V.
+Torm,Denmark,Industrials,B,suspended,25,0.028915,0.000836,,,,0,-4269.46,1002.95,6.9107,17,29,1,0,TORMAX EAST AG IN LIQUIDATION
+Triumph,Switzerland,Consumer Discretionary,B,suspended,68,0.005852,0.000034,,,,0,13378.90,39815.42,10.5920,17,233,1,0,TRUMPF SE + CO. KG
+Twin Disc,United States,Industrials,B,suspended,68,0.000171,0.000000,,,,0,1512.88,70076.90,11.1573,21,12,1,0,OTAWI HOLDINGS LIMITED
+Twitter,United States,Communication Services,B,suspended,33,0.000125,0.000000,,,,0,2604.82,8010.27,8.9885,9,1,1,0,ITT INC.
+UL,United States,Industrials,B,suspended,52,0.001164,0.000001,,,Completed,1,250.28,859.28,6.7561,6,1,1,0,STULIANOU ARTEMIS
+Ubisoft,France,Information Technology,B,suspended,46,0.004663,0.000022,,,,0,726.76,5576.01,8.6262,8,26,1,0,UBISOFT ENTERTAINMENT
+UiPath,United States,Information Technology,B,suspended,61,0.018583,0.000345,,,,0,-568.12,968.60,6.8759,16,18,1,6,IPTP HOLDING PLC
+Under Armour,United States,Consumer Discretionary,B,suspended,62,,,,,,0,-4.68,10.00,2.3027,5,,1,4,OUN GMBH
+Uniqlo/Fast Retailing,Japan,Consumer Discretionary,B,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Universal Music Group,Netherlands,Consumer Discretionary,B,sold,59,0.000343,0.000000,,,,0,16497.03,20426.50,9.9246,15,7,1,0,UNIVERSAL MUSIC GROUP N.V.
+Upwork,United States,Industrials,B,suspended,71,0.172293,0.029685,,,,0,167.07,203.14,5.3139,11,35,1,0,RSK GROUP LIMITED
+VF Corporation,United States,Consumer Discretionary,B,suspended,46,0.000485,0.000000,,,,0,46946.53,49442.49,10.8086,19,24,1,0,V.F. CORPORATION
+VMWare,United States,Information Technology,B,suspended,62,,,,,,0,-95.90,152.81,5.0292,7,,1,4,CROOTO SOFTWARE LTD
+Valero Energy,United States,Energy,B,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Vattenfall,Sweden,Utilities,B,other,20,0.003147,0.000010,,,,0,-3297.81,1271.23,7.1477,17,4,1,4,VEFA HOLDING SA
+Vesuvius,United Kingdom,Industrials,B,suspended,46,0.001602,0.000003,,,,0,7034.87,9362.49,9.1445,18,15,1,0,VESUVIUS PLC
+Victoria’s Secret,United States,Consumer Discretionary,B,suspended,47,,,,,,0,-805.92,264.90,5.5793,8,,1,0,EQT AB
+Viessmann,Germany,Industrials,B,suspended,46,,,,,,0,,,,,1,1,0,MR ALEKSEI VIDEMANN
+Vietnam Airlines,Vietnam,Industrials,B,suspended,71,0.000126,0.000000,,,,0,21548.23,51114.97,10.8418,10,7,4,0,LINDE GMBH
+Viking River Cruises,Switzerland,Consumer Discretionary,B,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Villeroy &amp; Boch,Germany,Consumer Discretionary,B,suspended,46,0.005815,0.000034,,,,0,-82.23,2751.30,7.9198,13,16,1,0,BO HOLDING AG
+Viva,Australia,Energy,B,suspended,79,,,,,,0,,,,1,35,1,0,ALMAVIVA TECHNOLOGIES S.R.L.
+Volkswagen,Germany,Consumer Discretionary,B,suspended,23,0.006695,0.000045,6.8443,131.80,Completed,1,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Volvo Cars,Sweden,Industrials,B,suspended,29,,,,,Completed,1,-4620.80,7899.85,8.9746,11,,1,0,TARS HOLDING AG
+WarnerMedia,United States,Communication Services,B,suspended,46,0.025168,0.000633,,,,0,570.92,3337.02,8.1128,13,89,3,0,"INTERMEDICA, INC."
+Waters Corporation,United States,Health Care,B,suspended,46,,,,,,0,387.44,8735.51,9.0752,4,,1,0,WATERSIDE FINANCIAL LTD
+WeTransfer,United States,Information Technology,B,suspended,63,0.268851,0.072281,,,,0,38.44,240.29,5.4819,7,33,2,0,GETTRANSFER LTD
+Western Union,United States,Information Technology,B,suspended,46,0.000716,0.000001,,,,0,7873.97,11178.62,9.3218,14,8,1,0,NIKON CORPORATION
+Wielton,Poland,Industrials,B,suspended,62,,,,,,0,-4.68,10.00,2.3027,5,,1,4,OUN GMBH
+William Grant &amp; Sons,United Kingdom,Consumer Staples,B,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Wimbledon,United Kingdom,NGO,B,other,62,,,,,,0,-4.68,10.00,2.3027,5,,1,4,OUN GMBH
+Wintershall Dea AG,Germany,Energy,B,sold,46,0.000666,0.000000,,,,0,1422.12,7511.49,8.9242,10,5,1,0,INTESS SA
+Wizz Air,Hungary,Industrials,B,suspended,55,0.000653,0.000000,,,,0,-62.40,8552.24,9.0539,18,5,2,0,IRB HOLDING AG
+Wolffkran,Switzerland,Industrials,B,suspended,28,0.000582,0.000000,,,,0,3119.05,8594.84,9.0589,4,5,1,0,WOLFFKRAN HOLDING AG
+World Boxing Council,Mexico,NGO,B,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+World Federation of Exchanges,United Kingdom,NGO,B,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Woseba,Poland,Consumer Staples,B,other,64,,,,,,0,,,,,1,1,8,B.S.A.
+Wrangler (Kontoor),United States,Consumer Discretionary,B,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Würth,Germany,Consumer Discretionary,B,suspended,46,,,,,,0,1102.51,4212.59,8.3458,4,22,3,0,ADOLF WÜRTH GMBH & CO. KG
+Yanmar,Japan,Consumer Discretionary,B,suspended,73,,,,,,0,-51.45,51.55,3.9426,4,,1,0,"KORDARO ZHAN-MARI, ZHAK, ALEKSANDR"
+ZHA,United Kingdom,Industrials,B,suspended,33,0.007189,0.000052,,,,0,238.33,278.20,5.6283,12,2,1,0,PERINOTTO DZHANKARLO
+Zegna Group,Italy,Consumer Discretionary,B,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+Zendesk,United States,Information Technology,B,suspended,46,,,,,,0,612.75,614.97,6.4216,10,,1,0,GSK PLC
+Zynga,United States,Communication Services,B,suspended,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.
+bunq.com,Netherlands,Financials,B,suspended,71,,,,,,0,,,,22,,1,0,AECOM
+d&amp;b audiotechnik,Germany,Consumer Discretionary,B,suspended,46,0.001496,0.000002,,,,0,43098.22,107717.35,11.5873,19,154,2,0,NIKE INC
+eDreams ODIGEO,Spain,Consumer Discretionary,B,other,23,0.006695,0.000045,,,,0,19256.96,34627.06,10.4524,18,271,2,0,G HOLDINGS INC.

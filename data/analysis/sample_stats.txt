@@ -1,0 +1,33 @@
+============================================================
+REGRESSION SAMPLE SUMMARY STATISTICS
+============================================================
+
+Sample sizes:
+  Total firms (matched Orbis-Yale): 899
+  With α (employee intensity): 709
+  With Y_i (exit payoff ratio): 16
+  With all controls: 836
+  FULL SPECIFICATION (α + Y_i + controls): 12
+
+α (employee intensity) distribution:
+  Mean: 0.285148
+  Median: 0.006695
+  P10: 0.000126
+  P90: 0.024059
+  Min: 0.000009
+  Max: 148.585202
+
+Y_i (exit payoff ratio) distribution:
+  Mean: 116.1987
+  Median: 16.6496
+  Min: 0.2670
+  Max: 649.7021
+
+Grade distribution:
+  Grade A: 473
+  Grade B: 426
+
+Sanctions exposure (instrument Z):
+  0 packages: 798
+  1-4 packages: 70
+  5-8 packages: 31
