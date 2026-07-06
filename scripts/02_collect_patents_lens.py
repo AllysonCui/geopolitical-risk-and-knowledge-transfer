@@ -29,6 +29,17 @@ try:
 except ImportError:
     raise SystemExit("requests not installed: pip install requests")
 
+# Load .env file from project root if it exists
+ENV_FILE = Path(__file__).parent.parent / ".env"
+if ENV_FILE.exists():
+    with open(ENV_FILE) as f:
+        for line in f:
+            line = line.strip()
+            if line and not line.startswith("#") and "=" in line:
+                key, _, val = line.partition("=")
+                val = val.strip().strip("'\"")
+                os.environ.setdefault(key.strip(), val)
+
 LENS_API_URL = "https://api.lens.org/patent/search"
 IN_FILE = Path(__file__).parent.parent / "data" / "collected" / "firms_exiters.csv"
 OUT_FILE = Path(__file__).parent.parent / "data" / "collected" / "patents_by_firm.csv"
