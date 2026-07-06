@@ -86,20 +86,19 @@ def main():
     # Filter to firms with α and controls
     sample = []
     for r in rows:
-        alpha = safe_float(r.get("alpha_emp_intensity"))
+        alpha = safe_float(r.get("alpha"))
         ln_a = safe_float(r.get("ln_assets"))
         yrs = safe_float(r.get("years_in_russia"))
         if alpha is not None and ln_a is not None and yrs is not None:
             sample.append(r)
 
+    n_both = sum(1 for r in sample if safe_float(r.get("alpha_pat_pctile")) is not None)
     results.append(f"\nSample with α + controls: N = {len(sample)}")
+    results.append(f"  With both α components (emp + patent): {n_both}")
+    results.append(f"  With employee intensity only: {len(sample) - n_both}")
 
-    # Construct variables
-    alpha_raw = np.array([float(r["alpha_emp_intensity"]) for r in sample])
-
-    # Winsorize and percentile-rank α
-    alpha_wins = winsorize(alpha_raw, pct=1)
-    alpha_pctile = percentile_rank(alpha_wins)
+    # α is already percentile-ranked in script 08
+    alpha_pctile = np.array([float(r["alpha"]) for r in sample])
     alpha_sq = alpha_pctile ** 2
 
     # Controls
