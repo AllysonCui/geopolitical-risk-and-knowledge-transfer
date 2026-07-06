@@ -55,6 +55,7 @@ def get_patent_count(company_name: str, token: str) -> dict:
     """
     headers = {
         "Authorization": f"Bearer {token}",
+        "x-lens-token": token,
         "Content-Type": "application/json",
     }
     # Search both applicant and owner fields; use phrase match for precision
@@ -95,7 +96,12 @@ def get_patent_count(company_name: str, token: str) -> dict:
         elif resp.status_code == 429:
             return {"patents_total": None, "api_status": "rate_limited"}
         else:
-            return {"patents_total": None, "api_status": f"http_{resp.status_code}"}
+            detail = ""
+            try:
+                detail = resp.text[:200]
+            except Exception:
+                pass
+            return {"patents_total": None, "api_status": f"http_{resp.status_code}", "detail": detail}
     except requests.RequestException as e:
         return {"patents_total": None, "api_status": f"error:{e}"}
 
@@ -115,6 +121,20 @@ def main():
             "Set LENS_API_TOKEN env var or pass --token YOUR_TOKEN\n"
             "Get a free token at https://www.lens.org/ (Profile > API & Bulk Data)"
         )
+
+    # Quick auth test before processing all firms
+    print(f"Token loaded (first 8 chars): {args.token[:8]}...")
+    print("Testing API connection with a sample query...")
+    test = get_patent_count("Apple", args.token)
+    if test["api_status"] != "ok":
+        detail = test.get("detail", "")
+        raise SystemExit(
+            f"API test failed: {test['api_status']}\n"
+            f"Response: {detail}\n"
+            "Check that your token is for the Patent Search API (not Scholarly).\n"
+            "Get a patent API token at: https://www.lens.org/lens/user/subscriptions"
+        )
+    print(f"  API test OK — Apple has {test['patents_total']} patents\n")
 
     firms = []
     with open(IN_FILE, encoding="utf-8") as f:
@@ -150,7 +170,10 @@ def main():
                 "api_status": result["api_status"],
             }
         )
+        detail = result.get("detail", "")
         print(f"{result['api_status']} | patents={result['patents_total']}")
+        if detail and result["api_status"] != "ok":
+            print(f"    → {detail}")
 
         if i < len(firms) - 1:
             time.sleep(REQUEST_DELAY_SEC)
