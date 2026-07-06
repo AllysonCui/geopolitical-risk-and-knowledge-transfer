@@ -1,0 +1,1049 @@
+name,country,industry,grade_latest,patents_total,api_status
+AAK,Sweden,Consumer Staples,A,796,ok
+AB InBev,Belgium,Consumer Staples,A,19,ok
+ABB,Switzerland,Industrials,A,106188,ok
+AECOM,United States,Industrials,A,986,ok
+AFRY,Sweden,Industrials,A,30,ok
+AG Barr,United Kingdom,Consumer Staples,A,0,ok
+AP7,Sweden,Financials,A,0,ok
+APG,Netherlands,Financials,A,697,ok
+AVL,Austria,Industrials,A,14859,ok
+Aarsleff,Danish,Industrials,A,186,ok
+Accenture,Ireland,Information Technology,A,15642,ok
+Accountor,Finland,Information Technology,A,0,ok
+Acerinox,Spain,Materials,A,66,ok
+Acronis,Switzerland,Information Technology,A,779,ok
+Adenza,United Kingdom,Information Technology,A,0,ok
+Aegon,Netherlands,Financials,A,13,ok
+AerCap,Ireland,Industrials,A,0,ok
+Agilent,United States,Information Technology,A,30522,ok
+Agrokoncernas,Lithuania,Industrials,A,0,ok
+Aimbridge | Interstate Hotels,United States,Consumer Discretionary,A,0,ok
+Air Lease,United States,Industrials,A,0,ok
+Air Liquide,France,Materials,A,46230,ok
+Air Products,United States,Materials,A,6555,ok
+AirBaltic,Latvia,Industrials,A,0,ok
+Akvelon,United States,Information Technology,A,0,ok
+Alcoa,United States,Materials,A,8317,ok
+Aldi,Germany,Consumer Staples,A,345,ok
+Allegro,Poland,Consumer Discretionary,A,5140,ok
+Allen &amp; Overy,United Kingdom,Industrials,A,0,ok
+AmRest,Spain,Consumer Discretionary,A,0,ok
+Amedia,Norway,Communication Services,A,55,ok
+American Airlines,United States,Industrials,A,282,ok
+Ametek,United States,Industrials,A,2142,ok
+Amsted Rail,United States,Industrials,A,1679,ok
+Amway,United States,Consumer Staples,A,809,ok
+Ansell,Australia,Industrials,A,1898,ok
+Arconic,United States,Materials,A,2125,ok
+Arendt &amp; Medernach,Luxembourg,Industrials,A,0,ok
+Arrival,United Kingdom,Consumer Discretionary,A,427,ok
+Asda,United Kingdom,Consumer Staples,A,133,ok
+Asics,Japan,Consumer Discretionary,A,3100,ok
+Aspo,Finland,Industrials,A,65,ok
+Assicurazioni Generali,Italy,Financials,A,0,ok
+Atos,France,Information Technology,A,1447,ok
+Atria,Finland,Consumer Staples,A,156,ok
+Autogrill,Italy,Consumer Discretionary,A,13,ok
+Avantor,United States,Health Care,A,597,ok
+Avaya,United States,Information Technology,A,11815,ok
+Avery Dennison,United States,Materials,A,14072,ok
+Avid,United States,Information Technology,A,2208,ok
+Aviva,United Kingdom,Financials,A,484,ok
+BASF SE,Germany,Materials,A,109699,ok
+BBDO,United States,Industrials,A,17,ok
+BSI,United Kingdom,Industrials,A,406,ok
+Badoo,United Kingdom,Industrials,A,7,ok
+Baker Botts,United States,Industrials,A,6,ok
+Baker Hughes,United States,Energy,A,64082,ok
+Baker McKenzie,United States,Industrials,A,6,ok
+Baker Tilly,United Kingdom,Financials,A,6,ok
+Bakoma,Poland,Consumer Staples,A,9,ok
+Ball Corporation,United States,Materials,A,836,ok
+BaseTrack,Estonia,Information Technology,A,0,ok
+Beam Suntory,Japan,Consumer Staples,A,1,ok
+Bellona,Norway,NGO,A,10,ok
+Bentley Systems,United States,Information Technology,A,411,ok
+Bestseller,Denmark,Consumer Discretionary,A,0,ok
+Bet356,United Kingdom,Consumer Discretionary,A,0,ok
+BioMar,Danish,Industrials,A,337,ok
+BlackRock,United States,Financials,A,301,ok
+Blockchain.com,Luxembourg,Information Technology,A,0,ok
+Bolt,Estonia,Information Technology,A,5472,ok
+Bonava,Sweden,Real Estate,A,0,ok
+Booking,United States,Consumer Discretionary,A,31,ok
+Boreo,Finland,Industrials,A,1,ok
+Bose,United States,Information Technology,A,11032,ok
+Boskalis,Netherlands,Industrials,A,312,ok
+Breitling SA,Switzerland,Consumer Discretionary,A,24,ok
+Bristol-Myers Squibb,United States,Health Care,A,49913,ok
+British American Tobacco,United Kingdom,Consumer Staples,A,14358,ok
+British Petroleum (BP),United Kingdom,Energy,A,0,ok
+British Standards Institution (BSI),United Kingdom,Industrials,A,0,ok
+Broadridge Financial Solutions,United States,Financials,A,109,ok
+Bruker,United States,Industrials,A,11863,ok
+Brunel,Netherlands,Industrials,A,1594,ok
+Bryan Cave,United States,Industrials,A,3,ok
+Bumble,United States,Communication Services,A,115,ok
+Bunge,United States,Consumer Staples,A,1940,ok
+CBC,Canada,Communication Services,A,472,ok
+CCC,Poland,Consumer Discretionary,A,262,ok
+CD Projekt,Poland,Communication Services,A,0,ok
+CERN,Switzerland,NGO,A,367,ok
+CFA Institute,United States,NGO,A,0,ok
+CMA CGM,France,Industrials,A,3,ok
+CMS,Germany,Industrials,A,5896,ok
+CRH,Ireland,Materials,A,369,ok
+Cadence,United States,Information Technology,A,4808,ok
+Calrec,United Kingdom,Consumer Discretionary,A,45,ok
+Canara,India,Financials,A,7,ok
+Canva,Australia,Information Technology,A,643,ok
+Cargotec,Finland,Industrials,A,982,ok
+Carlsberg,Denmark,Consumer Staples,A,1877,ok
+Carnival,United States,Consumer Discretionary,A,258,ok
+Caverion,Finland,Industrials,A,201,ok
+Centrica,United Kingdom,Utilities,A,271,ok
+Chanel,France,Consumer Discretionary,A,2146,ok
+Chapman Freeborn,United Kingdom,Industrials,A,0,ok
+Charles Schwab,United States,Financials,A,476,ok
+Ciech,Poland,Materials,A,59,ok
+Cisco,United States,Information Technology,A,67267,ok
+Citi,United States,Financials,A,189,ok
+Clarivate,United Kingdom,Industrials,A,0,ok
+Cleaves,Norway,Financials,A,31,ok
+Clifford Chance,United Kingdom,Industrials,A,0,ok
+Colliers,Canada,Real Estate,A,13,ok
+Columbus,Denmark,Information Technology,A,3923,ok
+Comarch,Poland,Information Technology,A,33,ok
+Commvault,United States,Information Technology,A,3589,ok
+Compass Group,United Kingdom,Consumer Staples,A,21,ok
+Compass Mining,United States,Financials,A,0,ok
+Coop,Switzerland,Financials,A,151074,ok
+Corteva,United States,Consumer Staples,A,6592,ok
+Coty,United States,Consumer Staples,A,2059,ok
+Covestro,Germany,Materials,A,16819,ok
+Cummins,United States,Industrials,A,26220,ok
+Currency.com,United Kingdom,Financials,A,0,ok
+Cushman &amp; Wakefield,United States,Real Estate,A,0,ok
+Cyfrowy Polsat,Poland,Communication Services,A,4,ok
+DDB,United States,Materials,A,21,ok
+DLA Piper,United States,Industrials,A,3,ok
+DMG Mori,Japan,Industrials,A,3587,ok
+DP Eurasia,Netherlands,Consumer Staples,A,0,ok
+DPD,Germany,Industrials,A,76,ok
+DWS,Germany,Financials,A,692,ok
+DXC Technology,United States,Information Technology,A,6,ok
+Daikin,Japan,Industrials,A,94340,ok
+Danfoss,Denmark,Industrials,A,28738,ok
+Dechert,United States,Industrials,A,65,ok
+Deezer,France,Communication Services,A,14,ok
+Deichmann,Germany,Consumer Discretionary,A,331,ok
+Dell,United States,Information Technology,A,42537,ok
+Deloitte,United States,Industrials,A,218,ok
+Delta Air Lines,United States,Industrials,A,100,ok
+Dentsu International,United Kingdom,Communication Services,A,0,ok
+Deugro,Germany,Industrials,A,0,ok
+Deutsche Bank,Germany,Financials,A,696,ok
+Deutsche Telekom,Germany,Communication Services,A,14043,ok
+Digicert,United States,Information Technology,A,325,ok
+Dino Polska,Poland,Consumer Staples,A,0,ok
+Docker,United States,Information Technology,A,86,ok
+Domino's Pizza,United States,Consumer Discretionary,A,12,ok
+Donaldson Company,United States,Industrials,A,2450,ok
+Dr. Oetker,Germany,Consumer Staples,A,11,ok
+Draftkings,United States,Consumer Discretionary,A,103,ok
+Duisburger Hafen,Germany,Industrials,A,6,ok
+ELA Container,Germany,Industrials,A,7,ok
+ELKO Group,Latvia,Information Technology,A,0,ok
+ENEOS,Japan,Energy,A,3191,ok
+EPAM,United States,Information Technology,A,10,ok
+EY,United States,Industrials,A,238,ok
+EarthDaily Analytics,United States,Industrials,A,34,ok
+Eastnine,Sweden,Industrials,A,0,ok
+Edeka,Germany,Consumer Staples,A,7,ok
+Ejot,Germany,Industrials,A,2023,ok
+Electronic Arts,United States,Communication Services,A,1628,ok
+Elisa Esports,Finland,NGO,A,0,ok
+Elopak,Norway,Materials,A,2582,ok
+Emerson Electric,United States,Industrials,A,10950,ok
+Endeavour Group,Australia,Consumer Staples,A,7,ok
+Enel,Italy,Utilities,A,1518,ok
+EnerSys,United States,Industrials,A,320,ok
+Energizer,United States,Industrials,A,2331,ok
+Eni,Italy,Energy,A,7566,ok
+Equinor,Norway,Energy,A,2612,ok
+Espersen,Denmark,Consumer Staples,A,101,ok
+Essity,,,A,6965,ok
+Etsy,United States,Consumer Discretionary,A,193,ok
+Euroins,Bulgaria,Financials,A,0,ok
+Euronet Worldwide,United States,Financials,A,76,ok
+Eurovision,United Kingdom,NGO,A,27,ok
+Eversheds Sutherland,United Kingdom,Industrials,A,1,ok
+Evonik,Germany,Materials,A,51070,ok
+Expedia,United States,Consumer Discretionary,A,320,ok
+Exxonmobil,United States,Energy,A,55186,ok
+FICO,United States,Information Technology,A,2704,ok
+FL Smidth,Denmark,Industrials,A,28,ok
+FMC Corporation,United States,Materials,A,3141,ok
+Fantasy Premier League,United Kingdom,Consumer Discretionary,A,0,ok
+Faurecia | Forvia,France,Consumer Discretionary,A,0,ok
+Fazer,Finland,Consumer Staples,A,275,ok
+Fennovoima,Finland,Energy,A,0,ok
+Fiskars,Finland,Consumer Discretionary,A,4061,ok
+Five9,United States,Information Technology,A,60,ok
+Flowserve,United States,Industrials,A,2275,ok
+Fonterra,New Zealand,Consumer Staples,A,1202,ok
+Ford,United States,Consumer Discretionary,A,191337,ok
+Formula One,United Kingdom,Communication Services,A,62,ok
+Fortum,Finland,Utilities,A,948,ok
+Freedom Holding,Kazakhstan,Financials,A,0,ok
+Freshfields,United Kingdom,Industrials,A,0,ok
+Fugro,Netherlands,Industrials,A,968,ok
+Fujifilm,Japan,Information Technology,A,202008,ok
+G2A,Netherlands,Communication Services,A,0,ok
+GC Rieber,Norway,Industrials,A,0,ok
+GM,United States,Consumer Discretionary,A,138019,ok
+GXO Logistics,United States,Industrials,A,0,ok
+Galp,Portugal,Energy,A,1,ok
+Game Insight,Lithuania,Consumer Discretionary,A,0,ok
+Gameloft,France,Information Technology,A,3,ok
+Garmin,United States,Consumer Discretionary,A,2228,ok
+Gaz-System,Poland,Utilities,A,8,ok
+Geberit,Switzerland,Industrials,A,4846,ok
+Georg Fischer,Switzerland,Industrials,A,2716,ok
+Gerry Weber,Germany,Consumer Discretionary,A,0,ok
+Gett,Israel,Industrials,A,84,ok
+Global Fashion Group,Luxembourg,Consumer Discretionary,A,0,ok
+Global Foundries,United States,Information Technology,A,249,ok
+GoDaddy,United States,Information Technology,A,5,ok
+Goodvalley,Denmark,Consumer Staples,A,0,ok
+Gowling,Canada,Industrials,A,9,ok
+Grant Thornton,United States,Industrials,A,14,ok
+Grid Dynamics,United States,Information Technology,A,2,ok
+Grundfos,Denmark,Industrials,A,4918,ok
+H&amp;M,Sweden,Consumer Discretionary,A,1,ok
+HP Enterprise (Independent from HP Inc.),United States,Information Technology,A,0,ok
+HP Inc.,United States,Information Technology,A,38,ok
+Halewood,United Kingdom,Consumer Staples,A,24,ok
+Halliburton,United States,Energy,A,98488,ok
+Halyk Bank,Kazakhstan,Financials,A,0,ok
+Hampidjan,Iceland,Industrials,A,247,ok
+Haniel,Germany,Materials,A,452,ok
+Hansgrohe,Germany,Consumer Discretionary,A,4041,ok
+Hard Rock Café,United States,Consumer Staples,A,0,ok
+Harvia,Finland,Consumer Discretionary,A,140,ok
+Hays plc,United Kingdom,Industrials,A,0,ok
+Hearst Communications,United States,Communication Services,A,1,ok
+Heidrick &amp; Struggles,United States,Industrials,A,0,ok
+Heineken,Netherlands,Consumer Staples,A,4619,ok
+Heinzmann,Germany,Industrials,A,560,ok
+Hempel,Denmark,Industrials,A,1490,ok
+Henkel,Germany,Consumer Staples,A,107275,ok
+Herbert Smith Freehills,Australia,Industrials,A,0,ok
+Hertz,United States,Consumer Discretionary,A,2105,ok
+Hesburger,Finland,Consumer Discretionary,A,0,ok
+Hogan Lovells,United Kingdom,Industrials,A,8,ok
+Holcim,Switzerland,Materials,A,2814,ok
+Home Credit,Czech Republic,Financials,A,1,ok
+Honeywell,United States,Industrials,A,131949,ok
+Hortex,Poland,Consumer Staples,A,14,ok
+Houthoff,Netherlands,Industrials,A,11,ok
+Huhtamaki,Finland,Materials,A,2528,ok
+Hypertherm Associates,Netherlands,Industrials,A,0,ok
+Hyve,United Kingdom,Consumer Discretionary,A,110,ok
+IBM,United States,Information Technology,A,521362,ok
+ID Logistics,France,Industrials,A,0,ok
+IDEXX Labs,United States,Health Care,A,0,ok
+IMAX,Canada,Consumer Discretionary,A,1503,ok
+IMCD,Netherlands,Industrials,A,2,ok
+IMI Plc,United Kingdom,Materials,A,15,ok
+ISS,Denmark,Industrials,A,590,ok
+Icosagen,Estonia,Industrials,A,71,ok
+Ikea,Sweden,Consumer Discretionary,A,2973,ok
+Imperial Brands,United Kingdom,Consumer Staples,A,0,ok
+InPost,Poland,Industrials,A,7,ok
+Inchcape,United Kingdom,Industrials,A,44,ok
+Incoff Aerospace,Slovakia,Industrials,A,0,ok
+Inditex,Spain,Consumer Discretionary,A,11,ok
+Infineon,Germany,Information Technology,A,104172,ok
+Insydium,United Kingdom,Industrials,A,0,ok
+Intercontinental Exchange,United States,Financials,A,323,ok
+Intercontinental Hotels (IHG),United Kingdom,Consumer Discretionary,A,0,ok
+International Biathlon Union,Austria,NGO,A,0,ok
+International Boxing Federation,France,NGO,A,0,ok
+International Cat Federation,Canada,NGO,A,0,ok
+International Cycling Union,United States,NGO,A,0,ok
+International Ice Hockey Federation,Switzerland,NGO,A,0,ok
+International Olympic Committee,Switzerland,NGO,A,0,ok
+International Paper,United States,Materials,A,2265,ok
+International Paralympic Committee,Germany,NGO,A,0,ok
+International Skating Union,Switzerland,NGO,A,0,ok
+International Weightlifting Federation,Switzerland,NGO,A,0,ok
+Interpublic Group,United States,Communication Services,A,0,ok
+Intracom Telecom,Greece,Communication Services,A,7,ok
+Iveco,Italy,Industrials,A,7921,ok
+J Sainsbury,United Kingdom,Consumer Staples,A,9,ok
+JD Sports,United Kingdom,Consumer Discretionary,A,0,ok
+JKX,United Kingdom,Energy,A,0,ok
+JLL,United States,Real Estate,A,35,ok
+JYSK,Denmark,Consumer Discretionary,A,71,ok
+Jabil,United States,Information Technology,A,2805,ok
+Jamie Oliver,United Kingdom,Consumer Staples,A,0,ok
+Jan de Nul,Luxembourg,Industrials,A,123,ok
+JetBrains,Czech Republic,Information Technology,A,0,ok
+John Wood Group,United Kingdom,Industrials,A,2,ok
+Johnson Matthey,United Kingdom,Materials,A,22576,ok
+Jotun,Norway,Materials,A,786,ok
+Jägermeister,Germany,Consumer Staples,A,1,ok
+KION Group,Germany,Industrials,A,2,ok
+KLP,Norway,Financials,A,42,ok
+KPMG,United States,Industrials,A,292,ok
+Kalnapilis-Taurus,Lithuania,Consumer Staples,A,0,ok
+Kamstrup,Denmark,Utilities,A,1004,ok
+Kearney,United States,Industrials,A,3232,ok
+Kelly,United States,Industrials,A,21252,ok
+Kemira,Finland,Consumer Discretionary,A,10787,ok
+Kennametal,United States,Industrials,A,13048,ok
+Kennedys,United States,Industrials,A,13,ok
+Kesko,Finland,Consumer Staples,A,14,ok
+Kiilto,Finland,Materials,A,38,ok
+Kingspan,Ireland,Industrials,A,1871,ok
+Kinross Gold,Canada,Materials,A,0,ok
+Knorr-Bremse,Germany,Industrials,A,31145,ok
+Koch Industries,United States,Industrials,A,15,ok
+Kofax,United States,Information Technology,A,590,ok
+Koskisen,Finland,Industrials,A,92,ok
+Krispy Kreme,United States,Consumer Discretionary,A,5,ok
+L'Occitane,France,Consumer Discretionary,A,7,ok
+LVMH,France,Consumer Discretionary,A,3757,ok
+Lamb Weston,United States,Consumer Staples,A,768,ok
+Latham &amp; Watkins,United States,Industrials,A,0,ok
+Lear Corporation,United States,Consumer Discretionary,A,4831,ok
+Legrand,France,Industrials,A,11811,ok
+Leica Camera AG,Germany,Information Technology,A,680,ok
+Leptos Estates,Cyprus,Real Estate,A,0,ok
+Lifan,China,Consumer Discretionary,A,6593,ok
+Lincoln Electric,United States,Industrials,A,1294,ok
+Lindab,Sweden,Industrials,A,1114,ok
+Lindstrom Group,Finland,Consumer Discretionary,A,0,ok
+Lindt-Sprungli,Switzerland,Consumer Staples,A,13,ok
+Linklaters,United Kingdom,Industrials,A,3,ok
+Lloyd's Register,United Kingdom,Industrials,A,11,ok
+Logitech,Switzerland,Information Technology,A,3224,ok
+London Stock Exchange Group,United Kingdom,Financials,A,1,ok
+Lufthansa,Germany,Industrials,A,2129,ok
+Luxoft,Switzerland,Information Technology,A,0,ok
+LyondellBasell,Netherlands,Materials,A,573,ok
+MAN,Germany,Industrials,A,397674,ok
+MSCI,United States,Financials,A,3,ok
+MSU S.A.,Poland,Consumer Discretionary,A,0,ok
+Maersk,Denmark,Industrials,A,2436,ok
+Makrochem SA,Poland,Industrials,A,0,ok
+Mannheimer Swartling,Sweden,Industrials,A,0,ok
+Mantsinen,Finland,Industrials,A,84,ok
+Marsh McLennan,United States,Financials,A,5,ok
+Marugame,Japan,Consumer Staples,A,82,ok
+Maxima,Lithuania,Consumer Discretionary,A,297,ok
+Mayr-Melnhof,United Kingdom,Materials,A,720,ok
+McCain Foods,Canada,Consumer Staples,A,543,ok
+McDonald's,United States,Consumer Discretionary,A,23,ok
+McKinsey,United States,Industrials,A,148,ok
+Mercedes-Benz,Germany,Consumer Discretionary,A,21702,ok
+MessageBird,Netherlands,Information Technology,A,21,ok
+Mondi,United Kingdom,Materials,A,2318,ok
+Monroe Energy,United States,Energy,A,0,ok
+Moog Inc.,United States,Industrials,A,2295,ok
+Moose Toys,Australia,Consumer Discretionary,A,11,ok
+Morgan Advanced Materials,United Kingdom,Industrials,A,57,ok
+Morgan Lewis,United States,Industrials,A,44,ok
+Morrisons,United Kingdom,Consumer Staples,A,16,ok
+NCAB Group AB,Sweden,Industrials,A,0,ok
+NTT Data,Japan,Information Technology,A,3938,ok
+Nasdaq,United States,Financials,A,1458,ok
+Naspers,South Africa,Consumer Discretionary,A,0,ok
+Nemetschek Group,Germany,Information Technology,A,0,ok
+Nemiroff,Ukraine,Consumer Staples,A,137,ok
+Netflix,United States,Communication Services,A,2965,ok
+Netscout,United States,Information Technology,A,892,ok
+Next,United Kingdom,Consumer Discretionary,A,6430,ok
+Nike,United States,Consumer Discretionary,A,47694,ok
+Nissan,Japan,Consumer Discretionary,A,221751,ok
+Nokia,Finland,Information Technology,A,211519,ok
+Nokian Tyres,Finland,Consumer Discretionary,A,161,ok
+Nordea Bank,Finland,Financials,A,14,ok
+Norton Rose Fulbright,United Kingdom,Industrials,A,7,ok
+Norwegian Cruise Lines,United States,Consumer Discretionary,A,0,ok
+OBI,Germany,Consumer Discretionary,A,820,ok
+Oceania Cruises,United States,Consumer Discretionary,A,0,ok
+Oerlikon,Switzerland,Materials,A,25546,ok
+Olam Group,Singapore,Consumer Staples,A,0,ok
+Omnicom Media Group,United States,Communication Services,A,2,ok
+Omron,Japan,Information Technology,A,90516,ok
+OneWeb,United States,Communication Services,A,29,ok
+Orica,Australia,Industrials,A,2302,ok
+Orkla,Norway,Consumer Staples,A,301,ok
+Orlen Lietuva,Poland,Energy,A,0,ok
+Orsted,Denmark,Utilities,A,53,ok
+Otis Worldwide,United States,Industrials,A,0,ok
+Owens Corning,United States,Industrials,A,16372,ok
+PFZW,Netherlands,Financials,A,0,ok
+PGL Esports,United States,Communication Services,A,0,ok
+PHX,United States,Energy,A,9,ok
+PKO BP,Poland,Financials,A,0,ok
+PME pensioenfonds,Netherlands,Financials,A,0,ok
+PZU SA,Poland,Financials,A,0,ok
+Pandora,Denmark,Consumer Discretionary,A,577,ok
+Parker Hannifin,United States,Industrials,A,12101,ok
+Paul Smith,United Kingdom,Consumer Discretionary,A,40,ok
+Paulig,Finland,Consumer Staples,A,80,ok
+Paysera,Lithuania,Financials,A,0,ok
+Pensioenfonds Detailhandel,Netherlands,Financials,A,0,ok
+Pentair,United States,Industrials,A,2802,ok
+Petro,Austria,Energy,A,10545,ok
+Petrofac,United Kingdom,Energy,A,54,ok
+Pixabay,Germany,Consumer Discretionary,A,0,ok
+Playrix,Ireland,Consumer Discretionary,A,0,ok
+Playtika,Israel,Information Technology,A,41,ok
+Polskie Górnictwo Naftowe i Gazownictwo SA,Poland,Energy,A,0,ok
+Ponsse PLC,Finland,Industrials,A,0,ok
+Postnord,Norway,Utilities,A,15,ok
+Primo Water,United States,Consumer Staples,A,26,ok
+Princess Cruises,United States,Consumer Discretionary,A,0,ok
+Prio,Portugal,Energy,A,148,ok
+Publicis Groupe,France,Communication Services,A,6,ok
+Pure Storage,United States,Information Technology,A,6255,ok
+PwC,United States,Industrials,A,279,ok
+Qantas Airlines,Australia,Industrials,A,0,ok
+R&amp;A,United States,Industrials,A,5,ok
+RWS,United Kingdom,Industrials,A,222,ok
+Raisio,United States,Consumer Staples,A,1248,ok
+Rational,Germany,Consumer Discretionary,A,2966,ok
+Red Hat,United States,Information Technology,A,9944,ok
+Reface,Ukraine,Information Technology,A,7,ok
+Refinitiv,United Kingdom,Financials,A,493,ok
+Regent Seven Seas Cruises,United States,Consumer Discretionary,A,0,ok
+Rehau,Switzerland,Consumer Discretionary,A,8974,ok
+Renault,France,Consumer Discretionary,A,73221,ok
+Repsol,Spain,Energy,A,1895,ok
+Resbud,Estonia,Industrials,A,0,ok
+Rewe,Germany,Consumer Discretionary,A,16,ok
+Rimi,Latvia,Consumer Discretionary,A,35,ok
+Rio Tinto,Australia,Materials,A,1915,ok
+Rocket Lawyer,United States,Information Technology,A,23,ok
+Roku,United States,Communication Services,A,3225,ok
+Roland Berger,Germany,Industrials,A,0,ok
+Royal London,United Kingdom,Financials,A,17,ok
+Royal Swinkels Family Brewers,Netherlands,Consumer Staples,A,0,ok
+S Group (Suomen Osuuskauppojen Keskuskunta),Finland,Consumer Staples,A,0,ok
+S&amp;P 500 [S&amp;P Dow Jones Indices],United States,Financials,A,0,ok
+SKF,Sweden,Industrials,A,43926,ok
+SMAY,Poland,Industrials,A,47,ok
+SRV,Finland,Industrials,A,9,ok
+Salesforce,United States,Industrials,A,12270,ok
+Sarantis Group,Greece,Consumer Staples,A,0,ok
+Savills,United Kingdom,Real Estate,A,0,ok
+Schneider Electric,France,Industrials,A,34758,ok
+Senior PLC,United Kingdom,Industrials,A,0,ok
+Sidley Austin,United States,Industrials,A,7,ok
+Siemens,Germany,Industrials,A,820630,ok
+Slack,United States,Information Technology,A,1873,ok
+Smurfit Kappa,Ireland,Materials,A,1133,ok
+Societe Generale,France,Financials,A,512,ok
+Sodexo,France,Industrials,A,8,ok
+SoftwareOne,Switzerland,Information Technology,A,0,ok
+Sonos,United States,Consumer Discretionary,A,6143,ok
+Spin Master,Canada,Consumer Discretionary,A,1910,ok
+Squire Patton Boggs,United States,Industrials,A,0,ok
+Stanley Black &amp; Decker,United States,Industrials,A,3,ok
+Starbucks,United States,Consumer Discretionary,A,1410,ok
+State Street,United States,Financials,A,409,ok
+Stora Enso,Finland,Materials,A,7700,ok
+Storebrand,Norway,Financials,A,0,ok
+Strabag,Austria,Industrials,A,939,ok
+Strava,United States,Information Technology,A,79,ok
+Sulzer,Switzerland,Industrials,A,43127,ok
+Svenska Handelsbanken,Sweden,Financials,A,17,ok
+Sylvamo,United States,Materials,A,0,ok
+Systembolaget,Sweden,Consumer Discretionary,A,0,ok
+Sæplast,Iceland,Materials,A,2,ok
+TDZ Turn,Czech Republic,Industrials,A,0,ok
+TJ Maxx,United States,Consumer Discretionary,A,0,ok
+TUI,Germany,Consumer Discretionary,A,156,ok
+Tata Steel,India,Materials,A,3051,ok
+Tchibo,Germany,Consumer Staples,A,634,ok
+TeamViewer,Germany,Information Technology,A,37,ok
+Technip Energies,France,Energy,A,911,ok
+Teknos,Finland,Industrials,A,40,ok
+Teknotherm Marine HVAC sp. z o.o.,Poland,Industrials,A,0,ok
+Teleperformance,France,Communication Services,A,88,ok
+Teradata,United States,Information Technology,A,1801,ok
+Terex Corporation,United States,Industrials,A,119,ok
+Tetra Pak,Sweden,Industrials,A,8045,ok
+Tietoevry,Finland,Information Technology,A,0,ok
+Tom Ford,United States,Consumer Discretionary,A,8,ok
+Topsoe,Denmark,Energy,A,11048,ok
+Toyota,Japan,Consumer Discretionary,A,547778,ok
+Trane Technologies,Ireland,Industrials,A,11,ok
+TransferGo,United Kingdom,Financials,A,1,ok
+Trimble,United States,Information Technology,A,6468,ok
+TripAdvisor,United States,Communication Services,A,7,ok
+Triumph Motorcycles,United Kingdom,Consumer Discretionary,A,14,ok
+Tunnock's,United Kingdom,Consumer Staples,A,0,ok
+UEFA,Switzerland,NGO,A,8,ok
+Uber,United States,Information Technology,A,5025,ok
+Umbro,United Kingdom,Consumer Discretionary,A,130,ok
+Unilever,United Kingdom,Consumer Staples,A,114884,ok
+United Airlines,United States,Industrials,A,144,ok
+United Internet Group,Germany,Information Technology,A,0,ok
+Universal,United States,Communication Services,A,79766,ok
+Uponor,Finland,Industrials,A,4638,ok
+VTG,Germany,Industrials,A,80,ok
+Vaillant Group,Germany,Industrials,A,145,ok
+Valeo,France,Consumer Discretionary,A,115064,ok
+Valio,Finland,Consumer Staples,A,1850,ok
+Valmet,Finland,Industrials,A,28508,ok
+Van Oord,Netherlands,Industrials,A,143,ok
+VanEck,United States,Financials,A,18,ok
+Vanguard,United States,Financials,A,8090,ok
+Velux,Denmark,Consumer Discretionary,A,461,ok
+Veon,Netherlands,Communication Services,A,40,ok
+Vestas,Denmark,Energy,A,15081,ok
+Vianor,Finland,Consumer Discretionary,A,13,ok
+Vinmonopolet,Norway,Consumer Staples,A,0,ok
+Visteon,United States,Consumer Discretionary,A,14834,ok
+Vodafone,United Kingdom,Information Technology,A,9327,ok
+Volaris Group,Canada,Information Technology,A,0,ok
+Volfas Engelman,Lithuania,Consumer Staples,A,0,ok
+Vorwerk Group,,,A,0,ok
+WIKA,Germany,Industrials,A,839,ok
+WPP PLC,United Kingdom,Communication Services,A,0,ok
+Waitrose,United Kingdom,Consumer Staples,A,10,ok
+Walker's Shortbread,United Kingdom,Consumer Staples,A,0,ok
+Wallenius Wilhelmsen,Norway,Consumer Discretionary,A,2,ok
+Wargaming,Belarus,Consumer Discretionary,A,88,ok
+Wartsila,Finland,Industrials,A,913,ok
+WePlay,United States,Consumer Discretionary,A,8,ok
+Wear Medicine,Poland,Consumer Discretionary,A,0,ok
+Weir Group,United Kingdom,Industrials,A,74,ok
+Wex Inc.,United States,Information Technology,A,8,ok
+White &amp; Case,United States,Industrials,A,0,ok
+Wienerberger,Austria,Industrials,A,1186,ok
+Willis Towers Watson,United Kingdom,Financials,A,0,ok
+Windstar Cruises,United States,Consumer Discretionary,A,0,ok
+Winston &amp; Strawn,United States,Industrials,A,0,ok
+Women's Tennis Association,United States,NGO,A,0,ok
+World Athletics Council,United States,NGO,A,0,ok
+World Boxing Association,Panama,NGO,A,0,ok
+World Boxing Organization,United States,NGO,A,0,ok
+World Rowing Federation,United States,NGO,A,0,ok
+World Rugby Union,Ireland,NGO,A,0,ok
+YIT,Finland,Industrials,A,310,ok
+ZET Chemie,Germany,Materials,A,0,ok
+ZF Friedrichshafen,Germany,Consumer Discretionary,A,12269,ok
+Zepz,United Kingdom,Financials,A,0,ok
+Zott,Germany,Consumer Staples,A,140,ok
+Zurich Insurance Group,Switzerland,Financials,A,0,ok
+Zwack,Hungary,Consumer Staples,A,77,ok
+edX (2U),United States,Information Technology,A,0,ok
+3M,United States,Industrials,B,129473,ok
+ACCA,United Kingdom,Industrials,B,74,ok
+ADEO | Leroy Merlin,France,Consumer Discretionary,B,0,ok
+ADP,United States,Information Technology,B,3735,ok
+AICPA,United States,Industrials,B,0,ok
+AL-KO Vehicle Technology,Germany,Consumer Discretionary,B,0,ok
+AM Best,United States,Information Technology,B,0,ok
+AMD,United States,Information Technology,B,1276,ok
+ARM,United Kingdom,Information Technology,B,11406,ok
+AXA,France,Financials,B,208,ok
+AXA Investments Managers,France,Financials,B,0,ok
+Abrdn,United Kingdom,Financials,B,6,ok
+Acer,Taiwan,Information Technology,B,22931,ok
+Acne Studios,Sweden,Consumer Discretionary,B,0,ok
+Adamed,Poland,Health Care,B,820,ok
+Air Astana,Kazakhstan,Industrials,B,0,ok
+Air France,France,Industrials,B,139,ok
+Air Malta,Malta,Industrials,B,0,ok
+Airbnb,United States,Consumer Discretionary,B,2385,ok
+Akamai,United States,Information Technology,B,2220,ok
+Akin Gump,United States,Industrials,B,3,ok
+Alaska Airlines,United States,Industrials,B,40,ok
+Alimentation Couche-Tard,Canada,Consumer Staples,B,5,ok
+Alstom,France,Industrials,B,42500,ok
+Amazon,United States,Consumer Discretionary,B,40607,ok
+Ambarella,United States,Information Technology,B,476,ok
+Amdocs,United States,Information Technology,B,1020,ok
+Amer Sports,Finland,Consumer Discretionary,B,353,ok
+American Express,United States,Financials,B,5277,ok
+Amica,Poland,Consumer Discretionary,B,230,ok
+Analog Devices,United States,Information Technology,B,22021,ok
+Ansys,United States,Information Technology,B,680,ok
+Aon PLC,United Kingdom,Financials,B,0,ok
+Apple,United States,Information Technology,B,173050,ok
+Arla,Denmark,Consumer Staples,B,1839,ok
+Asian Infrastructure Investment Bank,China,Financials,B,0,ok
+Asos,United Kingdom,Consumer Discretionary,B,16,ok
+Association of International Certified Professional Accountants,United States,Industrials,B,0,ok
+Aston Martin,United Kingdom,Consumer Discretionary,B,434,ok
+Asus,Taiwan,Information Technology,B,674,ok
+Atlassian,Australia,Information Technology,B,1598,ok
+Audi,Germany,Consumer Discretionary,B,59802,ok
+Australia Post,Australia,Communication Services,B,7,ok
+Austrian Airlines,Austria,Industrials,B,0,ok
+Autodesk,United States,Information Technology,B,3821,ok
+Avast,Czech Republic,Information Technology,B,388,ok
+Axis Communication,Sweden,Consumer Discretionary,B,1,ok
+Azerbaijan Airlines,Azerbaijan,Industrials,B,0,ok
+B Lab,United States,NGO,B,557,ok
+BCG,United States,Industrials,B,134,ok
+BMC,United States,Information Technology,B,3460,ok
+BMW,Germany,Consumer Discretionary,B,2041,ok
+BNP Paribas,France,Financials,B,106,ok
+BUDVAR Centrum Sp. z.o.o.,Poland,Industrials,B,0,ok
+Badminton World Federation,Malaysia,NGO,B,10,ok
+Bain,United States,Industrials,B,1562,ok
+Bang &amp; Olufsen,Denmark,Information Technology,B,1,ok
+Bank of China,China,Financials,B,36522,ok
+Bentley,United States,Consumer Discretionary,B,6218,ok
+Big Fish Games,United States,Communication Services,B,54,ok
+Bitdefender,Romania,Information Technology,B,893,ok
+BlackBerry,Canada,Information Technology,B,25939,ok
+Boeing,United States,Industrials,B,97025,ok
+Bombardier,Canada,Industrials,B,15463,ok
+Boohoo Group,United Kingdom,Consumer Discretionary,B,0,ok
+Boosteroid Cloud Gaming,United Arab Emirates,Information Technology,B,0,ok
+Boryszew,Poland,Materials,B,23,ok
+Brav,Norway,Consumer Discretionary,B,113,ok
+Bridgestone Tire,Japan,Consumer Discretionary,B,4468,ok
+Brinks,United States,Consumer Discretionary,B,413,ok
+British Airways,United Kingdom,Industrials,B,323,ok
+Brown-Forman,United States,Consumer Staples,B,76,ok
+Brunico Communications,Canada,Communication Services,B,0,ok
+Budweiser Budvar,Czech Republic,Consumer Staples,B,2,ok
+Bulgaria Air,Bulgaria,Industrials,B,0,ok
+Bulgarian Postbank,Bulgaria,Financials,B,0,ok
+Burberry,United Kingdom,Consumer Discretionary,B,147,ok
+Buta Airways,Azerbaijan,Industrials,B,0,ok
+CBRE,United States,Real Estate,B,48,ok
+CME Group,United States,Financials,B,177,ok
+CNH Industrial,United Kingdom,Industrials,B,5615,ok
+Callaway Golf,United States,Consumer Discretionary,B,5450,ok
+Canada Goose,Canada,Consumer Discretionary,B,54,ok
+Canadian Tire,Canada,Consumer Discretionary,B,201,ok
+Canon,Japan,Information Technology,B,746583,ok
+Canonical,United Kingdom,Information Technology,B,44,ok
+Capgemini,France,Information Technology,B,42,ok
+Cargolux,Luxembourg,Industrials,B,6,ok
+Ceratizit,Luxembourg,Industrials,B,1240,ok
+Chemours,United States,Materials,B,6707,ok
+Chevron,United States,Energy,B,47342,ok
+Chipperfield,United Kingdom,Industrials,B,162,ok
+Chopard,Switzerland,Consumer Discretionary,B,401,ok
+Cie Automotives,Spain,Consumer Discretionary,B,0,ok
+Ciena,United States,Communication Services,B,6520,ok
+Citrix,United States,Information Technology,B,10666,ok
+Cleary Gottlieb,United States,Industrials,B,0,ok
+Clorox,United States,Consumer Staples,B,4372,ok
+Clutch,United States,Industrials,B,5028,ok
+Cogent Communications,United States,Communication Services,B,0,ok
+Columbia Sportswear,United States,Consumer Discretionary,B,672,ok
+Commerzbank,Germany,Financials,B,44,ok
+Conde Nast,United States,Communication Services,B,1,ok
+Conformis,United States,Health Care,B,806,ok
+Costco,United States,Consumer Discretionary,B,11,ok
+Coupa,United States,Information Technology,B,281,ok
+Coursera,United States,Consumer Discretionary,B,68,ok
+Credit Agricole,France,Financials,B,25,ok
+Criteo,France,Consumer Discretionary,B,89,ok
+Crocs,United States,Consumer Discretionary,B,709,ok
+Curve,United Kingdom,Financials,B,427,ok
+Cyprus Airways,Cyprus,Industrials,B,0,ok
+DACHSER,Germany,Industrials,B,0,ok
+DAF,Netherlands,Consumer Discretionary,B,1213,ok
+DHL,Germany,Industrials,B,65,ok
+DJI,China,Information Technology,B,,"error:HTTPSConnectionPool(host='api.lens.org', port=443): Max retries exceeded with url: /patent/search (Caused by SSLError(CertificateError(""hostname 'api.lens.org' doesn't match either of 'gateway.hsia.sonifi.net', 'www.gateway.hsia.sonifi.net'"")))"
+DKV Mobility,Germany,Information Technology,B,0,ok
+DSV A/S,Denmark,Industrials,B,0,ok
+Daimler Truck,Germany,Consumer Discretionary,B,2950,ok
+Damen,Netherlands,Industrials,B,438,ok
+Danaher,United States,Health Care,B,603,ok
+Danone,France,Consumer Staples,B,3856,ok
+Danske Bank,Denmark,Financials,B,2,ok
+Dassault Aviation,France,Industrials,B,482,ok
+Dassault Systèmes,France,Information Technology,B,40,ok
+Debevoise &amp; Plimpton,United States,Industrials,B,0,ok
+Decathlon,France,Consumer Discretionary,B,2915,ok
+Deckers,United States,Consumer Discretionary,B,931,ok
+Demant,Denmark,Health Care,B,75,ok
+Denso,Japan,Consumer Discretionary,B,254519,ok
+Depositphotos,Ukraine,Consumer Discretionary,B,0,ok
+Diadora,Italy,Consumer Discretionary,B,234,ok
+Diageo,United Kingdom,Consumer Staples,B,569,ok
+Diebold Nixdorf,United States,Information Technology,B,3175,ok
+DirecTV,United States,Communication Services,B,3407,ok
+Discover,United States,Communication Services,B,636,ok
+Discovery,United States,Communication Services,B,21497,ok
+Disney,United States,Communication Services,B,8625,ok
+Dreamstime,United States,Communication Services,B,0,ok
+DuPont,United States,Materials,B,22539,ok
+Dyson,Singapore,Consumer Discretionary,B,21726,ok
+ECFMG,United States,Industrials,B,0,ok
+EDF,France,Utilities,B,324,ok
+ESET,Slovakia,Information Technology,B,33,ok
+Edrington,United Kingdom,Consumer Staples,B,77,ok
+Egon Zehnder,United States,Industrials,B,1,ok
+Electrolux,Sweden,Consumer Discretionary,B,39293,ok
+Elsevier,Netherlands,Communication Services,B,564,ok
+Embraer,Brazil,Industrials,B,1396,ok
+Epiroc,Sweden,Consumer Staples,B,2736,ok
+Eppendorf SE,Germany,Health Care,B,1064,ok
+Epson,Japan,Consumer Discretionary,B,313217,ok
+Equinix,United States,Real Estate,B,600,ok
+Ericsson,Sweden,Information Technology,B,287133,ok
+Esri,United Kingdom,Information Technology,B,71,ok
+Estee Lauder,United States,Consumer Staples,B,549,ok
+Etex,Belgium,Communication Services,B,1680,ok
+Eurasian Resources Group,Luxembourg,Materials,B,0,ok
+European University Association,Belgium,NGO,B,0,ok
+Exiger,United States,Industrials,B,13,ok
+Exor,Netherlands,Financials,B,16,ok
+FANUC,Japan,Industrials,B,60926,ok
+FIBA,Switzerland,NGO,B,43,ok
+FIFA,Switzerland,Industrials,B,10,ok
+Famur,Poland,Industrials,B,261,ok
+Farfetch,United Kingdom,Consumer Discretionary,B,26,ok
+FedEx,United States,Industrials,B,984,ok
+Ferragamo,Italy,Consumer Discretionary,B,246,ok
+Ferrari,Italy,Consumer Discretionary,B,10719,ok
+Fidelity,United States,Financials,B,2283,ok
+Finnlines,Finland,Industrials,B,78,ok
+Fitch,United States,Financials,B,1443,ok
+Fiverr,Israel,Consumer Discretionary,B,0,ok
+Fluidra,Spain,Industrials,B,170,ok
+Forest Stewardship Council (FSC),Germany,NGO,B,0,ok
+Fortinet,United States,Information Technology,B,2647,ok
+Foster + Partners,United Kingdom,Industrials,B,9,ok
+Fujitsu,Japan,Information Technology,B,512451,ok
+Fédération Internationale de Motocyclisme,Switzerland,NGO,B,0,ok
+Ganni,Denmark,Consumer Discretionary,B,40,ok
+Gap Inc,United States,Consumer Discretionary,B,78,ok
+Gasum,Finland,Energy,B,10,ok
+Generac,United States,Industrials,B,717,ok
+Gestamp,Spain,Consumer Discretionary,B,1248,ok
+GetYourGuide,Switzerland,Consumer Discretionary,B,0,ok
+Goodyear,United States,Consumer Discretionary,B,46190,ok
+Grainpro,United States,Materials,B,37,ok
+Grammarly,United States,Information Technology,B,98,ok
+Graphisoft,Hungary,Information Technology,B,26,ok
+Grupa Azoty,Poland,Materials,B,210,ok
+Grupo Antolín,Spain,Consumer Discretionary,B,201,ok
+Grupo Bimbo,Mexico,Consumer Staples,B,300,ok
+HARIBO,Germany,Consumer Staples,B,6,ok
+HHLA,Germany,Financials,B,12,ok
+HMM,South Korea,Industrials,B,5,ok
+Hannover Re,Germany,Financials,B,0,ok
+Hapag Lloyd,Germany,Industrials,B,11,ok
+Harley-Davidson,United States,Consumer Discretionary,B,1212,ok
+Hasbro,United States,Consumer Discretionary,B,1927,ok
+Heraeus,Germany,Industrials,B,29764,ok
+Herbalife,United States,Consumer Staples,B,70,ok
+Hermes,France,Consumer Discretionary,B,7122,ok
+Herzog &amp; de Meuron,Switzerland,Industrials,B,0,ok
+Hexagon,Sweden,Information Technology,B,5269,ok
+Hindalco,India,Materials,B,56,ok
+Hitachi Construction,Japan,Industrials,B,32044,ok
+Honda,Japan,Consumer Discretionary,B,298292,ok
+Honey Group,Finland,Consumer Staples,B,3,ok
+Hugo Boss,Germany,Consumer Discretionary,B,17,ok
+Hunkemoller,Netherlands,Consumer Discretionary,B,5,ok
+Husqvarna,Sweden,Consumer Discretionary,B,12963,ok
+Hyundai,South Korea,Consumer Discretionary,B,285170,ok
+ICBC,China,Financials,B,818,ok
+Iberia,Spain,Industrials,B,1165,ok
+Icecat,Netherlands,Industrials,B,0,ok
+Illinois Tool Works,United States,Industrials,B,64352,ok
+Indeed,United States,Information Technology,B,176,ok
+Institute of Internal Auditors,United States,Industrials,B,0,ok
+Intel,United States,Information Technology,B,257449,ok
+Interactive Advertising Bureau,United States,Industrials,B,1,ok
+Intercomm Foods,Greece,Consumer Staples,B,0,ok
+International Canoe Federation,Switzerland,NGO,B,0,ok
+International Federation of Sport Climbing,Italy,NGO,B,0,ok
+International Tennis Federation,United Kingdom,NGO,B,0,ok
+Intertek,United States,Industrials,B,955,ok
+Intuit,United States,Information Technology,B,7146,ok
+Isuzu,Japan,Consumer Discretionary,B,32141,ok
+JCB,United Kingdom,Industrials,B,827,ok
+Jablotron,Czech Republic,Consumer Discretionary,B,19,ok
+Japan Credit Bureau (JCB),Japan,Financials,B,0,ok
+Johnson Controls,Ireland,Industrials,B,26974,ok
+Julipedra,Portugal,Materials,B,0,ok
+Jungheinrich,Germany,Industrials,B,5031,ok
+Juniper Networks,United States,Information Technology,B,12543,ok
+KBC Group,Belgium,Financials,B,0,ok
+KGHM,Poland,Materials,B,314,ok
+KLM,Netherlands,Industrials,B,99,ok
+KONE,Finland,Industrials,B,20621,ok
+KUKA,Germany,Industrials,B,9819,ok
+Kepenou Mills,Greece,Consumer Staples,B,0,ok
+Kering,France,Consumer Discretionary,B,80,ok
+Kerry Group,Ireland,Consumer Staples,B,546,ok
+Kingston,United States,Information Technology,B,5459,ok
+Kodak Alaris,United Kingdom,Information Technology,B,1451,ok
+Komatsu,Japan,Industrials,B,57540,ok
+Konecranes,Finland,Industrials,B,3398,ok
+Konica Minolta,Japan,Consumer Discretionary,B,97699,ok
+Korean Air Lines,South Korea,Industrials,B,122,ok
+Korn Ferry,United States,Industrials,B,37,ok
+Krombacher,Germany,Consumer Staples,B,15,ok
+Kronospan,Austria,Materials,B,598,ok
+Kubota,Japan,Industrials,B,97549,ok
+Kurokesu,Lithuania,Consumer Discretionary,B,0,ok
+Kyocera,Japan,Information Technology,B,159719,ok
+Kärcher,Germany,Consumer Discretionary,B,255,ok
+Körber,Germany,Industrials,B,565,ok
+L'Oreal,France,Consumer Discretionary,B,14827,ok
+LCBO,Canada,Consumer Staples,B,2,ok
+LG Electronics,South Korea,Information Technology,B,441781,ok
+LUSH,United Kingdom,Consumer Discretionary,B,263,ok
+La Lorraine,Belgium,Consumer Staples,B,9,ok
+Lanxess,Germany,Materials,B,14879,ok
+Lego,Denmark,Consumer Discretionary,B,5023,ok
+Leonardo,Italy,Industrials,B,10548,ok
+Les Ballets de Monte-Carlo,Monaco,Consumer Discretionary,B,0,ok
+Levi Strauss,United States,Consumer Discretionary,B,168,ok
+Lexmark,United States,Information Technology,B,12107,ok
+Little Caesar's,United States,Consumer Discretionary,B,0,ok
+Live Nation Entertainment,United States,Communication Services,B,491,ok
+Lladró,Spain,Consumer Discretionary,B,24,ok
+Louis Dreyfus,Netherlands,Consumer Staples,B,123,ok
+Lumen,United States,Communication Services,B,1003,ok
+M&amp;G,United Kingdom,Financials,B,1,ok
+MS &amp; AD Insurance Group,Japan,Financials,B,0,ok
+MSC,United States,Financials,B,757,ok
+MSC Cruises,Switzerland,Consumer Discretionary,B,0,ok
+MV Group,Lithuania,Consumer Staples,B,13,ok
+MVRDV,Netherlands,Industrials,B,0,ok
+Magna,Canada,Consumer Discretionary,B,31466,ok
+Magna Steyr,Austria,Consumer Discretionary,B,2313,ok
+Mango,Spain,Consumer Discretionary,B,769,ok
+Manolo Blahnik,United Kingdom,Consumer Discretionary,B,1,ok
+Marks &amp; Spencer,United Kingdom,Consumer Staples,B,0,ok
+Marriott,United States,Consumer Discretionary,B,806,ok
+Marvell,United States,Information Technology,B,24167,ok
+Mastercard,United States,Information Technology,B,14525,ok
+Match Group,United States,Communication Services,B,269,ok
+Mattel,United States,Consumer Discretionary,B,10642,ok
+Mazda,Japan,Consumer Discretionary,B,68603,ok
+McCormick,United States,Consumer Staples,B,3581,ok
+Meggit,United Kingdom,Industrials,B,25,ok
+Meta,United States,Communication Services,B,30508,ok
+Metsa,Finland,Materials,B,267,ok
+Metso Outotec,Finland,Industrials,B,2526,ok
+Mettler Toledo,United States,Health Care,B,6648,ok
+Michelin,France,Consumer Discretionary,B,53194,ok
+Micro Focus,United Kingdom,Information Technology,B,4359,ok
+Micron,United States,Information Technology,B,109695,ok
+Microsoft,United States,Information Technology,B,246797,ok
+Milk Hydrosan sp. z o.o.,Poland,Industrials,B,0,ok
+Mitsubishi Electric,Japan,Industrials,B,571435,ok
+Mitsubishi Motors,Japan,Consumer Discretionary,B,34369,ok
+Mobatime (Elekon),Czech Republic,Consumer Discretionary,B,0,ok
+Moncler,Italy,Consumer Discretionary,B,88,ok
+Moneygram,United States,Financials,B,282,ok
+MongoDB,United States,Information Technology,B,241,ok
+Mothercare,United Kingdom,Consumer Discretionary,B,143,ok
+Motorola Solutions,United States,Information Technology,B,15860,ok
+Munich Re,Germany,Financials,B,13,ok
+NCR,United States,Information Technology,B,29318,ok
+NEC,Japan,Information Technology,B,497786,ok
+NHL,United States,NGO,B,18,ok
+NSG Group (Pilkington),Japan,Materials,B,0,ok
+NXP Semiconductors,Netherlands,Information Technology,B,228,ok
+Namecheap,United States,Information Technology,B,38,ok
+Nemak,Mexico,Consumer Discretionary,B,683,ok
+Neste Oyj,Finland,Energy,B,2805,ok
+NetApp,United States,Information Technology,B,7249,ok
+New Balance,United States,Consumer Discretionary,B,438,ok
+New Development Bank,China,Financials,B,0,ok
+Niantic Labs,United States,Information Technology,B,0,ok
+Nikon,Japan,Consumer Discretionary,B,81286,ok
+Nintendo,Japan,Communication Services,B,13085,ok
+Nippon Telegraph and Telephone Corporation (NTT),Japan,Communication Services,B,2,ok
+Norton,United States,Information Technology,B,19406,ok
+Nozbe,Poland,Industrials,B,0,ok
+Nu Skin,United States,Consumer Staples,B,73,ok
+Nutanix,United States,Information Technology,B,1432,ok
+Nvidia,United States,Information Technology,B,22976,ok
+ON24,United States,Information Technology,B,92,ok
+OP Bank Lithuania,Lithuania,Financials,B,0,ok
+Olvi,Finland,Consumer Staples,B,14,ok
+Olympus,Japan,Information Technology,B,148860,ok
+OpenText,Canada,Information Technology,B,11,ok
+Oracle,United States,Information Technology,B,48510,ok
+Orion,Finland,Health Care,B,19876,ok
+Outokumpu,Finland,Materials,B,11634,ok
+PTC,United States,Information Technology,B,4230,ok
+PVH,United States,Consumer Discretionary,B,52,ok
+PagerDuty,United States,Information Technology,B,92,ok
+Panasonic,Japan,Consumer Discretionary,B,364050,ok
+Papa John's,United States,Consumer Discretionary,B,8,ok
+Par Pacific,United States,Energy,B,0,ok
+Paramount,United States,Communication Services,B,4405,ok
+Payoneer,United States,Information Technology,B,0,ok
+Paypal,United States,Information Technology,B,10487,ok
+Peak Design,United States,Consumer Staples,B,136,ok
+Pekao SA,Poland,Financials,B,0,ok
+Pernod Ricard,France,Consumer Staples,B,682,ok
+Pivovary Staropramen,Czech Republic,Consumer Staples,B,3,ok
+Playmobil,Germany,Consumer Discretionary,B,0,ok
+Plzeňský Prazdroj,Czech Republic,Consumer Staples,B,0,ok
+Podravka,Croatia,Consumer Staples,B,32,ok
+Polaris,United States,Consumer Discretionary,B,16152,ok
+Porsche,Germany,Consumer Discretionary,B,42744,ok
+Prada,Italy,Consumer Discretionary,B,514,ok
+Preem AB,Sweden,Energy,B,19,ok
+Prosus,Netherlands,Industrials,B,1,ok
+Puma,Germany,Consumer Discretionary,B,2951,ok
+QS,United Kingdom,NGO,B,513,ok
+Qlik,Sweden,Information Technology,B,5,ok
+Qualcomm,United States,Information Technology,B,379269,ok
+RTB,United States,Industrials,B,129,ok
+Rabobank,Netherlands,Financials,B,18,ok
+Radio Free Europe,Czech Republic,Communication Services,B,0,ok
+Rakovnický Pivovar,Czech Republic,Consumer Staples,B,0,ok
+Ralph Lauren,United States,Consumer Discretionary,B,66,ok
+Ravensburger | BRIO,Germany,,B,0,ok
+Raytheon,United States,Industrials,B,60142,ok
+Recruit Holdings,Japan,Industrials,B,340,ok
+Reima,Finland,Consumer Discretionary,B,144,ok
+Remitly Global,United States,Information Technology,B,0,ok
+Renishaw,United Kingdom,Industrials,B,6535,ok
+Revolut,United Kingdom,Financials,B,1,ok
+Richemont,Switzerland,Consumer Discretionary,B,2968,ok
+Ricoh,Japan,Information Technology,B,311388,ok
+Roca,Spain,Consumer Discretionary,B,4410,ok
+Rockwell Automation,United States,Industrials,B,12406,ok
+Roland DG,Japan,Information Technology,B,2443,ok
+Rolex,Switzerland,Consumer Discretionary,B,3400,ok
+Rolls Royce,United Kingdom,Industrials,B,61278,ok
+Rotork,United Kingdom,Industrials,B,728,ok
+Rovio,Finland,Information Technology,B,110,ok
+Royal Caribbean Cruises,United States,Consumer Discretionary,B,134,ok
+Royal Society of Chemistry,United Kingdom,NGO,B,0,ok
+SSAB,Sweden,Materials,B,1028,ok
+STIHL,Germany,Consumer Discretionary,B,9026,ok
+Safran,France,Industrials,B,66298,ok
+Samsonite International,Luxembourg,Consumer Discretionary,B,2,ok
+Samsung,South Korea,Information Technology,B,1289220,ok
+Sandvik,Sweden,Industrials,B,33715,ok
+Sardina,Croatia,Consumer Staples,B,39,ok
+Scandinavian Tobacco,Denmark,Consumer Staples,B,4,ok
+Scania,Sweden,Industrials,B,25142,ok
+Schwarz Group,Germany,Consumer Staples,B,0,ok
+Sennheiser,Germany,Information Technology,B,2648,ok
+Sharp Group,Japan,Information Technology,B,19,ok
+Sherwin Williams,United States,Industrials,B,4025,ok
+Shiseido,Japan,Consumer Staples,B,22459,ok
+Siemens Energy AG,Germany,Industrials,B,0,ok
+Sigma Group,Czech Republic,Industrials,B,29,ok
+Simba Dickie Group,Germany,Consumer Discretionary,B,13,ok
+Skytrax,United Kingdom,NGO,B,0,ok
+Smartway Pharmaceuticals,United Kingdom,Health Care,B,0,ok
+Sodeca,Spain,Industrials,B,25,ok
+Solvay,Belgium,Materials,B,41919,ok
+SonoSim,United States,Health Care,B,22,ok
+Sony,Japan,Consumer Discretionary,B,622238,ok
+Sportradar,Switzerland,Consumer Discretionary,B,6,ok
+Spotify,Sweden,Communication Services,B,1941,ok
+SriLankan Airlines,Sri Lanka,Industrials,B,0,ok
+Stellantis,Netherlands,Consumer Discretionary,B,18044,ok
+Storytel,Sweden,Communication Services,B,0,ok
+Subaru,Japan,Consumer Discretionary,B,16358,ok
+Sumitomo Group,Japan,Financials,B,0,ok
+Supercell,Finland,Information Technology,B,376,ok
+Swagelok,United States,Industrials,B,2147,ok
+Swarovski,Liechtenstein,Consumer Discretionary,B,4188,ok
+Swatch,Switzerland,Consumer Discretionary,B,7648,ok
+Sweco,Sweden,Industrials,B,203,ok
+Synopsys,United States,Information Technology,B,8533,ok
+Systemair,Sweden,Industrials,B,141,ok
+T Machinery,Czech Republic,Industrials,B,27,ok
+TSMC,Taiwan,Information Technology,B,1889,ok
+TTC Holding,Czech Republic,Real Estate,B,8,ok
+Tadano,Japan,Industrials,B,4878,ok
+Take-Two Interactive,United States,Communication Services,B,85,ok
+Talgo,Spain,Industrials,B,699,ok
+Tanin,Slovenia,Materials,B,78,ok
+Tata Motors,India,Consumer Discretionary,B,480,ok
+Tendam,Spain,Consumer Discretionary,B,0,ok
+Thales,France,Industrials,B,48020,ok
+The Navigator Company,Portugal,Materials,B,12,ok
+Thermo Fisher,United States,Health Care,B,5852,ok
+TikTok,United States,Communication Services,B,50,ok
+Timken,United States,Industrials,B,4709,ok
+TomTom,Netherlands,Information Technology,B,4475,ok
+Torm,Denmark,Industrials,B,15,ok
+Tous,Spain,Consumer Discretionary,B,1109,ok
+Triumph,Switzerland,Consumer Discretionary,B,9868,ok
+Twin Disc,United States,Industrials,B,1085,ok
+Twitter,United States,Communication Services,B,2635,ok
+UL,United States,Industrials,B,3097,ok
+UPM,Finland,Materials,B,6720,ok
+UPS,United States,Industrials,B,337,ok
+Ubisoft,France,Information Technology,B,45,ok
+UiPath,United States,Information Technology,B,1096,ok
+Under Armour,United States,Consumer Discretionary,B,1395,ok
+Uniqlo/Fast Retailing,Japan,Consumer Discretionary,B,0,ok
+Universal Music Group,Netherlands,Consumer Discretionary,B,43,ok
+Upwork,United States,Industrials,B,9,ok
+VF Corporation,United States,Consumer Discretionary,B,0,ok
+VMWare,United States,Information Technology,B,16609,ok
+Valero Energy,United States,Energy,B,8,ok
+Vattenfall,Sweden,Utilities,B,1050,ok
+Veeam,United States,Information Technology,B,88,ok
+Vesuvius,United Kingdom,Industrials,B,4430,ok
+Victoria’s Secret,United States,Consumer Discretionary,B,0,ok
+Viessmann,Germany,Industrials,B,5530,ok
+Vietnam Airlines,Vietnam,Industrials,B,1,ok
+Viking River Cruises,Switzerland,Consumer Discretionary,B,15,ok
+Villeroy &amp; Boch,Germany,Consumer Discretionary,B,0,ok
+Visa,United States,Information Technology,B,16192,ok
+Vitec Group,United Kingdom,Consumer Discretionary,B,415,ok
+Viva,Australia,Energy,B,981,ok
+Volkswagen,Germany,Consumer Discretionary,B,77659,ok
+Volvo Cars,Sweden,Industrials,B,1,ok
+Volvo Group,Sweden,Industrials,B,350,ok
+WEKA,Israel,Information Technology,B,592,ok
+WWE,United States,Communication Services,B,406,ok
+WarnerMedia,United States,Communication Services,B,44,ok
+Waters Corporation,United States,Health Care,B,2,ok
+WeTransfer,United States,Information Technology,B,37,ok
+Western Union,United States,Information Technology,B,2412,ok
+Wielton,Poland,Industrials,B,80,ok
+William Grant &amp; Sons,United Kingdom,Consumer Staples,B,0,ok
+Wimbledon,United Kingdom,NGO,B,52,ok
+Wintershall Dea AG,Germany,Energy,B,2,ok
+Wise PLC,United Kingdom,Information Technology,B,0,ok
+Wizz Air,Hungary,Industrials,B,0,ok
+Wolffkran,Switzerland,Industrials,B,198,ok
+World Boxing Council,Mexico,NGO,B,0,ok
+World Federation of Exchanges,United Kingdom,NGO,B,0,ok
+Woseba,Poland,Consumer Staples,B,0,ok
+Wrangler (Kontoor),United States,Consumer Discretionary,B,0,ok
+Würth,Germany,Consumer Discretionary,B,387,ok
+Xerox,United States,Information Technology,B,223873,ok
+YKK Group,Japan,Industrials,B,1,ok
+YOOX,Italy,Consumer Discretionary,B,11,ok
+Yanmar,Japan,Consumer Discretionary,B,34228,ok
+Yara,Norway,Materials,B,3518,ok
+ZHA,United Kingdom,Industrials,B,1770,ok
+Zegna Group,Italy,Consumer Discretionary,B,2,ok
+Zendesk,United States,Information Technology,B,116,ok
+Zetor,Czech Republic,Industrials,B,45,ok
+Zynga,United States,Communication Services,B,1241,ok
+bunq.com,Netherlands,Financials,B,0,ok
+d&amp;b audiotechnik,Germany,Consumer Discretionary,B,0,ok
+eBay,United States,Consumer Discretionary,B,12781,ok
+eDreams ODIGEO,Spain,Consumer Discretionary,B,0,ok
+iHerb,United States,Consumer Discretionary,B,0,ok
+Żabka,Poland,Consumer Staples,B,0,ok
