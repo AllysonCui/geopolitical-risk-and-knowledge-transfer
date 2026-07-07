@@ -8,7 +8,10 @@ Dependent variables tested:
   (1) Binary: Grade A (clean exit) vs Grade B (partial)
   (2) Binary: sold=1 vs not sold=0
   (3) Ordinal: sold=3, nationalized=2, suspended=1, other=0
-  (4) Probit versions of (1) and (2)
+  (4) 2SLS IV with sanctions instrument
+  (5) Binary: Any subsidiary formally dissolved (Orbis inactive flag)
+  (6) Binary: Grade A AND sold (cleanest exit with value recovery)
+  (7) Binary: Suspended operations (stuck in the middle)
 
 α = composite replicability index (emp_intensity - patent_intensity),
     already percentile-ranked to [0,1] by script 08
@@ -230,6 +233,42 @@ def main():
     except Exception as e:
         results.append(f"  IV failed: {e}")
 
+    # ── SPECIFICATION 5: P(Any subsidiary formally dissolved) ──────────
+    results.append("\n" + "━" * 75)
+    results.append("SPECIFICATION 5: P(Subsidiary Dissolved) — any sub inactive=1 vs 0")
+    results.append("━" * 75)
+
+    y_sub_inact = np.array([float(r.get("y_sub_inactive", 0)) for r in sample])
+    results.append(f"  Y=1: {int(y_sub_inact.sum())}  |  Y=0: {int(len(y_sub_inact) - y_sub_inact.sum())}")
+
+    m5a = run_logit(y_sub_inact, X_base, var_names_base, "Model 5a: Logit (no FE)", results)
+    m5b = run_ols(y_sub_inact, X_base, var_names_base, "Model 5b: LPM (no FE)", results)
+    m5c = run_ols(y_sub_inact, X_fe, var_names_fe, "Model 5c: LPM (industry FE)", results)
+
+    # ── SPECIFICATION 6: P(Grade A + Sold) — cleanest exit ───────────
+    results.append("\n" + "━" * 75)
+    results.append("SPECIFICATION 6: P(Grade A + Sold) — clean exit WITH sale=1 vs 0")
+    results.append("━" * 75)
+
+    y_a_sold = np.array([float(r.get("y_grade_a_sold", 0)) for r in sample])
+    results.append(f"  Y=1: {int(y_a_sold.sum())}  |  Y=0: {int(len(y_a_sold) - y_a_sold.sum())}")
+
+    m6a = run_logit(y_a_sold, X_base, var_names_base, "Model 6a: Logit (no FE)", results)
+    m6b = run_ols(y_a_sold, X_base, var_names_base, "Model 6b: LPM (no FE)", results)
+    m6c = run_ols(y_a_sold, X_fe, var_names_fe, "Model 6c: LPM (industry FE)", results)
+
+    # ── SPECIFICATION 7: P(Suspended) — stuck in the middle ──────────
+    results.append("\n" + "━" * 75)
+    results.append("SPECIFICATION 7: P(Suspended) — operations suspended=1 vs 0")
+    results.append("━" * 75)
+
+    y_susp = np.array([float(r.get("y_suspended", 0)) for r in sample])
+    results.append(f"  Y=1: {int(y_susp.sum())}  |  Y=0: {int(len(y_susp) - y_susp.sum())}")
+
+    m7a = run_logit(y_susp, X_base, var_names_base, "Model 7a: Logit (no FE)", results)
+    m7b = run_ols(y_susp, X_base, var_names_base, "Model 7b: LPM (no FE)", results)
+    m7c = run_ols(y_susp, X_fe, var_names_fe, "Model 7c: LPM (industry FE)", results)
+
     # ── ROBUSTNESS CHECKS ─────────────────────────────────────────────────
     results.append("\n" + "━" * 75)
     results.append("ROBUSTNESS CHECKS")
@@ -284,7 +323,10 @@ def main():
     for label, model in [("Spec 1a (Logit, Grade A)", m1a),
                          ("Spec 1c (LPM, Grade A)", m1c),
                          ("Spec 2a (Logit, Sold)", m2a),
-                         ("Spec 3a (OLS, Ordinal)", m3a)]:
+                         ("Spec 3a (OLS, Ordinal)", m3a),
+                         ("Spec 5a (Logit, Sub Dissolved)", m5a),
+                         ("Spec 6a (Logit, A+Sold)", m6a),
+                         ("Spec 7a (Logit, Suspended)", m7a)]:
         if model:
             try:
                 b2 = model.params[2]

@@ -38,6 +38,7 @@ ANALYSIS_DIR = DATA_DIR / "analysis"
 ANALYSIS_DIR.mkdir(exist_ok=True)
 
 MERGED_ORBIS = COLLECTED / "merged_orbis_yale.csv"
+ORBIS_SUBS = COLLECTED / "orbis_subsidiaries.csv"
 DEALS_FILE = COLLECTED / "exit_deals_matched.csv"
 PATENTS_FILE = COLLECTED / "patents_by_firm.csv"
 SANCTIONS_FILE = COLLECTED / "eu_sanctions_2022.csv"
@@ -127,10 +128,22 @@ def main():
         for row in csv.DictReader(f):
             panel[row["name"]] = row
 
+    # Load subsidiary-level data for inactivation rate
+    from collections import defaultdict
+    guo_total_subs = defaultdict(int)
+    guo_inactive_subs = defaultdict(int)
+    with open(ORBIS_SUBS, encoding="utf-8") as f:
+        for row in csv.DictReader(f):
+            guo = row["guo_name"]
+            guo_total_subs[guo] += 1
+            if row.get("inactive") == "Yes":
+                guo_inactive_subs[guo] += 1
+
     print(f"Orbis-Yale merged: {len(orbis_yale)} firms")
     print(f"Patent data: {len(patents)} firms")
     print(f"Firms with Bloomberg deals: {len(deals_by_firm)}")
     print(f"Full panel: {len(panel)} firms")
+    print(f"Orbis subsidiaries (for inactivation): {sum(guo_total_subs.values())} subs across {len(guo_total_subs)} GUOs")
 
     # First pass: collect raw values for all matched firms
     raw_rows = []
@@ -189,6 +202,15 @@ def main():
         panel_row = panel.get(name, {})
         action_type = panel_row.get("action_type", oy.get("action_type", ""))
 
+        # New Y variables
+        guo_name = oy.get("guo_matched", "")
+        total_s = guo_total_subs.get(guo_name, 0)
+        inactive_s = guo_inactive_subs.get(guo_name, 0)
+        y_sub_inactive = 1 if inactive_s > 0 else 0
+        sub_inactivation_rate = inactive_s / total_s if total_s > 0 else None
+        y_grade_a_sold = 1 if grade == "A" and action_type == "sold" else 0
+        y_suspended = 1 if action_type == "suspended" else 0
+
         raw_rows.append({
             "name": name,
             "country": country,
@@ -211,6 +233,10 @@ def main():
             "n_subsidiaries": oy.get("n_subsidiaries", ""),
             "sanctions_exposure": sanctions_exp,
             "guo_matched": oy.get("guo_matched", ""),
+            "y_sub_inactive": y_sub_inactive,
+            "sub_inactivation_rate": sub_inactivation_rate,
+            "y_grade_a_sold": y_grade_a_sold,
+            "y_suspended": y_suspended,
         })
 
     # Second pass: compute composite α using percentile ranks
@@ -280,6 +306,10 @@ def main():
             "n_subsidiaries": r["n_subsidiaries"],
             "sanctions_exposure": r["sanctions_exposure"],
             "guo_matched": r["guo_matched"],
+            "y_sub_inactive": r["y_sub_inactive"],
+            "sub_inactivation_rate": f"{r['sub_inactivation_rate']:.4f}" if r["sub_inactivation_rate"] is not None else "",
+            "y_grade_a_sold": r["y_grade_a_sold"],
+            "y_suspended": r["y_suspended"],
         })
 
     # Write regression sample
@@ -339,6 +369,11 @@ def main():
     stats.append(f"\nGrade distribution:")
     for g in ["A", "B"]:
         stats.append(f"  Grade {g}: {grades.get(g, 0)}")
+
+    stats.append(f"\nNew Y variables:")
+    stats.append(f"  Y = any subsidiary inactive: {sum(1 for r in reg_rows if r['y_sub_inactive'] == 1)}")
+    stats.append(f"  Y = Grade A + Sold: {sum(1 for r in reg_rows if r['y_grade_a_sold'] == 1)}")
+    stats.append(f"  Y = Suspended: {sum(1 for r in reg_rows if r['y_suspended'] == 1)}")
 
     sanc = [r["sanctions_exposure"] for r in reg_rows]
     stats.append(f"\nSanctions exposure (instrument Z):")

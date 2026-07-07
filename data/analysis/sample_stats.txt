@@ -30,6 +30,11 @@ Grade distribution:
   Grade A: 473
   Grade B: 426
 
+New Y variables:
+  Y = any subsidiary inactive: 84
+  Y = Grade A + Sold: 170
+  Y = Suspended: 406
+
 Sanctions exposure (instrument Z):
   0 packages: 798
   1-4 packages: 70
