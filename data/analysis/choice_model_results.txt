@@ -1,0 +1,169 @@
+==============================================================================
+EXIT AS A PORTFOLIO OF REAL OPTIONS: DISCRETE-CHOICE RESULTS
+==============================================================================
+
+Sample: 709 exiters with both α components + controls
+  Sold: 131  Suspended: 330  Other: 248
+  Grade A: 365  Sanctioned sectors: 58
+  Matched deals: 67  Subsidiary dissolved: 26
+
+──────────────────────────────────────────────────────────────────────────────
+Knowledge-structure typology (median splits)
+──────────────────────────────────────────────────────────────────────────────
+  Quadrant                        N   Sold   Susp  GradeA  Dissolved  HasDeal
+  Tacit franchise  (E+ P-)      183    18%    40%     59%       0.5%       5%
+  Integrated ops   (E+ P+)      172    16%    53%     49%       0.6%      14%
+  License fortress (E- P+)      183    19%    51%     42%       8.7%      12%
+  Asset shell      (E- P-)      171    21%    41%     56%       4.7%       6%
+
+
+══════════════════════════════════════════════════════════════════════════════
+H1: MARKET FORMATION — P(matched M&A deal exists)
+  Prediction: buyers pay for codified, appropriable knowledge (patents),
+  not for tacit organizational knowledge that departs with employees.
+══════════════════════════════════════════════════════════════════════════════
+
+  H1a: LPM P(has deal): N=709, R²=0.0288
+  Variable                   Coef       Robust SE    P>|t|
+  ------------------------------------------------------------
+  const                       -0.0367     0.0758   0.6279
+  pat_pctile                0.1682***     0.0432   0.0001
+  emp_pctile                  -0.0129     0.0410   0.7540
+  ln_assets                   -0.0051     0.0070   0.4681
+  years_russia                 0.0036     0.0023   0.1232
+  ln_n_subs                    0.0547     0.0473   0.2471
+
+  H1b: Logit P(has deal): N=709, Pseudo-R²=0.0478
+  Variable                   Coef         Std Err    P>|z|
+  ------------------------------------------------------------
+  const                    -4.3785***     0.9895   0.0000
+  pat_pctile                2.1857***     0.5448   0.0001
+  emp_pctile                  -0.0646     0.5164   0.9004
+  ln_assets                   -0.0298     0.0788   0.7055
+  years_russia                 0.0416     0.0302   0.1685
+  ln_n_subs                    0.6498     0.4654   0.1626
+
+
+══════════════════════════════════════════════════════════════════════════════
+H2: MODE SORTING — P(Sold | Grade A) and the three-mode choice
+══════════════════════════════════════════════════════════════════════════════
+
+  H2a: LPM P(Sold|A), components: N=365, R²=0.0118
+  Variable                   Coef       Robust SE    P>|t|
+  ------------------------------------------------------------
+  const                      0.3704**     0.1682   0.0276
+  pat_pctile                   0.1325     0.0865   0.1257
+  emp_pctile                  -0.0817     0.1003   0.4151
+  ln_assets                    0.0019     0.0164   0.9099
+  years_russia                 0.0008     0.0058   0.8882
+  ln_n_subs                   -0.0847     0.1014   0.4036
+
+  H2b: LPM P(Sold|A), composite α: N=365, R²=0.0114
+  Variable                   Coef       Robust SE    P>|t|
+  ------------------------------------------------------------
+  const                     0.5162***     0.1312   0.0001
+  alpha                      -0.2010*     0.1174   0.0869
+  ln_assets                   -0.0011     0.0144   0.9370
+  years_russia                 0.0011     0.0057   0.8507
+  ln_n_subs                   -0.0846     0.1012   0.4035
+
+  H2c: Multinomial logit over {other, suspended, sold} (base=other)
+
+    --- suspended vs other ---
+    const                       -0.7440 (p=0.2139)
+    pat_pctile                1.2264*** (p=0.0001)
+    emp_pctile                   0.1479 (p=0.6638)
+    ln_assets                    0.0476 (p=0.3932)
+    years_russia                -0.0006 (p=0.9772)
+    ln_n_subs                   -0.0937 (p=0.7674)
+
+    --- sold vs other ---
+    const                       -0.2579 (p=0.7288)
+    pat_pctile                   0.2683 (p=0.4960)
+    emp_pctile                  -0.3476 (p=0.4230)
+    ln_assets                   -0.0143 (p=0.8400)
+    years_russia                 0.0113 (p=0.6502)
+    ln_n_subs                   -0.3971 (p=0.3445)
+
+    N=709, Pseudo-R²=0.0134
+
+
+══════════════════════════════════════════════════════════════════════════════
+H3: SHELL LIQUIDATION — P(subsidiary dissolved)
+  Prediction: dissolution decreases in employee intensity (a workforce
+  = a going concern worth transferring) and in subsidiary size.
+══════════════════════════════════════════════════════════════════════════════
+
+  H3a: LPM P(dissolved): N=709, R²=0.0566
+  Variable                   Coef       Robust SE    P>|t|
+  ------------------------------------------------------------
+  const                     0.2428***     0.0621   0.0001
+  emp_pctile               -0.1611***     0.0335   0.0000
+  pat_pctile                   0.0042     0.0287   0.8827
+  ln_assets                 -0.0103**     0.0043   0.0184
+  years_russia                -0.0012     0.0019   0.5371
+  ln_n_subs                   -0.0187     0.0246   0.4487
+
+  H3b: Logit P(dissolved): N=709, Pseudo-R²=0.2095
+  Variable                   Coef         Std Err    P>|z|
+  ------------------------------------------------------------
+  const                      4.0456**     1.6583   0.0147
+  emp_pctile               -6.9371***     1.5100   0.0000
+  pat_pctile                   0.1663     0.7476   0.8239
+  ln_assets                -0.4916***     0.1453   0.0007
+  years_russia                -0.0255     0.0410   0.5329
+  ln_n_subs                   -0.4181     0.8586   0.6263
+
+  Dissolution rate by employee-intensity tercile:
+    Low emp (shells)          : n=236, dissolved=8.5%
+    Mid emp                   : n=237, dissolved=1.7%
+    High emp (going concerns) : n=236, dissolved=0.8%
+
+
+══════════════════════════════════════════════════════════════════════════════
+H4: SANCTIONS — amplification of the sorting
+══════════════════════════════════════════════════════════════════════════════
+
+  H4a: P(Grade A), sanctioned sectors: N=58, R²=0.1251
+  Variable                   Coef       Robust SE    P>|t|
+  ------------------------------------------------------------
+  const                      0.8938**     0.3742   0.0169
+  alpha                       -0.7125     1.1616   0.5396
+  alpha_sq                     1.4494     1.2020   0.2279
+  ln_assets                   -0.0223     0.0257   0.3864
+  years_russia                 0.0041     0.0122   0.7396
+  ln_n_subs                   -0.1932     0.2900   0.5053
+
+  H4b: P(Grade A), non-sanctioned: N=651, R²=0.0215
+  Variable                   Coef       Robust SE    P>|t|
+  ------------------------------------------------------------
+  const                      0.2865**     0.1184   0.0155
+  alpha                       -0.0009     0.3580   0.9980
+  alpha_sq                     0.3283     0.3483   0.3459
+  ln_assets                    0.0145     0.0109   0.1839
+  years_russia                 0.0004     0.0045   0.9225
+  ln_n_subs                   -0.0153     0.0728   0.8331
+
+  H4c: P(Grade A), component interactions: N=709, R²=0.0473
+  Variable                   Coef       Robust SE    P>|t|
+  ------------------------------------------------------------
+  const                     0.8028***     0.1274   0.0000
+  pat_pctile               -0.3615***     0.0665   0.0000
+  emp_pctile                  -0.0561     0.0769   0.4660
+  sanctioned                   0.0311     0.1490   0.8346
+  pat×sanc                    -0.0986     0.1912   0.6063
+  emp×sanc                     0.3171     0.1953   0.1044
+  ln_assets                   -0.0119     0.0117   0.3093
+  years_russia                 0.0034     0.0042   0.4258
+  ln_n_subs                   -0.0293     0.0696   0.6730
+
+
+══════════════════════════════════════════════════════════════════════════════
+DESCRIPTIVE: deal values by months since invasion (N small)
+══════════════════════════════════════════════════════════════════════════════
+  0-6 months    : n=10, median=$   151.7mn, mean=$   326.4mn
+  6-12 months   : n= 7, median=$   104.8mn, mean=$   209.9mn
+  12-24 months  : n=12, median=$    96.3mn, mean=$   186.9mn
+  24-48 months  : n= 3, median=$   320.6mn, mean=$   552.6mn
+  Note: composition effects dominate at this N; the exit-tax escalation
+  (10% → 35%) and mandatory 50% discount (Dec 2022) bind on later deals.

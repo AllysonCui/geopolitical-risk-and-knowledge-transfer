@@ -1,29 +1,27 @@
-# Knowledge Structure, Exit Mode, and Sanctions Amplification
+# Hostage Capital: Exit Choices Under Geopolitical Coercion
 
-Does a multinational's knowledge structure determine *how* it exits a hostile market — and do sanctions sharpen that sorting?
+The assets a multinational can salvage in a geopolitical crisis are the same assets a hostile state can hold hostage. This project studies the 1,048 Western firms that withdrew from Russia after the February 2022 invasion (Yale CELI tracker backbone) and models exit as a discrete choice among three real options.
 
-This project studies the 1,048 Western firms that withdrew from Russia after the February 2022 invasion, using the Yale CELI tracker as the backbone. The central finding is that knowledge-intensive (IP-heavy) firms tend to **sell** their Russian operations, while operationally embedded firms tend to **walk away** — and EU sanctions amplify this divergence by a factor of 4x.
+## Theory
 
-## Thesis (three-part)
+A firm holding a Russian subsidiary after the invasion chooses the maximum of three payoffs:
 
-1. **Knowledge type determines exit mode.** Among firms that made a clean exit (Yale Grade A), the composite replicability index alpha negatively predicts selling (beta = -0.20, p = 0.087). IP-heavy firms sell (43%); operational firms walk away (29%).
-2. **Sanctions amplify the sorting.** The alpha-quadratic on P(Grade A) is 4.4x stronger in sanctioned sectors (R-squared = 12.5%) than non-sanctioned (R-squared = 2.2%).
-3. **Institutional moderators.** Japan (-28pp), Finland (+24pp), IT sector (-18pp) shift exit probability conditional on knowledge type.
+- **V_sell** — salvage price minus transaction costs, exit levy, and mandated discount. Requires a buyer, and a buyer exists only for *appropriable* assets (codified IP, brands, plants) that survive the parent's departure.
+- **V_walk** — zero salvage plus a write-off, but immediate and unilateral. Optimal when value is *tacit* — embedded in people who leave with the firm.
+- **V_dissolve** — liquidate the legal entity. Optimal for *asset shells* with no going concern.
 
-## Regression specification
+Adding iid extreme-value shocks yields a multinomial logit over exit modes (McFadden). The coercion mechanism: only the sell option runs through a state-controlled gate (approval commission, escalating exit levy from ~10% to ~35%, mandated discount from ~50% to ~60%, seizures of Danone and Carlsberg mid-negotiation). The state cannot tax a walk-away; it can and did tax the sale.
 
-```
-Y_i = b0 + b1*alpha_i + b2*alpha_i^2 + X_i'*gamma + mu_j + epsilon_i
-```
+## Findings (H1-H4)
 
-| Symbol | Meaning |
-|--------|---------|
-| Y_i | Binary: P(Grade A), P(Sold given Grade A), P(Subsidiary dissolved) |
-| alpha | Composite replicability index (0-1), see construction below |
-| X_i | Controls: ln(assets), years_in_russia, ln(n_subsidiaries) |
-| mu_j | Industry fixed effects (Yale sector classification) |
+1. **Market formation.** P(a matched M&A deal exists) rises steeply in patent intensity (logit 2.19, p < 0.001) and is flat in employee intensity. Across patent quintiles, P(deal) goes 6% to 19%.
+2. **The hostage gradient.** Across the same quintiles, P(clean exit, Grade A) *falls* 78% to 42% (patent percentile -0.36, p < 0.0001). The knowledge that creates a buyer also blocks the door. Conditional on committed exit, composite alpha confirms mode sorting: replicable operations walk away, IP-heavy operations sell (alpha = -0.20, p = 0.087).
+3. **Shell liquidation.** Subsidiary dissolution is driven by low employee intensity (logit -6.94, p < 0.0001) and small size (p = 0.0007): an 11-to-1 dissolution gradient across employee-intensity terciles (8.5% vs 0.8%).
+4. **Sanctions amplification.** The knowledge gradient on clean exit is 4.4x stronger in sanctioned sectors (R-squared 12.5% vs 2.2%).
 
-Estimation: OLS (LPM) with HC1 robust standard errors. Logit with marginal effects at means as robustness.
+## Estimation
+
+Multinomial logit over {sold, suspended, ambiguous} as the RUM reduced form, plus per-hypothesis LPM/logit with HC1 robust errors. Controls: ln(assets), years_in_russia, ln(n_subsidiaries); industry fixed effects in robustness. Main script: `scripts/10_run_choice_model.py`; the earlier single-index specification is preserved in `scripts/09_run_regressions.py`.
 
 ## Data sources
 
@@ -91,9 +89,10 @@ Run scripts in numerical order. Each consumes the output of prior steps.
 07_merge_bloomberg_deals.py    bloomberg_ma_deals + firms_exiters --> exit_deals_matched.csv
 08_build_analysis_dataset.py   all collected data --> regression_sample.csv
 09_run_regressions.py          regression_sample.csv --> regression_results.txt
+10_run_choice_model.py         regression_sample.csv --> choice_model_results.txt  (MAIN)
 ```
 
-Steps 02, 05, 06, 07 can run in any order as long as 01 has run first. Step 08 requires all prior outputs. Step 09 requires step 08.
+Steps 02, 05, 06, 07 can run in any order as long as 01 has run first. Step 08 requires all prior outputs. Steps 09 and 10 require step 08.
 
 ### Dependencies
 
@@ -127,7 +126,8 @@ data/
     eu_sanctions_2022.csv          9 sanctions packages
   analysis/                      Final outputs
     regression_sample.csv          899-row regression-ready dataset
-    regression_results.txt         Full regression output
+    regression_results.txt         Single-index specification output (script 09)
+    choice_model_results.txt       Discrete-choice model output (script 10, main)
     sample_stats.txt               Summary statistics
 
 scripts/
@@ -139,6 +139,7 @@ scripts/
   07_merge_bloomberg_deals.py
   08_build_analysis_dataset.py
   09_run_regressions.py
+  10_run_choice_model.py
 ```
 
 ## Known limitations
