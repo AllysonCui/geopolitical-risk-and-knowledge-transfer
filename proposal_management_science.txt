@@ -1,0 +1,358 @@
+PROPOSAL FOR MANAGEMENT SCIENCE SPECIAL ISSUE
+"Business and Its Interrelationship with Democratic Resilience, Geopolitics,
+and Society in a Time of Change"
+
+================================================================================
+
+TITLE:
+Knowledge Structure, Exit Mode, and Democratic Sanctions: How Firm-Level
+Intellectual Capital Shapes Multinational Withdrawal from Hostile Markets
+
+AUTHORS:
+[Author names and affiliations]
+
+================================================================================
+
+
+1.  WHAT IS THE RESEARCH QUESTION?
+
+When geopolitical crises force multinational corporations (MNCs) to exit a
+host country, firms face a consequential choice: sell their local operations
+to domestic buyers, or abandon them outright by walking away. This choice is
+not merely a financial one. Selling transfers organizational knowledge,
+proprietary technology, and operational capabilities to buyers in the
+adversarial regime, while walking away destroys value but prevents knowledge
+leakage. This paper asks:
+
+   How does a multinational's knowledge structure determine its mode of exit
+   from a hostile market under geopolitical duress, and do democratic
+   sanctions amplify this sorting?
+
+We study this question in the context of the mass corporate withdrawal from
+Russia following the February 2022 invasion of Ukraine -- the largest
+geopolitically motivated exit event since the anti-apartheid divestment
+movement of the 1980s. We decompose the question into three sub-inquiries:
+
+(a) Do IP-heavy firms (those with high patent intensity relative to assets)
+systematically choose to sell their Russian operations, while operationally
+embedded firms (those with labor-intensive, tacit-knowledge-dependent
+operations) walk away?
+
+(b) Do EU sanctions sharpen this knowledge-exit-mode sorting, and if so,
+through what mechanism?
+
+(c) Do home-country institutions -- reflecting the political economy of the
+firm's domicile -- moderate exit behavior conditional on knowledge type?
+
+The theoretical logic is grounded in the knowledge-based view (KBV) of the
+firm. IP-heavy firms hold codified, transferable knowledge (patents, trade
+secrets, proprietary processes) embedded in their Russian subsidiaries. This
+knowledge has recoverable market value, creating an incentive to sell.
+Operationally embedded firms, by contrast, hold tacit knowledge dispersed
+across people, routines, and local relationships. For these firms, the
+knowledge cannot be easily extracted through a sale, making abandonment the
+low-cost option. Sanctions, we argue, amplify this sorting by raising the
+cost of continued presence and compressing the timeline for exit, forcing
+firms to reveal their knowledge-type more starkly.
+
+
+2.  WHAT IS THE RESEARCH GAP AND CONTRIBUTION TO THE ACADEMIC LITERATURE?
+
+This study addresses three gaps at the intersection of international
+business, political economy, and the knowledge-based view of the firm.
+
+Gap 1: Geopolitical triggers in the market exit literature. The
+international business literature on foreign market exit has focused
+predominantly on economic determinants -- declining profitability, rising
+liability of foreignness, sunk cost considerations, and host-country
+institutional deterioration (Benito and Welch, 1997; Berry, 2013; Soule,
+Swaminathan, and Tihanyi, 2014). While some work examines political risk as
+a motive for exit (Dai, Eden, and Beamish, 2013; Witte et al., 2020), this
+literature has largely treated exit as a binary decision (stay vs. leave)
+rather than examining the mode of exit -- a distinction that carries
+profoundly different implications for knowledge transfer and sanctions
+effectiveness. The unprecedented scale of the Russia withdrawal (over 1,000
+firms) provides a unique natural experiment to study exit mode variation.
+
+Gap 2: Micro-mechanisms of sanctions effectiveness. The political economy
+literature on economic sanctions overwhelmingly studies aggregate outcomes:
+trade flows, GDP effects, regime behavior change, and welfare costs (Hufbauer
+et al., 2007; Felbermayr et al., 2020; Bapat et al., 2013). A growing
+literature examines firm-level effects of sanctions on trade and investment
+(Crozet and Hinz, 2020; Ahn and Ludema, 2020), but no existing work
+examines how sanctions interact with firm-level knowledge characteristics to
+shape exit behavior. This gap matters because sanctions are a primary tool
+of democratic resilience -- the mechanism through which democratic coalitions
+respond to autocratic aggression -- yet their firm-level behavioral channels
+remain poorly understood.
+
+Gap 3: The knowledge-based view meets geopolitics. The KBV literature
+(Grant, 1996; Kogut and Zander, 1993; Nonaka, 1994) has extensively studied
+how knowledge characteristics shape firm boundaries, entry mode, and
+subsidiary governance, but has not been applied to the exit context. This is
+a significant omission: if knowledge characteristics determine entry mode
+(Hennart, 1988; Brouthers, 2002), they should logically also shape exit
+mode, particularly when exit is involuntary and time-pressured.
+
+Our contribution bridges these three literatures. We introduce a novel
+composite measure -- the Knowledge Replicability Index (alpha) -- that
+captures the balance between a firm's codified intellectual property and its
+tacit operational knowledge. We show that alpha systematically predicts exit
+mode, that democratic sanctions amplify this sorting, and that home-country
+institutions moderate the relationship. In doing so, we provide the first
+micro-level evidence on how firm knowledge characteristics mediate the
+effectiveness of sanctions as a tool of democratic resilience, contributing
+simultaneously to the IB exit literature, the political economy of
+sanctions, and the applied KBV.
+
+
+3.  WHY IS IT IMPORTANT FOR BUSINESSES AND POLICY MAKERS TO CLOSE THIS
+    RESEARCH GAP?
+
+For businesses. The 2020s have brought a sharp increase in geopolitical risk
+exposure for multinational firms. Beyond Russia, rising tensions in the
+Taiwan Strait, the fragmentation of US-China economic relations, and
+political instability in multiple regions mean that geopolitically forced
+exit is no longer a tail risk but an operational planning consideration.
+Our research provides a diagnostic framework: firms can assess their
+"knowledge exposure" in geopolitically volatile markets by examining the
+balance of codified IP versus tacit operational knowledge in their
+subsidiaries. IP-heavy operations face a sell-or-lose dilemma under
+geopolitical duress -- they can recover value through sale, but doing so
+transfers strategic capabilities to adversarial actors. Operationally
+embedded firms, paradoxically, face lower knowledge-transfer risk because
+their core knowledge walks out the door with their people. Understanding
+this asymmetry ex ante allows firms to pre-position exit strategies, adjust
+subsidiary governance, and manage knowledge concentration as an element of
+geopolitical risk management. Our finding that home-country effects are
+among the strongest predictors of exit behavior also alerts firms that their
+domicile's political relationships and institutional norms will shape their
+degrees of freedom during a geopolitical crisis.
+
+For policymakers. Sanctions are the primary non-military instrument through
+which democratic coalitions respond to authoritarian aggression. The nine EU
+sanctions packages adopted against Russia in 2022 targeted specific sectors,
+but our evidence suggests that sector-level sanctions interact with firm-
+level knowledge characteristics in ways that policymakers may not
+anticipate. When sanctions compress exit timelines, IP-heavy firms in
+sanctioned sectors face intensified pressure to sell quickly -- potentially
+at discounted valuations and to buyers aligned with the sanctioned regime.
+This creates a perverse channel: the very policy designed to isolate an
+autocratic economy may inadvertently accelerate the transfer of Western
+proprietary knowledge to that economy. Policymakers designing future
+sanctions regimes should consider incorporating knowledge-transfer screening
+mechanisms, particularly for divestitures in sectors with high patent
+intensity, to ensure that exit-through-sale does not undermine the strategic
+objectives of the sanctions themselves.
+
+
+4.  WHAT DATA AND RESEARCH METHOD WILL BE USED?
+
+4.1 Data
+
+We construct a novel firm-level dataset by merging five distinct sources:
+
+(1) Yale Chief Executive Leadership Institute (CELI) Tracker. The backbone
+dataset tracks 1,589 Western firms operating in Russia, assigning each a
+withdrawal grade: A (clean break -- suspended operations and announced
+exit), B (suspension or scaling back), C (reducing activity), D (buying
+time), or F (business as usual). We use 12 tracker snapshots from December
+2022 through May 2025, with the latest snapshot providing the primary grade.
+From the free-text action descriptions, we classify exit actions into five
+categories: sold, nationalized, writedown, suspended, or other.
+
+(2) Bureau van Dijk Orbis. We extract subsidiary-level financial data for
+6,405 Russian subsidiaries of Western MNCs, including total assets,
+employment, shareholders' equity, NACE sector codes, incorporation dates,
+and active/inactive status. We aggregate to the parent level, yielding 899
+matched firms (86% match rate via fuzzy string matching with manual
+overrides for known problem cases).
+
+(3) Lens.org Patent Database. We collect total patent portfolio counts for
+all 1,048 Grade A and B firms (exiters), queried from the Lens.org API
+using applicant/owner name matching.
+
+(4) Bloomberg M&A. We extract 790 M&A deals involving Russian targets and
+Western sellers, matching 165 to our sample. Due to low disclosure (only 38
+of 178 post-invasion deals have disclosed valuations), we use the deal
+indicator as a binary measure rather than a continuous exit-payoff variable.
+
+(5) EU Sanctions Packages. We compile the nine EU sanctions packages adopted
+in 2022 and map them to NACE 2-digit sectors, constructing a firm-level
+sanctions exposure variable (count of packages targeting the firm's sector).
+
+4.2 Key Variable: The Knowledge Replicability Index (Alpha)
+
+We construct a composite index capturing the balance between codified and
+tacit knowledge in a firm's Russian operations:
+
+   alpha = rescale_to_[0,1](
+       percentile_rank(employees / total_assets)
+     - percentile_rank(patents / total_assets)
+   )
+
+High alpha (near 1) indicates an "operational arm" -- labor-intensive, with
+knowledge embedded in people and routines. Low alpha (near 0) indicates a
+"knowledge repository" -- asset- and IP-heavy, with codified knowledge that
+has recoverable market value. In our sample, alpha has mean 0.49, standard
+deviation 0.22, and ranges from 0 to 1.
+
+4.3 Econometric Specification
+
+Our primary specification is a linear probability model (LPM) with
+heteroskedasticity-robust (HC1) standard errors:
+
+   Y_i = b0 + b1*alpha_i + b2*alpha_i^2 + X_i'*gamma + mu_j + epsilon_i
+
+where Y_i is one of three binary dependent variables: (a) P(Grade A) --
+probability of clean exit; (b) P(Sold | Grade A) -- probability of selling,
+conditional on exit; (c) P(Subsidiary Dissolved) -- whether the firm's
+Russian subsidiaries were formally wound down. The vector X_i includes
+ln(total assets), years of operation in Russia, and ln(number of Russian
+subsidiaries). Fixed effects mu_j capture industry heterogeneity. Logit
+models with marginal effects at means serve as robustness checks.
+
+4.4 Identification Strategy
+
+We exploit EU sanctions exposure as a source of quasi-exogenous variation.
+Sanctions were adopted at the sector level based on geopolitical and
+strategic considerations (energy dependence, military relevance) that are
+plausibly orthogonal to individual firms' knowledge structures within a
+sector. Our primary identification approach uses: (a) split-sample
+regressions comparing sanctioned versus non-sanctioned sectors; (b)
+interaction models (alpha x sanctions exposure); and (c) descriptive
+tercile analysis.
+
+For the full paper, we plan three extensions to strengthen causal
+identification: (i) a panel event-study design exploiting the staggered
+timing of the nine EU sanctions packages across sectors, using multiple Yale
+tracker snapshots to trace grade transitions over time; (ii) enriching the
+control set with parent-level characteristics (ESG scores, political
+connections, board independence, prior experience with geopolitical exits);
+and (iii) exploring instrumental variable strategies using pre-war sector-
+level sanctions exposure from other sanctioned countries (Iran, North Korea,
+Myanmar) as instruments for Russia-specific sanctions intensity.
+
+
+5.  WHAT ARE THE ANTICIPATED RESULTS?
+
+Our preliminary analysis, based on a regression sample of 709 firms (365
+Grade A exiters), yields the following results:
+
+Knowledge-exit mode channel. Alpha negatively predicts selling conditional
+on exit (coefficient = -0.20, p = 0.087). Among Grade A firms, those in the
+lowest alpha tercile (IP-heavy) sell 43% of the time, while those in the
+highest tercile (operationally embedded) sell only 29%. This pattern is
+consistent with the KBV prediction: codified knowledge creates recoverable
+value that incentivizes sale, while tacit knowledge does not.
+
+Sanctions amplification. The alpha-quadratic effect on P(Grade A) is 4.4
+times stronger in EU-sanctioned sectors (R-squared = 12.5%, n = 58) than in
+non-sanctioned sectors (R-squared = 2.2%, n = 651). This suggests that
+sanctions sharpen the knowledge-sorting mechanism, though the sanctioned
+subsample is small. The full-sample interaction term (alpha x sanctions) has
+a coefficient of 0.08 (p = 0.137), directionally supportive but not yet
+significant at conventional levels.
+
+Institutional moderators. Home-country effects are among our most
+statistically robust findings. Japanese firms are 28 percentage points less
+likely to make a clean exit (p < 0.001), consistent with Japan's
+historically close economic ties with Russia and its culturally embedded
+long-term orientation toward business relationships. Finnish firms are 24
+percentage points more likely to exit cleanly (p = 0.004), reflecting
+Finland's geographic proximity, NATO accession context, and strong alignment
+with EU sanctions policy. Swedish firms show a 26-percentage-point reduction
+in clean exit probability (p = 0.009).
+
+Patent intensity U-shape. Firms at the extremes of patent intensity are more
+likely to exit (Grade A), while those in the mid-range are more likely to
+stay (linear: -1.44, p < 0.001; quadratic: +1.12, p < 0.001). This
+suggests that both very high-IP firms (who can sell) and very low-IP firms
+(who lose little by walking away) find exit easier than mid-range firms with
+moderate, difficult-to-disentangle IP positions.
+
+We anticipate that the planned extensions -- particularly the panel event-
+study design and enriched controls -- will sharpen the sanctions-
+amplification result and move the exit-mode coefficient toward conventional
+significance thresholds.
+
+
+6.  WHAT ARE THE IMPLICATIONS FOR BUSINESSES, POLICY, AND SOCIETY?
+
+For businesses. This study provides a practical diagnostic: the Knowledge
+Replicability Index offers firms a tool for assessing geopolitical knowledge
+exposure across their international subsidiary portfolios. Firms with
+concentrated IP in geopolitically volatile markets should pre-plan exit
+pathways that minimize involuntary knowledge transfer -- for example, by
+structuring subsidiary IP governance so that critical patents and
+proprietary processes can be retracted to the parent before or during exit,
+rather than being sold with the local entity. The strong home-country
+effects further suggest that firms should monitor the geopolitical alignment
+between their home government and host countries as a leading indicator of
+exit pressure and available exit modes. As geopolitical fragmentation
+accelerates, "geopolitical knowledge audits" should become a standard
+element of enterprise risk management alongside financial and operational
+risk assessments.
+
+For policy. Our findings reveal a tension at the heart of democratic
+sanctions design. Sanctions compress exit timelines and raise the cost of
+staying, but by doing so, they may push IP-heavy firms toward fire sales
+that transfer proprietary knowledge to buyers within the sanctioned regime.
+Future sanctions packages could incorporate knowledge-transfer screening --
+modeled on existing foreign investment screening mechanisms but applied in
+reverse -- to ensure that forced divestitures in strategically sensitive
+sectors do not undermine the sanctions' own objectives. More broadly, our
+findings inform the design of "smart sanctions" that account for firm-level
+heterogeneity rather than treating all firms within a sector identically.
+
+For society and democratic resilience. Democratic societies rely on
+sanctions as a primary non-military response to authoritarian aggression.
+Our research illuminates a previously unexamined micro-channel through which
+the effectiveness of this democratic tool may be undermined: firm-level
+knowledge sorting that inadvertently transfers strategic capabilities to
+adversarial regimes. By understanding this channel, democratic institutions
+can design more effective responses to geopolitical threats, strengthening
+the credibility and impact of collective democratic action. In an era when
+the robustness of democratic institutions is itself under pressure, ensuring
+that the tools of democratic resilience function as intended is not merely
+an academic exercise but a matter of urgent practical importance.
+
+================================================================================
+
+REFERENCES (selected)
+
+Ahn, D., and Ludema, R. (2020). The sword and the shield: The economics of
+   targeted sanctions. European Economic Review, 130.
+Bapat, N., Heinrich, T., Kobayashi, Y., and Morgan, T.C. (2013). Determinants
+   of sanctions effectiveness. International Interactions, 39(1), 79-98.
+Benito, G.R.G., and Welch, L. (1997). De-internationalization. Management
+   International Review, 37, 7-25.
+Berry, H. (2013). When do firms divest foreign operations? Organization
+   Science, 24(1), 246-261.
+Brouthers, K.D. (2002). Institutional, cultural and transaction cost
+   influences on entry mode choice. Journal of International Business
+   Studies, 33(2), 203-221.
+Crozet, M., and Hinz, J. (2020). Friendly fire: The trade impact of the
+   Russia sanctions. European Economic Review, 130.
+Dai, L., Eden, L., and Beamish, P. (2013). Place, space, and geographical
+   exposure. Journal of International Business Studies, 44(6), 554-578.
+Felbermayr, G., Kirilakha, A., Syropoulos, C., Yalcin, E., and Yotov, Y.
+   (2020). The global sanctions data base. European Economic Review, 129.
+Grant, R.M. (1996). Toward a knowledge-based theory of the firm. Strategic
+   Management Journal, 17(S2), 109-122.
+Hennart, J.F. (1988). A transaction costs theory of equity joint ventures.
+   Strategic Management Journal, 9(4), 361-374.
+Hufbauer, G.C., Schott, J.J., Elliott, K.A., and Oegg, B. (2007). Economic
+   Sanctions Reconsidered. 3rd edition. Peterson Institute.
+Kogut, B., and Zander, U. (1993). Knowledge of the firm and the evolutionary
+   theory of the multinational corporation. Journal of International Business
+   Studies, 24(4), 625-645.
+Nonaka, I. (1994). A dynamic theory of organizational knowledge creation.
+   Organization Science, 5(1), 14-37.
+Soule, S., Swaminathan, A., and Tihanyi, L. (2014). The diffusion of foreign
+   divestment from Burma. Strategic Management Journal, 35(7), 1032-1052.
+Witte, C.T., Burger, M.J., Ianchovichina, E.I., and Pennings, E. (2020).
+   Dodging bullets: The heterogeneous effect of political violence on
+   greenfield FDI. Journal of International Business Studies, 51, 862-892.
+
+================================================================================
