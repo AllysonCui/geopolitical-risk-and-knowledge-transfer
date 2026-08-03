@@ -68,16 +68,8 @@ def get_patent_count(company_name: str, token: str) -> dict:
                 ]
             }
         },
-        "size": 1,          # we only need the total count, not records
+        "size": 1,
         "include": ["lens_id"],
-        "aggregations": {
-            "families": {
-                "terms": {
-                    "field": "family.id",
-                    "size": 1
-                }
-            }
-        }
     }
 
     try:
@@ -85,10 +77,6 @@ def get_patent_count(company_name: str, token: str) -> dict:
         if resp.status_code == 200:
             data = resp.json()
             total_patents = data.get("total", 0)
-            # family count from aggregation bucket count
-            buckets = data.get("aggregations", {}).get("families", {}).get("buckets", [])
-            # Lens doesn't return exact family count in agg by default;
-            # use a second query for family-level deduplication if needed.
             return {
                 "patents_total": total_patents,
                 "api_status": "ok",
