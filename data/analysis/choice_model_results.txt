@@ -5,16 +5,16 @@ EXIT AS A PORTFOLIO OF REAL OPTIONS: DISCRETE-CHOICE RESULTS
 Sample: 709 exiters with both α components + controls
   Sold: 131  Suspended: 330  Other: 248
   Grade A: 365  Sanctioned sectors: 58
-  Matched deals: 67  Subsidiary dissolved: 26
+  Matched deals: 78  Subsidiary dissolved: 26
 
 ──────────────────────────────────────────────────────────────────────────────
 Knowledge-structure typology (median splits)
 ──────────────────────────────────────────────────────────────────────────────
   Quadrant                        N   Sold   Susp  GradeA  Dissolved  HasDeal
-  Tacit franchise  (E+ P-)      183    18%    40%     59%       0.5%       5%
-  Integrated ops   (E+ P+)      172    16%    53%     49%       0.6%      14%
-  License fortress (E- P+)      183    19%    51%     42%       8.7%      12%
-  Asset shell      (E- P-)      171    21%    41%     56%       4.7%       6%
+  Tacit franchise  (E+ P-)      183    18%    40%     59%       0.5%       7%
+  Integrated ops   (E+ P+)      172    16%    53%     49%       0.6%      16%
+  License fortress (E- P+)      183    19%    51%     42%       8.7%      15%
+  Asset shell      (E- P-)      171    21%    41%     56%       4.7%       7%
 
 
 ══════════════════════════════════════════════════════════════════════════════
@@ -23,25 +23,25 @@ H1: MARKET FORMATION — P(matched M&A deal exists)
   not for tacit organizational knowledge that departs with employees.
 ══════════════════════════════════════════════════════════════════════════════
 
-  H1a: LPM P(has deal): N=709, R²=0.0288
+  H1a: LPM P(has deal): N=709, R²=0.0430
   Variable                   Coef       Robust SE    P>|t|
   ------------------------------------------------------------
-  const                       -0.0367     0.0758   0.6279
-  pat_pctile                0.1682***     0.0432   0.0001
-  emp_pctile                  -0.0129     0.0410   0.7540
-  ln_assets                   -0.0051     0.0070   0.4681
-  years_russia                 0.0036     0.0023   0.1232
-  ln_n_subs                    0.0547     0.0473   0.2471
+  const                       -0.1036     0.0773   0.1799
+  pat_pctile                0.2174***     0.0460   0.0000
+  emp_pctile                  -0.0155     0.0433   0.7205
+  ln_assets                   -0.0043     0.0072   0.5497
+  years_russia                 0.0039     0.0026   0.1321
+  ln_n_subs                  0.1072**     0.0497   0.0310
 
-  H1b: Logit P(has deal): N=709, Pseudo-R²=0.0478
+  H1b: Logit P(has deal): N=709, Pseudo-R²=0.0656
   Variable                   Coef         Std Err    P>|z|
   ------------------------------------------------------------
-  const                    -4.3785***     0.9895   0.0000
-  pat_pctile                2.1857***     0.5448   0.0001
-  emp_pctile                  -0.0646     0.5164   0.9004
-  ln_assets                   -0.0298     0.0788   0.7055
-  years_russia                 0.0416     0.0302   0.1685
-  ln_n_subs                    0.6498     0.4654   0.1626
+  const                    -5.0020***     0.9572   0.0000
+  pat_pctile                2.5545***     0.5279   0.0000
+  emp_pctile                  -0.0557     0.4884   0.9091
+  ln_assets                   -0.0117     0.0757   0.8774
+  years_russia                 0.0417     0.0286   0.1443
+  ln_n_subs                  1.0746**     0.4204   0.0106
 
 
 ══════════════════════════════════════════════════════════════════════════════
@@ -161,9 +161,9 @@ H4: SANCTIONS — amplification of the sorting
 ══════════════════════════════════════════════════════════════════════════════
 DESCRIPTIVE: deal values by months since invasion (N small)
 ══════════════════════════════════════════════════════════════════════════════
-  0-6 months    : n=10, median=$   151.7mn, mean=$   326.4mn
-  6-12 months   : n= 7, median=$   104.8mn, mean=$   209.9mn
-  12-24 months  : n=12, median=$    96.3mn, mean=$   186.9mn
-  24-48 months  : n= 3, median=$   320.6mn, mean=$   552.6mn
+  0-6 months    : n=13, median=$   140.0mn, mean=$   294.8mn
+  6-12 months   : n= 8, median=$   247.4mn, mean=$   451.5mn
+  12-24 months  : n=13, median=$    81.7mn, mean=$   177.4mn
+  24-48 months  : n= 6, median=$   278.8mn, mean=$   403.9mn
   Note: composition effects dominate at this N; the exit-tax escalation
   (10% → 35%) and mandatory 50% discount (Dec 2022) bind on later deals.

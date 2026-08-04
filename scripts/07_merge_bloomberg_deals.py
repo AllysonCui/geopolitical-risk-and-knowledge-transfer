@@ -1,19 +1,22 @@
 """
-Match Bloomberg M&A deal sellers to Yale CELI tracker firms.
+Match Bloomberg deal sellers to Yale CELI tracker firms.
 
-Filters post-invasion deals, fuzzy-matches seller names to the Yale
-firm list, and extracts sale prices for Y_i construction.
+Combines the M&A/INV export with the asset-sale (AST) export, filters
+post-invasion deals, fuzzy-matches seller names to the Yale firm list,
+and extracts sale prices for Y_i construction.
 
 Input:
-  data/bloomberg_ma_deals.csv
+  data/bloomberg_ma_deals.csv   (Deal Type M&A / INV, dates YYYY/M/D)
+  data/bloomberg_ast_deals.csv  (Deal Type AST, dates M/D/YYYY)
   data/collected/firms_exiters.csv
 
 Output:
-  data/collected/exit_deals_matched.csv — one row per matched deal
+  data/collected/exit_deals_matched.csv — one row per matched deal,
+  announce_date normalized to YYYY/MM/DD
 """
 
 import csv
-import re
+from datetime import date
 from pathlib import Path
 
 try:
@@ -22,12 +25,28 @@ except ImportError:
     raise SystemExit("rapidfuzz not installed: pip install rapidfuzz")
 
 DATA_DIR = Path(__file__).parent.parent / "data"
-BLOOMBERG_FILE = DATA_DIR / "bloomberg_ma_deals.csv"
+BLOOMBERG_FILES = [
+    DATA_DIR / "bloomberg_ma_deals.csv",
+    DATA_DIR / "bloomberg_ast_deals.csv",
+]
 YALE_FILE = DATA_DIR / "collected" / "firms_exiters.csv"
 OUT_FILE = DATA_DIR / "collected" / "exit_deals_matched.csv"
 
-INVASION_DATE = "2022/02/24"
+INVASION = date(2022, 2, 24)
 MATCH_THRESHOLD = 72
+
+
+def parse_date(raw):
+    """Parse YYYY/M/D or M/D/YYYY into a date, else None."""
+    parts = raw.strip().split("/")
+    if len(parts) != 3:
+        return None
+    try:
+        if len(parts[0]) == 4:
+            return date(int(parts[0]), int(parts[1]), int(parts[2]))
+        return date(int(parts[2]), int(parts[0]), int(parts[1]))
+    except ValueError:
+        return None
 
 
 def normalize_seller(name):
@@ -57,21 +76,24 @@ def main():
     yale_norm_map = {normalize_seller(n): n for n in yale_names}
     yale_norm_list = list(yale_norm_map.keys())
 
-    # Load Bloomberg deals
+    # Load Bloomberg deals from every export file
     deals = []
-    with open(BLOOMBERG_FILE, encoding="utf-8") as f:
-        for row in csv.DictReader(f):
-            deals.append(row)
+    for path in BLOOMBERG_FILES:
+        if not path.exists():
+            print(f"Skipping missing file: {path.name}")
+            continue
+        with open(path, encoding="utf-8") as f:
+            rows = list(csv.DictReader(f))
+        for row in rows:
+            row["_date"] = parse_date(row.get("Announce Date", ""))
+        print(f"{path.name}: {len(rows)} deals")
+        deals.extend(rows)
 
     print(f"Total Bloomberg deals: {len(deals)}")
 
     # Filter post-invasion
-    post_invasion = [d for d in deals if d.get("Announce Date", "") >= INVASION_DATE]
-    print(f"Post-invasion deals (≥{INVASION_DATE}): {len(post_invasion)}")
-
-    # Filter M&A only (exclude pure INV)
-    ma_deals = [d for d in post_invasion if d.get("Deal Type", "").strip() == "M&A"]
-    print(f"M&A deals only: {len(ma_deals)}")
+    post_invasion = [d for d in deals if d["_date"] and d["_date"] >= INVASION]
+    print(f"Post-invasion deals (≥{INVASION}): {len(post_invasion)}")
 
     # Match sellers to Yale firms
     matched_deals = []
@@ -133,7 +155,7 @@ def main():
                 "match_score": best_score,
                 "target_name": deal.get("Target Name", "").strip(),
                 "acquirer_name": deal.get("Acquirer Name", "").strip(),
-                "announce_date": deal.get("Announce Date", "").strip(),
+                "announce_date": deal["_date"].strftime("%Y/%m/%d"),
                 "deal_value_mn_usd": deal_value if deal_value else "",
                 "deal_type": deal.get("Deal Type", "").strip(),
                 "deal_status": deal.get("Deal Status", "").strip(),
@@ -143,6 +165,19 @@ def main():
         else:
             for s in sellers:
                 unmatched_sellers.add(s.strip())
+
+    # Dedupe deals appearing in more than one export
+    seen = set()
+    deduped = []
+    for d in matched_deals:
+        key = (d["yale_name"], d["target_name"].upper(), d["announce_date"])
+        if key in seen:
+            continue
+        seen.add(key)
+        deduped.append(d)
+    if len(deduped) < len(matched_deals):
+        print(f"Removed {len(matched_deals) - len(deduped)} duplicate deals")
+    matched_deals = deduped
 
     print(f"\nMatched deals: {len(matched_deals)}")
     unique_firms = set(d["yale_name"] for d in matched_deals)
