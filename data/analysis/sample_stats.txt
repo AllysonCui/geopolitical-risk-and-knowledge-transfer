@@ -7,9 +7,9 @@ Sample sizes:
   With α (composite): 709
     - Both components (emp + patent): 709
     - Employee intensity only: 0
-  With Y_i (exit payoff ratio): 16
+  With Y_i (exit payoff ratio): 18
   With all controls: 836
-  FULL SPECIFICATION (α + Y_i + controls): 12
+  FULL SPECIFICATION (α + Y_i + controls): 14
 
 α (composite replicability index) distribution:
   Mean: 0.4868
@@ -21,7 +21,7 @@ Sample sizes:
   Max: 1.0000
 
 Y_i (exit payoff ratio) distribution:
-  Mean: 116.1987
+  Mean: 117.0500
   Median: 16.6496
   Min: 0.2670
   Max: 649.7021
