@@ -5,11 +5,11 @@ Filters post-invasion deals, fuzzy-matches seller names to the Yale
 firm list, and extracts sale prices for Y_i construction.
 
 Input:
-  data/bloomberg_ma_deals.csv
-  data/collected/firms_exiters.csv
+  data/raw/bloomberg/bloomberg_ma_deals.csv
+  data/analysis/firms_exiters.csv
 
 Output:
-  data/collected/exit_deals_matched.csv — one row per matched deal
+  data/analysis/exit_deals_matched.csv — one row per matched deal
 """
 
 import csv
@@ -22,9 +22,9 @@ except ImportError:
     raise SystemExit("rapidfuzz not installed: pip install rapidfuzz")
 
 DATA_DIR = Path(__file__).parent.parent / "data"
-BLOOMBERG_FILE = DATA_DIR / "bloomberg_ma_deals.csv"
-YALE_FILE = DATA_DIR / "collected" / "firms_exiters.csv"
-OUT_FILE = DATA_DIR / "collected" / "exit_deals_matched.csv"
+BLOOMBERG_FILE = DATA_DIR / "raw" / "bloomberg" / "bloomberg_ma_deals.csv"
+YALE_FILE = DATA_DIR / "analysis" / "firms_exiters.csv"
+OUT_FILE = DATA_DIR / "analysis" / "exit_deals_matched.csv"
 
 INVASION_DATE = "2022/02/24"
 MATCH_THRESHOLD = 72

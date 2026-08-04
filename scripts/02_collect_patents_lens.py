@@ -14,7 +14,7 @@ Setup:
        python3 02_collect_patents_lens.py --token YOUR_TOKEN
 
 Output:
-  data/collected/patents_by_firm.csv — one row per firm with patent counts
+  data/raw/lens/patents_by_firm.csv — one row per firm with patent counts
 """
 
 import csv
@@ -41,8 +41,8 @@ if ENV_FILE.exists():
                 os.environ.setdefault(key.strip(), val)
 
 LENS_API_URL = "https://api.lens.org/patent/search"
-IN_FILE = Path(__file__).parent.parent / "data" / "collected" / "firms_exiters.csv"
-OUT_FILE = Path(__file__).parent.parent / "data" / "collected" / "patents_by_firm.csv"
+IN_FILE = Path(__file__).parent.parent / "data" / "analysis" / "firms_exiters.csv"
+OUT_FILE = Path(__file__).parent.parent / "data" / "raw" / "lens" / "patents_by_firm.csv"
 
 # Rate limit: Lens.org free tier allows ~10 req/min → sleep 7s between requests
 REQUEST_DELAY_SEC = 7

@@ -6,11 +6,11 @@ extracts financial variables, and computes derived measures for the
 α proxy and controls.
 
 Input:
-  data/orbis_export_part1.xlsx
-  data/orbis_export_part2.xlsx
+  data/raw/orbis/orbis_export_part1.xlsx
+  data/raw/orbis/orbis_export_part2.xlsx
 
 Output:
-  data/collected/orbis_subsidiaries.csv — one row per subsidiary with
+  data/analysis/orbis_subsidiaries.csv — one row per subsidiary with
     financials, GUO info, and derived variables
 """
 
@@ -21,12 +21,13 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 
 DATA_DIR = Path(__file__).parent.parent / "data"
-OUT_DIR = DATA_DIR / "collected"
-OUT_DIR.mkdir(exist_ok=True)
+ORBIS_DIR = DATA_DIR / "raw" / "orbis"
+OUT_DIR = DATA_DIR / "analysis"
+OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 ORBIS_FILES = [
-    DATA_DIR / "orbis_export_part1.xlsx",
-    DATA_DIR / "orbis_export_part2.xlsx",
+    ORBIS_DIR / "orbis_export_part1.xlsx",
+    ORBIS_DIR / "orbis_export_part2.xlsx",
 ]
 
 YEARS = ["2023", "2022", "2021", "2020", "2019", "2018"]

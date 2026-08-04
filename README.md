@@ -30,35 +30,35 @@ Estimation: OLS (LPM) with HC1 robust standard errors. Logit with marginal effec
 ### 1. Yale CELI Tracker (backbone)
 
 - **What**: 1,589 firms tracked across 12 snapshots (Dec 2022 - May 2025), graded A-F on withdrawal compliance.
-- **Where**: Public CSV snapshots in `data/` (e.g. `250521.csv`).
+- **Where**: Public CSV snapshots in `data/raw/yale/` (e.g. `250521.csv`).
 - **Provides**: firm name, home country, industry, Yale grade, action type (sold/suspended/other).
 - **Concern**: Grades are subjective editorial judgments, not verified outcomes. Action text is inconsistent across snapshots (same firm may say "exited" in one and "sold operations" in another). We take the latest snapshot as ground truth.
 
 ### 2. Bureau van Dijk Orbis (subsidiary financials)
 
 - **What**: 6,405 Russian subsidiaries of Western multinationals, with financial data.
-- **Where**: Downloaded as two XLSX files (`data/orbis_export_part1.xlsx`, `data/orbis_export_part2.xlsx`) per the query spec in `scripts/03_orbis_query_spec.md`.
+- **Where**: Downloaded as two XLSX files (`data/raw/orbis/orbis_export_part1.xlsx`, `data/raw/orbis/orbis_export_part2.xlsx`) per the query spec in `scripts/03_orbis_query_spec.md`.
 - **Provides**: total assets, employee count, employee costs, shareholders' equity, NACE sector code, GUO (global ultimate owner) name and country, incorporation date, active/inactive status.
 - **Concern**: The Orbis export had limited column coverage initially — personnel costs and total costs were missing for many firms, so we use employees/total_assets as the employee-intensity proxy instead of the originally specified personnel_costs/total_costs. Multi-year data (2018-2023) was requested but coverage is uneven; the parser cascades through years to find the most recent available. Currency conversion from RUB to USD uses Orbis's internal period-average exchange rates, which may distort values during the 2022 ruble crash.
 
 ### 3. Bloomberg M&A Deals (exit valuations)
 
 - **What**: 790 M&A deals involving Russian targets and Western sellers.
-- **Where**: Exported from Bloomberg `MA <GO>` to `data/bloomberg_ma_deals.csv`.
+- **Where**: Exported from Bloomberg `MA <GO>` to `data/raw/bloomberg/bloomberg_ma_deals.csv`.
 - **Provides**: deal value, TV/EBITDA, payment type, deal status, seller/acquirer/target names.
 - **Concern**: Only 38 of 178 post-invasion deals have disclosed sale values. The rest are "N/A." This means Y_i (exit payoff ratio = sale price / pre-exit book value) is available for only ~16 firms in the regression sample. The project has therefore pivoted from continuous Y_i to binary dependent variables (Grade A, Sold, Subsidiary dissolved). An expanded Bloomberg pull with write-down/impairment data would restore the continuous Y_i for 200+ additional firms.
 
 ### 4. Lens.org Patent Data (IP intensity)
 
 - **What**: Patent portfolio size for each of the 1,048 parent firms.
-- **Where**: Collected via `scripts/02_collect_patents_lens.py` using the Lens.org scholarly API; saved to `data/collected/patents_by_firm.csv`.
+- **Where**: Collected via `scripts/02_collect_patents_lens.py` using the Lens.org scholarly API; saved to `data/raw/lens/patents_by_firm.csv`.
 - **Provides**: total patent count per parent company, used as the numerator for the proprietary-intensity component of alpha.
 - **Concern**: Lens.org's free API has aggressive rate limits (7 seconds between requests). Coverage is imperfect — some firms return zero patents due to name mismatches (e.g., "3M" matches noise). Patent counts are a stock measure (lifetime patents), not a flow measure (recent R&D activity), so a firm with legacy patents but no current R&D scores high on IP intensity.
 
 ### 5. EU Sanctions Package Data (instrument)
 
 - **What**: 9 EU sanctions packages adopted in 2022, mapped to NACE 2-digit sectors.
-- **Where**: `data/collected/eu_sanctions_2022.csv` (manually constructed) + hard-coded mapping in `scripts/08_build_analysis_dataset.py`.
+- **Where**: `data/raw/eu_sanctions/eu_sanctions_2022.csv` (manually constructed) + hard-coded mapping in `scripts/08_build_analysis_dataset.py`.
 - **Provides**: sanctions_exposure = count of packages hitting the firm's NACE sector (0-8).
 - **Concern**: The mapping is coarse — sector-level, not firm-level. 798 of 899 firms in the sample have zero sanctions exposure. Only 101 firms are in affected sectors, and only ~35 of those are Grade A, limiting statistical power in split-sample regressions. Firm-level sanctions data (from Bloomberg BSRP or OFAC/EU lists) would be a much sharper instrument.
 
@@ -89,7 +89,7 @@ Run scripts in numerical order. Each consumes the output of prior steps.
 05_parse_orbis_export.py       orbis_export_part*.xlsx --> orbis_subsidiaries.csv
 06_merge_orbis_yale.py         orbis_subsidiaries + firms_exiters --> merged_orbis_yale.csv
 07_merge_bloomberg_deals.py    bloomberg_ma_deals + firms_exiters --> exit_deals_matched.csv
-08_build_analysis_dataset.py   all collected data --> regression_sample.csv
+08_build_analysis_dataset.py   all raw + intermediate data --> regression_sample.csv
 09_run_regressions.py          regression_sample.csv --> regression_results.txt
 ```
 
@@ -113,19 +113,24 @@ The Orbis-to-Yale merge uses `rapidfuzz.fuzz.token_sort_ratio` with a threshold 
 
 ```
 data/
-  *.csv                          Yale CELI tracker snapshots (raw)
-  bloomberg_ma_deals.csv         Bloomberg M&A export (raw)
-  orbis_export_part1.xlsx        Orbis subsidiary export (raw)
-  orbis_export_part2.xlsx
-  collected/                     Intermediate processed data
+  raw/                           Raw data, one subfolder per source
+    yale/
+      *.csv                        Yale CELI tracker snapshots (e.g. 250521.csv)
+    orbis/
+      orbis_export_part1.xlsx      Orbis subsidiary export
+      orbis_export_part2.xlsx
+    bloomberg/
+      bloomberg_ma_deals.csv       Bloomberg M&A export
+    lens/
+      patents_by_firm.csv          1,048 firms with patent counts (via Lens.org API)
+    eu_sanctions/
+      eu_sanctions_2022.csv        9 sanctions packages (manually constructed)
+  analysis/                      Data built on top of the raw data
     firms_exit_panel.csv           1,589 firms, all grades
     firms_exiters.csv              1,048 Grade A+B firms
     orbis_subsidiaries.csv         6,405 Russian subsidiaries
     merged_orbis_yale.csv          899 matched firm-level records
     exit_deals_matched.csv         165 matched M&A deals
-    patents_by_firm.csv            1,048 firms with patent counts
-    eu_sanctions_2022.csv          9 sanctions packages
-  analysis/                      Final outputs
     regression_sample.csv          899-row regression-ready dataset
     regression_results.txt         Full regression output
     sample_stats.txt               Summary statistics
