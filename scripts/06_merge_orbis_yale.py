@@ -8,11 +8,11 @@ For parents with multiple Russian subsidiaries, aggregates by summing
 total assets and using the largest subsidiary's employee intensity.
 
 Input:
-  data/collected/orbis_subsidiaries.csv
-  data/collected/firms_exiters.csv
+  data/analysis/orbis_subsidiaries.csv
+  data/analysis/firms_exiters.csv
 
 Output:
-  data/collected/merged_orbis_yale.csv — one row per Yale exiter with
+  data/analysis/merged_orbis_yale.csv — one row per Yale exiter with
     aggregated subsidiary financials and α proxy components
 """
 
@@ -25,7 +25,7 @@ try:
 except ImportError:
     raise SystemExit("rapidfuzz not installed: pip install rapidfuzz")
 
-DATA_DIR = Path(__file__).parent.parent / "data" / "collected"
+DATA_DIR = Path(__file__).parent.parent / "data" / "analysis"
 
 ORBIS_FILE = DATA_DIR / "orbis_subsidiaries.csv"
 YALE_FILE = DATA_DIR / "firms_exiters.csv"

@@ -2,8 +2,8 @@
 Parse Yale CELI tracker snapshots to build a firm-level exit panel.
 
 Outputs:
-  data/collected/firms_exit_panel.csv  — one row per firm, exit status + action text
-  data/collected/firms_exiters.csv     — Grade A/B firms only (the main sample)
+  data/analysis/firms_exit_panel.csv  — one row per firm, exit status + action text
+  data/analysis/firms_exiters.csv     — Grade A/B firms only (the main sample)
 
 Yale grade legend:
   A = Clean break (suspended + announced exit)
@@ -19,15 +19,16 @@ import re
 from pathlib import Path
 
 DATA_DIR = Path(__file__).parent.parent / "data"
-OUT_DIR = DATA_DIR / "collected"
-OUT_DIR.mkdir(exist_ok=True)
+YALE_DIR = DATA_DIR / "raw" / "yale"
+OUT_DIR = DATA_DIR / "analysis"
+OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 # Use the two chronological endpoints: earliest and latest snapshot
 SNAPSHOTS = {
-    "2022-12-24": DATA_DIR / "221224.csv",
-    "2025-05-21": DATA_DIR / "250521.csv",
+    "2022-12-24": YALE_DIR / "221224.csv",
+    "2025-05-21": YALE_DIR / "250521.csv",
 }
-LATEST = DATA_DIR / "250521.csv"
+LATEST = YALE_DIR / "250521.csv"
 
 # ── Action-text classifiers ────────────────────────────────────────────────
 

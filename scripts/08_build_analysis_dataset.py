@@ -17,11 +17,11 @@ Constructs:
   Z    = sanctions_exposure (instrument based on EU package timing)
 
 Input:
-  data/collected/merged_orbis_yale.csv
-  data/collected/exit_deals_matched.csv
-  data/collected/patents_by_firm.csv
-  data/collected/eu_sanctions_2022.csv
-  data/collected/firms_exit_panel.csv
+  data/analysis/merged_orbis_yale.csv
+  data/analysis/exit_deals_matched.csv
+  data/raw/lens/patents_by_firm.csv
+  data/raw/eu_sanctions/eu_sanctions_2022.csv
+  data/analysis/firms_exit_panel.csv
 
 Output:
   data/analysis/regression_sample.csv — final regression dataset
@@ -33,16 +33,16 @@ import math
 from pathlib import Path
 
 DATA_DIR = Path(__file__).parent.parent / "data"
-COLLECTED = DATA_DIR / "collected"
+RAW_DIR = DATA_DIR / "raw"
 ANALYSIS_DIR = DATA_DIR / "analysis"
-ANALYSIS_DIR.mkdir(exist_ok=True)
+ANALYSIS_DIR.mkdir(parents=True, exist_ok=True)
 
-MERGED_ORBIS = COLLECTED / "merged_orbis_yale.csv"
-ORBIS_SUBS = COLLECTED / "orbis_subsidiaries.csv"
-DEALS_FILE = COLLECTED / "exit_deals_matched.csv"
-PATENTS_FILE = COLLECTED / "patents_by_firm.csv"
-SANCTIONS_FILE = COLLECTED / "eu_sanctions_2022.csv"
-PANEL_FILE = COLLECTED / "firms_exit_panel.csv"
+MERGED_ORBIS = ANALYSIS_DIR / "merged_orbis_yale.csv"
+ORBIS_SUBS = ANALYSIS_DIR / "orbis_subsidiaries.csv"
+DEALS_FILE = ANALYSIS_DIR / "exit_deals_matched.csv"
+PATENTS_FILE = RAW_DIR / "lens" / "patents_by_firm.csv"
+SANCTIONS_FILE = RAW_DIR / "eu_sanctions" / "eu_sanctions_2022.csv"
+PANEL_FILE = ANALYSIS_DIR / "firms_exit_panel.csv"
 
 OUT_FILE = ANALYSIS_DIR / "regression_sample.csv"
 STATS_FILE = ANALYSIS_DIR / "sample_stats.txt"
