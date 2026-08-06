@@ -1,9 +1,17 @@
 """
 Collect patent counts per company from Lens.org public API.
 
-Uses the firms_exiters.csv produced by 01_parse_yale_tracker.py.
-Queries Lens.org for each parent company's patent portfolio size
-(a key input to the proprietary-intensity component of α).
+Uses the FULL panel (firms_exit_panel.csv, all grades A-F) produced by
+01_parse_yale_tracker.py — patent data for non-exiters is required by the
+selection stage of 10_selection_exit_mode.py. (The existing
+patents_by_firm.csv on disk predates this change and covers Grade A/B
+exiters only.)
+
+Counts are restricted to patents with a 2017-2021 grant date: a
+pre-invasion vintage window, so the measure is pre-determined with respect
+to exit behavior and reflects recent codified knowledge rather than
+lifetime legacy stock. (The existing CSV on disk is lifetime stock —
+re-run this script to replace it.)
 
 Setup:
   1. Register at https://www.lens.org/ (free account)
@@ -41,8 +49,12 @@ if ENV_FILE.exists():
                 os.environ.setdefault(key.strip(), val)
 
 LENS_API_URL = "https://api.lens.org/patent/search"
-IN_FILE = Path(__file__).parent.parent / "data" / "analysis" / "firms_exiters.csv"
+IN_FILE = Path(__file__).parent.parent / "data" / "analysis" / "firms_exit_panel.csv"
 OUT_FILE = Path(__file__).parent.parent / "data" / "raw" / "lens" / "patents_by_firm.csv"
+
+# Pre-invasion grant-date window (see docs/formal_model.md, measurement rules)
+GRANT_DATE_FROM = "2017-01-01"
+GRANT_DATE_TO = "2021-12-31"
 
 # Rate limit: Lens.org free tier allows ~10 req/min → sleep 7s between requests
 REQUEST_DELAY_SEC = 7
@@ -58,13 +70,27 @@ def get_patent_count(company_name: str, token: str) -> dict:
         "x-lens-token": token,
         "Content-Type": "application/json",
     }
-    # Search both applicant and owner fields; use phrase match for precision
+    # Search both applicant and owner fields; use phrase match for precision.
+    # Restrict to granted patents in the pre-invasion vintage window so the
+    # stock is pre-determined w.r.t. exit behavior.
     payload = {
         "query": {
             "bool": {
-                "should": [
-                    {"match_phrase": {"applicant.name": company_name}},
-                    {"match_phrase": {"owner.name": company_name}},
+                "must": [
+                    {
+                        "bool": {
+                            "should": [
+                                {"match_phrase": {"applicant.name": company_name}},
+                                {"match_phrase": {"owner.name": company_name}},
+                            ]
+                        }
+                    },
+                    # NOTE: field names per Lens Patent API docs — verify
+                    # against https://docs.api.lens.org before a live run
+                    # (untestable offline; no API token in this environment).
+                    {"range": {"date_published": {
+                        "gte": GRANT_DATE_FROM, "lte": GRANT_DATE_TO}}},
+                    {"term": {"publication_type": "GRANTED_PATENT"}},
                 ]
             }
         },

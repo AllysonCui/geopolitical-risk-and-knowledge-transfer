@@ -1,19 +1,23 @@
 """
 Fuzzy-match Orbis GUO names to Yale CELI tracker firm names.
 
-Links 6,400+ Orbis Russian subsidiaries to ~1,048 Grade A/B exiters
-via fuzzy string matching on parent company names.
+Links 6,400+ Orbis Russian subsidiaries to the FULL Yale panel (all
+grades A–F, 1,589 firms) via fuzzy string matching on parent company
+names. Merging the full panel — not just the Grade A/B exiters — is what
+lets the Heckman selection stage in 10_selection_exit_mode.py model
+WHETHER a firm exits before modelling HOW it exits, instead of
+conditioning on exiters from the start.
 
 For parents with multiple Russian subsidiaries, aggregates by summing
 total assets and using the largest subsidiary's employee intensity.
 
 Input:
   data/analysis/orbis_subsidiaries.csv
-  data/analysis/firms_exiters.csv
+  data/analysis/firms_exit_panel.csv
 
 Output:
-  data/analysis/merged_orbis_yale.csv — one row per Yale exiter with
-    aggregated subsidiary financials and α proxy components
+  data/analysis/merged_orbis_yale.csv — one row per Yale firm with
+    aggregated subsidiary financials and knowledge-intensity components
 """
 
 import csv
@@ -28,7 +32,7 @@ except ImportError:
 DATA_DIR = Path(__file__).parent.parent / "data" / "analysis"
 
 ORBIS_FILE = DATA_DIR / "orbis_subsidiaries.csv"
-YALE_FILE = DATA_DIR / "firms_exiters.csv"
+YALE_FILE = DATA_DIR / "firms_exit_panel.csv"
 OUT_FILE = DATA_DIR / "merged_orbis_yale.csv"
 
 MATCH_THRESHOLD = 70
@@ -186,6 +190,9 @@ def main():
                 "industry": yale_row["industry"],
                 "grade_latest": yale_row["grade_latest"],
                 "action_type": yale_row["action_type"],
+                "first_grade_a_date": yale_row.get("first_grade_a_date", ""),
+                "first_grade_ab_date": yale_row.get("first_grade_ab_date", ""),
+                "timing_left_censored": yale_row.get("timing_left_censored", ""),
                 "guo_matched": "",
                 "match_quality": "",
                 "n_subsidiaries": 0,
@@ -245,6 +252,9 @@ def main():
             "industry": yale_row["industry"],
             "grade_latest": yale_row["grade_latest"],
             "action_type": yale_row["action_type"],
+            "first_grade_a_date": yale_row.get("first_grade_a_date", ""),
+            "first_grade_ab_date": yale_row.get("first_grade_ab_date", ""),
+            "timing_left_censored": yale_row.get("timing_left_censored", ""),
             "guo_matched": guo_match,
             "match_quality": mq,
             "n_subsidiaries": len(subs),
@@ -266,7 +276,10 @@ def main():
         writer.writerows(output_rows)
 
     matched_with_data = sum(1 for r in output_rows if r["sum_assets_th_usd"])
+    n_exiters = sum(1 for r in output_rows if r["grade_latest"] in ("A", "B"))
+    n_stayers = len(output_rows) - n_exiters
     print(f"\nOutput: {len(output_rows)} rows → {OUT_FILE}")
+    print(f"  Exiters (A/B): {n_exiters} | Non-exiters (C/D/F): {n_stayers}")
     print(f"  Matched with financial data: {matched_with_data}")
     print(f"  With employee intensity: {sum(1 for r in output_rows if r['emp_intensity'])}")
 

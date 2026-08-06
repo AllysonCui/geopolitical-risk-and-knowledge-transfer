@@ -1,0 +1,60 @@
+country,iso2,sanctions_coalition,wgi_rule_of_law_2021,legal_origin
+United States,US,1,1.4,english
+Germany,DE,1,1.6,german
+United Kingdom,GB,1,1.5,english
+France,FR,1,1.4,french
+Japan,JP,1,1.5,german
+Switzerland,CH,1,1.8,german
+Finland,FI,1,2.0,scandinavian
+China,CN,0,-0.5,german
+Netherlands,NL,1,1.8,french
+Poland,PL,1,0.5,socialist
+Italy,IT,1,0.2,french
+Sweden,SE,1,1.8,scandinavian
+Denmark,DK,1,1.9,scandinavian
+Danish,DK,1,1.9,scandinavian
+Austria,AT,1,1.8,german
+Spain,ES,1,0.9,french
+India,IN,0,0.0,english
+Canada,CA,1,1.7,english
+Czech Republic,CZ,1,1.0,socialist
+Norway,NO,1,2.0,scandinavian
+Greece,GR,1,0.2,french
+Belgium,BE,1,1.3,french
+Australia,AU,1,1.6,english
+Luxembourg,LU,1,1.8,french
+Ireland,IE,1,1.4,english
+Lithuania,LT,1,1.0,socialist
+Slovenia,SI,1,1.1,socialist
+Portugal,PT,1,1.1,french
+Hungary,HU,1,0.5,socialist
+Israel,IL,0,1.0,english
+Turkey,TR,0,-0.4,french
+Mexico,MX,0,-0.6,french
+South Korea,KR,1,1.0,german
+Latvia,LV,1,0.9,socialist
+Estonia,EE,1,1.3,socialist
+Iceland,IS,1,1.7,scandinavian
+Cyprus,CY,1,0.7,english
+Taiwan,TW,1,1.1,german
+United Arab Emirates,AE,0,0.8,english
+Bulgaria,BG,1,0.0,socialist
+Kazakhstan,KZ,0,-0.4,socialist
+Slovakia,SK,1,0.6,socialist
+Ukraine,UA,1,-0.7,socialist
+Singapore,SG,1,1.8,english
+Azerbaijan,AZ,0,-0.6,socialist
+Croatia,HR,1,0.4,socialist
+Liechtenstein,LI,1,1.8,german
+Andorra,AD,1,1.2,french
+Serbia,RS,0,-0.1,socialist
+New Zealand,NZ,1,1.9,english
+South Africa,ZA,0,-0.1,english
+Belarus,BY,0,-1.0,socialist
+Panama,PA,0,-0.1,french
+Malta,MT,1,0.9,french
+Malaysia,MY,0,0.5,english
+Romania,RO,1,0.4,socialist
+Brazil,BR,0,-0.3,french
+Monaco,MC,1,1.2,french
+Sri Lanka,LK,0,0.0,english

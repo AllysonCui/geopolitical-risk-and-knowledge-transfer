@@ -112,8 +112,12 @@ def main():
     results.append("=" * 78)
 
     # ── Prepare full sample ──────────────────────────────────────────────
+    # regression_sample.csv now covers ALL grades (for the selection model
+    # in script 10); this legacy script keeps its original A/B exiter frame.
     sample = []
     for r in rows:
+        if r.get("grade") not in ("A", "B"):
+            continue
         alpha = safe_float(r.get("alpha"))
         ln_a = safe_float(r.get("ln_assets"))
         yrs = safe_float(r.get("years_in_russia"))

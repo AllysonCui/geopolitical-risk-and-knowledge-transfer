@@ -2,154 +2,146 @@
 
 Does a multinational's knowledge structure determine *how* it exits a hostile market — and do sanctions sharpen that sorting?
 
-This project studies the 1,048 Western firms that withdrew from Russia after the February 2022 invasion, using the Yale CELI tracker as the backbone. The central finding is that knowledge-intensive (IP-heavy) firms tend to **sell** their Russian operations, while operationally embedded firms tend to **walk away** — and EU sanctions amplify this divergence by a factor of 4x.
+This project studies the Western firms that withdrew from Russia after the February 2022 invasion, using the Yale CELI tracker as the backbone. All three empirical questions are now anchored in a single formal model — **exit as a fire-sale problem with inalienable human capital** (`docs/formal_model.md`) — and each specification is a comparative static of that model: codified knowledge (patents) is alienable and transfers with the legal entity, tacit knowledge embodied in employees is not, so IP-heavy firms **sell** while operationally embedded firms **walk away**, and sanctions steepen the sorting by raising transaction costs.
 
-## Thesis (three-part)
+## The three questions and their specifications
 
-1. **Knowledge type determines exit mode.** Among firms that made a clean exit (Yale Grade A), the composite replicability index alpha negatively predicts selling (beta = -0.20, p = 0.087). IP-heavy firms sell (43%); operational firms walk away (29%).
-2. **Sanctions amplify the sorting.** The alpha-quadratic on P(Grade A) is 4.4x stronger in sanctioned sectors (R-squared = 12.5%) than non-sanctioned (R-squared = 2.2%).
-3. **Institutional moderators.** Japan (-28pp), Finland (+24pp), IT sector (-18pp) shift exit probability conditional on knowledge type.
+1. **Q1 — Exit mode** (`scripts/10_selection_exit_mode.py`): Heckman-style two-stage on the **full population** of matched foreign parents (all Yale grades A–F, not just exiters): a selection probit for whether a firm completes a clean exit, then a mode probit (sell vs. walk away) with the inverse-Mills-ratio control function. Exclusion restriction: consumer-facing (B2C) NACE status — boycott pressure shifts *whether* to exit, not the mechanics of the asset transfer. State seizures (Danone, Carlsberg, Fortum, Uniper) are coded as a third competing risk and dropped from the sell/walk margin.
+2. **Q2 — Sanctions amplification** (`scripts/11_sanctions_amplification.py`): a pooled **PatInt × SancExp interaction** (replacing the earlier split-sample R² comparison, which did not survive the rebuild — see "What changed") plus a **cause-specific competing-risks Cox** (statsmodels PHReg, episode-split counting-process data) with *time-varying* sector exposure built from the staggered 2022 EU package rollout.
+3. **Q3 — Institutional moderators** (`scripts/12_institutional_moderators.py`): cross-level PatInt × institution interactions (coalition membership, WGI rule of law, legal origin) with home-country fixed effects — levels are absorbed, only the interactions are identified. Mundlak correlated-random-effects probit as robustness. Wild cluster bootstrap (home country, ~35 clusters) throughout.
 
-## Regression specification
+The legacy cross-sectional specifications are retained in `scripts/09_run_regressions.py` (restricted to the original Grade A/B frame) for comparability.
 
-```
-Y_i = b0 + b1*alpha_i + b2*alpha_i^2 + X_i'*gamma + mu_j + epsilon_i
-```
+## Headline empirical patterns (current build)
 
-| Symbol | Meaning |
-|--------|---------|
-| Y_i | Binary: P(Grade A), P(Sold given Grade A), P(Subsidiary dissolved) |
-| alpha | Composite replicability index (0-1), see construction below |
-| X_i | Controls: ln(assets), years_in_russia, ln(n_subsidiaries) |
-| mu_j | Industry fixed effects (Yale sector classification) |
-
-Estimation: OLS (LPM) with HC1 robust standard errors. Logit with marginal effects at means as robustness.
+- Among Grade A exits with patent data (n=362): selling rises monotonically across patent-stock terciles (28% → 36% → 49%); patent percentile is positive in the mode probit (β ≈ 0.49, p ≈ 0.045; wild-cluster-bootstrap p ≈ 0.07 on the LPM analog). Labor intensity is negative but imprecise.
+- In the cause-specific hazard, patent intensity strongly *reduces* the walk-away hazard (log HR ≈ −1.16, p < 0.001) with no significant effect on the sale hazard — IP-heavy firms don't abandon.
+- The IMR (λ) is statistically indistinguishable from zero: little evidence that selection into exit biases the naive mode regression.
+- The PatInt × sanctions interaction is currently a precise zero at sector-level exposure; firm-level exposure measures are the planned sharpening.
 
 ## Data sources
 
 ### 1. Yale CELI Tracker (backbone)
 
-- **What**: 1,589 firms tracked across 12 snapshots (Dec 2022 - May 2025), graded A-F on withdrawal compliance.
+- **What**: 1,589 firms tracked across 11 snapshots (Dec 2022 – May 2025), graded A–F on withdrawal compliance.
 - **Where**: Public CSV snapshots in `data/raw/yale/` (e.g. `250521.csv`).
-- **Provides**: firm name, home country, industry, Yale grade, action type (sold/suspended/other).
-- **Concern**: Grades are subjective editorial judgments, not verified outcomes. Action text is inconsistent across snapshots (same firm may say "exited" in one and "sold operations" in another). We take the latest snapshot as ground truth.
+- **Provides**: firm name, home country, industry, Yale grade, action text; and — new — **exit timing** (first snapshot at Grade A) used by the hazard model.
+- **Concern**: Grades are subjective editorial judgments, not verified outcomes. Timing is coarse: 323 firms were already Grade A at the first snapshot (left-censored). Exit-mode coding relies on a regex classifier over action text plus manual seizure overrides; the planned hand-validation against the KSE Institute "LeaveRussia" database and Bloomberg/Refinitiv M&A records has **not** been done yet.
 
 ### 2. Bureau van Dijk Orbis (subsidiary financials)
 
 - **What**: 6,405 Russian subsidiaries of Western multinationals, with financial data.
-- **Where**: Downloaded as two XLSX files (`data/raw/orbis/orbis_export_part1.xlsx`, `data/raw/orbis/orbis_export_part2.xlsx`) per the query spec in `scripts/03_orbis_query_spec.md`.
-- **Provides**: total assets, employee count, employee costs, shareholders' equity, NACE sector code, GUO (global ultimate owner) name and country, incorporation date, active/inactive status.
-- **Concern**: The Orbis export had limited column coverage initially — personnel costs and total costs were missing for many firms, so we use employees/total_assets as the employee-intensity proxy instead of the originally specified personnel_costs/total_costs. Multi-year data (2018-2023) was requested but coverage is uneven; the parser cascades through years to find the most recent available. Currency conversion from RUB to USD uses Orbis's internal period-average exchange rates, which may distort values during the 2022 ruble crash.
+- **Where**: Two XLSX exports in `data/raw/orbis/` per the query spec in `scripts/03_orbis_query_spec.md`.
+- **Provides**: total assets, employee count, NACE code, GUO name/country, incorporation date, active/inactive status.
+- **Concern**: No PP&E column, so **asset tangibility — the key sellability confounder — cannot be controlled yet**; no parent-level financials, so patent stock cannot be scaled by parent size. Both are now REQUIRED ADDITIONS in the 03 spec for the next export.
 
-### 3. Bloomberg M&A Deals (exit valuations)
+### 3. Bloomberg M&A Deals (exit valuations + sale timing)
 
 - **What**: 790 M&A deals involving Russian targets and Western sellers.
-- **Where**: Exported from Bloomberg `MA <GO>` to `data/raw/bloomberg/bloomberg_ma_deals.csv`.
-- **Provides**: deal value, TV/EBITDA, payment type, deal status, seller/acquirer/target names.
-- **Concern**: Only 38 of 178 post-invasion deals have disclosed sale values. The rest are "N/A." This means Y_i (exit payoff ratio = sale price / pre-exit book value) is available for only ~16 firms in the regression sample. The project has therefore pivoted from continuous Y_i to binary dependent variables (Grade A, Sold, Subsidiary dissolved). An expanded Bloomberg pull with write-down/impairment data would restore the continuous Y_i for 200+ additional firms.
+- **Provides**: deal value, status, announce date — the announce date now provides sharp event timing for completed sales in the hazard model.
+- **Concern**: Only ~18 firms have a computable exit-payoff ratio; binary/mode outcomes remain primary.
 
 ### 4. Lens.org Patent Data (IP intensity)
 
-- **What**: Patent portfolio size for each of the 1,048 parent firms.
-- **Where**: Collected via `scripts/02_collect_patents_lens.py` using the Lens.org scholarly API; saved to `data/raw/lens/patents_by_firm.csv`.
-- **Provides**: total patent count per parent company, used as the numerator for the proprietary-intensity component of alpha.
-- **Concern**: Lens.org's free API has aggressive rate limits (7 seconds between requests). Coverage is imperfect — some firms return zero patents due to name mismatches (e.g., "3M" matches noise). Patent counts are a stock measure (lifetime patents), not a flow measure (recent R&D activity), so a firm with legacy patents but no current R&D scores high on IP intensity.
+- **What**: Patent portfolio size per parent firm, `data/raw/lens/patents_by_firm.csv`.
+- **Concern (important)**: the existing CSV covers **Grade A/B exiters only** and counts **lifetime** patents. Script 02 has been updated to (a) query the full 1,589-firm panel so patents can enter the selection stage, and (b) restrict to 2017–2021 granted patents (pre-determined vintage). **Re-run it (needs a Lens API token) to replace the file**; until then, the selection stage runs without patent intensity and the hazard risk set is effectively exiters.
 
-### 5. EU Sanctions Package Data (instrument)
+### 5. EU Sanctions Package Data
 
-- **What**: 9 EU sanctions packages adopted in 2022, mapped to NACE 2-digit sectors.
-- **Where**: `data/raw/eu_sanctions/eu_sanctions_2022.csv` (manually constructed) + hard-coded mapping in `scripts/08_build_analysis_dataset.py`.
-- **Provides**: sanctions_exposure = count of packages hitting the firm's NACE sector (0-8).
-- **Concern**: The mapping is coarse — sector-level, not firm-level. 798 of 899 firms in the sample have zero sanctions exposure. Only 101 firms are in affected sectors, and only ~35 of those are Grade A, limiting statistical power in split-sample regressions. Firm-level sanctions data (from Bloomberg BSRP or OFAC/EU lists) would be a much sharper instrument.
+- **What**: 9 EU sanctions packages adopted in 2022 with adoption dates (`data/raw/eu_sanctions/eu_sanctions_2022.csv`), mapped to NACE 2-digit sectors in script 08.
+- **Provides**: `sanctions_exposure` (count of packages hitting the sector) and `sanction_hit_dates` (adoption dates — the time-varying exposure profile for the hazard).
+- **Concern**: Sector-level and 2022-only. The design calls for firm-level exposure via CN/HS product codes from the EU Official Journal annexes (Eurostat RAMON correspondences), dual-use Annex I flags, and OFAC/Castellum counterparty exposure — not yet collected. Packages 9–14 are unmapped.
 
-## Alpha construction
+### 6. Home-country institutions (new)
 
-Alpha measures how replicable a firm's Russian operations are:
+- **What**: `data/raw/institutions/home_country_institutions.csv` — sanctions-coalition membership (Decree 430-r "unfriendly countries" proxy), WGI Rule of Law 2021, LLSV legal origin.
+- **Concern (important)**: hand-entered scaffold values — **verify against primary sources before reporting** (see `data/raw/institutions/README.md`). ESG-disclosure mandates (Carrots & Sticks) not yet collected.
+
+## Knowledge-structure measures
+
+The model treats **codifiability** as the driver, so the components enter separately (the symmetric composite α is legacy):
 
 ```
-alpha = rescale_to_01(
-    percentile_rank(employees / total_assets)     -- high = labor-heavy, operational
-  - percentile_rank(patents / total_assets)        -- high = IP-embedded
-)
+pat_pctile          percentile rank of parent patent stock (global; within-sector variant pat_pctile_sector)
+lab_pctile          percentile rank of subsidiary employees/assets (global; within-sector variant)
+alpha, alpha_sq     legacy composite (script 09 only)
 ```
 
-- High alpha (near 1): operational arm — many employees relative to assets, few patents. Knowledge is tacit, embedded in people and routines. Walking away is cheap because there is little proprietary value to extract.
-- Low alpha (near 0): knowledge repository — asset-heavy, patent-rich. Walking away means abandoning recoverable IP, so these firms sell.
-
-For firms missing patent data (no Lens.org match), alpha falls back to employee-intensity percentile only.
+Planned repairs that need new data: patent stock at the GUO with 2017–2021 vintage scaled by parent employees/assets (Lens re-pull + Orbis parent columns); labor intensity numerator and denominator from the same 2019–2021 window.
 
 ## Pipeline
 
-Run scripts in numerical order. Each consumes the output of prior steps.
-
 ```
-01_parse_yale_tracker.py       Yale CSVs --> firms_exit_panel.csv, firms_exiters.csv
-02_collect_patents_lens.py     firms_exiters.csv --> patents_by_firm.csv  (needs API token)
+01_parse_yale_tracker.py       Yale CSVs --> firms_exit_panel.csv (all grades, exit timing, seizure coding)
+02_collect_patents_lens.py     full panel --> patents_by_firm.csv  (needs API token; 2017-21 grant window)
 03_orbis_query_spec.md         (instructions for manual Orbis download, not a script)
 05_parse_orbis_export.py       orbis_export_part*.xlsx --> orbis_subsidiaries.csv
-06_merge_orbis_yale.py         orbis_subsidiaries + firms_exiters --> merged_orbis_yale.csv
+06_merge_orbis_yale.py         orbis_subsidiaries + FULL panel --> merged_orbis_yale.csv (1,394 firms, A-F)
 07_merge_bloomberg_deals.py    bloomberg_ma_deals + firms_exiters --> exit_deals_matched.csv
-08_build_analysis_dataset.py   all raw + intermediate data --> regression_sample.csv
-09_run_regressions.py          regression_sample.csv --> regression_results.txt
+08_build_analysis_dataset.py   all raw + intermediate --> regression_sample.csv (population incl. stayers)
+09_run_regressions.py          legacy cross-sectional specs (A/B frame) --> regression_results.txt
+10_selection_exit_mode.py      Q1: Heckman two-stage --> results_10_selection_exit_mode.txt
+11_sanctions_amplification.py  Q2: interaction + competing-risks Cox --> results_11_sanctions_amplification.txt
+12_institutional_moderators.py Q3: country-FE interactions --> results_12_institutional_moderators.txt
 ```
 
-Steps 02, 05, 06, 07 can run in any order as long as 01 has run first. Step 08 requires all prior outputs. Step 09 requires step 08.
+Steps 02, 05, 06, 07 can run in any order after 01. Step 08 requires all prior outputs; 09–12 require 08. Scripts 10–12 share `scripts/estimation_utils.py` (wild cluster bootstrap, probit/OLS reporting).
 
 ### Dependencies
 
 ```
-pip install openpyxl rapidfuzz numpy statsmodels
+pip install openpyxl rapidfuzz numpy scipy statsmodels
 ```
 
-- `openpyxl`: parsing Orbis XLSX exports (step 05)
-- `rapidfuzz`: fuzzy string matching for Orbis-Yale and Bloomberg-Yale merges (steps 06, 07)
-- `numpy` + `statsmodels`: regression estimation (step 09)
+## What changed in the model-based redesign (and what it overturned)
+
+- The sample now includes **non-exiters** (grades C/D/F), fixing the exiter-only conditioning.
+- Seizures are a separate competing risk (classifier priority + manual overrides), no longer misclassified as sales/exits.
+- The sanctions question is an **interaction/hazard design**, not a subsample R² ratio. Instructively, the old "4.4×" headline did not survive the rebuild: with the corrected action classification and the population-based percentiles, the sanctioned-sector R² ratio flips below 1 — the interaction coefficient (currently ≈ 0) is the defensible statistic.
+- Grade A **and** B firms are the exiter sample; Grade A alone defines completed exits for the mode margin.
+
+## Not yet implemented (needs data access)
+
+1. **Lens re-pull** for the full panel with the 2017–2021 grant window (API token required) — unblocks patents in the selection stage and stayers in the hazard risk set.
+2. **Orbis re-export** with PP&E/intangibles and parent-level financials (tangibility control; parent-scaled patent intensity; 2019–2021 window alignment).
+3. **Exit-mode hand-validation** against KSE LeaveRussia and Bloomberg/Refinitiv transaction records.
+4. **Firm-level sanction exposure** (EU OJ annexes → CN → CPA → NACE via Eurostat RAMON; dual-use Annex I; OFAC/Castellum) and mapping of packages 9–14.
+5. **Survey-based public pressure** (Eurobarometer 2022 / Pew) for the B2C × pressure exclusion restriction; currently B2C alone identifies (the B2C × non-coalition cell is near-empty).
+6. **ESG-disclosure mandates** (Carrots & Sticks) for the stakeholder-pressure channel.
+7. **FIML heckprobit** (Stata/R) to replace the two-step control-function approximation.
+8. Verification of the hand-entered institution values (`data/raw/institutions/README.md`).
 
 ## Fuzzy matching
 
-The Orbis-to-Yale merge uses `rapidfuzz.fuzz.token_sort_ratio` with a threshold of 70 (90 for short names <= 5 characters). Twenty-one manual overrides handle known problem names (IKEA, BMW, H&M, etc.). Match rate: 899 of 1,048 exiters (86%). The Bloomberg-to-Yale merge uses the same approach on seller names.
+The Orbis-to-Yale merge uses `rapidfuzz` token-set/partial ratios with a threshold of 70 (90 for names ≤ 5 characters) plus 21 manual overrides. Match rate: 1,394 of 1,589 panel firms (88%). The Bloomberg-to-Yale merge uses the same approach on seller names.
 
 ## File structure
 
 ```
 data/
-  raw/                           Raw data, one subfolder per source
-    yale/
-      *.csv                        Yale CELI tracker snapshots (e.g. 250521.csv)
-    orbis/
-      orbis_export_part1.xlsx      Orbis subsidiary export
-      orbis_export_part2.xlsx
-    bloomberg/
-      bloomberg_ma_deals.csv       Bloomberg M&A export
-    lens/
-      patents_by_firm.csv          1,048 firms with patent counts (via Lens.org API)
-    eu_sanctions/
-      eu_sanctions_2022.csv        9 sanctions packages (manually constructed)
-  analysis/                      Data built on top of the raw data
-    firms_exit_panel.csv           1,589 firms, all grades
-    firms_exiters.csv              1,048 Grade A+B firms
-    orbis_subsidiaries.csv         6,405 Russian subsidiaries
-    merged_orbis_yale.csv          899 matched firm-level records
-    exit_deals_matched.csv         165 matched M&A deals
-    regression_sample.csv          899-row regression-ready dataset
-    regression_results.txt         Full regression output
-    sample_stats.txt               Summary statistics
+  raw/
+    yale/                        11 Yale CELI tracker snapshots
+    orbis/                       Orbis subsidiary exports (xlsx)
+    bloomberg/                   Bloomberg M&A export
+    lens/                        patents_by_firm.csv (exiters-only, lifetime — re-pull pending)
+    eu_sanctions/                9 packages with adoption dates
+    institutions/                home-country institutions (+ verification README)
+  analysis/
+    firms_exit_panel.csv         1,589 firms, all grades, exit timing
+    firms_exiters.csv            1,048 Grade A+B firms
+    orbis_subsidiaries.csv       6,405 Russian subsidiaries
+    merged_orbis_yale.csv        1,394 matched firms (all grades)
+    exit_deals_matched.csv       matched M&A deals
+    regression_sample.csv        1,394-row analysis dataset
+    regression_results.txt       legacy specs (09)
+    results_10_*.txt             Q1 selection model
+    results_11_*.txt             Q2 interaction + hazard
+    results_12_*.txt             Q3 institutions
+    sample_stats.txt             summary statistics
+
+docs/
+  formal_model.md                the fire-sale / inalienable-human-capital model
 
 scripts/
-  01_parse_yale_tracker.py
-  02_collect_patents_lens.py
-  03_orbis_query_spec.md
-  05_parse_orbis_export.py
-  06_merge_orbis_yale.py
-  07_merge_bloomberg_deals.py
-  08_build_analysis_dataset.py
-  09_run_regressions.py
+  01..12 + estimation_utils.py   see Pipeline
 ```
-
-## Known limitations
-
-1. **Alpha is a proxy, not a direct measure.** The ideal alpha would use personnel_costs/total_costs (operational delegation). The Orbis export lacked consistent cost breakdowns, so we substitute employees/total_assets. These are correlated but not identical.
-2. **Y_i is mostly binary.** Only 16 firms have a continuous exit payoff ratio. The analysis therefore uses P(Grade A) and P(Sold) as dependent variables rather than the originally intended sale_price/book_value.
-3. **Sanctions instrument is coarse.** Sector-level mapping leaves 89% of firms with zero sanctions exposure. Firm-level sanctions data would improve identification.
-4. **Cross-sectional design.** The data supports panel structure (multi-year Orbis financials, multiple Yale snapshots), but the current regressions are cross-sectional. A difference-in-differences or event-study design would strengthen causal claims.
-5. **No parent-level controls.** R&D/revenue, geographic diversification, and Russia revenue share are not yet integrated. These are standard controls in the divestiture literature and would address omitted-variable concerns.
