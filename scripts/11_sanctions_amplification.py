@@ -7,10 +7,12 @@ designs the model actually implies:
   (a) Pooled interaction on the exit-mode margin:
         Pr(Sell | exit) = Φ(β₁ PatPct + β₂ SancExp + β₃ PatPct × SancExp + X'β)
       Model prediction (docs/formal_model.md, Prediction 2): sanctions
-      raise transaction costs τ, so only high-transferability firms clear
-      the sale threshold → β₃ > 0. If the buyer-pool channel dominates
-      for technology firms, β₃ < 0; the model signs both channels and the
-      data decide.
+      raise transaction costs τ, so the sale cutoff θ* rises — a level
+      effect, unambiguous. The steepening claim is a cross-partial derived
+      under V_i ~ F log-concave: β₃ > 0 whenever the marginal firm sits at
+      or below the mode of F; if the buyer-pool channel dominates for
+      technology assets (sanctions destroy V itself), β₃ < 0. The model
+      signs both channels and the data decide.
 
   (b) Cause-specific competing-risks Cox (sale and walk-away as competing
       events) with TIME-VARYING sanction exposure, using the staggered
