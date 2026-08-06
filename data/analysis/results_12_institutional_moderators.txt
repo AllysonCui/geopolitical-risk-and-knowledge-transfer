@@ -5,86 +5,86 @@ Cross-level interactions with country fixed effects
 
 Exit-mode sample: 360 Grade A exits (sold 133 / walked 227)
   Home countries: 35 (16 FE cells after pooling <5-firm countries)
-  Non-coalition firms: 8 | Common-law: 179 | WGI range: [-1.0, 2.0]
+  Non-coalition firms: 8 | Common-law: 179 | WGI range: [-1.2, 2.0]
 
 ──────────────────────────────────────────────────────────────────────────────
 Spec 1: LPM, country FE — institution LEVELS absorbed by FE;
         only PatPct × institution interactions identified
 ──────────────────────────────────────────────────────────────────────────────
 
-  1: LPM country FE + interactions (HC1): N=360, R²=0.1294
+  1: LPM country FE + interactions (HC1): N=360, R²=0.1295
   Variable                         Coef         Rob. SE        t    P>|t|
   ------------------------------------------------------------------------
-  const                              0.2909     0.2495    1.166   0.2438
-  pat_pctile                        -0.3431     0.5330   -0.644   0.5198
-  pat_x_coalition                    0.4396     0.4999    0.879   0.3792
-  pat_x_wgi                         -0.0001     0.2008   -0.001   0.9995
-  pat_x_commonlaw                    0.1244     0.1735    0.717   0.4734
-  lab_pctile                        -0.0615     0.0985   -0.625   0.5323
-  ln_assets                         -0.0000     0.0162   -0.001   0.9993
-  years_russia                       0.0011     0.0059    0.184   0.8542
-  ln_n_subs                         -0.0219     0.1078   -0.203   0.8389
-  ind_Consumer Dis                   0.0720     0.1258    0.573   0.5669
-  ind_Consumer Sta                   0.1195     0.1428    0.837   0.4027
-  ind_Financials                     0.1323     0.1434    0.922   0.3564
-  ind_Industrials                    0.1170     0.1201    0.974   0.3303
-  ind_Information                   -0.0180     0.1293   -0.139   0.8894
-  ind_Materials                      0.1766     0.1620    1.090   0.2756
-  ind_NGO                           -0.1995     0.1300   -1.535   0.1249
-  ind_OTHER                         -0.0695     0.1384   -0.502   0.6155
-  cty_Denmark                        0.2532     0.2498    1.014   0.3107
-  cty_Finland                        0.0834     0.2118    0.394   0.6938
-  cty_France                        -0.1287     0.2030   -0.634   0.5260
-  cty_Germany                        0.0477     0.2044    0.233   0.8155
-  cty_Ireland                        0.1940     0.2781    0.697   0.4856
-  cty_Italy                       0.6366***     0.2452    2.596   0.0094
-  cty_Japan                          0.0037     0.2791    0.013   0.9894
-  cty_Lithuania                     -0.1568     0.2581   -0.608   0.5434
-  cty_Netherland                     0.0067     0.2218    0.030   0.9760
-  cty_Norway                         0.1179     0.2532    0.466   0.6415
-  cty_OTHER                          0.1234     0.2007    0.615   0.5388
-  cty_Poland                        -0.2450     0.1997   -1.227   0.2197
-  cty_Sweden                         0.2598     0.2981    0.871   0.3836
-  cty_Switzerlan                    -0.0618     0.2093   -0.295   0.7678
-  cty_United Kin                    -0.0814     0.1849   -0.440   0.6597
-  cty_United Sta                    -0.1215     0.1781   -0.682   0.4951
+  const                              0.2946     0.2494    1.181   0.2376
+  pat_pctile                        -0.3338     0.5232   -0.638   0.5235
+  pat_x_coalition                    0.4868     0.4988    0.976   0.3291
+  pat_x_wgi                         -0.0391     0.2118   -0.185   0.8536
+  pat_x_commonlaw                    0.1237     0.1732    0.715   0.4749
+  lab_pctile                        -0.0626     0.0985   -0.636   0.5250
+  ln_assets                         -0.0004     0.0163   -0.022   0.9827
+  years_russia                       0.0012     0.0059    0.198   0.8434
+  ln_n_subs                         -0.0209     0.1079   -0.194   0.8464
+  ind_Consumer Dis                   0.0710     0.1257    0.565   0.5723
+  ind_Consumer Sta                   0.1178     0.1428    0.825   0.4096
+  ind_Financials                     0.1333     0.1433    0.930   0.3525
+  ind_Industrials                    0.1179     0.1202    0.981   0.3268
+  ind_Information                   -0.0189     0.1293   -0.146   0.8841
+  ind_Materials                      0.1769     0.1619    1.092   0.2747
+  ind_NGO                           -0.2010     0.1302   -1.544   0.1227
+  ind_OTHER                         -0.0705     0.1385   -0.509   0.6105
+  cty_Denmark                        0.2614     0.2529    1.034   0.3013
+  cty_Finland                        0.0906     0.2133    0.425   0.6709
+  cty_France                        -0.1361     0.2041   -0.667   0.5050
+  cty_Germany                        0.0477     0.2046    0.233   0.8157
+  cty_Ireland                        0.1935     0.2772    0.698   0.4852
+  cty_Italy                       0.6102***     0.2354    2.593   0.0095
+  cty_Japan                          0.0057     0.2793    0.020   0.9837
+  cty_Lithuania                     -0.1609     0.2576   -0.625   0.5323
+  cty_Netherland                     0.0071     0.2220    0.032   0.9746
+  cty_Norway                         0.1209     0.2526    0.479   0.6321
+  cty_OTHER                          0.1196     0.2004    0.597   0.5505
+  cty_Poland                        -0.2569     0.1996   -1.287   0.1982
+  cty_Sweden                         0.2595     0.2984    0.870   0.3846
+  cty_Switzerlan                    -0.0582     0.2098   -0.277   0.7816
+  cty_United Kin                    -0.0832     0.1851   -0.450   0.6530
+  cty_United Sta                    -0.1246     0.1780   -0.700   0.4840
 
   Wild cluster bootstrap (home country, 999 reps):
-    pat_x_coalition : β=+0.4396, WCB p=0.5190
-    pat_x_wgi       : β=-0.0001, WCB p=0.9990
-    pat_x_commonlaw : β=+0.1244, WCB p=0.4940
+    pat_x_coalition : β=+0.4868, WCB p=0.4760
+    pat_x_wgi       : β=-0.0391, WCB p=0.8800
+    pat_x_commonlaw : β=+0.1237, WCB p=0.4840
 
 ──────────────────────────────────────────────────────────────────────────────
 Spec 2: Mundlak CRE probit — country means of firm covariates +
         institution levels, instead of country FE
 ──────────────────────────────────────────────────────────────────────────────
 
-  2: Mundlak CRE probit: N=360, Pseudo-R²=0.0826, Log-L=-217.5
+  2: Mundlak CRE probit: N=360, Pseudo-R²=0.0854, Log-L=-216.9
   Variable                         Coef         Std Err        z    P>|z|          AME
   ------------------------------------------------------------------------------------
-  const                            4.1604**     1.9704    2.111   0.0347   
-  pat_pctile                      -5.7752**     2.7944   -2.067   0.0388      -1.9904
-  pat_x_coalition                  7.3260**     3.0019    2.440   0.0147       2.5248
-  pat_x_wgi                         -0.8633     0.7573   -1.140   0.2543      -0.2975
-  pat_x_commonlaw                    0.4825     0.4983    0.968   0.3329       0.1663
-  coalition                      -3.7267***     1.3251   -2.812   0.0049      -1.2844
-  wgi_rule_of_law                    0.4380     0.3596    1.218   0.2233       0.1510
-  common_law                       -0.5102*     0.2755   -1.852   0.0640      -0.1758
-  lab_pctile                        -0.1832     0.2802   -0.654   0.5132      -0.0632
-  ln_assets                         -0.0024     0.0448   -0.054   0.9568      -0.0008
-  years_russia                       0.0041     0.0158    0.256   0.7978       0.0014
-  ln_n_subs                         -0.1676     0.2944   -0.569   0.5691      -0.0578
-  pat_bar_c                          0.1185     0.6855    0.173   0.8628       0.0408
-  lab_bar_c                        -1.6814*     0.9307   -1.807   0.0708      -0.5795
-  ln_assets_bar_c                   -0.0721     0.1153   -0.625   0.5317      -0.0249
-  ind_Consumer Dis                   0.1923     0.3880    0.496   0.6201       0.0663
-  ind_Consumer Sta                   0.4179     0.4130    1.012   0.3116       0.1440
-  ind_Financials                     0.3100     0.4366    0.710   0.4777       0.1068
-  ind_Industrials                    0.4344     0.3717    1.169   0.2425       0.1497
-  ind_Information                   -0.0150     0.4085   -0.037   0.9706      -0.0052
-  ind_Materials                      0.6004     0.4444    1.351   0.1767       0.2069
-  ind_NGO                          -1.2792*     0.6595   -1.940   0.0524      -0.4409
-  ind_OTHER                         -0.0768     0.4656   -0.165   0.8689      -0.0265
+  const                            4.2782**     1.9892    2.151   0.0315   
+  pat_pctile                      -5.8504**     2.8207   -2.074   0.0381      -2.0093
+  pat_x_coalition                  7.7648**     3.0495    2.546   0.0109       2.6668
+  pat_x_wgi                         -1.1460     0.7839   -1.462   0.1437      -0.3936
+  pat_x_commonlaw                    0.4832     0.4959    0.974   0.3299       0.1660
+  coalition                      -4.0398***     1.3553   -2.981   0.0029      -1.3875
+  wgi_rule_of_law                   0.6382*     0.3827    1.668   0.0954       0.2192
+  common_law                       -0.5111*     0.2759   -1.852   0.0640      -0.1755
+  lab_pctile                        -0.1779     0.2802   -0.635   0.5256      -0.0611
+  ln_assets                         -0.0029     0.0449   -0.065   0.9485      -0.0010
+  years_russia                       0.0042     0.0158    0.265   0.7913       0.0014
+  ln_n_subs                         -0.1744     0.2944   -0.592   0.5536      -0.0599
+  pat_bar_c                          0.0732     0.6877    0.106   0.9152       0.0252
+  lab_bar_c                        -1.6872*     0.9340   -1.806   0.0708      -0.5795
+  ln_assets_bar_c                   -0.0756     0.1156   -0.654   0.5129      -0.0260
+  ind_Consumer Dis                   0.1829     0.3883    0.471   0.6376       0.0628
+  ind_Consumer Sta                   0.4167     0.4130    1.009   0.3130       0.1431
+  ind_Financials                     0.3092     0.4367    0.708   0.4790       0.1062
+  ind_Industrials                    0.4261     0.3723    1.144   0.2525       0.1463
+  ind_Information                   -0.0222     0.4089   -0.054   0.9567      -0.0076
+  ind_Materials                      0.5892     0.4448    1.324   0.1854       0.2023
+  ind_NGO                         -1.2934**     0.6562   -1.971   0.0487      -0.4442
+  ind_OTHER                         -0.0749     0.4655   -0.161   0.8721      -0.0257
 
 ──────────────────────────────────────────────────────────────────────────────
 Descriptive: sale rate by institutions × patent-intensity half
@@ -101,9 +101,10 @@ Descriptive: sale rate by institutions × patent-intensity half
 LIMITATIONS
 ==============================================================================
 
-  * Institution values are a hand-entered scaffold (see
-    data/raw/institutions/README.md) — verify WGI 2021, the Decree 430-r
-    coalition list, and legal-origin codings before reporting.
+  * Institution values are verified against sources (see
+    data/raw/institutions/README.md). One deviation: the WGI Rule of Law
+    column is the 2022 vintage — the 2021 release was unreachable through
+    this environment's network policy; swap it in when available.
   * Nearly all exiters have coalition home countries, so pat_x_coalition
     leans on few firms; the WCB p-value is the honest one.
   * The stakeholder-pressure channel is proxied by legal origin; the

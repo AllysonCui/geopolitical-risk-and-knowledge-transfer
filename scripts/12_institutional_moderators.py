@@ -26,8 +26,10 @@ probit as robustness (country means of firm covariates + institution
 levels instead of FE). Wild cluster bootstrap (home country) on all
 interaction terms.
 
-Note: home-country institutions are hand-entered scaffold values —
-see data/raw/institutions/README.md — verify before reporting.
+Home-country institution values are verified against sources (coalition:
+Decree 430-r list; WGI: official DataBank RL.EST export, 2022 vintage —
+one year later than the design's 2021 target; legal origin: LLSV) — see
+data/raw/institutions/README.md for provenance and remaining caveats.
 
 Input:  data/analysis/regression_sample.csv
         (institutions already merged in by script 08)
@@ -144,9 +146,10 @@ def main():
     results.append("LIMITATIONS")
     results.append("=" * 78)
     results.append("""
-  * Institution values are a hand-entered scaffold (see
-    data/raw/institutions/README.md) — verify WGI 2021, the Decree 430-r
-    coalition list, and legal-origin codings before reporting.
+  * Institution values are verified against sources (see
+    data/raw/institutions/README.md). One deviation: the WGI Rule of Law
+    column is the 2022 vintage — the 2021 release was unreachable through
+    this environment's network policy; swap it in when available.
   * Nearly all exiters have coalition home countries, so pat_x_coalition
     leans on few firms; the WCB p-value is the honest one.
   * The stakeholder-pressure channel is proxied by legal origin; the

@@ -299,10 +299,12 @@ def main():
         # B2C flag from NACE division of the largest subsidiary
         b2c = 1 if nace_sector in B2C_NACE_DIVISIONS else 0
 
-        # Home-country institutions
+        # Home-country institutions (WGI vintage: 2022 estimates — the 2021
+        # release was unreachable through this environment's network policy;
+        # see data/raw/institutions/README.md)
         inst = institutions.get(country, {})
         coalition = inst.get("sanctions_coalition", "")
-        wgi = inst.get("wgi_rule_of_law_2021", "")
+        wgi = inst.get("wgi_rule_of_law_2022", "")
         legal_origin = inst.get("legal_origin", "")
 
         # New Y variables

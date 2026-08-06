@@ -54,8 +54,8 @@ The legacy cross-sectional specifications are retained in `scripts/09_run_regres
 
 ### 6. Home-country institutions (new)
 
-- **What**: `data/raw/institutions/home_country_institutions.csv` — sanctions-coalition membership (Decree 430-r "unfriendly countries" proxy), WGI Rule of Law 2021, LLSV legal origin.
-- **Concern (important)**: hand-entered scaffold values — **verify against primary sources before reporting** (see `data/raw/institutions/README.md`). ESG-disclosure mandates (Carrots & Sticks) not yet collected.
+- **What**: `data/raw/institutions/home_country_institutions.csv` — sanctions-coalition membership (Decree 430-r "unfriendly countries" list), WGI Rule of Law estimate, LLSV legal origin.
+- **Provenance**: verified against sources on 2026-08-06 — the coalition dummy against the Decree 430-r list (zero changes from the initial coding), WGI from the official DataBank `RL.EST` export (via a vendored public mirror), legal origin per LLSV with one correction (UAE → french civil law). **One deviation**: the WGI column is the **2022 vintage** — the 2021 release was unreachable through this environment's network policy; adjacent-year estimates are highly correlated, but swap in 2021 when available (see `data/raw/institutions/README.md`). ESG-disclosure mandates (Carrots & Sticks) not yet collected.
 
 ## Knowledge-structure measures
 
@@ -109,7 +109,7 @@ pip install openpyxl rapidfuzz numpy scipy statsmodels
 5. **Survey-based public pressure** (Eurobarometer 2022 / Pew) for the B2C × pressure exclusion restriction; currently B2C alone identifies (the B2C × non-coalition cell is near-empty).
 6. **ESG-disclosure mandates** (Carrots & Sticks) for the stakeholder-pressure channel.
 7. **FIML heckprobit** (Stata/R) to replace the two-step control-function approximation.
-8. Verification of the hand-entered institution values (`data/raw/institutions/README.md`).
+8. Swap the WGI Rule of Law column from the 2022 vintage to 2021 once the WGI download is reachable (values verified otherwise; see `data/raw/institutions/README.md`).
 
 ## Fuzzy matching
 
