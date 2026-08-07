@@ -2,11 +2,11 @@
 
 Does a multinational's knowledge structure determine *how* it exits a hostile market — and do sanctions sharpen that sorting?
 
-This project studies the Western firms that withdrew from Russia after the February 2022 invasion, using the Yale CELI tracker as the backbone. All three empirical questions are now anchored in a single formal model — **exit as a fire-sale problem with inalienable human capital** (`docs/formal_model.md`) — and each specification is a comparative static of that model: codified knowledge (patents) is alienable and transfers with the legal entity, tacit knowledge embodied in employees is not, so IP-heavy firms **sell** while operationally embedded firms **walk away**, and sanctions steepen the sorting by raising transaction costs.
+This project studies how Western firms left Russia after the February 2022 invasion, using the Yale CELI tracker as the backbone of the analysis. The central research question is whether the transferability of a subsidiary's productive assets helps explain *how* the parent exits. Transferable assets can preserve value under new ownership and therefore increase the price a buyer is willing to pay. By contrast, value that depends on employees, relationships, and firm-specific routines may be difficult for a buyer to retain after ownership changes. The model therefore predicts that subsidiaries associated with more transferable intellectual property should be easier to sell, whereas subsidiaries that rely more heavily on non-transferable human capital may have fewer viable sale opportunities and may instead close, suspend operations, or otherwise exit without an arm's-length sale. The analysis also asks whether sanctions and home-country institutions alter this relationship. These are hypotheses to be tested, not assumptions that the current evidence has already established.
 
 ## The three questions and their specifications
 
-1. **Q1 — Exit mode** (`scripts/10_selection_exit_mode.py`): Heckman-style two-stage on the **full population** of matched foreign parents (all Yale grades A–F, not just exiters): a selection probit for whether a firm completes a clean exit, then a mode probit (sell vs. walk away) with the inverse-Mills-ratio control function. Exclusion restriction: consumer-facing (B2C) NACE status — boycott pressure shifts *whether* to exit, not the mechanics of the asset transfer. State seizures (Danone, Carlsberg, Fortum, Uniper) are coded as a third competing risk and dropped from the sell/walk margin.
+1. **Q1 — Exit mode** (`scripts/10_selection_exit_mode.py`): Is a firm's knowledge structure associated with completing a sale rather than exiting without a sale? The code estimates a Heckman-style two-stage model on the **full population** of matched foreign parents (all Yale grades A–F, not only firms that exited). The first-stage probit models completion of a clean exit. The second-stage probit models sale versus non-sale exit and includes the inverse Mills ratio as a control function. Consumer-facing (B2C) NACE status is the proposed exclusion restriction: the design assumes that public pressure affects whether a firm exits but does not directly affect whether it can find a buyer. That assumption is contestable and requires validation. State seizures (Danone, Carlsberg, Fortum, and Uniper) are treated as a third outcome because they are not voluntary choices between sale and non-sale exit.
 2. **Q2 — Sanctions amplification** (`scripts/11_sanctions_amplification.py`): a pooled **PatInt × SancExp interaction** (replacing the earlier split-sample R² comparison, which did not survive the rebuild — see "What changed") plus a **cause-specific competing-risks Cox** (statsmodels PHReg, episode-split counting-process data) with *time-varying* sector exposure built from the staggered 2022 EU package rollout.
 3. **Q3 — Institutional moderators** (`scripts/12_institutional_moderators.py`): cross-level PatInt × institution interactions (coalition membership, WGI rule of law, legal origin) with home-country fixed effects — levels are absorbed, only the interactions are identified. Mundlak correlated-random-effects probit as robustness. Wild cluster bootstrap (home country, ~35 clusters) throughout.
 
@@ -15,9 +15,9 @@ The legacy cross-sectional specifications are retained in `scripts/09_run_regres
 ## Headline empirical patterns (current build)
 
 - Among Grade A exits with patent data (n=362): selling rises monotonically across patent-stock terciles (28% → 36% → 49%); patent percentile is positive in the mode probit (β ≈ 0.49, p ≈ 0.045; wild-cluster-bootstrap p ≈ 0.07 on the LPM analog). Labor intensity is negative but imprecise.
-- In the cause-specific hazard, patent intensity strongly *reduces* the walk-away hazard (log HR ≈ −1.16, p < 0.001) with no significant effect on the sale hazard — IP-heavy firms don't abandon.
+- In the cause-specific hazard model, higher patent intensity is associated with a lower estimated hazard of exit without a sale (log hazard coefficient ≈ −1.16, p < 0.001). Its estimated association with the sale hazard is not statistically distinguishable from zero. This pattern is consistent with the transferability mechanism, but it does not establish that mechanism because patent stock may also proxy for parent size, sector, profitability, or asset composition.
 - The IMR (λ) is statistically indistinguishable from zero: little evidence that selection into exit biases the naive mode regression.
-- The PatInt × sanctions interaction is currently a precise zero at sector-level exposure; firm-level exposure measures are the planned sharpening.
+- The estimated PatInt × sanctions interaction is close to zero with the current sector-level exposure measure. More precise firm-level exposure data are needed to test the moderation hypothesis credibly.
 
 ## Data sources
 
@@ -57,17 +57,17 @@ The legacy cross-sectional specifications are retained in `scripts/09_run_regres
 - **What**: `data/raw/institutions/home_country_institutions.csv` — sanctions-coalition membership (Decree 430-r "unfriendly countries" list), WGI Rule of Law estimate, LLSV legal origin.
 - **Provenance**: verified against sources on 2026-08-06 — the coalition dummy against the Decree 430-r list (zero changes from the initial coding), WGI from the official DataBank `RL.EST` export (via a vendored public mirror), legal origin per LLSV with one correction (UAE → french civil law). **One deviation**: the WGI column is the **2022 vintage** — the 2021 release was unreachable through this environment's network policy; adjacent-year estimates are highly correlated, but swap in 2021 when available (see `data/raw/institutions/README.md`). ESG-disclosure mandates (Carrots & Sticks) not yet collected.
 
-## Knowledge-structure measures
+## How the theoretical concepts are measured
 
-The model treats **codifiability** as the driver, so the components enter separately (the symmetric composite α is legacy):
+The model distinguishes transferable codified assets from value embodied in people and routines. The available variables are imperfect proxies for those concepts and therefore enter separately (the symmetric composite α is retained only for legacy analysis):
 
 ```
-pat_pctile          percentile rank of parent patent stock (global; within-sector variant pat_pctile_sector)
-lab_pctile          percentile rank of subsidiary employees/assets (global; within-sector variant)
+pat_pctile          percentile rank of the parent's patent stock; a proxy for codified knowledge, not a direct measure of IP owned by the Russian subsidiary
+lab_pctile          percentile rank of subsidiary employees/assets; a proxy for labor intensity, not a direct measure of tacit or firm-specific knowledge
 alpha, alpha_sq     legacy composite (script 09 only)
 ```
 
-Planned repairs that need new data: patent stock at the GUO with 2017–2021 vintage scaled by parent employees/assets (Lens re-pull + Orbis parent columns); labor intensity numerator and denominator from the same 2019–2021 window.
+The current mapping is incomplete. Parent patent stock does not show which patents would transfer with the Russian legal entity, and employees per unit of assets does not directly measure whether employee knowledge is firm-specific or likely to leave after a sale. Planned improvements include measuring the parent's 2017–2021 patent stock and scaling it by parent size, identifying subsidiary-level IP ownership where possible, and constructing labor intensity from a consistent 2019–2021 accounting window.
 
 ## Pipeline
 
@@ -93,14 +93,18 @@ Steps 02, 05, 06, 07 can run in any order after 01. Step 08 requires all prior o
 pip install openpyxl rapidfuzz numpy scipy statsmodels
 ```
 
-## What changed in the model-based redesign (and what it overturned)
+## What changed in the redesign
 
 - The sample now includes **non-exiters** (grades C/D/F), fixing the exiter-only conditioning.
 - Seizures are a separate competing risk (classifier priority + manual overrides), no longer misclassified as sales/exits.
 - The sanctions question is an **interaction/hazard design**, not a subsample R² ratio. Instructively, the old "4.4×" headline did not survive the rebuild: with the corrected action classification and the population-based percentiles, the sanctioned-sector R² ratio flips below 1 — the interaction coefficient (currently ≈ 0) is the defensible statistic.
-- Grade A **and** B firms are the exiter sample; Grade A alone defines completed exits for the mode margin.
+- Grade A **and** B firms form the broad exiter sample; Grade A alone defines completed exits for the exit-mode analysis. This makes the estimand clear but also ties the outcome to Yale's editorial classification.
 
-## Not yet implemented (needs data access)
+## Where the model and evidence do—and do not—match
+
+The model predicts a higher probability of sale when more subsidiary value can be transferred to a buyer. The positive association between parent patent rank and sale, together with the lower estimated non-sale exit hazard, is consistent with that prediction. The evidence does not yet identify the model's mechanism. Patent data are measured at the parent rather than the Russian subsidiary, labor intensity is only a rough proxy for non-transferable human capital, and the data do not directly measure the buyer's valuation or the fraction of value that survives a transfer. The current sanctions interaction is close to zero, so the data do not support the stronger claim that sanctions amplify knowledge-based sorting. Institutional interactions are also imprecisely estimated. These null and uncertain results should remain part of the project's substantive interpretation.
+
+## Major work required before strong causal claims
 
 1. **Lens re-pull** for the full panel with the 2017–2021 grant window (API token required) — unblocks patents in the selection stage and stayers in the hazard risk set.
 2. **Orbis re-export** with PP&E/intangibles and parent-level financials (tangibility control; parent-scaled patent intensity; 2019–2021 window alignment).
@@ -140,7 +144,7 @@ data/
     sample_stats.txt             summary statistics
 
 docs/
-  formal_model.md                the fire-sale / inalienable-human-capital model
+  formal_model.md                model of sale with imperfectly transferable assets
 
 scripts/
   01..12 + estimation_utils.py   see Pipeline

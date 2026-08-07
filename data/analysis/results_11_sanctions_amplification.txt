@@ -1,5 +1,5 @@
 ==============================================================================
-Q2: SANCTIONS AS AMPLIFIER — INTERACTION + COMPETING-RISKS HAZARD
+Q2: SANCTIONS MODERATION — INTERACTION + COMPETING-RISKS HAZARD
 ==============================================================================
 
 Exit-mode sample: 362 Grade A exits (sold 134 / walked 228)
@@ -75,10 +75,10 @@ Spec A: Pr(Sold | exit) with PatPct × sanctions interaction
 ──────────────────────────────────────────────────────────────────────────────
 Spec B: Cause-specific Cox with time-varying sanction exposure
   Risk set: firms with patent data (announced exiters). Events:
-  sale vs walk-away (competing); Grade B and seized censored.
+  sale vs exit without sale (competing); Grade B and seized censored.
 ──────────────────────────────────────────────────────────────────────────────
 
-  Hazard risk set: 709 firms with patent data (effectively announced exiters until the Lens re-pull) | sale events: 134 | walk-away events: 228 | censored: 347
+  Hazard risk set: 709 firms with patent data (effectively announced exiters until the Lens re-pull) | sale events: 134 | non-sale exit events: 228 | censored: 347
 
   Cause-specific hazard: SALE (134 events, 970 episodes)
   Variable                       log HR       HR       SE    P>|z|
@@ -99,7 +99,7 @@ Spec B: Cause-specific Cox with time-varying sanction exposure
   ind_NGO                       -1.1342       0.322   1.1238   0.3129
   ind_OTHER                      0.2590       1.296   0.7092   0.7149
 
-  Cause-specific hazard: WALK-AWAY (228 events, 970 episodes)
+  Cause-specific hazard: EXIT WITHOUT SALE (228 events, 970 episodes)
   Variable                       log HR       HR       SE    P>|z|
   ------------------------------------------------------------------
   pat_pctile                    -1.1607***    0.313   0.2646   0.0000

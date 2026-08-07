@@ -8,12 +8,13 @@ Merges: Yale exit panel (ALL grades A–F) + Orbis subsidiary financials
 The sample is now the full matched population of foreign parents with
 Russian subsidiaries — not just Grade A/B exiters — so that
 10_selection_exit_mode.py can estimate the exit decision (selection) and
-the exit mode (sell vs. walk away) as separate stages.
+the exit mode (sale versus exit without a sale) as separate stages.
 
 Constructs:
-  Knowledge structure (theory: codified knowledge is alienable and
-  transfers with the legal entity; tacit knowledge embodied in employees
-  is inalienable — see docs/formal_model.md):
+  Knowledge structure (theory: transferable codified assets may retain
+  more value under new ownership than knowledge tied to employees and
+  firm-specific routines; the available variables are proxies for these
+  concepts — see docs/formal_model.md):
     pat_pctile         parent patent stock, percentile rank (global)
     pat_pctile_sector  same, ranked within Yale industry sector
     lab_pctile         subsidiary employee intensity, percentile rank

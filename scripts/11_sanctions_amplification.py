@@ -1,20 +1,18 @@
 """
-Q2 — Do sanctions amplify the knowledge-type sorting?
+Q2 — Do sanctions alter the association between knowledge structure and exit mode?
 
 Replaces the subsample R² comparison (the old "4.4x" claim) with the two
 designs the model actually implies:
 
   (a) Pooled interaction on the exit-mode margin:
         Pr(Sell | exit) = Φ(β₁ PatPct + β₂ SancExp + β₃ PatPct × SancExp + X'β)
-      Model prediction (docs/formal_model.md, Prediction 2): sanctions
-      raise transaction costs τ, so the sale cutoff θ* rises — a level
-      effect, unambiguous. The steepening claim is a cross-partial derived
-      under V_i ~ F log-concave: β₃ > 0 whenever the marginal firm sits at
-      or below the mode of F; if the buyer-pool channel dominates for
-      technology assets (sanctions destroy V itself), β₃ < 0. The model
-      signs both channels and the data decide.
+      Sanctions may raise transaction costs and lower sale probabilities.
+      Their interaction with patent intensity is theoretically ambiguous:
+      higher transaction costs can make transferable value more important,
+      while the loss of capable buyers can reduce the value of technology
+      assets. The data must distinguish these channels.
 
-  (b) Cause-specific competing-risks Cox (sale and walk-away as competing
+  (b) Cause-specific competing-risks Cox (sale and exit without sale as competing
       events) with TIME-VARYING sanction exposure, using the staggered
       2022 EU package rollout:
         h_sell(t) = h₀(t) exp(β₁ PatPct + β₂ SancExp(t) + β₃ PatPct×SancExp(t) + X'β)
@@ -57,7 +55,7 @@ def main():
     rows = load_sample()
     results = []
     results.append("=" * 78)
-    results.append("Q2: SANCTIONS AS AMPLIFIER — INTERACTION + COMPETING-RISKS HAZARD")
+    results.append("Q2: SANCTIONS MODERATION — INTERACTION + COMPETING-RISKS HAZARD")
     results.append("=" * 78)
 
     # ── (a) Pooled interaction on the exit-mode margin ───────────────────
@@ -107,12 +105,12 @@ def main():
     results.append("\n" + "─" * 78)
     results.append("Spec B: Cause-specific Cox with time-varying sanction exposure")
     results.append("  Risk set: firms with patent data (announced exiters). Events:")
-    results.append("  sale vs walk-away (competing); Grade B and seized censored.")
+    results.append("  sale vs exit without sale (competing); Grade B and seized censored.")
     results.append("─" * 78)
 
     # Patent data only exists for exiters, so complete cases restrict the
     # risk set to (essentially) the Grade A/B firms: the hazard compares
-    # timing of completed sale vs walk-away among announced exiters, with
+    # timing of completed sale vs exit without sale among announced exiters, with
     # Grade B and seized firms censored. (A missingness-indicator variant
     # was degenerate — stayers never have events, so the indicator perfectly
     # predicts censoring.) Re-running the Lens pull for the full panel will
@@ -146,7 +144,7 @@ def main():
     n_walk = sum(1 for s in subjects if s["event"] == "walked")
     results.append(f"\n  Hazard risk set: {len(subjects)} firms with patent data "
                    f"(effectively announced exiters until the Lens re-pull) | "
-                   f"sale events: {n_sold} | walk-away events: {n_walk} | "
+                   f"sale events: {n_sold} | non-sale exit events: {n_walk} | "
                    f"censored: {len(subjects) - n_sold - n_walk}")
 
     # Episode-split (counting process) records
@@ -174,7 +172,7 @@ def main():
              "pat_x_sanc(t)", "ln_assets", "years_russia"] + \
             [f"ind_{s[:12]}" for s in ind_labels_h]
 
-    for cause, label in (("sold", "SALE"), ("walked", "WALK-AWAY")):
+    for cause, label in (("sold", "SALE"), ("walked", "EXIT WITHOUT SALE")):
         entry, stop, status, Xh = build_episodes(cause)
         results.append(f"\n  Cause-specific hazard: {label} "
                        f"({int(status.sum())} events, {len(stop)} episodes)")

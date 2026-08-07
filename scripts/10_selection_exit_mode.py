@@ -1,5 +1,5 @@
 """
-Q1 — Do IP-heavy firms sell while labor-heavy firms walk away?
+Q1 — Is knowledge structure associated with sale rather than exit without a sale?
 
 Heckman-style two-stage estimation on the FULL population of matched
 foreign parents with Russian subsidiaries (all Yale grades A–F), fixing
@@ -29,10 +29,12 @@ DATA CONSTRAINTS THAT SHAPE THE SPECIFICATION:
     mechanics of how an asset transfers.
 
 Model predictions (docs/formal_model.md):
-  Prediction 1: β(PatPct) > 0 — codified knowledge survives the transfer,
-                so patent-intensive firms clear the sale threshold;
-                β(LabPct) < 0 — tacit human capital is inalienable and
-                dies in the transfer, so labor-intensive firms walk away.
+  Prediction 1: β(PatPct) > 0 if parent patent intensity is a useful proxy
+                for transferable value that a buyer can retain;
+                β(LabPct) < 0 if labor intensity captures value tied to
+                employees and routines that may not survive a change in
+                ownership. These are tests of associations implied by the
+                model, not direct estimates of knowledge transferability.
 
 Inference: default probit SEs; wild cluster bootstrap (home country,
 Rademacher, null-imposed, 999 reps) on the LPM analog for the two key
@@ -55,7 +57,7 @@ def main():
     rows = load_sample()
     results = []
     results.append("=" * 78)
-    results.append("Q1: SELECTION-CORRECTED EXIT MODE — SELL vs WALK AWAY")
+    results.append("Q1: SELECTION-CORRECTED EXIT MODE — SALE vs EXIT WITHOUT SALE")
     results.append("Heckman-style two-stage (probit selection + IMR control function)")
     results.append("=" * 78)
 
@@ -108,7 +110,7 @@ def main():
 
     # ── Stage 2: exit mode among completed exits ─────────────────────────
     results.append("\n" + "─" * 78)
-    results.append("Stage 2: Pr(Sold | clean exit) — sell vs walk away")
+    results.append("Stage 2: Pr(Sold | clean exit) — sale vs exit without sale")
     results.append("─" * 78)
 
     pat_all = np.array([safe_float(r["pat_pctile"]) if safe_float(r["pat_pctile"]) is not None
@@ -118,7 +120,7 @@ def main():
     sold_s = mode[sel]
     pat_s = pat_all[sel]
     results.append(f"  Exiter sample (Grade A, patent data): {int(sel.sum())} | "
-                   f"Sold: {int(sold_s.sum())} | Walked away: {int(sel.sum() - sold_s.sum())}")
+                   f"Sold: {int(sold_s.sum())} | Exit without sale: {int(sel.sum() - sold_s.sum())}")
 
     # Tercile pattern (descriptive)
     for a, nm in ((pat_s, "patent pctile"), (lab[sel], "labor pctile")):

@@ -67,12 +67,12 @@ Spec 1.1: P(Grade A) — exit probability
 ──────────────────────────────────────────────────────────────────────────────
 Spec 1.2: P(Sold | Grade A) — exit mode (HEADLINE)
   Among exiters: does α determine HOW they leave?
-  High α (operational) → walk away. Low α (IP-heavy) → sell.
+  Higher α denotes greater labor intensity; lower α denotes greater patent intensity.
 ──────────────────────────────────────────────────────────────────────────────
-  Sample: 364 Grade A firms | Sold: 122 | Walk-away: 242
-    Low α (IP-heavy)         : n= 75, sold=44%
+  Sample: 364 Grade A firms | Sold: 122 | Exit without sale: 242
+    Low α (more patent-intensive): n= 75, sold=44%
     Mid α                    : n=199, sold=33%
-    High α (operational)     : n= 90, sold=26%
+    High α (more labor-intensive): n= 90, sold=26%
 
   1.2a: LPM linear α: N=364, R²=0.0102, Adj-R²=-0.0009
   F-stat: 0.937 (p=0.4422)
@@ -121,8 +121,8 @@ Spec 1.3: P(Sold) — full sample (unconditional)
 
 
 ══════════════════════════════════════════════════════════════════════════════
-PART II: SANCTIONS AS AMPLIFIER
-  Hypothesis: sanctions sharpen the knowledge-type sorting
+PART II: LEGACY SANCTIONS MODERATION TESTS
+  Hypothesis under evaluation: sanctions alter the knowledge association
 ══════════════════════════════════════════════════════════════════════════════
 
 ──────────────────────────────────────────────────────────────────────────────
@@ -462,7 +462,7 @@ SUMMARY OF KEY FINDINGS
      → 1 s.d. ↑ in α reduces P(sell) by 4.4%
      Low-α firms sell 43% of the time; high-α firms sell 29%
 
-  2. SANCTIONS AMPLIFICATION (Part II)
+  2. LEGACY SANCTIONS MODERATION TESTS (Part II)
      Sanctioned: β₂ = 0.3782, R² = 0.0582
      Non-sanctioned: β₂ = 0.6002, R² = 0.0230
      → α quadratic is 0.6x stronger in sanctioned sectors

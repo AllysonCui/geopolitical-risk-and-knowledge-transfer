@@ -1,5 +1,5 @@
 ==============================================================================
-Q1: SELECTION-CORRECTED EXIT MODE — SELL vs WALK AWAY
+Q1: SELECTION-CORRECTED EXIT MODE — SALE vs EXIT WITHOUT SALE
 Heckman-style two-stage (probit selection + IMR control function)
 ==============================================================================
 
@@ -36,9 +36,9 @@ Stage 1: Pr(Clean exit = Grade A) — full population
   Instrument relevance: b2c z = 0.583 (p = 0.5598)
 
 ──────────────────────────────────────────────────────────────────────────────
-Stage 2: Pr(Sold | clean exit) — sell vs walk away
+Stage 2: Pr(Sold | clean exit) — sale vs exit without sale
 ──────────────────────────────────────────────────────────────────────────────
-  Exiter sample (Grade A, patent data): 362 | Sold: 134 | Walked away: 228
+  Exiter sample (Grade A, patent data): 362 | Sold: 134 | Exit without sale: 228
     patent pctile  low: sold 28% (n=138) | mid: sold 36% (n=116) | high: sold 49% (n=108)
     labor pctile   low: sold 42% (n=115) | mid: sold 31% (n=143) | high: sold 39% (n=104)
 
