@@ -16,27 +16,28 @@ AUTHORS:
 
 1.  WHAT IS THE RESEARCH QUESTION?
 
-When geopolitical crises force multinational corporations (MNCs) to exit a
-host country, firms face a consequential choice: sell their local operations
-to domestic buyers, or abandon them outright by walking away. This choice is
-not merely a financial one. Selling transfers organizational knowledge,
-proprietary technology, and operational capabilities to buyers in the
-adversarial regime, while walking away destroys value but prevents knowledge
-leakage. This paper asks:
+When a geopolitical crisis makes continued operation in a host country
+untenable, a multinational corporation must decide not only whether to leave
+but also how to leave. It may sell its local subsidiary to a new owner, close
+or suspend the operation without a sale, or lose control through state
+seizure. These outcomes have different economic consequences. A sale can
+preserve going-concern value, but only if a buyer expects to retain the assets,
+capabilities, and relationships that generated that value. An exit without a
+sale may sacrifice more financial value, while a seizure is not a voluntary
+choice at all. The paper's main research question is:
 
-   How does a multinational's knowledge structure determine its mode of exit
-   from a hostile market under geopolitical duress, and do democratic
-   sanctions amplify this sorting?
+   Is the transferability of a subsidiary's productive assets associated with
+   the parent's mode of exit from a geopolitically contested market, and do
+   sanctions or home-country institutions alter that association?
 
 We study this question in the context of the mass corporate withdrawal from
 Russia following the February 2022 invasion of Ukraine -- the largest
 geopolitically motivated exit event since the anti-apartheid divestment
 movement of the 1980s. We decompose the question into three sub-inquiries:
 
-(a) Do IP-heavy firms (those with high patent intensity relative to assets)
-systematically choose to sell their Russian operations, while operationally
-embedded firms (those with labor-intensive, tacit-knowledge-dependent
-operations) walk away?
+(a) Are firms with more codified, contractible assets more likely to complete
+a sale, while firms whose value depends more heavily on employees and
+firm-specific routines are more likely to exit without an arm's-length sale?
 
 (b) Do EU sanctions sharpen this knowledge-exit-mode sorting, and if so,
 through what mechanism?
@@ -44,16 +45,28 @@ through what mechanism?
 (c) Do home-country institutions -- reflecting the political economy of the
 firm's domicile -- moderate exit behavior conditional on knowledge type?
 
-The theoretical logic is grounded in the knowledge-based view (KBV) of the
-firm. IP-heavy firms hold codified, transferable knowledge (patents, trade
-secrets, proprietary processes) embedded in their Russian subsidiaries. This
-knowledge has recoverable market value, creating an incentive to sell.
-Operationally embedded firms, by contrast, hold tacit knowledge dispersed
-across people, routines, and local relationships. For these firms, the
-knowledge cannot be easily extracted through a sale, making abandonment the
-low-cost option. Sanctions, we argue, amplify this sorting by raising the
-cost of continued presence and compressing the timeline for exit, forcing
-firms to reveal their knowledge-type more starkly.
+One formal model organizes the three questions. It combines the fire-sale
+logic of Shleifer and Vishny (1992) with Hart and Moore's (1994) insight that
+human capital cannot be transferred by contract in the same way as legal or
+physical assets. A parent sells when the value a buyer can retain after the
+change in ownership is large enough to cover the transaction cost of sale:
+
+   sell  iff  theta(k, h) > theta* = (tau - w) / V
+
+Here, V is the subsidiary's going-concern value; theta(k,h) is the share of
+that value that a buyer expects to retain; tau is the cost of completing a
+sale; and w is the cost of closing or otherwise exiting without a sale.
+Transferable assets increase theta. Reliance on employees, relationships, and
+parent-specific organizational routines may reduce theta because those inputs
+can leave or lose value after ownership changes. Heterogeneity in subsidiary
+value converts the cutoff into a probabilistic sale decision and motivates a
+binary-response specification. The model predicts the signs of the direct
+knowledge effects, but it does not imply that the available patent and labor
+variables measure transferability without error. It also does not give an
+unconditional sign for the sanctions interaction: sanctions may raise
+transaction costs, but they may also reduce the value of technology assets by
+removing capable buyers. The empirical analysis must distinguish these
+channels rather than assume that sanctions necessarily amplify the sorting.
 
 
 2.  WHAT IS THE RESEARCH GAP AND CONTRIBUTION TO THE ACADEMIC LITERATURE?
@@ -72,7 +85,9 @@ literature has largely treated exit as a binary decision (stay vs. leave)
 rather than examining the mode of exit -- a distinction that carries
 profoundly different implications for knowledge transfer and sanctions
 effectiveness. The unprecedented scale of the Russia withdrawal (over 1,000
-firms) provides a unique natural experiment to study exit mode variation.
+firms) provides an unusually large setting in which to study exit-mode
+variation. It should not be treated as a natural experiment because firms,
+sectors, sanctions exposure, and exit timing are not randomly assigned.
 
 Gap 2: Micro-mechanisms of sanctions effectiveness. The political economy
 literature on economic sanctions overwhelmingly studies aggregate outcomes:
@@ -94,16 +109,20 @@ a significant omission: if knowledge characteristics determine entry mode
 (Hennart, 1988; Brouthers, 2002), they should logically also shape exit
 mode, particularly when exit is involuntary and time-pressured.
 
-Our contribution bridges these three literatures. We introduce a novel
-composite measure -- the Knowledge Replicability Index (alpha) -- that
-captures the balance between a firm's codified intellectual property and its
-tacit operational knowledge. We show that alpha systematically predicts exit
-mode, that democratic sanctions amplify this sorting, and that home-country
-institutions moderate the relationship. In doing so, we provide the first
-micro-level evidence on how firm knowledge characteristics mediate the
-effectiveness of sanctions as a tool of democratic resilience, contributing
-simultaneously to the IB exit literature, the political economy of
-sanctions, and the applied KBV.
+Our intended contribution is to connect these literatures through a common
+economic mechanism: the value retained by a buyer after control changes. We
+model codified and human-capital-intensive inputs separately and use parent
+patent-stock rank and subsidiary labor intensity as preliminary empirical
+proxies. The current results show an association between parent patent rank
+and the probability of sale among completed exits. They do not yet establish
+that transferable intellectual property causes a sale: parent patents may not
+be owned by the Russian subsidiary, and labor intensity does not directly
+measure tacit or firm-specific knowledge. The sanctions and institutional
+interaction estimates are presently imprecise or close to zero. Accordingly,
+the paper's current contribution is a theoretically disciplined framework and
+a set of transparent preliminary facts. A stronger claim about mechanisms or
+sanctions effectiveness depends on the measurement and identification work
+described below.
 
 
 3.  WHY IS IT IMPORTANT FOR BUSINESSES AND POLICY MAKERS TO CLOSE THIS
@@ -114,174 +133,215 @@ exposure for multinational firms. Beyond Russia, rising tensions in the
 Taiwan Strait, the fragmentation of US-China economic relations, and
 political instability in multiple regions mean that geopolitically forced
 exit is no longer a tail risk but an operational planning consideration.
-Our research provides a diagnostic framework: firms can assess their
-"knowledge exposure" in geopolitically volatile markets by examining the
-balance of codified IP versus tacit operational knowledge in their
-subsidiaries. IP-heavy operations face a sell-or-lose dilemma under
-geopolitical duress -- they can recover value through sale, but doing so
-transfers strategic capabilities to adversarial actors. Operationally
-embedded firms, paradoxically, face lower knowledge-transfer risk because
-their core knowledge walks out the door with their people. Understanding
-this asymmetry ex ante allows firms to pre-position exit strategies, adjust
-subsidiary governance, and manage knowledge concentration as an element of
-geopolitical risk management. Our finding that home-country effects are
-among the strongest predictors of exit behavior also alerts firms that their
-domicile's political relationships and institutional norms will shape their
-degrees of freedom during a geopolitical crisis.
+The framework encourages firms to ask which subsidiary assets a buyer could
+actually retain after a forced transfer. Patents, licenses, physical assets,
+employee know-how, supplier relationships, and parent-provided services may
+have very different degrees of transferability. Mapping those dependencies
+before a crisis can improve contingency planning and subsidiary governance.
+The current estimates, however, are not yet a validated risk-scoring tool and
+should not be presented as one. Home-country differences in exit behavior are
+large in the sample, but those differences may reflect unobserved firm and
+country characteristics rather than institutional mechanisms alone.
 
 For policymakers. Sanctions are the primary non-military instrument through
 which democratic coalitions respond to authoritarian aggression. The nine EU
-sanctions packages adopted against Russia in 2022 targeted specific sectors,
-but our evidence suggests that sector-level sanctions interact with firm-
-level knowledge characteristics in ways that policymakers may not
-anticipate. When sanctions compress exit timelines, IP-heavy firms in
-sanctioned sectors face intensified pressure to sell quickly -- potentially
-at discounted valuations and to buyers aligned with the sanctioned regime.
-This creates a perverse channel: the very policy designed to isolate an
-autocratic economy may inadvertently accelerate the transfer of Western
-proprietary knowledge to that economy. Policymakers designing future
-sanctions regimes should consider incorporating knowledge-transfer screening
-mechanisms, particularly for divestitures in sectors with high patent
-intensity, to ensure that exit-through-sale does not undermine the strategic
-objectives of the sanctions themselves.
+sanctions packages adopted against Russia in 2022 targeted specific sectors.
+Sanctions can restrict the buyer pool, require licenses, impose mandatory
+discounts, and shorten the time available to negotiate. Those changes may
+reduce sales overall, may make transferable assets especially important to
+the remaining buyers, or may destroy the value of technology assets when no
+capable buyer remains. The current sector-level interaction estimate is close
+to zero and therefore does not show that sanctions accelerate proprietary
+knowledge transfer. Knowledge-transfer screening may still be worth studying,
+but the policy recommendation should remain conditional until firm-level
+sanctions exposure and subsidiary-level asset ownership are measured.
 
 
 4.  WHAT DATA AND RESEARCH METHOD WILL BE USED?
 
 4.1 Data
 
-We construct a novel firm-level dataset by merging five distinct sources:
+We construct a novel firm-level dataset by merging six distinct sources:
 
 (1) Yale Chief Executive Leadership Institute (CELI) Tracker. The backbone
 dataset tracks 1,589 Western firms operating in Russia, assigning each a
 withdrawal grade: A (clean break -- suspended operations and announced
 exit), B (suspension or scaling back), C (reducing activity), D (buying
-time), or F (business as usual). We use 12 tracker snapshots from December
-2022 through May 2025, with the latest snapshot providing the primary grade.
-From the free-text action descriptions, we classify exit actions into five
-categories: sold, nationalized, writedown, suspended, or other.
+time), or F (business as usual). We use 11 tracker snapshots from December
+2022 through May 2025. The snapshot sequence also dates each firm's exit
+(first snapshot at Grade A), which feeds the hazard analysis. From the
+free-text action descriptions we classify exit mode -- sold, seized,
+suspended, other -- with state seizures (Danone, Carlsberg, Fortum,
+Uniper) hand-coded as a separate competing risk rather than a chosen exit
+mode.
 
 (2) Bureau van Dijk Orbis. We extract subsidiary-level financial data for
 6,405 Russian subsidiaries of Western MNCs, including total assets,
 employment, shareholders' equity, NACE sector codes, incorporation dates,
-and active/inactive status. We aggregate to the parent level, yielding 899
-matched firms (86% match rate via fuzzy string matching with manual
-overrides for known problem cases).
+and active/inactive status. We aggregate to the parent level and merge to
+the FULL Yale panel -- all grades A through F, not only exiters --
+yielding 1,394 matched firms (88% match rate via fuzzy string matching
+with manual overrides), of which 495 are non-exiting stayers. Retaining
+the stayers is what permits the selection-corrected design below.
 
-(3) Lens.org Patent Database. We collect total patent portfolio counts for
-all 1,048 Grade A and B firms (exiters), queried from the Lens.org API
-using applicant/owner name matching.
+(3) Lens.org Patent Database. We collect patent portfolio counts per
+parent, queried from the Lens.org API using applicant/owner name matching.
+(Current coverage is the 1,048 Grade A/B exiters with lifetime counts; the
+collection script now targets the full panel with a pre-invasion 2017-2021
+grant window, to be re-run.)
 
 (4) Bloomberg M&A. We extract 790 M&A deals involving Russian targets and
-Western sellers, matching 165 to our sample. Due to low disclosure (only 38
-of 178 post-invasion deals have disclosed valuations), we use the deal
-indicator as a binary measure rather than a continuous exit-payoff variable.
+Western sellers, matching 165 to our sample. Deal announce dates provide
+sharp event timing for completed sales; due to low value disclosure we use
+the deal indicator as a binary measure rather than a continuous
+exit-payoff variable.
 
-(5) EU Sanctions Packages. We compile the nine EU sanctions packages adopted
-in 2022 and map them to NACE 2-digit sectors, constructing a firm-level
-sanctions exposure variable (count of packages targeting the firm's sector).
+(5) EU Sanctions Packages. We compile the EU sanctions packages adopted in
+2022 with their adoption dates and map them to NACE 2-digit sectors,
+constructing both a cross-sectional exposure count and a time-varying
+exposure profile (which packages had hit the firm's sector by date t).
 
-4.2 Key Variable: The Knowledge Replicability Index (Alpha)
+(6) Home-country institutions. Sanctions-coalition membership from the
+Russian government's own "unfriendly countries" list (Decree No. 430-r,
+March 2022 -- pre-determined and binary), rule of law from the World Bank
+Worldwide Governance Indicators (RL.EST), and legal-origin families per
+La Porta et al.
 
-We construct a composite index capturing the balance between codified and
-tacit knowledge in a firm's Russian operations:
+4.2 Key Variables: Codified and Tacit Knowledge Intensity
 
-   alpha = rescale_to_[0,1](
-       percentile_rank(employees / total_assets)
-     - percentile_rank(patents / total_assets)
-   )
+The model contains two distinct concepts, which we proxy separately:
 
-High alpha (near 1) indicates an "operational arm" -- labor-intensive, with
-knowledge embedded in people and routines. Low alpha (near 0) indicates a
-"knowledge repository" -- asset- and IP-heavy, with codified knowledge that
-has recoverable market value. In our sample, alpha has mean 0.49, standard
-deviation 0.22, and ranges from 0 to 1.
+   k (transferable codified assets): percentile rank of the parent's patent stock
+                  (pat_pctile; within-sector variant available)
+   h (human-capital dependence): percentile rank of subsidiary employees / total assets
+                  (lab_pctile; within-sector variant available)
 
-4.3 Econometric Specification
+These measures do not correspond exactly to the model. Parent patent stock
+does not identify intellectual property owned by, licensed to, or transferred
+with the Russian subsidiary. Employees divided by assets measures labor
+intensity, not the tacitness, firm specificity, or post-sale retention of
+employee knowledge. An earlier composite index obscured these differences and
+has therefore been retired. Planned improvements include a pre-invasion patent
+window scaled by parent size, subsidiary-level IP ownership or licensing where
+available, and consistently dated labor and asset measures.
 
-Our primary specification is a linear probability model (LPM) with
-heteroskedasticity-robust (HC1) standard errors:
+4.3 Econometric Specifications
 
-   Y_i = b0 + b1*alpha_i + b2*alpha_i^2 + X_i'*gamma + mu_j + epsilon_i
+Each sub-question has a distinct estimand. The economic model motivates a
+binary sale decision, while the probit specification adds a distributional
+assumption about unobserved determinants of that decision.
 
-where Y_i is one of three binary dependent variables: (a) P(Grade A) --
-probability of clean exit; (b) P(Sold | Grade A) -- probability of selling,
-conditional on exit; (c) P(Subsidiary Dissolved) -- whether the firm's
-Russian subsidiaries were formally wound down. The vector X_i includes
-ln(total assets), years of operation in Russia, and ln(number of Russian
-subsidiaries). Fixed effects mu_j capture industry heterogeneity. Logit
-models with marginal effects at means serve as robustness checks.
+(a) Exit mode with selection correction (Q1). The first-stage probit estimates
+the probability that a matched parent completes a clean exit. The second-stage
+probit, estimated among completed voluntary exits, models the probability of a
+sale rather than an exit without a sale and includes the inverse Mills ratio.
+The proposed exclusion restriction is consumer-facing B2C status. Its validity
+requires B2C status to affect exit completion through public pressure without
+directly affecting buyer demand, brand transferability, or the feasibility of
+a sale. Those direct channels are plausible, so the restriction requires
+additional evidence and sensitivity analysis. Seizures are excluded because
+they are not voluntary exit-mode choices. Controls include ln(assets), years
+in Russia, ln(subsidiary count), and industry fixed effects.
+
+(b) Sanctions amplification (Q2). A pooled interaction,
+
+   P(Sold | exit) = Phi(b1*k + b2*SancExp + b3*(k x SancExp) + X'b),
+
+with b3 the object of interest, plus a cause-specific competing-risks Cox
+model (sale and exit without a sale as competing events) with time-varying sector
+exposure built from the staggered adoption dates of the 2022 EU packages.
+
+(c) Institutional moderators (Q3). Cross-level interactions (k x
+coalition, k x rule of law, k x common law) with home-country fixed
+effects, which absorb institution levels -- only the interactions are
+identified, which is exactly what the question asks. A Mundlak correlated-
+random-effects probit serves as robustness.
+
+Inference throughout uses heteroskedasticity-robust standard errors and,
+for coefficients where home-country clustering matters (~35 clusters), a
+wild cluster bootstrap (Rademacher weights, null imposed).
 
 4.4 Identification Strategy
 
-We exploit EU sanctions exposure as a source of quasi-exogenous variation.
-Sanctions were adopted at the sector level based on geopolitical and
-strategic considerations (energy dependence, military relevance) that are
-plausibly orthogonal to individual firms' knowledge structures within a
-sector. Our primary identification approach uses: (a) split-sample
-regressions comparing sanctioned versus non-sanctioned sectors; (b)
-interaction models (alpha x sanctions exposure); and (c) descriptive
-tercile analysis.
+For the sanctions question, the hazard model uses the dates on which EU
+packages first covered a firm's sector. This timing variation is preferable
+to a simple cross-sectional comparison, but it is not automatically causal:
+packages may target sectors on different trajectories, exposure is currently
+measured only at the sector level, and many exits are left-censored at the
+first Yale snapshot. Sector controls and time-varying exposure reduce some
+confounding but do not eliminate it. For the exit-mode question, the two-stage
+model addresses selection on observables and on the proposed exclusion
+restriction; it does not solve selection if B2C status directly affects sale
+feasibility or if unmeasured asset quality affects both exit and mode.
 
-For the full paper, we plan three extensions to strengthen causal
-identification: (i) a panel event-study design exploiting the staggered
-timing of the nine EU sanctions packages across sectors, using multiple Yale
-tracker snapshots to trace grade transitions over time; (ii) enriching the
-control set with parent-level characteristics (ESG scores, political
-connections, board independence, prior experience with geopolitical exits);
-and (iii) exploring instrumental variable strategies using pre-war sector-
-level sanctions exposure from other sanctioned countries (Iran, North Korea,
-Myanmar) as instruments for Russia-specific sanctions intensity.
+For the full paper, we plan three extensions: (i) firm-level sanction
+exposure built from EU Official Journal product-code annexes (CN to NACE
+correspondences, dual-use list coverage, counterparty SDN exposure),
+replacing the sector-level mapping and extending it past 2022; (ii)
+enriching the control set with parent-level characteristics, including
+asset tangibility (PP&E/assets), the key sellability confounder; and
+(iii) a FIML bivariate probit (heckprobit) replacing the two-step
+control-function approximation.
 
 
 5.  WHAT ARE THE ANTICIPATED RESULTS?
 
-Our preliminary analysis, based on a regression sample of 709 firms (365
-Grade A exiters), yields the following results:
+Our preliminary analysis, based on a matched population of 1,394 firms
+(899 exiters, 495 stayers; 362 completed Grade A exits with patent data in
+the mode margin), yields the following results:
 
-Knowledge-exit mode channel. Alpha negatively predicts selling conditional
-on exit (coefficient = -0.20, p = 0.087). Among Grade A firms, those in the
-lowest alpha tercile (IP-heavy) sell 43% of the time, while those in the
-highest tercile (operationally embedded) sell only 29%. This pattern is
-consistent with the KBV prediction: codified knowledge creates recoverable
-value that incentivizes sale, while tacit knowledge does not.
+Knowledge and exit mode (Prediction 1). The share sold rises across terciles
+of parent patent stock: 28%, 36%, and 49%. In the mode probit, the coefficient
+on patent-stock percentile is 0.49 (conventional p = 0.045; wild-cluster-
+bootstrap p = 0.068 across 36 home-country clusters). Moving from the bottom
+to the top of the patent-rank distribution corresponds to an estimated change
+of about 17 percentage points in sale probability. The labor-intensity
+coefficient is negative but imprecisely estimated. The inverse Mills ratio is
+also imprecise; failure to reject a zero coefficient is not proof that
+selection is absent. In the cause-specific hazard model, patent rank is
+associated with a lower hazard of exit without a sale (log hazard coefficient
+-1.16, p < 0.001), while its association with the sale hazard is not
+statistically distinguishable from zero. Taken together, these patterns are
+consistent with the proposed transferability mechanism but do not identify it.
 
-Sanctions amplification. The alpha-quadratic effect on P(Grade A) is 4.4
-times stronger in EU-sanctioned sectors (R-squared = 12.5%, n = 58) than in
-non-sanctioned sectors (R-squared = 2.2%, n = 651). This suggests that
-sanctions sharpen the knowledge-sorting mechanism, though the sanctioned
-subsample is small. The full-sample interaction term (alpha x sanctions) has
-a coefficient of 0.08 (p = 0.137), directionally supportive but not yet
-significant at conventional levels.
+Sanctions amplification (Prediction 2). At the current sector-level
+exposure measure, the estimated k x sanctions interaction is close to zero. We
+flag a cautionary result from our own revision process: an earlier
+split-sample comparison suggested the knowledge effect was "4.4x stronger"
+in sanctioned sectors, but that ratio did not survive the corrected exit-
+mode classification and the population-based measurement -- reinforcing
+that the pooled interaction, not a subsample R-squared ratio, is the
+statistic that can carry the claim. Statistical power at sector level is
+limited (32 sanctioned-sector firms in the mode margin); the planned firm-
+level exposure measure built from EU product-code annexes is the sharpest
+route to a definitive answer, and the model itself signs both possible
+outcomes (threshold channel: positive; buyer-pool channel: negative).
 
-Institutional moderators. Home-country effects are among our most
-statistically robust findings. Japanese firms are 28 percentage points less
-likely to make a clean exit (p < 0.001), consistent with Japan's
-historically close economic ties with Russia and its culturally embedded
-long-term orientation toward business relationships. Finnish firms are 24
-percentage points more likely to exit cleanly (p = 0.004), reflecting
-Finland's geographic proximity, NATO accession context, and strong alignment
-with EU sanctions policy. Swedish firms show a 26-percentage-point reduction
-in clean exit probability (p = 0.009).
+Institutional moderators (Prediction 3). Home-country levels matter --
+Japanese firms are about 28 percentage points less likely to make a clean
+exit, Finnish firms about 20 points more likely -- but the model's
+sharper prediction concerns interactions with knowledge type, and under
+home-country fixed effects the k x coalition, k x rule-of-law, and k x
+common-law interactions are directionally consistent with the threshold
+channel yet statistically insignificant under the wild cluster bootstrap.
+The near-uniform coalition membership of the exiter sample (only 8
+non-coalition completed exits) limits identification; the stakeholder-
+pressure channel awaits the sharper ESG-disclosure-mandate measure.
 
-Patent intensity U-shape. Firms at the extremes of patent intensity are more
-likely to exit (Grade A), while those in the mid-range are more likely to
-stay (linear: -1.44, p < 0.001; quadratic: +1.12, p < 0.001). This
-suggests that both very high-IP firms (who can sell) and very low-IP firms
-(who lose little by walking away) find exit easier than mid-range firms with
-moderate, difficult-to-disentangle IP positions.
-
-We anticipate that the planned extensions -- particularly the panel event-
-study design and enriched controls -- will sharpen the sanctions-
-amplification result and move the exit-mode coefficient toward conventional
-significance thresholds.
+The main conclusion at this stage is deliberately limited: parent patent rank
+predicts exit mode in the current matched sample, whereas the sanctions and
+institutional moderation hypotheses are not supported by precise estimates.
+Firm-level sanctions exposure, a full-panel pre-invasion patent measure,
+subsidiary-level IP ownership, direct outcome validation, and asset-tangibility
+controls are necessary before interpreting the association as causal.
 
 
 6.  WHAT ARE THE IMPLICATIONS FOR BUSINESSES, POLICY, AND SOCIETY?
 
-For businesses. This study provides a practical diagnostic: the Knowledge
-Replicability Index offers firms a tool for assessing geopolitical knowledge
-exposure across their international subsidiary portfolios. Firms with
+For businesses. This study provides a practical diagnostic: the two-
+dimensional knowledge-exposure profile (codified patent intensity versus
+tacit labor intensity) offers firms a tool for assessing geopolitical
+knowledge exposure across their international subsidiary portfolios. Firms with
 concentrated IP in geopolitically volatile markets should pre-plan exit
 pathways that minimize involuntary knowledge transfer -- for example, by
 structuring subsidiary IP governance so that critical patents and
@@ -294,28 +354,25 @@ accelerates, "geopolitical knowledge audits" should become a standard
 element of enterprise risk management alongside financial and operational
 risk assessments.
 
-For policy. Our findings reveal a tension at the heart of democratic
-sanctions design. Sanctions compress exit timelines and raise the cost of
-staying, but by doing so, they may push IP-heavy firms toward fire sales
-that transfer proprietary knowledge to buyers within the sanctioned regime.
-Future sanctions packages could incorporate knowledge-transfer screening --
-modeled on existing foreign investment screening mechanisms but applied in
-reverse -- to ensure that forced divestitures in strategically sensitive
-sectors do not undermine the sanctions' own objectives. More broadly, our
-findings inform the design of "smart sanctions" that account for firm-level
-heterogeneity rather than treating all firms within a sector identically.
+For policy. The model identifies a possible tension in sanctions design.
+Restrictions that shrink the buyer pool may lower sale values, while rapid
+divestiture requirements may increase pressure to accept the remaining bids.
+Whether this combination transfers more strategic knowledge to domestic
+buyers is an open empirical question: the current sanctions interaction is
+approximately zero. The appropriate recommendation is therefore to collect
+transaction-level evidence on the assets and licenses transferred and to
+evaluate knowledge-transfer screening, rather than to claim that the present
+analysis has already demonstrated a harmful sanctions channel.
 
 For society and democratic resilience. Democratic societies rely on
 sanctions as a primary non-military response to authoritarian aggression.
-Our research illuminates a previously unexamined micro-channel through which
-the effectiveness of this democratic tool may be undermined: firm-level
-knowledge sorting that inadvertently transfers strategic capabilities to
-adversarial regimes. By understanding this channel, democratic institutions
-can design more effective responses to geopolitical threats, strengthening
-the credibility and impact of collective democratic action. In an era when
-the robustness of democratic institutions is itself under pressure, ensuring
-that the tools of democratic resilience function as intended is not merely
-an academic exercise but a matter of urgent practical importance.
+This research evaluates a possible firm-level channel through which sanctions
+could have unintended consequences: the assets that remain transferable when
+foreign owners leave. Establishing whether that channel is economically
+important requires substantially better measures than the current sector and
+parent-level proxies. A credible answer would help democratic institutions
+design divestiture rules that preserve sanctions objectives without assuming
+that every sale transfers the same type or amount of productive knowledge.
 
 ================================================================================
 
@@ -340,6 +397,9 @@ Felbermayr, G., Kirilakha, A., Syropoulos, C., Yalcin, E., and Yotov, Y.
    (2020). The global sanctions data base. European Economic Review, 129.
 Grant, R.M. (1996). Toward a knowledge-based theory of the firm. Strategic
    Management Journal, 17(S2), 109-122.
+Hart, O., and Moore, J. (1994). A theory of debt based on the
+   inalienability of human capital. Quarterly Journal of Economics, 109(4),
+   841-879.
 Hennart, J.F. (1988). A transaction costs theory of equity joint ventures.
    Strategic Management Journal, 9(4), 361-374.
 Hufbauer, G.C., Schott, J.J., Elliott, K.A., and Oegg, B. (2007). Economic
@@ -349,6 +409,9 @@ Kogut, B., and Zander, U. (1993). Knowledge of the firm and the evolutionary
    Studies, 24(4), 625-645.
 Nonaka, I. (1994). A dynamic theory of organizational knowledge creation.
    Organization Science, 5(1), 14-37.
+Shleifer, A., and Vishny, R.W. (1992). Liquidation values and debt
+   capacity: A market equilibrium approach. Journal of Finance, 47(4),
+   1343-1366.
 Soule, S., Swaminathan, A., and Tihanyi, L. (2014). The diffusion of foreign
    divestment from Burma. Strategic Management Journal, 35(7), 1032-1052.
 Witte, C.T., Burger, M.J., Ianchovichina, E.I., and Pennings, E. (2020).

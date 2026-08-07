@@ -3,39 +3,38 @@ REGRESSION SAMPLE SUMMARY STATISTICS
 ============================================================
 
 Sample sizes:
-  Total firms (matched Orbis-Yale): 899
-  With α (composite): 709
-    - Both components (emp + patent): 709
-    - Employee intensity only: 0
-  With Y_i (exit payoff ratio): 16
-  With all controls: 836
-  FULL SPECIFICATION (α + Y_i + controls): 12
+  Total firms (matched Orbis-Yale, ALL grades): 1394
+  Exiters (Grade A/B): 899
+  Non-exiters (C/D/F): 495
+  With patent percentile: 898
+  With labor percentile: 1101
+  With legacy α: 1101
+  With Y_i (exit payoff ratio): 18
+  With all controls: 1290
+  With event date (hazard sample): 473
 
-α (composite replicability index) distribution:
-  Mean: 0.4868
-  Median: 0.5008
-  Std Dev: 0.2155
-  P10: 0.1829
-  P90: 0.7543
-  Min: 0.0000
-  Max: 1.0000
-
-Y_i (exit payoff ratio) distribution:
-  Mean: 116.1987
-  Median: 16.6496
-  Min: 0.2670
-  Max: 649.7021
+Exit mode (Grade A firms; seized = competing risk):
+  sold: 186
+  walked: 285
+  seized: 4
 
 Grade distribution:
   Grade A: 473
   Grade B: 426
+  Grade C: 139
+  Grade D: 165
+  Grade F: 191
 
-New Y variables:
-  Y = any subsidiary inactive: 84
-  Y = Grade A + Sold: 170
-  Y = Suspended: 406
+Instruments / moderators:
+  B2C (consumer-facing NACE): 70
+  Coalition home country: 1286 | Non-coalition: 104 | Unmatched country: 4
 
-Sanctions exposure (instrument Z):
-  0 packages: 798
-  1-4 packages: 70
-  5-8 packages: 31
+Sanctions exposure (2022 EU packages hitting sector):
+  0 packages: 1225
+  1-4 packages: 104
+  5-8 packages: 65
+
+Other Y variables:
+  Y = any subsidiary inactive: 123
+  Y = Grade A + Sold: 169
+  Y = Suspended: 586

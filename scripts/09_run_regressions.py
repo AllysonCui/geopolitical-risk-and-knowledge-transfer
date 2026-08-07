@@ -1,18 +1,19 @@
 """
-Regression analysis: Knowledge structure, exit mode, and sanctions amplification.
+Legacy regression analysis: knowledge structure, exit mode, and sanctions.
 
-Thesis: The same knowledge structure (α) that determines WHETHER a firm exits
-Russia also determines HOW it exits (sell vs. walk away), and EU sanctions
-amplify the entire mechanism.
+This script preserves the project's earlier cross-sectional specifications for
+comparability. Its sanctions-amplification hypothesis is not supported by the
+revised pooled interaction in script 11 and should not be read as a current
+conclusion.
 
 Three-part story:
   1. Knowledge type → exit probability (Grade A)
-  2. Knowledge type → exit mode (sell vs. walk away, conditional on exit)
-  3. Sanctions sharpen the sorting: the α effect is 4x stronger in sanctioned sectors
+  2. Knowledge type → exit mode (sale versus exit without a sale, conditional on exit)
+  3. Legacy test of whether sanctions moderate the association
 
 Structure:
   Part I   — The knowledge–exit mode channel
-  Part II  — Sanctions as amplifier (split-sample + interaction)
+  Part II  — Legacy sanctions moderation tests (split-sample + interaction)
   Part III — Institutional moderators (country, industry)
   Part IV  — Supporting evidence (subsidiary dissolution, size effects)
   Part V   — Robustness checks
@@ -112,8 +113,12 @@ def main():
     results.append("=" * 78)
 
     # ── Prepare full sample ──────────────────────────────────────────────
+    # regression_sample.csv now covers ALL grades (for the selection model
+    # in script 10); this legacy script keeps its original A/B exiter frame.
     sample = []
     for r in rows:
+        if r.get("grade") not in ("A", "B"):
+            continue
         alpha = safe_float(r.get("alpha"))
         ln_a = safe_float(r.get("ln_assets"))
         yrs = safe_float(r.get("years_in_russia"))
@@ -196,15 +201,15 @@ def main():
     results.append("\n" + "─" * 78)
     results.append("Spec 1.2: P(Sold | Grade A) — exit mode (HEADLINE)")
     results.append("  Among exiters: does α determine HOW they leave?")
-    results.append("  High α (operational) → walk away. Low α (IP-heavy) → sell.")
+    results.append("  Higher α denotes greater labor intensity; lower α denotes greater patent intensity.")
     results.append("─" * 78)
 
     sold_ga = sold[ga_mask]
-    results.append(f"  Sample: {n_ga} Grade A firms | Sold: {int(sold_ga.sum())} | Walk-away: {n_ga - int(sold_ga.sum())}")
+    results.append(f"  Sample: {n_ga} Grade A firms | Sold: {int(sold_ga.sum())} | Exit without sale: {n_ga - int(sold_ga.sum())}")
 
     # Tercile breakdown
     alpha_ga = alpha[ga_mask]
-    for lo, hi, label in [(0, 0.33, "Low α (IP-heavy)"), (0.33, 0.67, "Mid α"), (0.67, 1.01, "High α (operational)")]:
+    for lo, hi, label in [(0, 0.33, "Low α (more patent-intensive)"), (0.33, 0.67, "Mid α"), (0.67, 1.01, "High α (more labor-intensive)")]:
         mask = (alpha_ga >= lo) & (alpha_ga < hi)
         n_t = int(mask.sum())
         if n_t > 0:
@@ -226,11 +231,11 @@ def main():
     m_3a = run_ols(sold, X_linear, var_linear, "1.3a: LPM linear α", results)
 
     # ═════════════════════════════════════════════════════════════════════
-    # PART II: SANCTIONS AS AMPLIFIER
+    # PART II: LEGACY SANCTIONS MODERATION TESTS
     # ═════════════════════════════════════════════════════════════════════
     results.append("\n\n" + "═" * 78)
-    results.append("PART II: SANCTIONS AS AMPLIFIER")
-    results.append("  Hypothesis: sanctions sharpen the knowledge-type sorting")
+    results.append("PART II: LEGACY SANCTIONS MODERATION TESTS")
+    results.append("  Hypothesis under evaluation: sanctions alter the knowledge association")
     results.append("═" * 78)
 
     # ── 2.1: Split sample — P(Grade A) ──────────────────────────────
@@ -414,7 +419,7 @@ def main():
         results.append(f"     → 1 s.d. ↑ in α reduces P(sell) by {abs(m_2a.params[1]) * 0.215:.1%}")
         results.append(f"     Low-α firms sell 43% of the time; high-α firms sell 29%")
 
-    results.append("\n  2. SANCTIONS AMPLIFICATION (Part II)")
+    results.append("\n  2. LEGACY SANCTIONS MODERATION TESTS (Part II)")
     if m_sanc_a and m_unsanc_a:
         results.append(f"     Sanctioned: β₂ = {m_sanc_a.params[2]:.4f}, R² = {m_sanc_a.rsquared:.4f}")
         results.append(f"     Non-sanctioned: β₂ = {m_unsanc_a.params[2]:.4f}, R² = {m_unsanc_a.rsquared:.4f}")

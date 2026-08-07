@@ -43,6 +43,22 @@ Click **"Columns to display"** → Add each of the following fields:
 - Total costs / Operating expenses (USD thousands)
 - P/L for period [net income] (USD thousands)
 - Shareholders' funds / equity (USD thousands)
+- **Tangible fixed assets / PP&E (USD thousands)** — REQUIRED ADDITION:
+  asset tangibility (PP&E/assets) is the obvious confounder for
+  "sellability" in the exit-mode regressions (scripts 10–12) and is
+  missing from the current export
+- **Intangible fixed assets (USD thousands)** — complement to the above
+
+**Parent (GUO) financials — REQUIRED ADDITION for the repaired knowledge
+measures (docs/formal_model.md):**
+- GUO total assets (USD thousands), 2019–2021
+- GUO number of employees, 2019–2021
+- GUO consolidated operating revenue, 2019–2021
+
+These scale the parent patent stock (patents per parent employee/assets,
+full parent footprint — not the largest Russian subsidiary), and let the
+labor-intensity numerator and denominator come from the same 2019–2021
+window.
 
 **Shareholder info**
 - Ultimate owner name
