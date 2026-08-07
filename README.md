@@ -1,199 +1,216 @@
-# Knowledge Structure and the Completion of Corporate Exit from Russia
+# Corporate Exit from Russia: Current Data and Draft Status
 
-## The question in plain language
+## What this repository currently does
 
-After Russia invaded Ukraine in February 2022, many foreign companies said
-that they would reduce, suspend, or end their Russian operations. An
-announcement did not necessarily produce a completed exit. Some companies
-found a buyer, some closed their local operations, some remained in an
-unresolved state for months or years, and a small number lost control through
-state intervention.
+This repository is an early empirical draft about foreign companies that
+reduced, suspended, or ended operations in Russia after the February 2022
+invasion of Ukraine. It follows companies across repeated Yale CELI tracker
+files and combines those records with Russian subsidiary accounts, parent
+patent counts, selected transaction records, sanctions dates, and home-country
+information.
 
-This project asks:
+The research proposal describes the study in its ideal form: a subsidiary-level
+analysis of how buyer scarcity, transaction restrictions, approval delays, and
+the cost of maintaining an unresolved business affect the completion of exit.
+The current repository cannot yet estimate that full model. Its purpose is to
+establish the descriptive facts, test provisional measures, and identify the
+data that must be added.
 
-> Why do some foreign companies complete their departure from Russia while
-> others remain unresolved, and does the type of knowledge on which the
-> Russian business depends help explain the difference?
+## The practical question
 
-The proposed mechanism is straightforward. A company can wait for a suitable
-buyer, but waiting is costly. Patents, licenses, and documented processes may
-preserve value for a future buyer, making continued waiting more attractive.
-Businesses that depend heavily on employees and day-to-day operations may be
-more expensive to hold in suspension because payroll and other operating costs
-continue. These arguments generate predictions about how long companies wait
-and which outcome eventually occurs. They do not assume that patents cause a
-sale or that employee-intensive companies inevitably close.
+An announcement that a company intends to leave is not the same as a completed
+exit. After announcing, a company may:
 
-## The outcomes
+- Continue operating while seeking a solution.
+- Suspend activity but retain legal ownership.
+- Complete a sale to a new owner.
+- Close or liquidate the Russian operation.
+- Lose control through state intervention.
 
-The repeated Yale CELI tracker files allow the project to follow changes in a
-company's reported position between December 2022 and May 2025. The proposed
-analysis uses five states:
+The current draft asks how long companies remain unresolved and whether their
+assets and operating structure are associated with the outcome eventually
+reported.
 
-1. **Still operating:** the company has not announced a full departure.
-2. **Exit announced but unresolved:** the company has reduced or suspended
-   activity or announced an intention to leave, but the available record does
-   not show a completed sale or closure.
-3. **Sale completed:** control of the Russian operation is reported to have
-   transferred to a buyer.
-4. **Closure completed:** the Russian operation is reported to have closed or
-   been liquidated without a sale.
-5. **State-imposed loss of control:** the Russian state seized or placed the
-   operation under temporary administration. This is kept separate because it
-   is not a voluntary corporate decision.
+## What is observed now
 
-These labels describe what the current Yale text and Bloomberg records appear
-to show. They are not yet a legal verification of ownership. Ambiguous cases
-should remain unresolved rather than being forced into a completed outcome.
+### Yale CELI tracker
 
-## The model
+The repository contains 11 Yale snapshots from December 2022 through May 2025.
+Each snapshot provides a company name, home country, industry, Yale grade, and
+a short description of the company's reported actions.
 
-A company with an unresolved exit pays a carrying cost while it waits. A
-suitable buyer may arrive. The value of waiting depends on four quantities:
+The new snapshot-level file contains 17,258 company-date observations. A
+conservative text classifier assigns one of five provisional states:
 
-- The value a buyer could preserve after taking control.
-- The cost of completing the transaction.
-- The cost of keeping the subsidiary in an unresolved state.
-- The expected time until an eligible buyer and any required approvals become
-  available.
+1. Still operating.
+2. Exit announced but unresolved.
+3. Sale reported as completed.
+4. Closure reported as completed.
+5. State-imposed loss of control.
 
-The model allows these conditions to change over time. For example, payroll
-costs may continue, the subsidiary's value may deteriorate, sanctions may
-reduce the buyer pool, and Russian approval requirements may delay a
-transaction. At each date, the parent compares the value of continuing to
-wait with the cost of closing the operation. This creates a genuine decision
-about when to stop waiting.
+Generic language such as “plans to leave” is not treated as a completed sale.
+The file also contains an ambiguity flag. There are currently 5,367 ambiguous
+company-date observations, so the state labels should be treated as a review
+queue rather than verified legal outcomes.
 
-The complete mathematical skeleton and its assumptions are in
-`docs/formal_model.md`.
+### Orbis subsidiary data
 
-## Predictions to take to the data
+The current Orbis files contain 6,405 Russian subsidiaries associated with
+foreign parents. Available fields include total assets, employees, NACE sector,
+incorporation date, ownership names, and active or inactive status.
 
-The revised model makes three primary predictions:
+Important omissions include PP&E, intangible assets, monthly payroll,
+profitability, and a historical record of changes in legal ownership. The next
+Orbis export should add those fields and retain consistent pre-invasion dates.
 
-1. **Transferable assets and closure.** If patents and other codified assets
-   preserve the value of a future transaction, companies with more of these
-   assets should be slower to close without a sale.
-2. **Human-capital dependence and closure.** If employee-intensive operations
-   are more expensive to hold during suspension, they should close sooner,
-   all else equal.
-3. **Buyer availability and sale timing.** Sanctions, mandatory discounts, and
-   approval requirements may delay completed sales by reducing the number of
-   eligible buyers or lowering acceptable transaction values.
+### Patent data
 
-The present results are consistent with the first prediction: higher parent
-patent rank is associated with a lower rate of closure or another completed
-exit without a sale. Patent rank is not detectably associated with the rate
-of completed sales. Labor intensity has the predicted positive association
-with non-sale completion, but the estimate is imprecise. These are preliminary
-associations, not causal estimates.
+The Lens.org file contains parent-company patent counts. It largely covers
+companies that announced an exit and counts lifetime patents. It therefore
+does not provide the full population needed for the proposed duration analysis.
 
-## How the concepts are measured
+The next pull should cover every matched parent and count patents granted in a
+pre-invasion window such as 2017-2021. Parent patent stock remains only a rough
+proxy because it does not show which patents were owned by or licensed to the
+Russian subsidiary.
 
-| Concept | Current measure | Important limitation |
-|---|---|---|
-| Transferable codified assets | Parent patent-stock percentile | Does not identify patents owned by or licensed to the Russian subsidiary |
-| Cost of maintaining operations | Subsidiary employees divided by total assets | Labor intensity is not a direct measure of payroll during suspension |
-| Exit status and timing | Changes across Yale tracker snapshots and action descriptions | Announcements may not establish legal completion; the first snapshot already contains many completed cases |
-| Completed sale | Yale action text supplemented by Bloomberg deal records | Many transaction values and exact completion dates are missing |
-| Sanctions pressure | Number and timing of EU packages covering the firm's sector | Sector exposure is broad and ends with the mapped 2022 packages |
+### Transactions
 
-## Current evidence
+The Bloomberg file contains 790 reported transactions involving Russian
+targets and foreign sellers, of which 165 have been matched to the company
+sample. Announcement dates improve timing for some sales. Transaction values
+are available for too few observations to support a reliable valuation model.
 
-- The merged dataset contains 1,394 matched foreign parents from the Yale and
-  Orbis files.
+### Sanctions and institutions
+
+The repository maps the timing of 2022 EU sanctions packages to broad economic
+sectors. This is a coarse measure: it does not identify the exact restriction
+facing a seller, buyer, product, or transaction. Home-country coalition status,
+rule of law, and legal origin are also present, but their estimated interactions
+are imprecise and are not central to the revised proposal.
+
+## What the current evidence suggests
+
+The present results should be read as descriptive associations:
+
 - Among 362 companies currently classified as completed exits with patent
   data, the reported sale share rises from 28% in the lowest patent tercile to
   49% in the highest tercile.
-- In the current duration analysis, moving from the bottom to the top of the
+- In the current duration sample, moving from the bottom to the top of the
   parent patent ranking is associated with an approximately 69% lower rate of
-  completing an exit without a sale (p < 0.001).
-- The estimated relationship between patent rank and the rate of completed
-  sales is small relative to its uncertainty (p = 0.54).
-- Moving from the bottom to the top of the labor-intensity ranking is
-  associated with an estimated 32% higher rate of completion without a sale,
-  but the estimate is too imprecise to support a firm conclusion (p = 0.30).
-- The current sanctions interaction is close to zero.
+  completing an exit without a sale.
+- The estimated relationship between parent patent rank and the rate of
+  completed sales is small relative to its uncertainty.
+- Labor intensity is associated with an estimated 32% higher rate of non-sale
+  completion, but this estimate is too imprecise for a firm conclusion.
+- The current relationship between sanctions exposure and patent intensity is
+  close to zero.
 
-The duration estimates currently use only companies with patent data. Because
-the existing patent file largely covers companies that announced an exit, the
-risk set is selected. A full-panel pre-invasion patent measure is required
-before these estimates can support the revised research question.
+These estimates do not show that patents cause a company to wait or that
+employee intensity causes closure. The patent sample is selected, the outcome
+labels are provisional, and important subsidiary characteristics are missing.
 
-## Analysis plan
+## How the revised proposal differs from the current code
 
-### Primary analysis
+The proposal treats geopolitical exit as a distorted market for corporate
+control. A parent waits for an eligible buyer and any required approval while
+paying the cost of maintaining the subsidiary. Sanctions and host-country rules
+can reduce buyer availability, lower permitted transaction value, or delay
+completion.
 
-Follow each company from one Yale snapshot to the next and estimate how its
-current state predicts the next observed transition:
+The existing scripts do not yet estimate that quantitative model. In
+particular, they do not observe:
 
-- Still operating to exit announced.
-- Exit announced but unresolved to completed sale.
-- Exit announced but unresolved to completed closure.
-- Exit announced but unresolved to state-imposed loss of control.
+- The date a company applied for government approval.
+- The date approval was granted or denied.
+- The set of potential buyers.
+- The monthly cost of maintaining the subsidiary.
+- Legal ownership at every date.
+- Intellectual property attached to each Russian subsidiary.
 
-The main quantities of interest are the time spent unresolved and the
-probability of each eventual outcome. Statistical details belong in the
-methods section and scripts; the economic interpretation should be reported
-in predicted probabilities and expected waiting times.
+The formal model is therefore a research design and accounting framework, not
+a description of the current estimator.
 
-### Existing analyses retained for comparison
+## Files produced by the current pipeline
 
-- `scripts/09_run_regressions.py`: earlier cross-sectional models.
-- `scripts/10_selection_exit_mode.py`: earlier two-stage exit-mode model.
-- `scripts/11_sanctions_amplification.py`: current duration estimates for
-  completed sale and completed non-sale exit.
-- `scripts/12_institutional_moderators.py`: exploratory home-country results.
+```text
+data/analysis/firm_snapshot_states.csv
+    One row per company and Yale snapshot, with a provisional state and an
+    ambiguity flag.
 
-These scripts are useful diagnostics, but scripts 10 and 11 do not yet
-implement the revised state-transition model.
+data/analysis/firms_exit_panel.csv
+    One row per company, retaining the older grade and timing variables.
 
-## Data sources
+data/analysis/orbis_subsidiaries.csv
+    Cleaned Russian subsidiary records.
 
-- **Yale CELI tracker:** repeated company grades and descriptions from
-  December 2022 through May 2025.
-- **Orbis:** Russian subsidiary assets, employees, sector, age, and ownership
-  structure.
-- **Lens.org:** parent patent portfolios. The current file must be replaced by
-  a full-panel, pre-invasion pull.
-- **Bloomberg M&A:** reported sales and transaction dates where available.
-- **EU sanctions packages:** sector coverage and adoption dates.
-- **Home-country institutions:** coalition membership, rule of law, and legal
-  origin; currently exploratory rather than central.
+data/analysis/merged_orbis_yale.csv
+    Matched parent-level Yale-Orbis sample.
 
-## Work still required
+data/analysis/regression_sample.csv
+    Current parent-level analysis file.
 
-1. Translate every Yale snapshot into the five states above, retaining an
-   explicit `ambiguous` flag.
-2. Re-pull 2017–2021 patents for the full population, including companies that
-   never announced an exit.
-3. Add PP&E/assets, intangible assets, profitability, and parent size to the
-   Orbis export.
-4. Check reported completed sales and closures against current ownership and
-   liquidation records where available.
-5. Replace the current selected duration analysis with a full-risk-set
-   state-transition model.
-6. Treat sanctions moderation and home-country interactions as secondary
-   until their measurement and statistical power improve.
+data/analysis/results_10_selection_exit_mode.txt
+    Earlier two-stage analysis of exit completion and reported outcome.
+
+data/analysis/results_11_sanctions_amplification.txt
+    Current duration results for reported sales and non-sale completions.
+
+data/analysis/results_12_institutional_moderators.txt
+    Exploratory home-country interactions.
+```
+
+## Scripts
+
+```text
+01_parse_yale_tracker.py       combine Yale snapshots and assign provisional states
+02_collect_patents_lens.py     collect patent counts; full-panel re-run required
+03_orbis_query_spec.md         fields requested for the next Orbis export
+05_parse_orbis_export.py       clean and combine Orbis files
+06_merge_orbis_yale.py         match subsidiaries and parents to Yale companies
+07_merge_bloomberg_deals.py    match reported transactions
+08_build_analysis_dataset.py   construct the current parent-level dataset
+09_run_regressions.py          retain earlier cross-sectional checks
+10_selection_exit_mode.py      retain the earlier two-stage model
+11_sanctions_amplification.py  estimate the current duration relationships
+12_institutional_moderators.py explore home-country relationships
+```
 
 ## Reproducing the current build
 
-```text
-01_parse_yale_tracker.py       combine Yale snapshots and construct timing
-02_collect_patents_lens.py     collect pre-invasion patents for the full panel
-03_orbis_query_spec.md         fields required for the next Orbis download
-05_parse_orbis_export.py       combine and clean Orbis exports
-06_merge_orbis_yale.py         match Russian subsidiaries to Yale companies
-07_merge_bloomberg_deals.py    match reported transactions
-08_build_analysis_dataset.py   construct the analysis file
-09_run_regressions.py          run legacy cross-sectional checks
-10_selection_exit_mode.py      run the earlier two-stage model
-11_sanctions_amplification.py  run the current duration models
-12_institutional_moderators.py run exploratory country interactions
-```
-
-Dependencies:
+Install the Python dependencies:
 
 ```bash
 pip install openpyxl rapidfuzz numpy scipy statsmodels
 ```
+
+Run the scripts in numerical order. Scripts 02, 05, 06, and 07 can run after
+script 01. Script 08 requires the preceding data outputs, and scripts 09-12
+use the dataset produced by script 08.
+
+## Highest-priority next steps
+
+1. Fix the intended outlet and satisfy its formal eligibility requirements.
+   An Academy of Management Collections proposal needs a selected article list;
+   the cited AMP special-issue call requires a focal managerial implication
+   previously published in an eligible AOM journal. Neither requirement is met
+   by the current draft, and an article should not be invented merely to make
+   the proposal appear compliant.
+2. Manually review the ambiguous Yale company-date records and document the
+   evidence supporting every completed outcome.
+3. Obtain historical legal ownership and liquidation records for the Russian
+   subsidiaries.
+4. Collect pre-invasion patents for the full parent population.
+5. Add PP&E, intangible assets, profitability, payroll or labor cost, and
+   parent size.
+6. Build transaction histories containing buyer identity, price, completion
+   date, and approval information.
+7. Replace the current selected duration regressions with a subsidiary-level
+   model using the complete population at risk.
+
+## Interpretation standard
+
+Until those steps are completed, the repository supports a presentable
+motivation and a transparent description of the current evidence. It does not
+yet support causal claims about knowledge transfer, sanctions effectiveness,
+government approval, or the welfare consequences of sale versus closure.
