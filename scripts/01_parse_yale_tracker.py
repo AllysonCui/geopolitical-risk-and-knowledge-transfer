@@ -1,12 +1,18 @@
 """
-Parse Yale CELI tracker snapshots to build a firm-level exit panel.
+Parse the repeated Yale CELI tracker snapshots.
 
-Uses ALL available snapshots (Dec 2022 - May 2025) so that downstream
-scripts can date each firm's exit: the first snapshot at which a firm
-appears with Grade A is the (coarse) event date used by the
-competing-risks hazard in 11_sanctions_amplification.py.
+The primary new output keeps one row per company and snapshot so the project
+can study movement from continued operation to an unresolved exit process and
+then to a reported completed outcome. Classification is deliberately
+conservative: generic statements that a company plans to leave do not count
+as evidence that a sale or closure has been completed.
+
+The older one-row-per-company outputs are retained so existing scripts remain
+reproducible while the new state-transition analysis is developed.
 
 Outputs:
+  data/analysis/firm_snapshot_states.csv — one row per firm and Yale snapshot
+                                          with a provisional state
   data/analysis/firms_exit_panel.csv  — one row per firm, exit status + action
                                         text + exit-timing columns
   data/analysis/firms_exiters.csv     — Grade A/B firms only (the main sample)
@@ -67,6 +73,31 @@ SUSPENDED_PATTERNS = re.compile(
     re.IGNORECASE,
 )
 
+# Conservative patterns for the new snapshot-level state file. Unlike the
+# legacy SOLD_PATTERNS, these do not treat a general withdrawal announcement
+# as proof of a completed transaction.
+COMPLETED_SALE_PATTERNS = re.compile(
+    r"\b(sold|sale completed|completed (the )?sale|divested|divestiture completed|"
+    r"transferred (its |the )?(business|assets|stake|operations|ownership)|"
+    r"handed over (its |the )?(business|assets|operations)|"
+    r"new owner|management buyout)\b",
+    re.IGNORECASE,
+)
+COMPLETED_CLOSURE_PATTERNS = re.compile(
+    r"\b(liquidated|liquidation completed|dissolved|wound up|"
+    r"closed (all |its |the )?(offices|operations|business|subsidiar)|"
+    r"ceased (all |its |the )?(operations|business))\b",
+    re.IGNORECASE,
+)
+EXIT_PROCESS_PATTERNS = re.compile(
+    r"\b(announc(ed|es|ing)?.{0,40}(exit|leave|withdraw)|"
+    r"plans? to (exit|leave|withdraw)|seeking (a )?buyer|"
+    r"sale process|negotiat(ing|ions?).{0,30}(sale|buyer)|"
+    r"suspend(ed|ing)?|halt(ed|ing)?|paus(ed|ing)?|"
+    r"wind(ing)? down|withdraw(ing|al)?|exit(ing)?)\b",
+    re.IGNORECASE,
+)
+
 # Firms whose Russian assets were placed under state "temporary management"
 # or otherwise seized. The action text often reads like a sale or exit, so
 # the regex misclassifies them; these overrides force the seized code, which
@@ -100,6 +131,29 @@ def classify_action(action: str, firm_name: str = "") -> str:
     return "other"
 
 
+def classify_snapshot_state(action: str, grade: str, firm_name: str = "") -> tuple[str, str]:
+    """Return (state, ambiguous_flag) for the new transition skeleton.
+
+    The action text is given priority for explicit completed outcomes. Grades
+    A and B without explicit completion evidence are treated as unresolved,
+    because the Yale grade records withdrawal posture rather than legal title.
+    """
+    action = action or ""
+    if firm_name in SEIZED_OVERRIDES or NATIONALIZED_PATTERNS.search(action):
+        return "state_imposed_loss_of_control", "no"
+    if COMPLETED_SALE_PATTERNS.search(action):
+        return "sale_completed", "no"
+    if COMPLETED_CLOSURE_PATTERNS.search(action):
+        return "closure_completed", "no"
+    if grade in ("A", "B") or EXIT_PROCESS_PATTERNS.search(action):
+        # Grade A can describe a clean break without establishing how or when
+        # ownership changed. Preserve that uncertainty for later review.
+        return "exit_announced_unresolved", "yes" if grade == "A" else "no"
+    if grade in ("C", "D", "F"):
+        return "still_operating", "no"
+    return "unclassified", "yes"
+
+
 def load_snapshot(path: Path) -> dict:
     """Return {name: row_dict} from a snapshot CSV."""
     firms = {}
@@ -122,6 +176,48 @@ latest_firms = snapshots[-1][1]
 early_firms = snapshots[0][1]
 
 print(f"Snapshots loaded: {len(snapshots)} ({SNAPSHOT_DATES[0]} … {SNAPSHOT_DATES[-1]})")
+
+# ── Build the snapshot-level state skeleton ───────────────────────────────
+
+snapshot_state_rows = []
+absorbing_state_by_firm = {}
+for snap_date, firms in snapshots:
+    for name, row in firms.items():
+        grade = (row.get("yaleGrade") or "").strip()
+        action = (row.get("action") or "").strip()
+        state, ambiguous = classify_snapshot_state(action, grade, name)
+        prior_terminal = absorbing_state_by_firm.get(name)
+        if state == "state_imposed_loss_of_control":
+            # Later state intervention supersedes an earlier reported status.
+            absorbing_state_by_firm[name] = state
+        elif prior_terminal:
+            # A completed outcome remains completed even if a later Yale
+            # description no longer repeats the transaction or closure text.
+            state, ambiguous = prior_terminal, "no"
+        elif state in ("sale_completed", "closure_completed"):
+            absorbing_state_by_firm[name] = state
+        snapshot_state_rows.append({
+            "snapshot_date": snap_date,
+            "name": name,
+            "country": (row.get("country") or "").strip(),
+            "industry": (row.get("industry") or "").strip(),
+            "yale_grade": grade,
+            "provisional_state": state,
+            "ambiguous": ambiguous,
+            "action_text": action,
+        })
+
+snapshot_states_out = OUT_DIR / "firm_snapshot_states.csv"
+snapshot_state_fields = [
+    "snapshot_date", "name", "country", "industry", "yale_grade",
+    "provisional_state", "ambiguous", "action_text",
+]
+with open(snapshot_states_out, "w", newline="", encoding="utf-8") as f:
+    writer = csv.DictWriter(f, fieldnames=snapshot_state_fields)
+    writer.writeheader()
+    writer.writerows(snapshot_state_rows)
+
+print(f"Snapshot states: {len(snapshot_state_rows)} rows → {snapshot_states_out}")
 
 # ── Build firm-level panel with exit timing ────────────────────────────────
 

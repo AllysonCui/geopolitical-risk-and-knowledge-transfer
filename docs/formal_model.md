@@ -1,150 +1,202 @@
-# A model of subsidiary sale when some assets are difficult to transfer
+# A waiting model of corporate exit completion
 
-The model explains when a parent company that must leave a host country can
-sell its subsidiary rather than exit without a sale. Its central idea is
-that a buyer will pay more when a larger share of the subsidiary's value can
-be retained after ownership changes. The framework combines the fire-sale
-logic of Shleifer and Vishny (1992), in which forced sales can occur at
-discounted prices, with Hart and Moore's (1994) insight that human capital
-cannot be owned or transferred in the same way as physical or legal assets.
-The model organizes the three empirical questions, but it does not establish
-that the available variables measure its theoretical concepts accurately.
+## 1. Economic question
 
-## Setup
+A parent company has announced that it intends to leave Russia, but its exit
+is not yet complete. The parent can continue to hold the subsidiary while it
+waits for a suitable buyer and any required approvals. Alternatively, it can
+close the operation without completing a sale. A completed sale is not treated
+as an action that the parent can choose at any moment; it becomes possible
+only when a qualified buyer and the necessary permissions are available.
 
-A parent that must exit chooses between **selling** the subsidiary and
-**exiting without an arm's-length sale**. The second category may include
-closure, suspension, or abandonment; it excludes state seizure, which is not
-a voluntary exit choice. For tractability, the model normalizes the salvage
-value of a non-sale exit to zero and denotes its wind-down cost by $w$. A
-buyer pays
+The model asks when the parent continues to wait and when it stops waiting.
 
-$$P = V \cdot \theta(k, h) - \tau$$
+## 2. Economic objects
 
-| Object | Meaning |
-|--------|---------|
-| $V$ | going-concern value of the subsidiary |
-| $k$ | codified-knowledge intensity (patents, documented processes) |
-| $h$ | tacit/human-capital intensity (knowledge embodied in employees) |
-| $\theta(k,h) \in [0,1]$ | fraction of value surviving the transfer: $\partial\theta/\partial k > 0$, $\partial\theta/\partial h < 0$ |
-| $\tau$ | transaction cost of the sale |
-| $w$ | cost of closing or otherwise exiting without a sale |
+| Symbol | Meaning |
+|---|---|
+| $k$ | Importance of patents and other codified assets |
+| $h$ | Dependence on employees and continuing operations |
+| $\theta(k)$ | Share of subsidiary value that a buyer can preserve, with $\theta'(k)>0$ |
+| $V_t$ | Subsidiary value at time $t$ before transaction costs |
+| $\tau_t$ | Transaction costs, mandatory discounts, taxes, and other deductions |
+| $S_t=\theta(k)V_t-\tau_t$ | Net value received if a qualified buyer completes a transaction at time $t$ |
+| $c_t=c(h,x_t)$ | Cost per period of maintaining the unresolved subsidiary, with $c_h>0$ |
+| $\lambda_t=\lambda(x_t)$ | Rate at which a qualified buyer and required permissions become available |
+| $w$ | Cost of closing the operation without a sale |
+| $x_t$ | Conditions that evolve over time, such as approval status, sanctions, operating restrictions, and demand |
 
-**Core assumption.** Codified assets such as patents, licenses, and documented
-processes can in principle be conveyed by contract. Knowledge embodied in
-employees, relationships, and firm-specific routines is less reliably
-transferable because employees may leave and organizational complementarities
-may weaken after the parent departs. A buyer can therefore capture a larger
-share of going-concern value when transferable assets are more important and
-a smaller share when value depends more heavily on non-transferable human
-capital. Formally, $\theta$ rises in $k$ and falls in $h$. This assumption
-concerns assets owned or used by the subsidiary; parent-level patent counts
-are only an empirical proxy for that concept.
+The two knowledge concepts have different functions. Codified assets increase
+the value preserved in a future transaction through $\theta(k)$. Dependence
+on employees and continuing operations raises the cost of remaining unresolved
+through $c(h,x_t)$. This separation avoids treating patents and labor intensity
+as opposite ends of a single index.
 
-The model is parameterized directly by $(k, h)$ rather than by a composite
-index. The project's earlier symmetric composite α is retained only in legacy
-script 09. In the current sample, the patent component is more strongly
-associated with exit mode than the labor component. This pattern motivates
-separate regressors, but it does not validate either proxy or prove the
-model's transferability mechanism.
+## 3. Constant-condition benchmark
 
-## The cutoff
+Suppose for the moment that $S$, $c$, and $\lambda$ never change. If the
+company commits to waiting until a buyer arrives, the value of waiting is
 
-The firm sells iff $V\theta(k,h) - \tau > -w$, i.e. iff
+$$
+rW=-c+\lambda(S-W),
+\qquad
+W=\frac{\lambda S-c}{r+\lambda}.
+$$
 
-$$\theta(k, h) \;>\; \theta^* \equiv \frac{\tau - w}{V}.$$
+The company closes immediately when waiting is worth less than paying the
+closure cost:
 
-Everything in the paper is a movement of $\theta(k,h)$ or of $\theta^*$.
-(The analysis focuses on the case $\tau > w$, in which completing a sale
-requires enough transferable value to compensate for transaction costs.)
+$$
+W<-w
+\quad\Longleftrightarrow\quad
+c>\lambda(S+w)+rw.
+$$
 
-**Heterogeneity.** Firms differ in the private value of retaining the
-subsidiary, $V_i$, which is distributed according to a continuous log-concave
-distribution $F(\cdot)$. This heterogeneity implies that the deterministic
-cutoff translates into a probabilistic sell/no-sell decision, yielding the
-binary-choice specification estimated in the empirical analysis. Concretely,
-firm $i$ sells iff $V_i > V^*(k,h;\tau,w) \equiv (\tau - w)/\theta(k,h)$, so
+This benchmark is useful because it displays the economic forces clearly, but
+it is not yet a model of *when* to stop waiting. Under constant conditions the
+company either closes immediately or waits indefinitely. A genuine stopping
+decision requires conditions to change over time.
 
-$$\Pr(\text{sell}) = 1 - F\!\left(V^*(k,h;\tau,w)\right),$$
+## 4. Dynamic stopping problem
 
-This expression motivates a binary-response model. A probit additionally
-requires a distributional assumption about the latent error; it is therefore
-an empirical implementation of the model rather than a likelihood uniquely
-implied by the economic framework.
+Let $x_t$ summarize the conditions facing the subsidiary. These conditions
+may change because costs accumulate, subsidiary value deteriorates, sanctions
+change the buyer pool, or government approval becomes more or less likely.
+Let $J(x)$ denote the value of an unresolved subsidiary in state $x$.
 
-## Predictions
+The continuous-time stopping problem is
 
-**Prediction 1 (exit mode — slope of θ).**
-$V^*_k = -(\tau-w)\,\theta_k/\theta^2 < 0$ and $V^*_h > 0$, so
-$\partial\Pr(\text{sell})/\partial k > 0$ and
-$\partial\Pr(\text{sell})/\partial h < 0$. In words, transferable assets
-increase the expected value of a sale. When geopolitical frictions reduce
-buyers' willingness to pay, subsidiaries whose value depends primarily on
-transferable assets should remain more likely to attract buyers. Subsidiaries
-whose value relies heavily on employees and firm-specific routines should be
-more likely to lack a viable sale opportunity and therefore exit without an
-arm's-length sale. These signs are unambiguous within the model; testing them
-requires credible measures of $k$ and $h$.
-→ `scripts/10_selection_exit_mode.py` (Heckman-style two-stage on the full
-population; B2C exclusion restriction: boycott pressure moves *whether* to
-exit, not the mechanics of the asset transfer).
+$$
+\max\left\{
+-w-J(x),\;
+-c(h,x)+\mathcal{L}J(x)
++\lambda(x)\big[\theta(k)V(x)-\tau(x)-J(x)\big]
+-rJ(x)
+\right\}=0.
+$$
 
-**Prediction 2 (sanctions may raise the sale threshold).** Licensing rules,
-exit taxes, mandatory discounts, and a smaller pool of eligible buyers can
-raise $\tau$. Holding other quantities fixed, this raises $\theta^*$ and
-reduces the probability of sale. Whether sanctions strengthen the association
-between transferable assets and sale is a separate interaction effect:
+The first expression is the value of closing now. The second is the value of
+continuing to wait: the parent pays the current carrying cost, conditions may
+change according to $\mathcal{L}$, and a completed transaction occurs at rate
+$\lambda(x)$. The parent closes when $J(x)=-w$ and waits when $J(x)>-w$.
 
-$$\frac{\partial^2 \Pr(\text{sell})}{\partial \tau\,\partial k}
-= -f'(V^*)\,V^*_\tau V^*_k \;-\; f(V^*)\,V^*_{k\tau},
-\qquad V^*_\tau > 0,\; V^*_k < 0,\; V^*_{k\tau} = -\theta_k/\theta^2 < 0.$$
+For readers who prefer a discrete interpretation, consider the interval
+between two Yale tracker snapshots. If the company waits during period $t$,
+its approximate value is
 
-The second term is positive, whereas the first depends on the location of the
-marginal firm in the value distribution. Moreover, sanctions may reduce $V$
-especially sharply for technology assets by eliminating capable buyers. That
-channel can reverse the sign. The model therefore does not deliver an
-unconditional prediction for the interaction; the empirical estimate must
-distinguish these competing mechanisms.
-→ `scripts/11_sanctions_amplification.py` (pooled PatInt × SancExp
-interaction — not a subsample R² comparison — plus a cause-specific
-competing-risks Cox with time-varying exposure from the staggered 2022 EU
-package rollout).
+$$
+-c_t\Delta
++e^{-r\Delta}\left[
+(1-\lambda_t\Delta)E_t J(x_{t+1})
++\lambda_t\Delta S_t
+\right].
+$$
 
-**Prediction 3 (home institutions move θ\* in opposite directions).**
-Coalition alignment raises $\tau$ (buyer restrictions, exit-tax exposure):
-$\theta^*\uparrow$, less selling. Stakeholder-pressure institutions raise
-$w$ (reputational and legal cost of walking away): $\theta^*\downarrow$,
-more selling. These mechanisms imply opposite movements in the cutoff.
-→ `scripts/12_institutional_moderators.py` (country fixed effects absorb
-institution levels, so the specification estimates only the $k \times$
-institution interactions).
+At each snapshot, the parent compares this continuation value with $-w$. This
+form makes clear why a company may wait at one date and close later: costs,
+value, buyer availability, or approval conditions can change between dates.
 
-## Mapping model objects to data
+## 5. Testable predictions
 
-| Model object | Empirical proxy | Source |
-|--------------|-----------------|--------|
-| $k$ — transferable codified assets | parent patent-stock percentile (`pat_pctile`, within-sector variant available); an indirect proxy that does not identify patents owned by the Russian subsidiary | Lens.org |
-| $h$ — non-transferable human capital | subsidiary employees/assets percentile (`lab_pctile`); a labor-intensity proxy that does not directly measure tacitness, specificity, or employee retention | Orbis |
-| $\tau$ shifters | EU package exposure of the NACE sector, time-varying | EU package dates + NACE map |
-| $\tau$ and $w$ shifters (home institutions) | coalition status, rule of law, legal origin | Decree 430-r list, WGI (DataBank RL.EST), LLSV |
-| seizure (involuntary transfer, outside the choice set) | `exit_mode = seized` — third competing risk, dropped from the sell/walk margin | Yale action text + manual overrides |
+### Prediction 1: codified assets delay closure
 
-## Measurement rules implied by the model
+An increase in $k$ raises $\theta(k)$ and therefore raises the value of a
+future completed transaction. Holding other quantities fixed, it expands the
+set of conditions under which the parent continues to wait. The rate of
+closure without a sale should therefore decline with $k$.
 
-1. $k$ should be measured at the **global ultimate owner** over a
-   **pre-invasion window (2017–2021 grants)** and scaled by parent size —
-   the codified knowledge at stake is the parent's, and vintage must be
-   pre-determined. (Current build: lifetime stock, unscaled; see README.)
-2. The $h$ numerator and denominator should come from the **same 2019–2021
-   window** of the Russian subsidiary's accounts.
-3. Asset tangibility (PP&E/assets) is the obvious confounder for
-   "sellability" and belongs in $X_i$ (pending Orbis re-export; see
-   `scripts/03_orbis_query_spec.md`).
-4. Because $k$ and $h$ enter as ranks, substantive results should be reported
-   as predicted probabilities or average marginal effects across meaningful
-   percentile changes, not interpreted as effects of one additional patent or
-   employee.
-5. A persuasive test also requires direct validation of the exit-mode coding,
-   evidence for the B2C exclusion restriction, and controls for parent size,
-   profitability, and subsidiary asset composition. Until those additions are
-   made, the estimates are best described as conditional associations.
+### Prediction 2: human-capital dependence accelerates closure
+
+An increase in $h$ raises the cost of maintaining an unresolved operation.
+Holding other quantities fixed, it makes the stopping condition more likely
+to bind. The rate of closure without a sale should therefore rise with $h$.
+
+### Prediction 3: sale timing depends primarily on buyer and approval availability
+
+Among subsidiaries that remain unresolved, the instantaneous rate of a
+completed transaction is $\lambda(x)$. Sanctions may reduce this rate by
+shrinking the eligible buyer pool. Russian approval requirements may also
+delay completion. Mandatory discounts and transaction taxes instead reduce
+$S_t$ and may cause the parent to keep waiting or close.
+
+The model does **not** require the sale-completion rate to be unrelated to
+$k$. That restriction holds only if codified assets affect the value of
+waiting but do not attract buyers, speed approval, or change bid acceptance.
+The current estimate for $k$ in the sale-completion equation is imprecise and
+should not be interpreted as proof of no relationship.
+
+### Prediction 4: cumulative sale probability can rise without a higher sale rate
+
+Even if $k$ does not change $\lambda$, a subsidiary with more codified assets
+may remain unresolved longer because it is less likely to close. Its
+cumulative probability of eventually finding a buyer can therefore increase
+without an increase in the transaction rate at any particular instant.
+
+## 6. Mapping the model to the Yale snapshots
+
+The current data skeleton treats each company at each snapshot as being in one
+of the following states:
+
+| State | Interpretation |
+|---|---|
+| Still operating | No full exit announcement is visible in the current record |
+| Exit announced but unresolved | Reduction, suspension, or announced departure without a verified completed outcome |
+| Sale completed | Available text or transaction data report a completed transfer to a buyer |
+| Closure completed | Available text reports closure or liquidation without a sale |
+| State-imposed loss of control | Seizure or temporary administration |
+
+The main empirical sample begins when a company first enters the unresolved
+state. The analysis then follows it until sale, closure, state intervention,
+or the final snapshot. Companies still operating are also needed to study the
+earlier decision to announce an exit, but that is a separate transition.
+
+## 7. Empirical skeleton
+
+The first implementation should estimate four easily explained quantities:
+
+1. Expected months from an exit announcement to any completed outcome.
+2. Probability of remaining unresolved after 6, 12, and 24 months.
+3. Probability that the next observed outcome is a completed sale.
+4. Probability that the next observed outcome is a completed closure.
+
+The statistical model may use transition-specific duration regressions, but
+the paper should describe results as waiting times and predicted
+probabilities. Technical estimator names belong in the methods appendix.
+
+Primary explanatory variables:
+
+- Parent patent rank as a provisional proxy for $k$.
+- Subsidiary employees/assets as a provisional proxy for $h$.
+- Assets, age, subsidiary count, sector, and home country as controls.
+- Time-varying sector sanctions as a provisional shifter of $\lambda_t$ or
+  $S_t$.
+
+## 8. What the current evidence says
+
+In the existing selected duration sample, moving from the bottom to the top of
+the parent patent ranking is associated with an approximately 69% lower rate
+of completing an exit without a sale (p < 0.001). Its estimated relationship
+with the rate of completed sales is small relative to its uncertainty
+(p = 0.54). Moving across the labor-intensity ranking is associated with an
+estimated 32% higher rate of non-sale completion, but that estimate is also
+imprecise (p = 0.30).
+
+These estimates are consistent with Predictions 1 and 2, but they are not a
+test of the full model because patent data are currently missing for much of
+the population and the outcome categories rely on announcement text.
+
+## 9. Main limitations
+
+1. Yale grades are editorial assessments rather than legal ownership records.
+2. Several distinct actions may appear within the same Yale grade.
+3. Many companies were already recorded as completed exits in the first
+   available snapshot, so their waiting times are not observed from the start.
+4. Parent patent stock is not the same as IP transferred with a Russian
+   subsidiary.
+5. Employees/assets does not directly measure payroll or the cost of
+   maintaining a suspended operation.
+6. The full panel needs pre-invasion patent coverage before the duration
+   results can be interpreted as population relationships.
+7. The processes governing $V_t$, $c_t$, and $\lambda_t$ remain to be
+   parameterized. The present document is a theoretical and empirical
+   skeleton, not a completed structural estimation.
