@@ -1,283 +1,277 @@
-PROPOSAL
-
-TITLE
-
-Corporate Exit Under Geopolitical Distortions: Buyer Scarcity, State Approval,
-and the Fate of Foreign Productive Capacity
-
-
-SUMMARY
-
-The public debate over corporate withdrawal from Russia has counted
-announcements: which companies promised to leave, which stayed, and which
-appeared to reverse course. I argue that this emphasis misses the economic
-problem. Once a company decides to leave, it cannot simply choose a completed
-sale. It must find an eligible buyer, accept a price shaped by mandatory
-discounts and taxes, and obtain government approval. Until then, the company
-remains responsible for a subsidiary whose employees, assets, and legal
-obligations do not disappear with the announcement.
-
-This study treats geopolitical exit as a distorted market for corporate
-control. A foreign parent waits for a qualified buyer while paying the cost of
-maintaining the subsidiary. Patents, licenses, and documented processes may
-preserve the value of a future transaction. Employee-intensive operations may
-be more costly to maintain during a prolonged suspension. Sanctions can reduce
-the pool of eligible buyers, while host-government rules can delay approval or
-lower the price the seller is allowed to receive. The same policy may therefore
-encourage departure while making departure harder to complete.
-
-What drew me to this problem was the gap visible in repeated company trackers:
-public withdrawal announcements accumulated quickly, while many ownership and
-operating arrangements remained unresolved years later.
-
-The ideal study would combine dated company announcements with Russian legal
-ownership records, transaction prices and buyers, government approval dates,
-subsidiary financial accounts, employment and payroll, patents and licenses,
-and firm-specific sanctions exposure. These data would support a dynamic model
-of waiting, sale, closure, and state intervention. The model would separate
-three forces: the scarcity of buyers, the value preserved in a transfer, and
-the cost of remaining unresolved. Counterfactual exercises would ask how much
-faster exits would have occurred without approval delays, mandatory discounts,
-or sanctions-related buyer restrictions, and who would have borne the resulting
-losses.
-
-My position is that sanctions and corporate-exit rules should be evaluated not
-by the number of withdrawal announcements but by what happens to productive
-capacity afterward. A sale, a closure, and a subsidiary held in limbo have
-different consequences for workers, shareholders, tax revenues, and the host
-state. Making those differences visible would give managers more realistic
-contingency plans and help policymakers design divestiture rules that do not
-undermine their own strategic objectives.
-
-
-1. THE PROBLEM
-
-Geopolitical crises are usually described as shocks that force companies to
-choose whether to remain in a market. That description is incomplete. Leaving
-is a process, not a switch. The parent may announce a withdrawal quickly, but
-completion requires a buyer, a viable transaction, and permission to transfer
-control. During the interval between announcement and completion, the firm may
-continue to employ workers, hold assets, pay taxes, fund basic operations, and
-bear legal responsibility for the subsidiary.
-
-Russia after the February 2022 invasion of Ukraine makes this problem visible.
-Foreign parents faced sanctions from their home jurisdictions and restrictions
-from the Russian state. Those two sets of policies did not simply increase the
-desire to exit. They altered the market through which exit had to occur.
-Potential buyers became scarcer. Transaction prices were subject to discounts,
-taxes, and bargaining pressure. Approval requirements added delay and
-uncertainty. In some cases, the state assumed control before the parent could
-complete a voluntary transaction.
-
-The central research question is:
-
-    How do geopolitical restrictions reshape the market for corporate control,
-    and how do those distortions determine the time required to complete an
-    exit and the eventual allocation of productive assets?
-
-This formulation moves beyond a count of corporate promises. It asks what
-happened to factories, stores, employees, intellectual property, and tax-paying
-entities after the promise was made.
-
-
-2. THE ECONOMIC MECHANISM
-
-The project begins with one friction: a parent that wants to leave cannot sell
-until a qualified buyer and the necessary approval become available. While it
-waits, it pays the cost of maintaining the unresolved subsidiary. It can stop
-waiting by closing the operation, but closure is costly and irreversible.
-
-Three quantities organize the analysis.
-
-First, buyer availability determines how quickly a feasible transaction can
-arrive. Sanctions, financing restrictions, and approval rules can reduce this
-arrival rate.
-
-Second, transferable value determines what an eligible buyer is willing to
-pay. Physical assets, patents, licenses, documented processes, customer
-relationships, and continued access to the parent need not survive a change in
-control to the same degree. Mandatory discounts and transaction taxes reduce
-the amount the parent can recover.
-
-Third, carrying cost determines how expensive it is to remain unresolved.
-Payroll, leases, compliance obligations, maintenance, and the deterioration of
-idle assets may make waiting increasingly costly. Employee-intensive operations
-may be particularly expensive to preserve during suspension.
-
-At each date, the parent compares the value of continued waiting with the cost
-of closing. Conditions change over time, so the decision is genuinely dynamic.
-A policy that reduces buyer availability can delay sales and increase the
-number of unresolved subsidiaries. A policy that reduces the permitted price
-can make closure more attractive. A rise in carrying costs can bring forward
-closure even when a future buyer remains possible.
-
-The model generates four empirical implications:
-
-1. Assets that preserve value under new ownership should reduce the rate of
-   closure while the parent waits.
-2. High carrying costs should shorten the unresolved period and increase the
-   probability of closure.
-3. Restrictions on buyers and approvals should delay completed sales.
-4. A characteristic can increase the eventual probability of sale by reducing
-   closure, even if it does not increase the rate at which buyers arrive.
-
-The formal skeleton is developed in `docs/formal_model.md`.
-
-
-3. IDEAL DATA
-
-The proposal is written around the data required to answer the question well,
-not around the limitations of the current repository. The ideal unit of
-observation is a foreign-parent-by-Russian-subsidiary-by-month panel beginning
-before February 2022 and continuing until legal separation, liquidation, state
-intervention, or the end of observation.
-
-The ideal dataset would combine the following sources.
-
-Corporate intentions and operating status. Dated company statements and
-archived trackers would identify the first announcement of suspension,
-reduction, or intended departure. These records measure intent, not completion.
-
-Legal ownership and entity status. Historical Russian corporate-register data,
-commercial registry services, and successive Orbis vintages would identify
-changes in direct and ultimate ownership, liquidation dates, name changes, and
-temporary administration. These records provide the legal completion outcome.
-
-Transactions and buyers. Bloomberg, Refinitiv, Mergermarket, company filings,
-and buyer disclosures would provide announcement and completion dates,
-transaction prices, ownership shares, payment terms, repurchase options, and
-buyer identity. Buyer balance sheets and industry experience would measure
-whether the buyer was capable of maintaining the operation.
-
-Government approval. Application dates, approval dates, denials, conditions,
-valuation requirements, mandatory discounts, and exit levies would measure the
-permission constraint. Where individual decisions are not public, the study
-would construct verified transaction histories and use policy-regime dates,
-while reporting missing approval information explicitly.
-
-Subsidiary operations. Pre-invasion and post-invasion accounts would provide
-revenue, profitability, payroll, employment, PP&E, intangible assets, cash,
-debt, inventories, taxes, and parent-company support. These variables measure
-carrying costs, deterioration, and the productive capacity at stake.
-
-Knowledge and organizational dependence. Patent ownership and licensing,
-trademarks, software rights, R&D personnel, parent-subsidiary service
-agreements, and the share of inputs supplied by the parent would distinguish
-assets that can transfer from capabilities that depend on continued
-relationships. Parent patent counts alone would be treated as a fallback proxy,
-not as the preferred measure.
-
-Policy exposure. Transaction-level sanctions, financing restrictions,
-counterparty designations, export controls, and sector rules would measure the
-constraints faced by each seller and potential buyer. Broad sector indicators
-would be used only when more precise exposure is unavailable.
-
-Workers and the host economy. Employment, payroll, production, taxes, and
-plant-level operation after transfer or closure would show who bears the
-consequences of each exit path.
-
-
-4. EMPIRICAL AND QUANTITATIVE DESIGN
-
-The empirical work would proceed in four stages.
-
-First, the study would document the exit process. It would report the time from
-announcement to completed sale, closure, or state intervention; the share of
-firms still unresolved after 6, 12, and 24 months; and the productive capacity
-associated with each state.
-
-Second, it would estimate how buyer availability, transferable value, carrying
-costs, and approval status predict transitions between states. The analysis
-would be reported through expected waiting times and predicted probabilities,
-with technical estimator details placed in the methods appendix.
-
-Third, the model would be estimated using moments that directly correspond to
-its mechanisms: the distribution of waiting times; transaction prices relative
-to pre-invasion value; closure rates; approval delays; employment and asset
-retention after transfer; and differences across firms with varying asset and
-knowledge structures.
-
-Fourth, the estimated model would conduct counterfactual experiments. These
-would remove one distortion at a time: approval delay, mandatory price discount,
-exit levy, sanctions-related buyer restrictions, or elevated carrying costs.
-The analysis would decompose each policy's effects on completion time,
-transaction value, closure, employment, tax payments, and the amount of
-productive capacity retained in Russia.
-
-The purpose of the model is not to replace transparent evidence. It is to
-separate mechanisms that produce similar observed delays. A firm may remain
-unresolved because no buyer is available, because approval is pending, because
-the permitted price is too low, or because the parent still finds waiting less
-costly than closure. Observed status alone cannot distinguish those explanations.
-
-
-5. CONTRIBUTION AND POINT OF VIEW
-
-Research on foreign divestment commonly treats exit as a decision made by the
-parent. Research on sanctions commonly evaluates aggregate trade, investment,
-or political outcomes. This project connects the two by treating divestiture as
-a market whose operation is shaped by both home- and host-country policy.
-
-The broader point is normative as well as analytical. Governments and public
-trackers often treat an announced withdrawal as evidence of alignment with
-sanctions objectives. That is too easy. An announcement can be followed by a
-discounted transfer of productive capacity to a domestic buyer, a costly
-closure borne by workers, years of continued tax payments during unresolved
-ownership, or an involuntary seizure. These outcomes are not interchangeable.
-
-My position is that corporate-exit policy should be judged by the post-exit
-allocation it creates, not by announcement counts. Policymakers should ask
-whether a rule deprives the host state of strategic capacity, transfers that
-capacity to a new owner, leaves it operating under unresolved foreign
-ownership, or destroys value that primarily belonged to workers and creditors.
-
-This perspective also changes managerial advice. A credible geopolitical exit
-plan must prepare for an extended period in which the company wants to leave
-but cannot complete a transaction. Firms should map which assets can be
-separated, which licenses and services a buyer would need, how long payroll and
-maintenance can be sustained, and what governance authority local managers
-retain if communication with the parent is disrupted.
-
-
-6. INVITATION TO CONVERSATION
-
-The project is intended to bring managers, workers, policymakers, and scholars
-into the same conversation. Managers understand that exit is operationally
-messy. Workers experience the consequences of suspension, sale, and closure.
-Sanctions officials care about strategic isolation. Host governments can use
-approval and administration rules to influence who receives the assets and at
-what price.
-
-The provocative question is not whether companies should leave an aggressor
-state. It is whether the rules intended to compel or control departure produce
-the outcomes their designers actually want. A policy can be morally clear and
-operationally self-defeating. The goal of this study is to make that possibility
-measurable and therefore open to better design.
-
-
-7. CURRENT DRAFT STATUS
-
-The present repository provides an initial descriptive foundation rather than
-the ideal study. Repeated Yale snapshots supply dated statements and changing
-grades. Orbis provides subsidiary assets and employees. Bloomberg supplies
-some transaction records, and Lens.org supplies incomplete parent patent
-counts. These data reveal a substantial unresolved state and suggest that
-parent patent rank is associated with a lower rate of non-sale completion.
-
-They do not yet observe government applications, reliable legal completion for
-every subsidiary, monthly carrying costs, subsidiary-level intellectual
-property, or the full set of firms at risk. The existing estimates should
-therefore be presented as motivation for the ideal design, not as its final
-results. The README documents these limitations and the current reproducible
-pipeline in detail.
-
-
-SELECTED INTELLECTUAL FOUNDATIONS
-
-The final paper would build on research on foreign divestment, economic
-statecraft and sanctions, search and matching, fire sales, firm boundaries,
-and the knowledge-based view of the firm. Its quantitative architecture is
-inspired by research that uses a disciplined model to connect an institutional
-distortion to observed microeconomic behavior and then evaluates policy through
-counterfactual comparisons. The relevant references will be expanded only
-after the paper's focal outlet and contribution are fixed.
+FOREIGN-MARKET ENTRY MODE AND THE COST OF EXIT AFTER POLITICAL RUPTURE
+
+Research proposal
+
+1. Research question
+
+Foreign firms commonly enter a market through a wholly owned operation, a
+joint venture, or a contract with a local distributor, licensee, or
+franchisee. The choice affects operating control, knowledge transfer, local
+capital investment, and dependence on a local partner. This study asks how the
+same choice affects the cost of leaving after relations between the home and
+host countries deteriorate.
+
+The empirical question is:
+
+    How does a firm's pre-rupture entry mode affect its accounting loss, time
+    to resolution, and recovery of invested capital after a political rupture?
+
+The first setting is foreign business activity in Russia after 24 February
+2022. Foreign firms using different entry modes faced the same change in the
+political environment. The study will compare outcomes across those modes
+while accounting for observable differences that affected the earlier entry
+choice.
+
+2. Contribution
+
+Research on foreign-market entry explains how ownership and local partnerships
+affect control, knowledge protection, adaptation, and operating performance.
+Research on political risk explains how expropriation, sanctions, and policy
+changes affect foreign investment. Less is known about whether the original
+entry arrangement determines the cost of leaving after a severe political
+shock.
+
+The study makes three contributions. First, it treats exit cost as an outcome
+of the earlier entry decision. Second, it measures exit cost with accounting
+loss, duration, and recovery rather than an announcement that the firm intends
+to leave. Third, it separates voluntary sale, contract termination, continued
+ownership, liquidation, and state-imposed loss of control.
+
+The result will be relevant beyond Russia if it identifies general components
+of exposure: capital placed under host-country jurisdiction, dependence on a
+local partner, the availability of an eligible buyer, and the legal process
+needed to end the arrangement.
+
+3. Theory
+
+Before a rupture, firm i chooses entry mode m from wholly owned operation,
+joint venture, and contractual entry. Its expected value is
+
+    U_im = pi_im - I_im - p_i L_im.
+
+pi_im is the value of normal operations, I_im is the cost of establishing the
+arrangement, p_i is the perceived probability of a political rupture, and L_im
+is the expected loss if a rupture occurs.
+
+After a rupture, an unresolved operation has value
+
+    V_im = [lambda_im P_im + sigma_im S_im - c_im]
+           / [r + lambda_im + sigma_im].
+
+K_im is the firm's pre-rupture capital exposure. lambda_im is the rate at which
+a permitted resolution occurs, P_im is net recovery at that resolution, c_im
+is the cost of maintaining the unresolved position, sigma_im is the rate of a
+forced loss of control, and S_im is recovery after forced loss. Expected exit
+loss is
+
+    L_im = K_im - V_im.
+
+Wholly owned operations usually place more assets under host-country
+jurisdiction. Joint ventures divide ownership but may either help or impede
+resolution. A local partner can identify a buyer and obtain approval, or can
+block a transaction and demand a larger share of the remaining value.
+Contractual entry usually places less equity at risk, but the foreign firm can
+still lose receivables, inventory, guarantees, and control over licensed
+technology or brands.
+
+The model does not assume that one mode is always best. It gives three outcomes
+to estimate:
+
+    H1. Entry modes differ in accounting loss relative to pre-rupture exposure.
+
+    H2. Entry modes differ in the time required to reach legal and operational
+        resolution.
+
+    H3. Entry modes differ in the fraction of pre-rupture exposure recovered by
+        the foreign parent.
+
+For wholly owned operations and joint ventures, the direction of the difference
+is an empirical question. Contractual entry should have lower total loss when
+its reduction in local capital exposure is larger than any unpaid receivables,
+contract penalties, guarantees, and loss of licensed assets.
+
+4. Unit of analysis and sample
+
+The preferred unit is a distinct Russian business presence linked to a foreign
+parent. A parent can have several units and can use more than one entry mode.
+The population should include every foreign firm with documented Russian sales
+or operations in 2021, including firms that continued operating after the
+invasion.
+
+The sample should not be limited to public exit announcements or reported
+transactions. Those restrictions would exclude unresolved firms and many
+contractual arrangements. The analysis period begins on 24 February 2022 and
+continues through the most recent date for which ownership and financial
+outcomes can be verified consistently.
+
+5. Entry-mode measurement
+
+Entry mode must be measured as of 31 December 2021.
+
+    Wholly owned operation: the foreign parent controlled at least 95 percent
+    of voting rights, directly or indirectly.
+
+    Joint venture: the foreign parent held an equity interest below 95 percent
+    and an unrelated partner held a material ownership or contractual control
+    right.
+
+    Contractual entry: the firm served Russia through a distributor, licensee,
+    or franchisee and held no equity in the local operator.
+
+A firm that used several modes will be divided into separate presence units
+where the data permit. If only parent-level outcomes are available, the main
+mode will be defined by the largest share of 2021 Russian revenue. Mixed-mode
+firms will also be reported separately. Two researchers should code each case
+from source documents and resolve disagreements using a written coding rule.
+
+6. Outcome measurement
+
+The study will measure three primary outcomes.
+
+Accounting loss is the cumulative Russia-specific impairment, write-down,
+deconsolidation loss, contract charge, and realized loss reported after the
+rupture, divided by the firm's pre-rupture Russian exposure.
+
+Time to resolution is the number of days from 24 February 2022 to the first
+verified date on which ownership transferred, the entity was liquidated, the
+contract ended, or the parent permanently lost control. Firms that remain
+unresolved at the end of the sample remain in the analysis rather than being
+assigned an artificial completion date.
+
+Recovery is cash received plus the fair value of retained claims, royalties,
+or repurchase rights, net of required contributions and transaction taxes,
+divided by pre-rupture exposure. Nominal amounts will be converted to a common
+currency using the exchange rate on the transaction date.
+
+A secondary summary measure is
+
+    Exit Cost_i = K_i - R_i + Holding Cost_i + Direct Transaction Cost_i.
+
+This measure will be reported only when its components are observed. Missing
+recovery or write-down information will not be replaced with zero.
+
+7. Data
+
+The ideal dataset requires five linked sources.
+
+First, a historical Orbis or comparable ownership export will identify direct
+and indirect shareholders, voting stakes, subsidiaries, 2021 assets, equity,
+revenue, employment, profitability, and industry. Current ownership records
+cannot substitute for historical ownership because an exit changes the field
+being used to define entry mode.
+
+Second, distributor, license, and franchise relationships will be collected
+from annual reports, company websites archived before 2022, commercial
+agreements, trade publications, and local operator disclosures. This source is
+necessary because non-equity arrangements are generally absent from ownership
+databases.
+
+Third, Russian company-registry records will establish changes in legal owner,
+liquidation, and current legal status. These records will distinguish an
+announcement from a completed transfer.
+
+Fourth, Bloomberg transaction records will provide buyer identity,
+announcement and completion dates, stake size, status, and disclosed value.
+Values will be checked against company filings and registry evidence.
+
+Fifth, annual reports, regulatory filings, and earnings-call materials will
+provide Russia-specific write-downs, impairment charges, proceeds, guarantees,
+retained options, and continuing obligations.
+
+The current repository contains a recent Orbis export, Yale action
+descriptions, and 1,392 Bloomberg transaction records. These files are enough
+to build a coding framework and a transaction baseline. They are not enough to
+measure the three entry modes or exit cost for the full population.
+
+8. Empirical design
+
+The first analysis will report the distribution of each outcome by entry mode.
+It will show sample size, missing-data rates, medians, means, and the full
+distribution. Results will be presented separately for wholly owned
+operations, joint ventures, contractual arrangements, and mixed cases.
+
+For accounting loss and recovery, the baseline specification is
+
+    Y_i = alpha + beta_J JointVenture_i + beta_C Contract_i
+          + gamma' X_i + industry effects + home-country effects + error_i.
+
+Y_i is either accounting loss divided by pre-rupture exposure or net recovery
+divided by pre-rupture exposure. X_i includes 2021 assets, revenue,
+profitability, employment, years in Russia, public-company status, whether the
+sector was subject to foreign-ownership restrictions, and whether the parent
+was directly sanctioned.
+
+For time to resolution, the data will be arranged by firm and month. Among
+firms that remain unresolved at the start of a month, the specification is
+
+    Pr(Resolution_it = 1) =
+        Logistic(alpha_t + beta_J JointVenture_i + beta_C Contract_i
+                 + gamma' X_i).
+
+alpha_t allows the general probability of resolution to change over time. The
+analysis will also distinguish sale, liquidation, contract termination, and
+forced loss of control because entry mode can affect those outcomes
+differently.
+
+Standard errors will account for multiple Russian units belonging to the same
+parent. A secondary analysis will compare units within the same parent when a
+parent used more than one entry mode. This removes stable parent
+characteristics but not differences in the activities assigned to each mode.
+
+9. Identification and interpretation
+
+The rupture was common across firms, but entry mode was selected before the
+rupture. Firms with regulated assets, complex production, valuable technology,
+or a need for local political access may have chosen different modes. Those
+characteristics can also affect exit cost.
+
+The baseline coefficients are therefore conditional associations. Industry,
+home-country, and pre-rupture operating controls will reduce observable
+differences but will not prove causality. Within-parent comparisons provide a
+stronger test when available. A causal estimate would require a credible source
+of pre-rupture variation in entry mode that has no direct effect on exit cost.
+The present proposal does not assume that legal ownership caps meet that
+condition, because restricted sectors may face different treatment after the
+rupture.
+
+10. Preliminary result from current data
+
+The current Bloomberg file contains 158 post-rupture transactions with a
+foreign seller and a Russian target or Russian asset reference. Among the 145
+transactions with a usable percentage interest, 57 of 114 transactions for at
+least 95 percent of the interest were completed, compared with 22 of 31
+transactions for smaller interests. The completion rates are 50.0 and 71.0
+percent. The difference is 21.0 percentage points, with a two-sided exact-test
+p-value of 0.043.
+
+The median time from 24 February 2022 to recorded completion was 476 days for
+full-interest transactions and 532.5 days for shared-interest transactions.
+Transaction value was disclosed for 25 full-interest transactions and 8
+shared-interest transactions.
+
+This result does not test the proposed hypotheses. The interest sold is a
+post-rupture transaction characteristic, not a verified pre-rupture entry
+mode. Firms without reported transactions are excluded. Full-interest records
+include asset sales, and contractual arrangements are largely absent. The
+result is a description of the available Bloomberg sample and a check on the
+data pipeline.
+
+11. Required work
+
+The next stage has four priorities.
+
+    1. Obtain historical ownership as of 31 December 2021 and rebuild parent-
+       subsidiary links without using post-exit ownership.
+
+    2. Construct and double-code the distributor, license, and franchise
+       population.
+
+    3. Verify legal resolution dates and ownership changes in Russian registry
+       records.
+
+    4. Extract Russia-specific write-downs, recovery, guarantees, and continuing
+       obligations from firm disclosures.
+
+After these tasks, the study can estimate the outcome specifications and
+assess whether the entry-mode comparisons are robust to sector composition,
+firm size, and pre-rupture selection.

@@ -1,249 +1,159 @@
-# Corporate exit in a distorted market for control
+# Formal Model
 
-## 1. Purpose
+## 1. Entry choice
 
-The model explains why a foreign parent can want to leave a market yet remain
-the legal owner of its subsidiary for an extended period. The central friction
-is that a completed sale requires both a qualified buyer and permission to
-transfer control. The parent cannot produce either condition on demand.
+A firm chooses one of three ways to serve a foreign market before a political
+rupture:
 
-While it waits, the parent pays the cost of maintaining the unresolved
-subsidiary. It can instead close the operation, but closure is costly and
-irreversible. Geopolitical policies affect the process by changing buyer
-availability, permitted transaction value, and approval delay.
+- $m=W$: a wholly owned local operation.
+- $m=J$: a joint venture with an unrelated local partner.
+- $m=C$: a contract with a local distributor, licensee, or franchisee.
 
-This framework is intended to discipline measurement and counterfactual
-analysis. It is not yet structurally estimated with the current repository.
+Let $\pi_m$ denote the present value of operating profit under mode $m$ when
+political relations remain stable. Let $K_m$ denote the firm's capital exposed
+in the host country. This includes equity, physical assets, receivables,
+guarantees, and contract-specific investments. A contractual arrangement can
+therefore have positive exposure even when the firm owns no local subsidiary.
 
-## 2. State and payoffs
+The firm assigns probability $p$ to a political rupture. Its entry problem is
 
-Consider parent company $i$ at time $t$. It has announced an intention to leave
-but still controls a Russian subsidiary.
+\[
+    m^* = \arg\max_m \left\{\pi_m - I_m - pL_m\right\},
+\]
 
-| Symbol | Meaning |
-|---|---|
-| $k_i$ | Codified assets and other capabilities that can remain valuable under new ownership |
-| $h_i$ | Dependence on employees, parent services, and continuing operations |
-| $x_{it}$ | Time-varying conditions, including approval status, sanctions, demand, and operating restrictions |
-| $V_i(x_{it})$ | Value of the subsidiary before transaction deductions |
-| $\theta(k_i,x_{it})$ | Share of value a buyer can preserve after control changes |
-| $\tau(x_{it})$ | Mandatory discount, transaction tax, compliance cost, and bargaining deduction |
-| $S_i(x_{it})=\theta(k_i,x_{it})V_i(x_{it})-\tau(x_{it})$ | Net value of a completed transaction |
-| $c(h_i,x_{it})$ | Cost per period of maintaining the unresolved subsidiary |
-| $\mu(x_{it})$ | Rate at which an eligible buyer becomes available |
-| $q(x_{it})$ | Rate at which a feasible transaction receives approval |
-| $\lambda(x_{it})$ | Effective completion rate generated jointly by buyer availability and approval |
-| $w_i$ | Cost of closing without a sale |
+where $I_m$ is the normal cost of establishing the arrangement and $L_m$ is
+the expected loss if a rupture occurs.
 
-It is useful to distinguish buyer availability from approval conceptually even
-when the data identify only their combined effect. In a simple sequential
-process, buyers arrive at rate $\mu$ and approval arrives at rate $q$ after a
-buyer is found. A reduced-form version summarizes both delays with the
-effective rate $\lambda$.
+This equation states the basic tradeoff. Ownership may raise normal operating
+profit by improving control over production and knowledge. It may also place
+more capital under host-country jurisdiction.
 
-Codified assets and operating dependence do different jobs. Codified assets
-can increase $\theta$, because a buyer can retain patents, licenses, physical
-assets, or documented processes. Operating dependence can increase $c$,
-because payroll, maintenance, local contracts, and parent-provided services
-continue or deteriorate during suspension. They are not opposite ends of one
-index.
+## 2. Resolution after a rupture
 
-## 3. Constant-condition benchmark
+For an equity operation, the parent owns an asset with pre-rupture book value
+$K_m$. While ownership remains unresolved, the parent pays $c_m$ per unit of
+time. This amount includes payroll, security, legal work, compliance, and other
+costs required to maintain or dispose of the operation.
 
-Suppose $S$, $c$, and $\lambda$ remain constant. If the parent commits to wait
-until completion, the value of waiting is
+A permitted sale is completed at rate $\lambda_m$ and pays the parent $P_m$,
+net of transaction taxes, required discounts, and direct selling costs. State
+seizure or another forced loss of control occurs at rate $\sigma_m$ and leaves
+the parent with $S_m$. Usually $S_m<P_m$. Let $V_m$ be the value of the
+unresolved operation immediately after the rupture. Then
 
-$$
-rW=-c+\lambda(S-W),
-\qquad
-W=\frac{\lambda S-c}{r+\lambda}.
-$$
+\[
+    rV_m = -c_m
+      + \lambda_m(P_m-V_m)
+      + \sigma_m(S_m-V_m),
+\]
 
-Closing produces payoff $-w$. The parent closes immediately when
+so
 
-$$
-W<-w
-\quad\Longleftrightarrow\quad
-c>\lambda(S+w)+rw.
-$$
+\[
+    V_m =
+    \frac{\lambda_mP_m+\sigma_mS_m-c_m}
+         {r+\lambda_m+\sigma_m}.
+\]
 
-This equation displays the model's basic economics:
+The expected exit loss is
 
-- Higher transferable value $S$ makes waiting more attractive.
-- Faster buyer-and-approval completion $\lambda$ makes waiting more attractive.
-- Higher carrying cost $c$ makes closure more attractive.
-- A more costly closure $w$ makes waiting more attractive.
+\[
+    L_m = K_m - V_m.
+\]
 
-The benchmark does not create a duration decision: with constant conditions,
-the parent either closes immediately or waits indefinitely. The full model
-therefore allows conditions to evolve.
+This definition places the three observed components in one measure. A larger
+write-down raises the loss. A longer delay raises the present value of holding
+costs. A larger recovery payment lowers the loss.
 
-## 4. Dynamic stopping problem
+For a contractual arrangement, $K_C$ consists of receivables, guarantees,
+inventory, and contract-specific investments rather than subsidiary equity.
+The arrangement can end through notice, non-renewal, or breach. The same value
+equation applies if $\lambda_C$ is interpreted as the rate at which the
+contract is legally and commercially resolved, $P_C$ as net recovery at
+resolution, and $\sigma_C$ as the rate of uncompensated termination or
+appropriation.
 
-Let $J_i(x)$ denote the value of an unresolved subsidiary in state $x$. The
-parent chooses between closing now and continuing to wait:
+## 3. Comparative results
 
-$$
-\max\left\{
--w_i-J_i(x),\;
--c(h_i,x)+\mathcal{L}J_i(x)
-+\lambda(x)\left[S_i(x)-J_i(x)\right]
--rJ_i(x)
-\right\}=0.
-$$
+The value of an unresolved operation changes as follows:
 
-$\mathcal{L}$ describes how the state changes while the parent waits. For
-example, approval may become more likely after documents are filed, subsidiary
-value may deteriorate during suspension, or carrying costs may rise as
-temporary arrangements expire.
+\[
+    \frac{\partial V_m}{\partial c_m}<0,
+    \qquad
+    \frac{\partial V_m}{\partial P_m}>0,
+    \qquad
+    \frac{\partial V_m}{\partial \lambda_m}
+    = \frac{P_m-V_m}{r+\lambda_m+\sigma_m}.
+\]
 
-The parent waits when $J_i(x)>-w_i$ and closes when $J_i(x)=-w_i$. A completed
-sale occurs only if the firm is still waiting when a buyer-and-approval
-opportunity arrives.
+When a permitted sale is better than continued waiting, $P_m>V_m$, a higher
+sale-completion rate reduces expected loss. A higher forced-loss rate reduces
+value when $S_m<V_m$.
 
-Between two tracker observations separated by $\Delta$, the same problem has
-the approximate discrete form
+The model does not impose a fixed ranking between wholly owned operations and
+joint ventures. A local partner may improve access to buyers and government
+approval, raising $\lambda_J$. The partner may also create bargaining disputes
+or block a transfer, lowering $\lambda_J$. The ranking must be estimated.
 
-$$
-J_{it}=\max\left\{
--w_i,\;
--c_{it}\Delta+e^{-r\Delta}
-\left[(1-\lambda_{it}\Delta)E_tJ_{i,t+1}
-+\lambda_{it}\Delta S_{it}\right]
-\right\}.
-$$
+Contractual entry has lower expected loss than wholly owned entry when
 
-This form maps naturally to monthly or quarterly subsidiary data.
+\[
+    K_C-V_C < K_W-V_W.
+\]
 
-## 5. Policy distortions
+Lower local capital exposure makes this inequality more likely, but it does
+not guarantee it. A distributor may fail to pay receivables, a license may be
+used without compensation, or the foreign firm may remain liable under a
+guarantee.
 
-The model separates three policy channels.
+## 4. Empirical implications
 
-### Buyer restriction
+The model identifies three separate comparisons:
 
-Sanctions, financing restrictions, and counterparty rules can reduce $\mu$ by
-removing eligible buyers or lenders. This increases expected waiting time and
-can eventually make closure preferable.
+1. **Capital at risk.** Entry modes with more host-country assets should have
+   larger losses unless they also obtain larger recoveries.
+2. **Time to resolution.** Entry mode affects the rate at which a sale,
+   termination, or other legal resolution occurs.
+3. **Recovery.** Entry mode affects the fraction of pre-rupture exposure that
+   the parent receives after taxes, discounts, and settlement costs.
 
-### Approval delay
+The primary empirical analysis should estimate each outcome separately. A
+summary exit-cost measure can then be constructed as
 
-Host-government review can reduce $q$ or make approval conditional on buyer
-identity, sector, or transaction terms. This creates a queue between agreement
-and legal completion.
+\[
+    \text{Exit Cost}_i
+    = K_i-R_i+\int_0^{T_i}e^{-rt}c_i(t)\,dt+F_i,
+\]
 
-### Transaction-value reduction
+where $R_i$ is realized recovery, $T_i$ is time to resolution, and $F_i$
+contains direct legal and transaction costs.
 
-Mandatory discounts, exit levies, taxes, and bargaining pressure raise $\tau$
-and reduce $S$. They may lower the seller's recovery without changing the
-physical productivity of the subsidiary.
+## 5. Selection into entry mode
 
-These channels can produce similar observed delays but have different policy
-implications. Better data are required to distinguish them.
+The common rupture does not make entry mode random. Firms chose ownership,
+joint ventures, and contracts before 2022 based on regulation, asset type,
+market size, knowledge-transfer concerns, and their own capabilities. These
+same factors can affect exit cost.
 
-## 6. Main predictions
+The baseline estimates are therefore conditional comparisons. The empirical
+design should include detailed pre-rupture controls and industry effects. A
+secondary analysis can compare Russian operations belonging to the same parent
+when that parent used more than one mode. A causal interpretation requires an
+additional source of pre-rupture variation in entry mode whose effect on exit
+cost operates only through entry mode. The current data do not provide such
+variation.
 
-### Transferable assets
+## 6. Link to measurement
 
-An increase in $k$ raises the value of a future transaction when it increases
-$\theta$. It should reduce the rate of closure while the parent waits. It may
-also attract buyers and raise $\mu$, but that is a separate empirical channel.
+The model and current data do not yet align in three places:
 
-### Operating dependence
+- The model requires entry mode immediately before the rupture. Current Orbis
+  ownership can reflect later changes.
+- The model requires the full population of foreign operations. Bloomberg
+  observes reported transactions, not firms that closed, waited, or used only
+  contracts.
+- The model requires net recovery and holding costs. Bloomberg reports some
+  transaction values but no write-downs or continuing costs.
 
-An increase in $h$ raises closure when it increases the cost of maintaining an
-unresolved operation. The preferred measure is payroll and other continuing
-costs, not employees divided by assets.
-
-### Buyer and approval restrictions
-
-Lower $\mu$ or $q$ increases expected completion time. It can raise closure if
-the expected delay makes waiting too costly.
-
-### Mandatory discounts and levies
-
-A larger $\tau$ reduces the value of completion. It can lengthen negotiations,
-lead the parent to reject available transactions, or bring forward closure.
-
-### Cumulative outcomes
-
-A firm characteristic can increase the eventual probability of sale without
-raising the completion rate at a particular instant. If the characteristic
-reduces closure, the subsidiary remains available to match with a buyer for
-longer.
-
-## 7. Measurement in the ideal study
-
-| Model object | Preferred evidence |
-|---|---|
-| $\mu$ | Dated buyer approaches, bids, buyer identity, buyer financing, and eligibility |
-| $q$ | Application, approval, denial, and conditional-approval dates |
-| $V$ | Pre-invasion subsidiary cash flow, assets, production, and comparable transaction values |
-| $\theta$ | Assets and rights conveyed; buyer operating continuity; subsidiary patents and licenses; parent-service dependence |
-| $\tau$ | Transaction price relative to valuation; mandatory discount; exit levy; taxes; professional fees |
-| $c$ | Payroll, leases, maintenance, compliance expense, working capital, and asset deterioration during suspension |
-| $w$ | Liquidation expense, severance, creditor losses, asset write-offs, and legal closure costs |
-| Completion | Historical legal ownership and liquidation records, not announcement text alone |
-
-The current repository measures only fragments of these objects. Parent patent
-rank is a provisional proxy for $k$, and employees/assets is a provisional
-proxy for $h$. Neither is a direct structural measure.
-
-## 8. Moments for estimation
-
-An estimated version of the model should match moments that identify distinct
-mechanisms:
-
-1. Time from exit announcement to buyer agreement.
-2. Time from buyer agreement to government approval.
-3. Time from approval to legal ownership transfer.
-4. Share of firms unresolved after 6, 12, and 24 months.
-5. Transaction price relative to independent valuation and pre-invasion value.
-6. Closure and liquidation rates.
-7. Employment, assets, production, and taxes before and after each outcome.
-8. Differences in these moments across firms with varying asset transferability
-   and continuing operating costs.
-
-Separating agreement, approval, and legal completion is essential. A single
-sale date cannot identify whether delay came from buyer scarcity or government
-review.
-
-## 9. Counterfactual decomposition
-
-The quantitative contribution would compare the observed economy with
-counterfactual environments that remove one distortion at a time while holding
-the estimated firm characteristics fixed.
-
-1. **No buyer restriction:** restore the pre-crisis eligible-buyer arrival
-   process.
-2. **No approval delay:** allow an otherwise valid transaction to complete
-   immediately after agreement.
-3. **No mandatory discount or exit levy:** remove the policy component of
-   $\tau$.
-4. **Lower carrying cost:** allow temporary suspension without continued
-   payroll or selected compliance costs.
-5. **Combined undistorted completion market:** remove all four distortions.
-
-For each experiment, report changes in:
-
-- Time to completed exit.
-- Probability of sale, closure, unresolved ownership, and state intervention.
-- Seller recovery and buyer surplus.
-- Employment and production retained in Russia.
-- Host-country tax payments.
-- Productive and strategic assets transferred, idled, or destroyed.
-
-The decomposition is more informative than asking whether sanctions simply
-“increase” or “decrease” exit. Different rules can increase the desire to leave
-while reducing the ability to complete departure.
-
-## 10. What the current data can support
-
-Repeated Yale snapshots can provisionally describe movement between reported
-states. Orbis supplies selected subsidiary characteristics. Bloomberg provides
-some transaction dates, and Lens.org provides incomplete parent patent counts.
-
-These data can motivate the model and document selected correlations. They
-cannot separately identify buyer arrival, approval delay, transaction-value
-reductions, or carrying costs. The current duration estimates are also based on
-an incomplete patent sample. Structural estimation and policy counterfactuals
-must therefore wait for the ideal data described above.
+These are data requirements for the main study. They are not variables that
+should be inferred from missing observations.

@@ -1,0 +1,46 @@
+ENTRY-MODE REVIEW FILE
+Firms: 1589
+  wholly_owned: 18
+  joint_venture: 7
+  contractual: 14
+  mixed: 1
+  unclassified: 1549
+
+Every classification requires manual review. The Orbis export is not a
+historical ownership file, and Yale action descriptions were not designed
+to measure entry mode.
+
+BLOOMBERG TRANSACTION BASELINE
+Sample: foreign-seller transactions announced on or after 2022-02-24
+with a Russian target or an explicit Russia reference.
+Transactions: 158
+Unique sellers: 133
+
+full_interest_offered:
+  transactions: 114
+  completed: 57 (50.0%)
+  median days from rupture to completion: 476
+  reported-value coverage: 25 (21.9%)
+
+shared_interest_offered:
+  transactions: 31
+  completed: 22 (71.0%)
+  median days from rupture to completion: 532.5
+  reported-value coverage: 8 (25.8%)
+
+unclassified:
+  transactions: 13
+  completed: 4 (30.8%)
+  median days from rupture to completion: 384.5
+  reported-value coverage: 2 (15.4%)
+
+Unadjusted comparison:
+  shared-minus-full completion difference: 21.0%
+  two-sided Fisher exact p-value: 0.043
+
+INTERPRETATION
+This is a transaction-selection result, not an entry-mode effect. Percent
+sought is observed after the rupture. Firms without a sale attempt are
+absent, and distributor or license relationships generally do not appear.
+Reported values use different currencies and cannot be compared without
+date-specific conversion. The file does not report accounting write-downs.
