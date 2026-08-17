@@ -1,277 +1,410 @@
-FOREIGN-MARKET ENTRY MODE AND THE COST OF EXIT AFTER POLITICAL RUPTURE
+\documentclass[11pt]{article}
 
-Research proposal
+\usepackage[T1]{fontenc}\usepackage[utf8]{inputenc}\usepackage{lmodern}\usepackage{microtype}\usepackage[a4paper,margin=1.1in]{geometry}\usepackage{amsmath}\usepackage{amssymb}\usepackage{enumitem}\usepackage{titlesec}\usepackage[authoryear,round]{natbib}\setcitestyle{aysep={,}}\usepackage[hidelinks]{hyperref}
+\usepackage{float}
+\setlist[enumerate]{itemsep=0.4em,topsep=0.5em}\setlist[itemize]{itemsep=0.3em,topsep=0.5em}\titleformat{\section}{\normalfont\large\bfseries}{\thesection.}{0.6em}{}\titlespacing*{\section}{0pt}{1.6em}{0.8em}\setlength{\parskip}{0.5em}\setlength{\parindent}{0pt}
 
-1. Research question
+\DeclareMathOperator*{\argmax}{arg,max}
 
-Foreign firms commonly enter a market through a wholly owned operation, a
-joint venture, or a contract with a local distributor, licensee, or
-franchisee. The choice affects operating control, knowledge transfer, local
-capital investment, and dependence on a local partner. This study asks how the
-same choice affects the cost of leaving after relations between the home and
-host countries deteriorate.
+\title{\textbf{Entry Mode and the Cost of Exit\\After a Political Rupture}}\author{Allyson Cui}\date{\today}
 
-The empirical question is:
+\begin{document}
 
-    How does a firm's pre-rupture entry mode affect its accounting loss, time
-    to resolution, and recovery of invested capital after a political rupture?
+\maketitle
 
-The first setting is foreign business activity in Russia after 24 February
-2022. Foreign firms using different entry modes faced the same change in the
-political environment. The study will compare outcomes across those modes
-while accounting for observable differences that affected the earlier entry
-choice.
+\begin{quote}
+\textbf{Draft status.} This is a preliminary proposal. The baseline model and
+empirical design focus on equity operations because those ownership interests
+and transfers can be verified most consistently.
+\end{quote}
 
-2. Contribution
+\section{Research Question}
 
-Research on foreign-market entry explains how ownership and local partnerships
-affect control, knowledge protection, adaptation, and operating performance.
-Research on political risk explains how expropriation, sanctions, and policy
-changes affect foreign investment. Less is known about whether the original
-entry arrangement determines the cost of leaving after a severe political
-shock.
+\begin{quote}
+How does a firm's pre-rupture equity entry mode affect the capital it exposes,
+the time required to exit, and the share of that capital recovered after a
+political rupture?
+\end{quote}
 
-The study makes three contributions. First, it treats exit cost as an outcome
-of the earlier entry decision. Second, it measures exit cost with accounting
-loss, duration, and recovery rather than an announcement that the firm intends
-to leave. Third, it separates voluntary sale, contract termination, continued
-ownership, liquidation, and state-imposed loss of control.
+\section{Introduction}
 
-The result will be relevant beyond Russia if it identifies general components
-of exposure: capital placed under host-country jurisdiction, dependence on a
-local partner, the availability of an eligible buyer, and the legal process
-needed to end the arrangement.
+A foreign firm can operate through a wholly owned subsidiary or share ownership
+with a local partner. This choice determines the parent's capital exposure and
+whether another owner must participate in decisions concerning the operation.
+The same differences may affect the time and financial terms of exit after a
+political rupture.
 
-3. Theory
+Russia after February 2022 provides a setting in which these effects can be
+studied after a common political shock. Using Orbis and transaction-level
+verification, \citet{EvenettPisani2023} identify 1,404 EU- and G7-based firms
+controlling 2,405 active Russian subsidiaries. Only 5--13\% completed an equity
+divestment during the first nine months after the invasion. This difference
+between announced withdrawals and completed transactions makes the duration
+and recovery of exit economically relevant.
 
-Before a rupture, firm i chooses entry mode m from wholly owned operation,
-joint venture, and contractual entry. Its expected value is
+The model takes each firm's pre-rupture entry mode as given. Until exit is
+completed, the operation continues to generate revenue and costs. Its
+post-rupture value therefore depends on three components: the capital exposed,
+the net cash flow generated during the delay, and the amount recovered at exit.
+A wholly owned subsidiary generally exposes more of the parent's capital and
+gives the parent full control over a transaction. A joint venture limits the
+parent's equity exposure, but the local partner may affect both the time and
+terms of exit.
 
-    U_im = pi_im - I_im - p_i L_im.
+I model exit as a continuous-time process because an ownership transfer may
+require an eligible buyer, government approval, and several stages of
+negotiation. A limited set of buyers can reduce the value of specialized assets
+\citep{ShleiferVishny1992,KimKung2017}, while sanctions can interfere with
+transactions and payments even when they do not prohibit them directly
+\citep{CrozetHinz2020}. The model represents these conditions through the exit
+rate, net cash flow during the delay, and recovery at exit.
 
-pi_im is the value of normal operations, I_im is the cost of establishing the
-arrangement, p_i is the perceived probability of a political rupture, and L_im
-is the expected loss if a rupture occurs.
+Existing research on Russia examines withdrawal announcements, completed
+divestments, and changes in foreign ownership
+\citep{BalyukFedyk2023,EvenettPisani2023,WellhausenZhu2026}. I examine whether
+the ownership structure established before the invasion predicts how much
+capital is exposed, how long exit takes, and how much of that capital is
+recovered. The analysis focuses on equity operations because historical
+ownership and completed equity transactions can be observed. Contractual
+arrangements, branches, direct exports, and post-rupture use of third-country
+hubs are outside the baseline empirical scope because they require different
+population and outcome data. These extensions and their data requirements are
+set out separately in \texttt{docs/data\_requirements\_entry\_mode.md}.
 
-After a rupture, an unresolved operation has value
+\section{Formal Model}
 
-    V_im = [lambda_im P_im + sigma_im S_im - c_im]
-           / [r + lambda_im + sigma_im].
+\subsection{Pre-Rupture Entry Mode}
 
-K_im is the firm's pre-rupture capital exposure. lambda_im is the rate at which
-a permitted resolution occurs, P_im is net recovery at that resolution, c_im
-is the cost of maintaining the unresolved position, sigma_im is the rate of a
-forced loss of control, and S_im is recovery after forced loss. Expected exit
-loss is
-
-    L_im = K_im - V_im.
-
-Wholly owned operations usually place more assets under host-country
-jurisdiction. Joint ventures divide ownership but may either help or impede
-resolution. A local partner can identify a buyer and obtain approval, or can
-block a transaction and demand a larger share of the remaining value.
-Contractual entry usually places less equity at risk, but the foreign firm can
-still lose receivables, inventory, guarantees, and control over licensed
-technology or brands.
-
-The model does not assume that one mode is always best. It gives three outcomes
-to estimate:
-
-    H1. Entry modes differ in accounting loss relative to pre-rupture exposure.
-
-    H2. Entry modes differ in the time required to reach legal and operational
-        resolution.
-
-    H3. Entry modes differ in the fraction of pre-rupture exposure recovered by
-        the foreign parent.
-
-For wholly owned operations and joint ventures, the direction of the difference
-is an empirical question. Contractual entry should have lower total loss when
-its reduction in local capital exposure is larger than any unpaid receivables,
-contract penalties, guarantees, and loss of licensed assets.
-
-4. Unit of analysis and sample
-
-The preferred unit is a distinct Russian business presence linked to a foreign
-parent. A parent can have several units and can use more than one entry mode.
-The population should include every foreign firm with documented Russian sales
-or operations in 2021, including firms that continued operating after the
-invasion.
-
-The sample should not be limited to public exit announcements or reported
-transactions. Those restrictions would exclude unresolved firms and many
-contractual arrangements. The analysis period begins on 24 February 2022 and
-continues through the most recent date for which ownership and financial
-outcomes can be verified consistently.
-
-5. Entry-mode measurement
-
-Entry mode must be measured as of 31 December 2021.
-
-    Wholly owned operation: the foreign parent controlled at least 95 percent
-    of voting rights, directly or indirectly.
-
-    Joint venture: the foreign parent held an equity interest below 95 percent
-    and an unrelated partner held a material ownership or contractual control
-    right.
-
-    Contractual entry: the firm served Russia through a distributor, licensee,
-    or franchisee and held no equity in the local operator.
-
-A firm that used several modes will be divided into separate presence units
-where the data permit. If only parent-level outcomes are available, the main
-mode will be defined by the largest share of 2021 Russian revenue. Mixed-mode
-firms will also be reported separately. Two researchers should code each case
-from source documents and resolve disagreements using a written coding rule.
-
-6. Outcome measurement
-
-The study will measure three primary outcomes.
-
-Accounting loss is the cumulative Russia-specific impairment, write-down,
-deconsolidation loss, contract charge, and realized loss reported after the
-rupture, divided by the firm's pre-rupture Russian exposure.
-
-Time to resolution is the number of days from 24 February 2022 to the first
-verified date on which ownership transferred, the entity was liquidated, the
-contract ended, or the parent permanently lost control. Firms that remain
-unresolved at the end of the sample remain in the analysis rather than being
-assigned an artificial completion date.
-
-Recovery is cash received plus the fair value of retained claims, royalties,
-or repurchase rights, net of required contributions and transaction taxes,
-divided by pre-rupture exposure. Nominal amounts will be converted to a common
-currency using the exchange rate on the transaction date.
-
-A secondary summary measure is
-
-    Exit Cost_i = K_i - R_i + Holding Cost_i + Direct Transaction Cost_i.
-
-This measure will be reported only when its components are observed. Missing
-recovery or write-down information will not be replaced with zero.
-
-7. Data
-
-The ideal dataset requires five linked sources.
-
-First, a historical Orbis or comparable ownership export will identify direct
-and indirect shareholders, voting stakes, subsidiaries, 2021 assets, equity,
-revenue, employment, profitability, and industry. Current ownership records
-cannot substitute for historical ownership because an exit changes the field
-being used to define entry mode.
-
-Second, distributor, license, and franchise relationships will be collected
-from annual reports, company websites archived before 2022, commercial
-agreements, trade publications, and local operator disclosures. This source is
-necessary because non-equity arrangements are generally absent from ownership
-databases.
-
-Third, Russian company-registry records will establish changes in legal owner,
-liquidation, and current legal status. These records will distinguish an
-announcement from a completed transfer.
-
-Fourth, Bloomberg transaction records will provide buyer identity,
-announcement and completion dates, stake size, status, and disclosed value.
-Values will be checked against company filings and registry evidence.
-
-Fifth, annual reports, regulatory filings, and earnings-call materials will
-provide Russia-specific write-downs, impairment charges, proceeds, guarantees,
-retained options, and continuing obligations.
-
-The current repository contains a recent Orbis export, Yale action
-descriptions, and 1,392 Bloomberg transaction records. These files are enough
-to build a coding framework and a transaction baseline. They are not enough to
-measure the three entry modes or exit cost for the full population.
-
-8. Empirical design
-
-The first analysis will report the distribution of each outcome by entry mode.
-It will show sample size, missing-data rates, medians, means, and the full
-distribution. Results will be presented separately for wholly owned
-operations, joint ventures, contractual arrangements, and mixed cases.
-
-For accounting loss and recovery, the baseline specification is
-
-    Y_i = alpha + beta_J JointVenture_i + beta_C Contract_i
-          + gamma' X_i + industry effects + home-country effects + error_i.
-
-Y_i is either accounting loss divided by pre-rupture exposure or net recovery
-divided by pre-rupture exposure. X_i includes 2021 assets, revenue,
-profitability, employment, years in Russia, public-company status, whether the
-sector was subject to foreign-ownership restrictions, and whether the parent
-was directly sanctioned.
-
-For time to resolution, the data will be arranged by firm and month. Among
-firms that remain unresolved at the start of a month, the specification is
-
-    Pr(Resolution_it = 1) =
-        Logistic(alpha_t + beta_J JointVenture_i + beta_C Contract_i
-                 + gamma' X_i).
-
-alpha_t allows the general probability of resolution to change over time. The
-analysis will also distinguish sale, liquidation, contract termination, and
-forced loss of control because entry mode can affect those outcomes
-differently.
-
-Standard errors will account for multiple Russian units belonging to the same
-parent. A secondary analysis will compare units within the same parent when a
-parent used more than one entry mode. This removes stable parent
-characteristics but not differences in the activities assigned to each mode.
-
-9. Identification and interpretation
-
-The rupture was common across firms, but entry mode was selected before the
-rupture. Firms with regulated assets, complex production, valuable technology,
-or a need for local political access may have chosen different modes. Those
-characteristics can also affect exit cost.
-
-The baseline coefficients are therefore conditional associations. Industry,
-home-country, and pre-rupture operating controls will reduce observable
-differences but will not prove causality. Within-parent comparisons provide a
-stronger test when available. A causal estimate would require a credible source
-of pre-rupture variation in entry mode that has no direct effect on exit cost.
-The present proposal does not assume that legal ownership caps meet that
-condition, because restricted sectors may face different treatment after the
+Before the rupture, a foreign parent operates through one of two equity modes:
+\[
+m\in\{W,J\},
+\]
+where $W$ denotes a wholly owned subsidiary and $J$ denotes a joint venture
+with an unrelated local shareholder. The model takes this previously chosen
+entry mode as given and does not assume that the firm anticipated the later
 rupture.
 
-10. Preliminary result from current data
+Let $K_m$ denote the book value of the foreign parent's equity exposure
+immediately before the rupture. For a wholly owned subsidiary, the parent owns
+the full book value. For a joint venture, $K_J$ is the parent's ownership share
+of the operation's book net assets. This definition is narrower than total
+economic exposure, but it corresponds to the equity information available in
+Orbis.
 
-The current Bloomberg file contains 158 post-rupture transactions with a
-foreign seller and a Russian target or Russian asset reference. Among the 145
-transactions with a usable percentage interest, 57 of 114 transactions for at
-least 95 percent of the interest were completed, compared with 22 of 31
-transactions for smaller interests. The completion rates are 50.0 and 71.0
-percent. The difference is 21.0 percentage points, with a two-sided exact-test
-p-value of 0.043.
+\subsection{Exit After the Rupture}
 
-The median time from 24 February 2022 to recorded completion was 476 days for
-full-interest transactions and 532.5 days for shared-interest transactions.
-Transaction value was disclosed for 25 full-interest transactions and 8
-shared-interest transactions.
+Suppose an unexpected political rupture occurs after the operation has been
+established. While exit remains incomplete, the operation generates net cash
+flow $x_m$ per year. This amount equals operating revenue minus operating,
+legal, compliance, maintenance, and other continuing expenses. It may be
+positive or negative.
 
-This result does not test the proposed hypotheses. The interest sold is a
-post-rupture transaction characteristic, not a verified pre-rupture entry
-mode. Firms without reported transactions are excluded. Full-interest records
-include asset sales, and contractual arrangements are largely absent. The
-result is a description of the available Bloomberg sample and a check on the
-data pipeline.
+Exit is completed at Poisson rate $\lambda_m$ and produces net
+recovery $P_m$ for the foreign parent. The rate summarizes the arrival of an
+eligible buyer and the completion of any required negotiation and approval.
+The baseline model assumes that $\lambda_m$, $x_m$, and $P_m$ remain constant
+while exit is incomplete. Let $r>0$ denote the annual discount
+rate and let $V_m$ denote the value of the unresolved operation immediately
+after the rupture. Then
+\[
+rV_m=x_m+\lambda_m(P_m-V_m),
+\]
+so
+\[
+V_m=\frac{x_m+\lambda_mP_m}{r+\lambda_m}.
+\]
 
-11. Required work
+The left-hand side is the required annual return on an unresolved operation
+worth $V_m$. The right-hand side is the net cash flow generated while waiting
+plus the expected change in value when exit occurs.
 
-The next stage has four priorities.
+The post-rupture loss is
+\[
+L_m=K_m-V_m.
+\]
+This is an economic loss conditional on the rupture. The expectation is over
+the time at which exit is completed, not over whether the rupture occurs.
 
-    1. Obtain historical ownership as of 31 December 2021 and rebuild parent-
-       subsidiary links without using post-exit ownership.
+It is useful to express the loss relative to exposed capital. Define
+\[
+p_m=\frac{P_m}{K_m},
+\qquad
+\xi_m=\frac{x_m}{K_m}.
+\]
+The expected loss per dollar of exposure is
+\[
+\ell_m
+=
+\frac{L_m}{K_m}
+=
+1-\frac{\xi_m+\lambda_mp_m}{r+\lambda_m}.
+\]
 
-    2. Construct and double-code the distributor, license, and franchise
-       population.
+The realized counterpart is
+\[
+L_i^{\mathrm{real}}
+=
+K_i
+-\int_0^{T_i}e^{-rt}x_i(t)\,dt
+-e^{-rT_i}P_i.
+\]
+This expression discounts both the cash flow generated during the delay and
+the recovery received at the exit date. Because $P_i$ is defined as net
+recovery, transaction costs must not be added again.
 
-    3. Verify legal resolution dates and ownership changes in Russian registry
-       records.
+\subsection{Comparative Results}
 
-    4. Extract Russia-specific write-downs, recovery, guarantees, and continuing
-       obligations from firm disclosures.
+The value of the unresolved operation satisfies
+\[
+\frac{\partial V_m}{\partial x_m}
+=
+\frac{1}{r+\lambda_m}>0,
+\qquad
+\frac{\partial V_m}{\partial P_m}
+=
+\frac{\lambda_m}{r+\lambda_m}>0,
+\]
+and
+\[
+\frac{\partial V_m}{\partial\lambda_m}
+=
+\frac{P_m-V_m}{r+\lambda_m}.
+\]
 
-After these tasks, the study can estimate the outcome specifications and
-assess whether the entry-mode comparisons are robust to sector composition,
-firm size, and pre-rupture selection.
+Higher net cash flow and greater recovery reduce the post-rupture loss. A higher
+exit rate also reduces the loss when the recovery at exit exceeds the value of
+continued waiting, $P_m>V_m$.
+
+The model does not impose a fixed ranking between the two entry
+modes. While a joint venture reduces the foreign parent's book exposure, the
+local partner may also help identify a buyer and complete the transaction,
+raising $\lambda_J$, or delay agreement and reduce it. Entry mode may therefore
+affect $K_m$, $\lambda_m$, and $P_m$ in different directions. Their net effect
+is an empirical question.
+
+\section{Empirical Implications}
+
+\subsection{Unit of Observation and Outcomes}
+
+The unit of observation is a foreign parent--Russian equity operation present
+on 24 February 2022. A wholly owned operation is one in which the foreign
+parent and its affiliates own the entire equity interest. A joint venture is
+one in which the foreign parent owns at least 25\% but less than 100\% and an
+unrelated local shareholder owns part of the remaining equity.
+
+The first outcome is the foreign parent's pre-rupture book exposure:
+\[
+K_i=s_iB_i,
+\]
+where $s_i$ is the parent's ownership share and $B_i$ is the operation's 2021
+book net assets.
+
+The second outcome is $T_i$, the number of days from 24 February 2022 to a
+completed exit. An operation that has not completed an exit by the final sample
+date contributes its observed time through that date. This outcome measures
+time from the rupture to an observed exit; it does not distinguish firms that
+did not attempt to exit from firms whose transactions were delayed.
+
+The third outcome is reported recovery:
+\[
+q_i=\frac{R_i}{K_i},
+\]
+where $R_i$ is the transaction value reported by Bloomberg for a completed
+deal. This is a gross recovery measure and is not identical to the model's net
+recovery $P_i$. Net recovery is used only when the parent's financial
+statements disclose proceeds after transaction costs and taxes.
+
+\subsection{Specifications}
+
+Capital exposure is estimated using
+\[
+\log K_i
+=
+\alpha_K+\beta_{KJ}J_i
++X_i'\gamma_K+\delta_{s(i)}+\delta_{h(i)}+\varepsilon_{Ki},
+\]
+where $J_i$ indicates a joint venture. The terms $\delta_{s(i)}$ and
+$\delta_{h(i)}$ are sector and parent-home-country fixed effects.
+
+Time to exit is estimated using a proportional-hazard specification:
+\[
+\lambda_i(t)
+=
+\lambda_0(t)
+\exp\!\left(
+\beta_{\lambda J}J_i
++X_i'\gamma_\lambda
++\delta_{s(i)}+\delta_{h(i)}
+\right).
+\]
+Unlike the constant-rate benchmark in the formal model, the baseline hazard
+$\lambda_0(t)$ may change over time. A piecewise-exponential specification can
+also estimate separate rates for different periods after the rupture.
+
+For completed exits with a disclosed transaction value, recovery is estimated
+using
+\[
+q_i
+=
+\alpha_q+\beta_{qJ}J_i
++X_i'\gamma_q+\delta_{s(i)}+\delta_{h(i)}+\varepsilon_{qi}.
+\]
+This specification estimates recovery conditional on both exit completion and
+value disclosure. It does not identify average recovery among all
+pre-rupture operations. Completion and disclosure rates must therefore be
+reported separately by entry mode.
+
+When post-rupture subsidiary accounts are available, net cash flow is measured
+as
+\[
+\xi_{it}
+=
+\frac{x_{it}}{K_i}
+\]
+and estimated using
+\[
+\xi_{it}
+=
+\alpha_x+\beta_{xJ}J_i
++X_i'\gamma_x+\eta_t
++\delta_{s(i)}+\delta_{h(i)}+\varepsilon_{xit},
+\]
+where $\eta_t$ denotes year effects. The sample includes only years in which
+the operation remains unresolved.
+
+The mode coefficients are conditional associations. A causal interpretation
+would require entry mode to be unrelated to unobserved determinants of exit
+outcomes after conditioning on $X_i$ and the fixed effects. Because firms
+selected their entry modes before 2022, this condition is not assumed. A
+within-parent specification can be reported for parents operating multiple
+Russian entities under different ownership structures.
+
+For calculations requiring a discount rate, the baseline uses $r=0.05$ per
+year. Results should also be reported for alternative rates between zero and
+10\%.
+
+\subsection{Variables and Data Sources}
+
+\begin{table}[H]
+\centering
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{p{0.30\textwidth} p{0.62\textwidth}}
+\hline
+\textbf{Variable} & \textbf{Where to find it} \\
+\hline
+
+Entry mode $J_i$
+&
+Historical Orbis ownership records as of 2021. A joint venture has a foreign
+parent holding of at least 25\% but less than 100\% and an unrelated local
+shareholder.
+\\
+
+Ownership share $s_i$
+&
+Historical Orbis direct and ultimate ownership records as of 2021.
+\\
+
+Book net assets $B_i$
+&
+The Russian operation's 2021 balance sheet in Orbis.
+\\
+
+Book exposure $K_i$
+&
+Constructed as $s_iB_i$.
+\\
+
+Exit date and $T_i$
+&
+Bloomberg completion date, verified using historical Orbis ownership,
+company filings, or official corporate records.
+\\
+
+Reported transaction value $R_i$
+&
+Bloomberg transaction value for deals marked as completed.
+\\
+
+Net recovery $P_i$
+&
+Parent financial statements when proceeds after taxes and transaction costs
+are disclosed. Otherwise unobserved.
+\\
+
+Net cash flow $x_{it}$
+&
+Operating revenue minus operating expenses in annual Orbis accounts or
+operation-specific parent disclosures.
+\\
+
+Pre-rupture controls $X_i$
+&
+Orbis records on 2021 assets, employment, operation age, industry, and parent
+country.
+\\
+
+Sector fixed effects $\delta_{s(i)}$
+&
+The operation's pre-rupture industry classification in Orbis.
+\\
+
+Home-country fixed effects $\delta_{h(i)}$
+&
+The foreign parent's country in Orbis.
+\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{thebibliography}{99}
+
+\bibitem[Balyuk and Fedyk(2023)]{BalyukFedyk2023}
+Tetyana Balyuk and Anastassia Fedyk.
+\newblock (2023).
+\newblock Divesting under pressure: U.S. firms' exit in response to Russia's
+war against Ukraine.
+\newblock \emph{Journal of Comparative Economics}, 51(4):1253--1273.
+\newblock \url{https://doi.org/10.1016/j.jce.2023.08.001}.
+
+\bibitem[Crozet and Hinz(2020)]{CrozetHinz2020}
+Matthieu Crozet and Julian Hinz.
+\newblock (2020).
+\newblock Friendly fire: The trade impact of the Russia sanctions and
+counter-sanctions.
+\newblock \emph{Economic Policy}, 35(101):97--146.
+\newblock \url{https://doi.org/10.1093/epolic/eiaa006}.
+
+\bibitem[Evenett and Pisani(2023)]{EvenettPisani2023}
+Simon J. Evenett and Niccolò Pisani.
+\newblock (2023).
+\newblock Geopolitics, conflict, and decoupling: Evidence of Western
+divestment from Russia during 2022.
+\newblock \emph{Journal of International Business Policy}, 6(4):511--540.
+\newblock \url{https://doi.org/10.1057/s42214-023-00167-y}.
+
+\bibitem[Kim and Kung(2017)]{KimKung2017}
+Hyunseob Kim and Howard Kung.
+\newblock (2017).
+\newblock The asset redeployability channel: How uncertainty affects
+corporate investment.
+\newblock \emph{The Review of Financial Studies}, 30(1):245--280.
+\newblock \url{https://doi.org/10.1093/rfs/hhv076}.
+
+\bibitem[Shleifer and Vishny(1992)]{ShleiferVishny1992}
+Andrei Shleifer and Robert W. Vishny.
+\newblock (1992).
+\newblock Liquidation values and debt capacity: A market equilibrium approach.
+\newblock \emph{The Journal of Finance}, 47(4):1343--1366.
+\newblock \url{https://doi.org/10.1111/j.1540-6261.1992.tb04661.x}.
+
+\bibitem[Wellhausen and Zhu(2026)]{WellhausenZhu2026}
+Rachel L. Wellhausen and Boliang Zhu.
+\newblock (2026).
+\newblock Exiting Russia.
+\newblock \emph{American Political Science Review}, First View:1--18.
+\newblock \url{https://doi.org/10.1017/S000305542610152X}.
+
+\end{thebibliography}
+
+\end{document}
